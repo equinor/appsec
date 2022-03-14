@@ -22,8 +22,6 @@ title: Application Security
 author: ISC AppSec, Equinor ASA
 description: >-
   Guidelines and tutorials related in Application Security in Equinor.
-baseurl: ""
-url: "https://equinor.github.io/appsec"
 twitter_username: EquinorASA
 github_username: Equinor
 
