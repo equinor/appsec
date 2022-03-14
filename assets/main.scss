@@ -1,0 +1,13 @@
+---
+---
+
+@import "minima";
+
+.site-title::before {
+	content: url("favicon.ico");
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 5px;
+	padding: 5px;
+}
