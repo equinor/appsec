@@ -2,12 +2,20 @@
 ---
 
 @import "minima";
+@import 'https://eds-static.equinor.com/font/equinor-font.css';
+
+$mossgreen: #007079;
 
 .site-title::before {
-	content: url("favicon.ico");
+	content: url( https://eds-static.equinor.com/logo/equinor-logo-primary.svg);
 	display: inline-block;
 	position: relative;
-	width: 50px;
-	height: 5px;
-	padding: 5px;
+	width: 3rem;
+	height: 1rem;
+	padding: 0.5rem;
+}
+
+body, a, a:visited {
+	font-family: 'Equinor';
+	color: $mossgreen;
 }
