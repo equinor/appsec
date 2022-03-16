@@ -28,6 +28,7 @@ github_username: Equinor
 # Build settings
 theme: minima
 markdown: kramdown
+site_favicon: favicon.ico
 
 header_pages:
   - guidelines/guidelines.md
