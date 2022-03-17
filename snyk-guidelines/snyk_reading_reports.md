@@ -1,7 +1,4 @@
----
-layout: page
-title: "How to interpret reports in Snyk Open Source"
----
+# Interpreting Snyk Open Source reports
 
 >Focus on the issues that pose the greatest risk.
 
@@ -29,4 +26,4 @@ The developers should not be complacent with a high number of `auto fixable` iss
 
 ![Security Issues](./images/security_issues_snyk_report.jpg)
 
-(For understanding severity - please read, ['How to interpret and prioritize Snyk findings'](./snyk_reading_reports.md) guideline.)
+(For understanding severity - please read, [Interpreting and prioritizing Snyk findings](snyk_interpret_and_prioritize.md) guideline.)

@@ -4,7 +4,7 @@ title: ISC AppSec
 ---
 Welcome to Equinor AppSec information pages.
 
-## [Guidelines](./guidelines/guidelines.md)
+## [Snyk guidelines](./snyk-guidelines/guidelines.md)
 The guidelines contain information related to how to set up Snyk for security
 scanning of repos, and also other guidelines related to licenses and other topics.
 
