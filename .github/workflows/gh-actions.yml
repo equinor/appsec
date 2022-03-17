@@ -15,5 +15,5 @@ jobs:
       - name: Verify no dead links
         run: |
           bundle install
-          bundle exec rake test
+          bundle exec rake test_gh
       - run: echo "🍏 This job's status is ${{ job.status }}."
