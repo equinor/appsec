@@ -11,6 +11,8 @@ A Security Champion is a team-member who amplifies the security message at the t
 In practice, this means to act as the "security conscience" of the team.
 You do not need to be a security expert to become a Security Champion, an interest for security is more than enough.
 
+> Please note that security is a team responsibility, and the Security Champion is not more accountable for security than any other team member
+
 Tasks *could* involve:
 
 - Staying up-to-date with best practices and security related news
