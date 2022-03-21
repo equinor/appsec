@@ -1,8 +1,4 @@
----
-layout: page
-title: "GitHub integration settings"
----
-
+# GitHub integration settings
 
 ## Open Source Security & Licenses
 It is recommended to enable Snyk test for pull requests. It can be set to either
@@ -12,14 +8,14 @@ when the PR is adding a dependency with issue.
 
 It can also be selected if it should fail for high or critical issues, and only if
 there is a fix available. Recommended settings is shown below.
-![](./open-source-pr-scanning.png)
+![Open source PR scanning](./images/open-source-pr-scanning.png)
 
 ## Automatic fix pull requests
 It is recommended to enable Snyk to auto-create pull requests for new and known
 vulnerabilities. This will allow Snyk to create a pull request with dependency
 upgrade for known issues. If there is no know fix, Snyk also has the possibility
 to apply patches to fix the issue. Recommended settings is shown below.
-![](./automatic-fix-pull-requests.png)
+![Automatically fix pull requests](./images/automatic-fix-pull-requests.png)
 
 ## Automatic dependency upgrade pull requests
 Snyk can be used to automatically update dependencies when there is a new patch,
@@ -31,3 +27,6 @@ version can be checked with `npm outdated`, and then updated with `npm update`.
 For checking vulnerabilities only, `npm audit` can be run get a list of
 severities provided by npm. This issues that can be fixed up a package upgrade
 can be fixed with `npm audit fix`.
+
+## More information
+Read more about how to [read Snyk reports](snyk_reading_reports.md)

@@ -30,6 +30,6 @@ theme: minima
 markdown: kramdown
 
 header_pages:
-  - guidelines/guidelines.md
+  - snyk-guidelines/guidelines.md
   - security-champion/security-champion.md
   - about.md

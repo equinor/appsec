@@ -1,8 +1,4 @@
----
-layout: page
-title: "How to interpret and prioritize Snyk findings"
----
-
+# Interpreting and prioritizing Snyk findings
 
 The [Snyk Priority Score](https://docs.snyk.io/features/fixing-and-prioritizing-issues/starting-to-fix-vulnerabilities/snyk-priority-score) is a good reference when prioritizing Snyk findings, and should be taken into consideration. Be mindful that Snyk reports on *potential* vulnerabilities, so you will still need to investigate if the reported issue is a true positive or not.
 
