@@ -34,7 +34,7 @@ Sometimes in order to stay compliant, one might have to adopt a new license for 
 This Equinor team maintains an application used by Equinor employees. The source-code is not made available, and the application is only reachable from the internal network.
 
 Snyk report the following issue:
-![](./images/agpl_issue.png)
+![aglp_issue](./images/agpl_issue.png)
 
 Investigating the AGPL-3.0 license, looking into the resources linked to at the bottom of this guide, the investigator finds the following useful information:
 
@@ -48,8 +48,8 @@ What they do next is described bellow.
 
 After a license-issue is resolved, a good practice would be to document it in Snyk via the 'ignore' button.
 
-![](./images/ignore_comment_1.png)
-![](./images/ignore_comment_2.png)
+![ignore_comment_1](./images/ignore_comment_1.png)
+![ignore_comment_1](./images/ignore_comment_2.png)
 
 If you do need assistance, don't be afraid to reach out on [Slack](https://equinor.slack.com/archives/CMM6FSW5V)
 
