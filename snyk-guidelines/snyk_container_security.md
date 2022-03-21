@@ -37,6 +37,8 @@ Teams have different software development life cycles (SDLC). The following figu
 
 ## Scanning from the Command Line
 
+Pre-read; [The Snyk CLI](https://docs.snyk.io/snyk-cli), [Snyk CLI for container security](https://docs.snyk.io/products/snyk-container/snyk-cli-for-container-security)
+
 * Command line options and examples
 * "docker scan" vs. "snyk container test"
 
@@ -61,7 +63,8 @@ Teams have different software development life cycles (SDLC). The following figu
 
 ## Resources
 
-* Installing the Snyk CLI
+* [The Snyk CLI](https://docs.snyk.io/snyk-cli)
+* [Installing the Snyk CLI](https://docs.snyk.io/snyk-cli/install-the-snyk-cli)
 
 * CIS Docker Benchmark (https://github.com/dev-sec/cis-docker-benchmark)?
 * Container security - https://snyk.io/learn/container-security/
