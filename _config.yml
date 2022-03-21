@@ -32,4 +32,5 @@ markdown: kramdown
 header_pages:
   - snyk-guidelines/guidelines.md
   - security-champion/security-champion.md
+  - resources/resources.md
   - about.md
