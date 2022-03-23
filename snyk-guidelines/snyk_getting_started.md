@@ -1,8 +1,10 @@
 # Getting started
-Snyk is available to all teams who code in Equinor. First, apply for Snyk in [AccessIT](https://accessit.equinor.com/Search/Search?term=snyk), then ask [#sdpteam](https://equinor.slack.com/archives/C02JJGV05) to create a Snyk organization for your team.
+Snyk is available to all teams who code in Equinor. First, apply for Snyk in [AccessIT](https://accessit.equinor.com/Search/Search?term=snyk), then ask [#sdpteam](https://equinor.slack.com/archives/C02JJGV05) to create a Snyk organization for your team if it does not already have one.
 
 When you have been granted an organization, make sure to log on to [snyk sso](https://app.snyk.io/login/sso) and use your Equinor
-email address. Here you can start integrating Snyk with the code you are working with.
+email address.
+
+After your first time sign in, you will be able to list organizations available at the Equinor Group overview (top level). If you see a relevant org to join, request one of the listed org admins to add you to the org.
 
 ## Creating projects
 Snyk has many different kinds of integrations, we recommend starting with adding your github repositories. Doing that will create
