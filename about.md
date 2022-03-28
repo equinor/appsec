@@ -4,4 +4,4 @@ title: About
 ---
 
 The AppSec team is responsible for maintaining application security for
-applications developed for av by Equinor.
+applications developed for and by Equinor.
