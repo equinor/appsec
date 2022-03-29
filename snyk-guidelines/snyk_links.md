@@ -5,3 +5,4 @@
 * [Interpret and prioritize findings](snyk_interpret_and_prioritize.html)
 * [Official documentation](https://docs.snyk.io/)
 * [Snyk API documentation](https://snyk.docs.apiary.io/)
+* [Dealing with licenses](snyk_licenses.html)
