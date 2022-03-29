@@ -3,6 +3,6 @@
 * [Integrate with github](gh-integration.html)
 * [Read Snyk reports](snyk_reading_reports.html)
 * [Interpret and prioritize findings](snyk_interpret_and_prioritize.html)
+* [Dealing with licenses](snyk_licenses.html)
 * [Official documentation](https://docs.snyk.io/)
 * [Snyk API documentation](https://snyk.docs.apiary.io/)
-* [Dealing with licenses](snyk_licenses.html)
