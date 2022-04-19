@@ -4,7 +4,7 @@ This guide focuses on security scanning of dependencies used in container images
 
 **TL;DR**
 
-In your development environment; use **Snyk Cli** to scan local container images and docker files. Use the **Snyk Container Registry** integration to monitor container images and manifests. Configure Snyk's notifications and response to detections.
+In your development environment; use [Snyk CLI](https://docs.snyk.io/snyk-cli) to scan local container images and docker files. Use the [Snyk Container Registry](https://docs.snyk.io/products/snyk-container/getting-started-snyk-container) integration to monitor container images and manifests. Configure Snyk's notifications and response to detections.
 
 ## Snyk in a Software Development Lifecycle
 
