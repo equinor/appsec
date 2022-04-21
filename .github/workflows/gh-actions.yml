@@ -4,9 +4,13 @@ jobs:
   check-dead-links:
     runs-on: ubuntu-latest
     steps:
-      - run: sudo apt update
-      - run: sudo apt install ruby-full build-essential zlib1g-dev
-      - run: sudo gem install jekyll bundler
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.6 # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      # - run: sudo apt update
+      # - run: sudo apt install ruby-full build-essential zlib1g-dev
+      # - run: sudo gem install jekyll bundler
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -14,6 +18,5 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: Verify no dead links
         run: |
-          bundle install
           bundle exec rake test_gh
       - run: echo "🍏 This job's status is ${{ job.status }}."
