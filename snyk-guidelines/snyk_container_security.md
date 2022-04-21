@@ -1,4 +1,4 @@
-# Container Image Security & Scanning
+# Container Image Security and Scanning
 
 This guide focuses on security scanning of dependencies used in container images. The guide do not discuss monitoring hosting platforms.
 
