@@ -22,7 +22,7 @@ We encourage raising Support tickets with Snyk. To enable some follow-up and tra
 
 - Create a Support ticket at [Snyk Support](https://support.snyk.io/hc/en-us/requests/new)
   - Use your Equinor email
-  - Add a few additional followers from the Equinor AppSec Team (krr and pmkv)
+  - Add additional followers from the Equinor AppSec Team (krr and pmkv)
   - After registering, please share the following ticker information in the [#snyk-equinor-bridge](https://equinor.slack.com/archives/C019LBMKJPL) Slack channel
     - Subject
     - Id
