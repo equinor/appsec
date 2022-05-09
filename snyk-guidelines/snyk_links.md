@@ -1,5 +1,6 @@
 * [Background](./snyk_background.html)
 * [Getting started](./snyk_getting_started.html)
+* [Tagging Snyk Projects in Equinor](./snyk_tagging_projects.html)
 * [Getting Support](./snyk_support.html)
 * [Integrate with github](gh-integration.html)
 * [Read Snyk reports](snyk_reading_reports.html)
