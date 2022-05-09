@@ -2,7 +2,7 @@
 
 This guide focuses on security scanning of dependencies used in container images. The guide do not discuss monitoring hosting platforms.
 
-- [Container Image Security & Scanning](#container-image-security--scanning)
+- [Container Image Security and Scanning](#container-image-security-and-scanning)
   - [TL;DR](#tldr)
   - [Snyk in a Software Development Lifecycle](#snyk-in-a-software-development-lifecycle)
   - [Scanning from the Command Line](#scanning-from-the-command-line)

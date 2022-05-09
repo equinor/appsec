@@ -1,6 +1,6 @@
 # Getting Snyk Support
 
-The short guideline gives some advice on how and where to get Snyk support. The AppSec team will provide help, but most of the Snyk support in Equinor should be community driven. We have a direct connection to Snyk's Customer Success staff which also will help out (the Slack channel [#snyk-equinor-bridge](https://equinor.slack.com/archives/C019LBMKJPL))
+This short guideline give some advice on how and where to get Snyk support. The AppSec team will provide help, but most of the Snyk support in Equinor should be community driven. We have a direct connection to Snyk's Customer Success staff which also will help out (the Slack channel [#snyk-equinor-bridge](https://equinor.slack.com/archives/C019LBMKJPL))
 
 Consult the _documentation_ part. If you cannot find your solution, considering raising a _Snyk Support Ticket_.
 
