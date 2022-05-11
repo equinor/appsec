@@ -3,6 +3,8 @@
 
 ## Intro
 
+> !!!!! To enable the rule-set that alerts on potential issues, add the "Distributed" environment-tag in your projects. __If you cant see 'Distributed' in the list, try searching for it__
+
 Open source software you use in your projects (eg. libraries) are licensed by the author(s) to ensure that it is used the way the author attended. There are many different licenses out there. Some of them are created to ensure the freedom of use without asking anything in return. Others may require that projects using the licensed software adopt the same license and make their software open and free.
 
 [**Information on why/how Snyk reports on License-issues**](https://docs.snyk.io/products/snyk-open-source/licenses)
