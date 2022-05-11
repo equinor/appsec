@@ -16,4 +16,6 @@ The default is that "all" projects will be included in the aggregated Dashboard.
 
 ## Toggling the rule-set for Equinor's OpenSource distributed projects
 
-We have configured Snyk to no longer _by default_ alert of potential license issues for projects. If your project is distributed (ex. exposed on the internet, source-code is OpenSource), you should use the tag "Distributed" in the Environment section. This will enable the correct rule-set for your project.  
+We have configured Snyk to no longer _by default_ alert of potential license issues for projects. If your project is distributed (ex. exposed on the internet, source-code is OpenSource), you should use the tag "Distributed" in the Environment section. This will enable the correct rule-set for your project.
+
+>__If you cant see 'Distributed' in the list, try searching for it!__
