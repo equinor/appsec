@@ -5,6 +5,7 @@ We use tagging of Snyk projects to assist us in getting useful metrics. Please m
 ## TL;DR
 
 * Omit official scan results for projects from the official Dashboard by setting the "Lifecycle stage" tag to "Sandbox"
+* For OpenSource project, set the project's "Environment" tag to "Distributed" (you will have to start typing for it to show up on the list)
 
 ## Filtering "noise" from scanning results
 
