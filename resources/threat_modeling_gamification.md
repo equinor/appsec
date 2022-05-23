@@ -2,7 +2,7 @@
 
 This gamified method of doing threat modeling might not be for everyone, but it has its pros and is worth testing out.
 
-![EOP Game-play](/snyk-guidelines/images/EOP_gameplay.png)
+![EOP Game-play](./EOP_gameplay.png)
 
 Here are the pros:  
 \+ Depending on your level of geek: Fun!  
