@@ -1,0 +1,45 @@
+site_name: Equinor AppSec
+repo_url: https://github.com/equinor/isc-appsec/
+site_url: https://equinor.github.io/appsec/
+site_author: ISC AppSec, Equinor ASA
+site_description: >-
+  Guidelines and tutorials related in Application Security in Equinor.
+
+edit_uri: edit/main/
+copyright: Copyright &copy; Equinor ASA
+theme:
+  name: material
+  logo: assets/icons/appsec-icon-white.svg
+  favicon: assets/icons/appsec-iconenergyred.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/equinor
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/EquinorASA
+extra_css:
+  - assets/css/mkdocs-eq.css
+  - https://eds-static.equinor.com/font/equinor-font.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
