@@ -129,7 +129,7 @@ The SCM integration will scan the Docker file and identify vulnerabilities in th
 
 ## View vulnerabilities
 
-For projects, please consult the [Interpreting Snyk Open Source reports](snyk_interpret_and_prioritize.md) guideline. Please note the following for containers:
+For projects, please consult the [Interpreting Snyk Open Source reports](2-snyk_interpret_and_prioritize.md) guideline. Please note the following for containers:
 
 - Review the [base image recommendation](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/base-image-detection#base-image-recommendations) if it exist. Test properly if base image is updated.
 - Review the [Image Layer Information](https://docs.snyk.io/products/snyk-container/getting-around-the-snyk-container-ui/image-layer-information) for vulnerabilities to identify where the vulnerability is introduced.

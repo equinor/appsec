@@ -28,6 +28,8 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.indexes
+    - navigation.expand
+    - navigation.top
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -44,3 +46,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.details
   - admonition
+  - toc:
+        permalink: true
+plugins:
+    - search
+    - awesome-pages

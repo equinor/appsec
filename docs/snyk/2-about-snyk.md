@@ -1,4 +1,4 @@
-# Snyk background
+# About Snyk
 ## What is it
 Snyk is a bundle of tools which helps managing vulnerabilities throughout the software development lifecycle. Currently Equinor has
 licenses for Snyk Open Source and Snyk Container which helps manage vulnerabilities related to third party software either as dependencies
@@ -18,4 +18,4 @@ These tools can scan code repositories continuously and on every pull request. T
 pip requirements and many other packaging formats and check if you are currently installing a dependency with an associated
 known vulnerability. They will also assist you in assessing the severity and suggesting mitigating actions.
 
-To learn more, check out how to [get started](snyk_getting_started.md)
+To learn more, check out how to [get started](index.md)

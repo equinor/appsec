@@ -24,3 +24,7 @@ We encourage raising Support tickets with Snyk. To enable some follow-up and tra
   - After registering, please share the following ticker information in the [#snyk-equinor-bridge](https://equinor.slack.com/archives/C019LBMKJPL) Slack channel
     - Subject
     - Id
+
+## External resources
+* [Official documentation](https://docs.snyk.io/)
+* [Snyk API documentation](https://snyk.docs.apiary.io/)
