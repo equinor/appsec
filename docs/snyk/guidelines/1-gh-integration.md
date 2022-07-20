@@ -29,4 +29,4 @@ severities provided by npm. This issues that can be fixed up a package upgrade
 can be fixed with `npm audit fix`.
 
 ## More information
-Read more about how to [read Snyk reports](snyk_reading_reports.md)
+Read more about how to [read Snyk reports](6-snyk_reading_reports.md)
