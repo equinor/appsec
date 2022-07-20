@@ -1,7 +1,4 @@
----
-layout: page
-title: Security Champion
----
+# Security Champion
 
 ## WIP: Info about security champion
 
