@@ -1,5 +1,5 @@
 # Getting started
-Snyk is available to all teams who code in Equinor. First, apply for Snyk in [AccessIT](https://accessit.equinor.com/Search/Search?term=snyk), then ask [#sdpteam](https://equinor.slack.com/archives/C02JJGV05) to create a Snyk organization for your team if it does not already have one.
+Snyk is available to all teams who code in Equinor. First, apply for Snyk in [AccessIT](https://accessit.equinor.com/Search/Search?term=snyk), then ask @appsecteam in [Slack channel #appsec](https://equinor.slack.com/archives/CMM6FSW5V) to create a Snyk organization for your team if it does not already have one.
 
 When you have been granted an organization, make sure to log on to [snyk sso](https://app.snyk.io/login/sso) and use your Equinor
 email address.
