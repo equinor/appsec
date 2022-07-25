@@ -11,8 +11,8 @@ Join the  [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) and [#security
 
 ## Reading Material
 - Check out some guidelines [here](/appsec/resources/)
-- Participate in cool events, conferences and network meetings in the Security Champion's group calendar
+- Participate in cool events, conferences and network meetings in the [Security Champion's group calendar](https://statoilsrm.sharepoint.com/sites/securitychampion9)
 
 ## Hands-on Activities
 - If your team has not been onboarded to Snyk yet, reach out to the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) team to have a session organized (you'll learn about your application's security posture)
-- If your team is not familiar with or has not done any Threat Modelling yet, reach out to the #appsec  team to have a session organized (it's cool stuff, you'll see)
+- If your team is not familiar with or has not done any Threat Modelling yet, reach out to the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V)  team to have a session organized (it's cool stuff, you'll see)
