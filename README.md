@@ -1,3 +1,5 @@
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/equinor/appsec)
+
 # Equinor AppSec public site
 
 This repo contains the documentation and setup for hosting https://equinor.github.io/appsec/
@@ -11,6 +13,8 @@ To start the project, simply run:
 mkdocs serve
 ```
 and the server will start on `localhost:8000`.
+
+.. or use e.g. Gitpod by click the Gitpod image/link above.
 
 ### Adding content
 To add content add markdown inside the `docs` folder, and link

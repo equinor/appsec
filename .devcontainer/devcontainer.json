@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.162.0/containers/javascript-node
+{
+  "name": "AppSec Site",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3",
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "dbaeumer.vscode-eslint"
+  ],
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "mkdocs port",
+      "onAutoForward": "openPreview"
+    }
+  },
+  
+  // Comment out the next line if you want to run as root instead
+  "remoteUser": "vscode",
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "pip install --user -r requirements.txt",
+  "postStartCommand": "mkdocs serve"
+
+}
