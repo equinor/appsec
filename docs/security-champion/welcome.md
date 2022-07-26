@@ -16,3 +16,4 @@ Join the  [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) and [#security
 ## Hands-on Activities
 - If your team has not been onboarded to Snyk yet, reach out to the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) team to have a session organized (you'll learn about your application's security posture)
 - If your team is not familiar with or has not done any Threat Modelling yet, reach out to the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V)  team to have a session organized (it's cool stuff, you'll see)
+- Sign up and try the labs at the [Web Security Academy](https://portswigger.net/web-security) to brush up on common web security topics (don't forget to apply them later)
