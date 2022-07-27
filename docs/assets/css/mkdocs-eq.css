@@ -1,0 +1,14 @@
+:root {
+    --mossgreen: #007079;
+    --md-text-font-family: "Equinor";
+    --md-primary-fg-color:        var(--mossgreen);
+    --md-primary-fg-color--light: var(--mossgreen);
+    --md-primary-fg-color--dark:  var(--mossgreen);
+}
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: hsl(184, 100%, 34%); 
+}
+/**
+Using Equinor font from link below, defined in mkdocks.yml
+https://eds-static.equinor.com/font/equinor-font.css
+**/

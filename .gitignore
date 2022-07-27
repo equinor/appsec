@@ -1,0 +1,5 @@
+site
+vendor
+.bundle
+.dccache
+venv/
