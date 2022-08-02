@@ -15,7 +15,7 @@ Like it is often said, security champions make everything better!
 
 | **When** | **What** | 
 |---|---|
-| To Be Finalised | Morning Coffee :material-coffee: | 
+| 8.30 - To Be Finalised | Morning Coffee :material-coffee: | 
 | To Be Finalised | Introduction and Agenda :material-human-greeting-proximity: | 
 | To Be Finalised | Catch the Flag :material-application-parentheses-outline: | 
 | To Be Finalised | Lunch :material-food-outline: | 
@@ -23,5 +23,5 @@ Like it is often said, security champions make everything better!
 | To Be Finalised | About the network :material-security-network: | 
 | To Be Finalised | ISC Portfolio Introduction :fontawesome-regular-rectangle-list: | 
 | To Be Finalised | Workshop :material-account-group-outline: | 
-| To Be Finalised | Socialize :material-beer-outline: | 
+| To Be Finalised - 6 PM| Socialize :material-beer-outline: | 
 
