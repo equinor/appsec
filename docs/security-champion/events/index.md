@@ -2,7 +2,7 @@
 
 | **When** | **What** | **Who** |
 |---|---|---|
-| September 2022 | Security Champion kick-off | Everyone who has [signed](https://forms.office.com/r/3C2vwEh2i0) up to become a Security Champion |
+| September 2022 | Security Champion kick-off | Everyone who has [signed](https://forms.office.com/r/3C2vwEh2i0) up to become a Security Champion. [Know more](./sc-kickoff-agenda.md) |
 | 13-16 September 2022 | Equinor Developer Conference |  |
 
 
