@@ -4,7 +4,7 @@ We would like to document all the cool things we do and the problems we solve in
 
 ## Here is a template to get you started :
 - **The Champion(s):**<br>
-The champion(s) corresponds to the protagonist(s) of the project. 
+The champion(s) corresponds to the protagonist(s) of the project. If you don't want your name published here, it's fine to only mention your team.
 
 - **The Initial Situation:**<br>
 The initial situation is usually unsatisfying for the champion(s).
