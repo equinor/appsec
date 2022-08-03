@@ -1,4 +1,4 @@
-# Security Champions Kickoff :rocket:
+# Security Champions Kickoff 🚀
 
 !!! todo "Signup Information"
     Use [this form](https://forms.office.com/r/3C2vwEh2i0) for signing up to the security champion's network.
