@@ -1,4 +1,4 @@
-# Guideline - API Security Guidelines #DRAFT
+# Guideline - API Security Guidelines
 
 ### 1. Create a complete inventory of all APIs
 

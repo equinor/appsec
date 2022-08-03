@@ -1,4 +1,4 @@
-# Guideline - Secure Coding #DRAFT
+# Guideline - Secure Coding
 
 ### 1. Input validation
 
