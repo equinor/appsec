@@ -1,4 +1,4 @@
-# Guideline - Logging and Error Handling #DRAFT
+# Guideline - Logging and Error Handling
 
 The primary objective of error handling and logging is to provide useful information for the user,
 administrators, and incident response teams. The objective is not to create massive amounts of logs, but high
