@@ -4,7 +4,7 @@
 **Absolutely not!** This is a initiative for people to learn more about security and generate a network for people to share experiences and competence.
 
 ### Who can become a Security Champion?
-Everyone who considers themselves part of a development team can become a Security Champion. Both developers, ux-designers, testers and citizen developers are welcome to join. There is no requirement to be a Equinor employee to join, we invite consultants as well!
+Everyone who considers themselves part of a development team can become a Security Champion. If you are a developer, ux-designer, tester, citizen developer or anything in-between, you are welcome to join. There is no requirement to be an Equinor employee to join, we invite consultants as well!
 
 ### I want to attend the Kick off event in october. Do you provide a WBS for hours and travel expenses?
 The Security Champion initiative is a network we invite IT professionals to join and share experiences. Members need to ask their project managers or line leaders for approval to travel and spend time on the network.
