@@ -2,7 +2,7 @@
 
 ## Info about Security Champion
 
-Ideally, each DevOps team in Equinor should have one or more team-member who takes on the role of Security Champion.
+Ideally, each developer team should have one or more team-member who takes on the role of Security Champion.
 
 A Security Champion is a team-member who amplifies the security message at the team level.
 
