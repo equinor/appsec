@@ -1,13 +1,11 @@
 # Security Champion
 
-!!! warning
-    The Security Champion initiative has yet not been *officially* launched in Equinor, so everything on this site is as of now work in progress. We intend to have a kickoff in Q3 2022, so stay tuned on these pages.
+## Info about Security Champion
 
-## Info about security champion
-
-Ideally, each Equinor delivery team would have one or more team-member who takes on the role of Security Champion.
+Ideally, each developer team should have one or more team-member who takes on the role of Security Champion.
 
 A Security Champion is a team-member who amplifies the security message at the team level.
+
 In practice, this means to act as the "security conscience" of the team.
 You do not need to be a security expert to become a Security Champion, an interest for security is more than enough.
 

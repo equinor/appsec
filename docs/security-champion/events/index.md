@@ -1,9 +1,11 @@
 # Events
 
-| **When** | **What** | **Who** |
+| **When** | **What** | **Where** |
 |---|---|---|
-| September 2022 | Security Champion kick-off | Everyone who has [signed](https://forms.office.com/r/3C2vwEh2i0) up to become a Security Champion. [Know more](./sc-kickoff-agenda.md) |
-| 13-16 September 2022 | Equinor Developer Conference |  |
+| 26 August 2022 10:00 | Security Champion Info meeting | Teams meeting, join [HERE](). [Know more](./1-sc-info-meeting.md)|
+| 01 September 2022 14:00 | Security Champion Info meeting | Teams meeting, join [HERE](). [Know more](./1-sc-info-meeting.md)|
+| September 2022 | Security Champion kick-off | Stavanger. For all security champions. [Know more](./sc-kickoff-agenda.md) |
+| 13-16 September 2022 | Equinor Developer Conference | Stavanger |
 
 
 To check all events, and add them to your own calendar, go to your outlook calendar and select the Security Champion Calendar from group calendars:
