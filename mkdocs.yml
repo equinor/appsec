@@ -9,6 +9,7 @@ edit_uri: edit/main/docs
 copyright: Copyright &copy; Equinor ASA
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/icons/appsec-icon-white.svg
   favicon: assets/icons/appsec-iconenergyred.svg
   palette:
