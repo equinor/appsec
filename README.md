@@ -20,3 +20,6 @@ and the server will start on `localhost:8000`.
 To add content add markdown inside the `docs` folder, and link
 it from the rest of the site.
 
+## How to contribute
+
+Read our [contribute.md](CONTRIBUTING.md)

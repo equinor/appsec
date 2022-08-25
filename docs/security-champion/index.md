@@ -2,7 +2,7 @@
 
 ## Info about Security Champion
 
-Ideally, each developer team should have one or more team-member who takes on the role of Security Champion.
+Ideally, each development team should have one or more team-members who takes on the role of Security Champion. When an **area** are supported by many small teams (1-2 persons) this **area** should be represented by one or more security champions.
 
 A Security Champion is a team-member who amplifies the security message at the team level.
 
@@ -23,7 +23,7 @@ Tasks *could* involve:
 - Be the point of contact for security related stuff
 - Drive internal bug-bounty
 
-As a Security Champion, you would be a target audience for a lot of the work done by the AppSec-team.
-The AppSec-team will be providing workshops, training, resources and support where needed.
+As a Security Champion you would be a target audience for a lot of the work done by the Equinor AppSec team.
+The AppSec team will be providing workshops, training, resources and support where needed.
 
-And of course it would be nice if the Security Champions would join Equinor's [**Security Champion Slack Channel**](https://equinor.slack.com/archives/C036HGPBJ04)
+Equinor Security Champions should join our [**Security Champion Slack Channel**](https://equinor.slack.com/archives/C036HGPBJ04)
