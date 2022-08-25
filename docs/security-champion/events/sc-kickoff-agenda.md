@@ -15,13 +15,12 @@ Like it is often said, security champions make everything better!
 
 | **When** | **What** | 
 |---|---|
-| 8.30 - To Be Finalised | Morning Coffee :material-coffee: | 
-| To Be Finalised | Introduction and Agenda :material-human-greeting-proximity: | 
-| To Be Finalised | Catch the Flag :material-application-parentheses-outline: | 
-| To Be Finalised | Lunch :material-food-outline: | 
-| To Be Finalised | Talk :material-microphone-outline: | 
-| To Be Finalised | About the network :material-security-network: | 
-| To Be Finalised | ISC Portfolio Introduction :fontawesome-regular-rectangle-list: | 
-| To Be Finalised | Workshop :material-account-group-outline: | 
-| To Be Finalised - 6 PM| Socialize :material-beer-outline: | 
-
+| 08.30 - 09:00 | Morning Coffee :material-coffee: | 
+| 09:00 - 09:30 | Introduction and Agenda :material-human-greeting-proximity: | 
+| 09:30 - 11:00 | Catch the Flag :material-application-parentheses-outline: | 
+| 11:00 - 12:00 | Lunch :material-food-outline: | 
+| 12:00 - 13:00 | Talk :material-microphone-outline: | 
+| 13:00 - 14:00 | About the network :material-security-network: | 
+| 14:00 - 14:30 | ISC Portfolio Introduction :fontawesome-regular-rectangle-list: | 
+| 14:30 - 16:00 | Workshop :material-account-group-outline: | 
+| 16:00 - 18:00 | Socialize :material-beer-outline: | 
