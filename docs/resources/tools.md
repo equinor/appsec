@@ -31,3 +31,7 @@ Kali Linux has around 600 penetration-testing tools and is a good starting point
 
 !!! warning
     Kali Linux is not officially supported by Equinor, and should not be installed Equinor managed PC's. It should only be installed on self managed devices, and never be connected to the corporate network.
+    
+## Links
+
+[A good list of open source tools](https://github.com/psiinon/open-source-web-scanners)
