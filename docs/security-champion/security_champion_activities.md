@@ -5,13 +5,13 @@
 
 Ensure all your projects code is scanned by a SAST (ex. by Snyk) + and all developers are using a linter
 
-## Define [security requirements](https://equinor.github.io/appsec/resources/security_requirements/)
+## Define [security requirements](../resources/security_requirements.md)
 
-Have a look at our [security requirements](https://equinor.github.io/appsec/resources/security_requirements/)-page and define some for your project.
+Have a look at our [security requirements](../resources/security_requirements.md)-page and define some for your project.
 
 ## Threat Modelling activities
 
-- Facilitate a [threat modelling session](https://equinor.github.io/appsec/resources/threat_modelling/) with your team - looking at the high level architecture of your system(s)
+- Facilitate a [threat modelling session](../resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
 - Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)
 
 ## Contribute to this site
