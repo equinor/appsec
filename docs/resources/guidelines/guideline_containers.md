@@ -8,7 +8,7 @@
 ### 2. Securing Registries
 - `Use access control`: If you have your own private registry, you need to establish access controls that define exactly who can access and publish images and who cannot perform these actions; which prevents unauthorized parties from changing these images.
 - `Sign your images`: Signatures help track images to the people who signed them. This makes it difficult to substitute the signed image for a compromised one. The **Docker Content Trust** mechanism provides information about signing images. You can also use **Notary**, an open-source tool that helps you sign and verify images.
-- `Scan your images`: Use vulnerability scanners like **Snyk** to check if the image is having any known vulnerability.
+- `Scan your images`: Use vulnerability scanners like **Snyk** to check if the image is having any known vulnerability. You can know more about container scanning with **Snyk**, [here](../../snyk/guidelines/4-snyk_container_security.md).
 
 ### 3. Securing Deployment
 - `Secure the target environment`: You can do this by hardening the underlying host operating system. You can also establish firewall and VPC rules or create special accounts that limit access.
@@ -18,7 +18,7 @@
 ### 4. Securing Container Runtime
 - Create separate virtual networks for your containers.
 - `Apply the principle of least privilege`: Allow connectivity only between containers that truly need it.
-- `Expose only the ports that serve the application`: Do not expose any other ports, except for SSH. Apply this principle to containers as well as the underlying machines.
+- `Expose only the ports that serve the application`: Do not expose any other ports, except for those serving the application. Apply this principle to containers as well as the underlying machines.
 - `Use TLS to secure communication between services`: This process encrypts traffic and ensures only authorized endpoints are allowed.
 - `Use the Docker Image policy plugin`: This plugin is designed to prevent any process from pulling images that were not previously allow-listed.
 
