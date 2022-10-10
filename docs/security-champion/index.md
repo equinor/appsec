@@ -26,4 +26,5 @@ Tasks *could* involve:
 As a Security Champion you would be a target audience for a lot of the work done by the Equinor AppSec team.
 The AppSec team will be providing workshops, training, resources and support where needed.
 
-Equinor Security Champions should join our [**Security Champion Slack Channel**](https://equinor.slack.com/archives/C036HGPBJ04)
+!!! todo "Signup Information"
+    Use [this form](https://forms.office.com/r/3C2vwEh2i0) for signing up to the security champion's network
