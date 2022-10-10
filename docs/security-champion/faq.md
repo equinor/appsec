@@ -12,5 +12,8 @@ The Security Champion initiative is a network we invite IT professionals to join
 ### Can we have more Security Champions in our team?
 We recommend each team to have 1-2 champions, and share their learnings with the rest of the team. Remember that it is the entire team that is responsible for the security of applications in the team's portfolio. The Security champions will support the team, but not bear any extended responsibility.
 
+## How can sign up to become a Security Champion?
+Use [this form](https://forms.office.com/r/3C2vwEh2i0) to sign up!
+
 ## Any more questions?
 Please reach out to us on [Slack](https://app.slack.com/client/T02JL00JU/CMM6FSW5V) or email at ``appsec[at]equinor.com``
