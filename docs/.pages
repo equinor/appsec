@@ -3,4 +3,5 @@ nav:
     - resources
     - security-champion
     - snyk
+    - threat-modeling
     - about
