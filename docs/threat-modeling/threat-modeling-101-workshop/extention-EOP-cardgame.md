@@ -1,1 +1,1 @@
-# Extention: Elevation of Privilege
+# Extension: Elevation of Privilege game

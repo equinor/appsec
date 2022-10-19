@@ -3,6 +3,7 @@
 A full day threat modeling 101 workshop from the Equinor AppSec team
 
 ## Purpose
+
 Help teams to build and operate more secure systems by incorporating threat modeling into their daily work.
 
 ## Audience
@@ -11,7 +12,7 @@ Software Development Teams. We prefer to run the 101 workshop for teams, prefera
 
 ## Schedule ⏱
 
-Full day (8 hours)
+Full day (8 hours, 9 - 16)
 
 ## Context
 
@@ -27,7 +28,3 @@ Threat modeling is often cited as the practice with greatest impact on strengthe
 - Threat modeling the SDLC
 - Getting started with Threat modeling in your team
 - Wrapping up
-
-## Slides
-
-The latest generated PDF of the slides is available at [./slides/pdf](https://github.com/equinor/appsec-threatmodeling-101-workshop/blob/main/slides/pdf/appsec-threat-modeling-101-slides.pdf)
