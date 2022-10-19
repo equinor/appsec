@@ -1,18 +1,18 @@
-# Threat Modelling
+# Getting Started on your
 
-Threat modelling is.. awesome. You will have a hard time investigating Secure Development without this process being mentioned again and again, and it's highly recommended that development teams do this regularly.  
+Threat modeling is.. awesome. You will have a hard time investigating Secure Development without this process being mentioned again and again, and it's highly recommended that development teams do this regularly.  
 
 OWASP has a [good overview](https://owasp.org/www-community/Threat_Modeling) of what it's all about, but in short it is a process that helps to identify the threats a system may be exposed to.
 
-## Having Threat Modelling sessions
+## Having Threat Modeling sessions
 
-There are numerous described methods out there for doing threat modelling. One approach that synergizes well with an agile approach to doing development, is [Agile Threat Modelling](https://martinfowler.com/articles/agile-threat-modelling.html). If you integrate this well, this process won't require any extra effort from your normal dev-cycle, but will add great value.  
+There are numerous described methods out there for doing threat modeling. One approach that synergizes well with an agile approach to doing development, is [Agile Threat Modeling](https://martinfowler.com/articles/agile-threat-modelling.html). If you integrate this well, this process won't require any extra effort from your normal dev-cycle, but will add great value.  
 
 !!! example "An example of how to get started:"
    
-    1. Someone from the team reads and get familiar with [Agile Threat Modelling](https://martinfowler.com/articles/agile-threat-modelling.html)
+    1. Someone from the team reads and get familiar with [Agile Threat Modeling](https://martinfowler.com/articles/agile-threat-modelling.html)
     2. Choose a scope beforehand (*ex. some upcoming functionality, current functionality, your CI/CD pipeline etc.*)
-    3. This person facilitates a threat modelling session with the whole team and other interested parties
+    3. This person facilitates a threat modeling session with the whole team and other interested parties
     4. Find a way to integrate with your current dev-cycle
         * *as part of existing ceremonies*
         * *as part of detailing a new task*
@@ -22,7 +22,7 @@ Of course, no shoe fits all. Whichever method you choose, the most important asp
 
 [PASTA](https://versprite.com/blog/what-is-pasta-threat-modeling/) is also worth noting as a methodology, as it is quite well documented and adopted.
 
-## Alternative forms for doing Threat Modelling
+## Alternative forms for doing Threat Modeling
 
 ### Abuser stories
 
@@ -41,9 +41,9 @@ When detailing your tasks for upcoming functionality with use cases, consider al
 
 For more information, [read this](https://en.wikipedia.org/wiki/Misuse_case)
 
-### Gamified Threat Modelling
+### Gamified Threat Modeling
 
-This gamified method of doing threat modelling might not be for everyone, but it has its pros and is worth testing out.
+This gamified method of doing threat modeling might not be for everyone, but it has its pros and is worth testing out.
 
 ![EOP Game-play](./EOP_gameplay.png)
 
@@ -57,7 +57,7 @@ Here are the pros:
 \- Leads to many false positives  
 \- Time-consuming  (~2+ h)  
 \- Not everyone might find the game-aspect of it as intriguing  
-\- Requires a lot more effort than for example doing **[Agile Threat Modelling](./threat_modelling.md)**  
+\- Requires a lot more effort than for example doing **[Agile Threat Modeling](./threat_modeling.md)**  
 \- Everyone needs a laptop  
 \- Requires 3-6 players
 
@@ -90,7 +90,7 @@ Afterwards, you can download the model with the added threats and keep it in you
 
 ## Other resources:
 
-* [Equinor AppSec Threat Modelling Slide-deck](https://threatmodeling.app.playground.radix.equinor.com/)
+* [Equinor AppSec Threat Modeling Slide-deck](https://threatmodeling.app.playground.radix.equinor.com/)
 * [Cheat sheet - Sample threats](https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ff649461(v=pandp.10)?redirectedfrom=MSDN)
-* [Threat Modelling Manifesto](https://www.threatmodelingmanifesto.org/)
-* [OWASPS Threat Modelling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
+* [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)
+* [OWASPS Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
