@@ -1,1 +1,1 @@
-# Extention: Threat Modeling remotely
+# Extension: Remote Threat Modeling for Dispersed Teams
