@@ -1,13 +1,15 @@
-# Events
+# Events 📣
 
-| **When** | **What** | **Where** |
-|---|---|---|
-| 26 August 2022 10:00 | Security Champion Info meeting | Teams meeting, join [HERE](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTI4ZDE4MTQtNjI3Ny00MWNiLTk5N2QtMjMzMDkzYjYyNzhi%40thread.v2/0?context=%7b%22Tid%22%3a%223aa4a235-b6e2-48d5-9195-7fcf05b459b0%22%2c%22Oid%22%3a%22096aaca6-6f03-46b8-96aa-f2adc7ad3859%22%7d). [Know more](./1-sc-info-meeting.md)|
-| 01 September 2022 14:00 | Security Champion Info meeting | Teams meeting, join [HERE](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTI4ZDE4MTQtNjI3Ny00MWNiLTk5N2QtMjMzMDkzYjYyNzhi%40thread.v2/0?context=%7b%22Tid%22%3a%223aa4a235-b6e2-48d5-9195-7fcf05b459b0%22%2c%22Oid%22%3a%22096aaca6-6f03-46b8-96aa-f2adc7ad3859%22%7d). [Know more](./1-sc-info-meeting.md)|
-| 13-16 September 2022 | Equinor Developer Conference | Stavanger |
-| 12 October 2022 | Security Champion kick-off | Stavanger. For all security champions. [Know more](./sc-kickoff-agenda.md) |
+## Morning coffee
+We have a AppSec morning Coffee every wednesday from 10:00 - 10:30. Please look at [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) which specific topics of the day.
 
+## Security Champion Seminar
+Last Thursday every month we arrange a Security Champion seminar from 12:00 - 13:00. The first seminar will be on October 27th 2022. This is a seminar intended for the community to share AppSec related knowledge with each other. An updated schedule of seminars and topics is found on [SharePoint](https://statoilsrm.sharepoint.com/sites/securitychampion9/Lists/Security%20Champion%20Seminar/Event%20itinerary%20-%20list%20view.aspx).
 
+### Presenting at the seminar
+Do you have any topics you are interested in sharing? Great!😍 Please submit your interest [here.](https://forms.office.com/r/nVn8BPst42)
+
+## Access Security Calendar
 To check all events, and add them to your own calendar, go to your outlook calendar and select the Security Champion Calendar from group calendars:
 
 ![Security Champion Calendar](./outlook.png)

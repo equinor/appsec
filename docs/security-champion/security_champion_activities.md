@@ -11,7 +11,7 @@ Have a look at our [security requirements](../resources/security_requirements.md
 
 ## Threat Modelling activities
 
-- Facilitate a [threat modelling session](../resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
+- Facilitate a [threat modelling session](../threat-modeling/resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
 - Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)
 
 ## Contribute to this site
