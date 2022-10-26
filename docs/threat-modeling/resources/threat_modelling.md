@@ -57,7 +57,7 @@ Here are the pros:
 \- Leads to many false positives  
 \- Time-consuming  (~2+ h)  
 \- Not everyone might find the game-aspect of it as intriguing  
-\- Requires a lot more effort than for example doing **[Agile Threat Modeling](./threat_modeling.md)**  
+\- Requires a lot more effort than for example doing Agile Threat Modeling  
 \- Everyone needs a laptop  
 \- Requires 3-6 players
 
