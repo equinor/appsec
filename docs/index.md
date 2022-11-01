@@ -2,7 +2,7 @@
 
 Welcome to Equinor AppSec information pages.
 
-## [Snyk guidelines](snyk/index.md)
+## [Snyk Guidelines](snyk/index.md)
 The guidelines contain information related to how to set up Snyk for security
 scanning of repos, and also other guidelines related to licenses and other topics.
 
