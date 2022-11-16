@@ -42,7 +42,6 @@ One noteworthy that I can recommend is [OWASP ZAP](https://www.zaproxy.org/).
 
     OWASP ZAP is quite versatile, and is well suited for integration with your CI/CD. 
 
-
 ### IAST
 
 Stands for "**Interactive** Application Security Testing". IAST is dynamic and gets its feedback from _sensor modules_ that are included with – and run in context with the application that is subject to the test.
@@ -57,6 +56,15 @@ It balances some of the false positives given by other more static approaches, a
 
 Proper utilization of IAST, as being included in the CI/CD pipeline will then be able to _"shift left"_ the types of tests that bring information about posible observable runtime vulnerabilities into the development stage.
 
+### RASP
+Stands for "**Runtime** application self-protection". 
+RASP enabled systems have both the capability to identify and monitor, as well as actively stopping an attack.
+
+As opposed to simply protecting the application from an external perspective by securing its interfaces (e.g firewall protection), RASP protects the system by also taking the internal state of the application into evaluation.
+By establishing protection mechanisms at the application/server layer, RASP-protected systems are less dependent on perimeter based protection.
+
+As for IAST the mechanicm is enabled by instrumentation embedded in the system. 
+However while IAST identifies vulnerabilities as part of the testing phase, RASP protects the application for direct attacks at runtime.
 
 ## Manual :raised_hand_with_fingers_splayed:
 
