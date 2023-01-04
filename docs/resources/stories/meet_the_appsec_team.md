@@ -1,3 +1,7 @@
+<!-- markdownlint-disable MD033 -->
+
+# Meet the Equinor AppSec Team
+
 ![Members of the Equinor AppSec-team walking through the office](./assets/appsec-header.webp)
 
 ## Championing application security
@@ -17,7 +21,7 @@ This means the way we think about security has evolved and requires us to respon
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <blockquote> “As we move into the cloud and onto the internet, we become much more exposed, and more of the responsibility to keep us secure falls on our developers. Coupled with >increasingly complex technologies and a heavy cognitive load, we need to build a culture around security to give our teams the tools and mindset they need.”
 
         </br>- Lars Kåre Skjørestad
@@ -30,7 +34,7 @@ Lars Kåre is part of the Application Security (AppSec) team. He explains that w
 
 To avoid just that and make sure our teams have the help they need, the AppSec team was assembled in 2022.
 
-“For us, it’s all about enabling our teams to write more secure code and help them build competence in application security. This means we must understand the context of our teams,” Lars Kåre explains. 
+“For us, it’s all about enabling our teams to write more secure code and help them build competence in application security. This means we must understand the context of our teams,” Lars Kåre explains.
 
 ![Members of the Equinor AppSec team during a discussion](./assets/appsec-team-members-discussing.webp)
 <small>Currently, the AppSec team totals 6 people split between Bergen and Stavanger.</small>
@@ -42,6 +46,8 @@ And for Equinor, the context is an important part to understand. We don’t have
 “But ultimately, our goal is that our team won’t be around at all in a couple of years – because security has become such an ingrained part of all our work that we’re no longer needed,” he adds.
 
 So, how do you go about building this culture and making yourself obsolete? Some of the first steps along the way are recruiting security champions, focusing on open source vulnerability management and threat modeling. Let’s find out more!
+
+---
 
 ## Benefit from a collective of knowledge
 
@@ -61,7 +67,7 @@ With so many developers spread across all these teams, you need a direct line to
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
 
             <img src="../assets/kristian-reed.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-    
+
     </blockquote>
     </div>
 
@@ -71,7 +77,7 @@ Just a month into the network’s lifespan they already have more than 140 membe
 
 The network also hosts a variety of events; from weekly virtual coffees to monthly seminars on relevant topics. But the heart of everything the network and the AppSec team do is the Slack channel.
 
-“We wanted to create a place where our champions can benefit from the collective knowledge of the entire network and somewhere people could ask for help when they had any questions. Slack was the natural choice to do so,” Kristian says. 
+“We wanted to create a place where our champions can benefit from the collective knowledge of the entire network and somewhere people could ask for help when they had any questions. Slack was the natural choice to do so,” Kristian says.
 
 <div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
 
@@ -83,7 +89,7 @@ The network also hosts a variety of events; from weekly virtual coffees to month
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <img src="../assets/secchampkickoff2.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
         <small>More than 40 Security Champions gathered in Stavanger for the kickoff.</small>
 
@@ -108,19 +114,21 @@ And all the information on the AppSec GitHub is available to the world – inspi
         <li>Access to exclusive resources and training</li>
         <li>Stay in touch with security teams</li>
     </ul>
-    
+
     <a href="../../../security-champion">Read more</a>
-   
+
 
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <img src="../assets/secchampnetwork.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
 
     </div>
 
 </div>
+
+---
 
 ## Understanding how to help
 
@@ -135,10 +143,10 @@ Together with Kristian, Ipsita Mishra also runs the security champion network. H
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <blockquote> “A“After we got our first couple of members, the response was overwhelming. We didn’t expect that so many people would be interested in security, nor that they would be so knowledgeable from the start. I think Equinor’s emphasis on safety might have something to do with that.”
 
-        </br>- Ipsita Mishra 
+        </br>- Ipsita Mishra
     </blockquote>
     </div>
 
@@ -152,7 +160,9 @@ Getting people to come together is no simple task, but it’s one they’ve alre
 
 ![Members of the Equinor AppSec team during a discussion](./assets/appsec-team-scanning-code.webp)
 
-## Automate scanning your code 
+---
+
+## Automate scanning your code
 
 The last years, there’s been a solid increase in malicious attacks through third-party dependencies. Just about all Equinor’s software development projects contain open source components and manually keeping up to date on potential security breaches in all of them would be an impossible task. Luckily, Snyk now automates that job.
 
@@ -169,7 +179,7 @@ How each team uses the tool in their daily work is up to them to decide, but the
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <blockquote> “Snyk will automatically and continuously scan your code and give you a overview of your status; how many vulnerabilities you have, what they are and what you need to do. Snyk can make a developer's life much easier and can even create pull requests automatically for you.”
 
         </br>- Petter Moe Kvalvaag
@@ -192,7 +202,7 @@ Together with Ipsita, Petter has been running onboarding sessions and workshops 
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <img src="../assets/appsec_tm_1.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
         <small>Benjamin focuses on threat modelling.</small>
 
@@ -208,10 +218,13 @@ But why bother with a workaround to visualize data, you might ask? To be able to
 <blockquote>
 “Getting to work with taking an analytical and data-driven approach to the work is really interesting – and very motivating. Not only are we able to find potential problems, but we can also use the data to see if what we did helped or not.”
 
-</br>- Petter Moe Kvalvaag 
+</br>- Petter Moe Kvalvaag
+
 </blockquote>
 
 “Once we have identified an issue and launched an initiative to mitigate it, we're able to see in retrospect how effective our initiative was. This helps us find the most effective way to reach out and assist the teams in the future,” Ipsita explains.
+
+---
 
 ![Why should you prepare for an attack](./assets/appsec_prepare_for_attack.webp)
 
@@ -219,14 +232,13 @@ But why bother with a workaround to visualize data, you might ask? To be able to
 
 Knowing what weaknesses you have is one thing, but you should also plan for someone to exploit them right from the start. Welcome to the world of threat modeling. Simply put, it means identifying and discussing the possible threats and weaknesses to your system.
 
-
 <div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 60% 40%;">
 
     <div style="grid-area: 1 / 1">
 
        <blockquote> “There are many different methods to do threat modeling, but what they all have in common is that you draw up a diagram of your system. Then, you use this to think of ways that someone could attack your system – and how to prevent or deal with it. You need to think like an attacker to identify your weaknesses. It’s a big cliché but it’s incredibly efficient.”
 
-        </br>- Benjamin Løkling Randeberg 
+        </br>- Benjamin Løkling Randeberg
 
 
     </div>
@@ -234,7 +246,7 @@ Knowing what weaknesses you have is one thing, but you should also plan for some
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
 
             <img src="../assets/benjamin-lokling-randeberg.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-    
+
     </blockquote>
     </div>
 
@@ -254,7 +266,7 @@ The team even hosted a threat modeling workshop at EDC 2022, which acts as the f
     </div>
 
     <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-    
+
         <img src="../assets/appsec_white_board.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
         <small>What else is there to do when a colleague has a question than to bust out the good old whiteboard?</small>
 
@@ -263,20 +275,22 @@ The team even hosted a threat modeling workshop at EDC 2022, which acts as the f
 
 </div>
 
-## Learn and consider how things work 
+---
+
+## Learn and consider how things work
 
 We’ve heard about what the team does, but what is it like to work in the AppSec team? Being part of an enabler team, whose aim is to enable others to be better, can feel quite different from a regular development team.
 
 “Being part of a team that also aims to build a wider culture in the community is new to me, and even though we’re still new it’s really inspiring to see the effect of the work we’re doing,” Petter explains.
 
-Working with security is just like working with technology in general – to keep up you need an eagerness to learn and keep up with what’s new. You also get to understand and explore the bigger picture: 
-
+Working with security is just like working with technology in general – to keep up you need an eagerness to learn and keep up with what’s new. You also get to understand and explore the bigger picture:
 
 <blockquote><a style="color:red">
     “Working in security means not only do you get to learn how everything works, but you also get to think about how someone could exploit things. Together, you get an all-round view of what you can do with different things. It’s not just software either, it’s hardware or gadgets too. This combination is what makes it so incredibly interesting. You get to do new things every day and learn new things every day.”
 
     </br>- Ipsita Mishra
-</a></blockquote> 
+
+</a></blockquote>
 
 You’ll get to learn a lot, but you’ll also get to be a teacher in order to spread the good word of application security – for example at internal conferences and workshops. But the gospel of AppSec stretches outside of Equinor as well: Lars Kåre even held a [presentation at Defcon in Las Vegas of 2022](https://www.appsecvillage.com/events/dc-2022/running-system-tests-with-active-authn-z).
 
@@ -290,4 +304,57 @@ As a newly started team, they’re still charting the course for the future.
 
 Only time will show if the AppSec team are successful in building a culture around security in our developer community. We’ll be sure to get back to them in a while to get an update on they’re doing.
 
-> Story, text and photographs: Torstein Lund Eik
+---
+
+# People
+
+<div style="display: grid;grid-column-gap: 5%; grid-row-gap:5%">
+
+    <div style="grid-area: 1 / 1; text-align:center">
+
+        <img src="../assets/lars-kare-skjorestad.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Lars Kåre Skjørestad</small>
+
+    </div>
+
+    <div style="grid-area: 1 / 2; text-align:center">
+
+         <img src="../assets/kristian-reed.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Kristian Reed</small>
+
+    </div>
+
+    <div style="grid-area: 1 / 3; text-align:center">
+
+         <img src="../assets/benjamin-lokling-randeberg.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Benjamin Løkling Randeberg</small>
+
+    </div>
+
+
+    <div style="grid-area: 2 / 1; text-align:center">
+
+        <img src="../assets/ipsita-mishra.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Ipsita Mishra</small>
+
+    </div>
+
+    <div style="grid-area: 2 / 2; text-align:center">
+
+        <img src="../assets/petter-moe-kvalvaag.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Petter Moe Kvalvaag</small>
+
+    </div>
+
+    <div style="grid-area: 2 / 3; text-align:center">
+
+        <img src="../assets/andrea-brambilla.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
+        </br><small>Andrea Brambilla</small>
+
+    </div>
+
+</div>
+
+---
+
+<p style="text-align:center;">Story, text and photographs: Torstein Lund Eik. Published January 2023</p>
