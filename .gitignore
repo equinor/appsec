@@ -3,5 +3,6 @@ vendor
 .bundle
 .dccache
 venv/
-
+.venv/
+.dccache
 .DS_STORE
