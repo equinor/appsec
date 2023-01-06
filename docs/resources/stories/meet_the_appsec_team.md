@@ -174,7 +174,7 @@ How each team uses the tool in their daily work is up to them to decide, but the
 
     <div style="grid-area: 1 / 1">
 
-        <img src="../assets/Petter-moe-kvalvaag.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
+        <img src="../assets/petter-moe-kvalvaag.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
 
     </div>
 
