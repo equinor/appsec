@@ -20,6 +20,10 @@ and the server will start on `localhost:8000`.
 To add content add markdown inside the `docs` folder, and link
 it from the rest of the site.
 
+
+### Runbook
+A runbook of how the site is deployed and maintained can be found in [Runbook](./runbook.md).
+
 ## How to contribute
 
 Read our [contribute.md](CONTRIBUTING.md)
