@@ -2,6 +2,11 @@
 
 Welcome to Equinor AppSec information pages. This site is primarily written by and for the people working with building/maintaining applications in Equinor, but could also function as a resource for others on the topic of application security.
 
+!!! tip "We are hiring! :partying_face:"
+    We are looking for a new colleague to join our team. If you are interested in working with application security in Equinor, please check out the [job posting](https://careers.peopleclick.eu.com/careerscp/client_statoil/external/gateway.do?functionName=viewFromLink&jobPostId=44024&localeCode=en-us) and apply!
+
+
+
 ## [Resources](resources/index.md)
 Some useful resources involving application security, together with some guidelines on various topics.
 
