@@ -12,13 +12,13 @@ We look forward to seeing you there!
 #### 6th June 2023
 
 | **When** | **What** |
-|---|---|---|
+|---|---|
 | 18.00 - 20:00 | CTF teams solving challenges together ! |
 
 #### 7th June 2023
 
 | **When** | **What** |
-|---|---|---|
+|---|---|
 | 08.00 - 08:30 | Morning Coffee |
 | 08.30 - 08:45 | Safety Moment |
 | 08.45 - 09:00 | Introduction and Agenda |
