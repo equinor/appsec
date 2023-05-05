@@ -1,4 +1,4 @@
-# Security Champions Meetup #1 
+# Security Champions Meetup #2 
 
 We are excited to invite you to our upcoming network meetup on all things security! This is where we all come together to share our experiences, learn from each other, and discuss the latest on security.
 
