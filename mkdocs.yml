@@ -39,7 +39,7 @@ extra:
       link: https://twitter.com/EquinorASA
 extra_css:
   - assets/css/mkdocs-eq.css
-  - https://eds-static.equinor.com/font/equinor-font.css
+  - https://cdn.eds.equinor.com/font/equinor-font.css
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
