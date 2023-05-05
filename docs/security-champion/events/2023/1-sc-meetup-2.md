@@ -29,7 +29,7 @@ We look forward to seeing you there!
 | 12:45 - 13:15 | Learning from the Community |
 | 13:15 - 13:30 | Break |
 | 13:30 - 14:15 | Threat Modelling PechaKucha (Track : Red)<br>Getting started with Threat modelling (Track : Blue)|
-| 14:15 - 15:00 | OT Hacking Demonstration (Track : Red)<br>A real security incident (Track : Blue)|
+| 14:15 - 15:00 | OT Hacking Demonstration (Track : Red)<br>World's Largest Cyber Defense Exercise (Track : Blue)|
 | 15:00 - 15:15 | Break |
 | 15:15 - 15:45 | Governance Review and Practical Tips Around It |
 | 15:45 - 16:00 | Conclusion |
