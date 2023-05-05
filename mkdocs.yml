@@ -10,7 +10,6 @@ copyright: >
   Copyright &copy; Equinor ASA
 theme:
   name: material
-  custom_dir: overrides
   logo: assets/icons/appsec-icon-white.svg
   favicon: assets/icons/appsec-iconenergyred.svg
   palette:
@@ -38,16 +37,9 @@ extra:
       link: https://github.com/equinor
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/EquinorASA
-  consent:
-    title: This website uses cookies
-    description: >-
-      We use cookies to recognize your visits, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.
-
-    actions:
-      - accept
 extra_css:
   - assets/css/mkdocs-eq.css
-  - https://eds-static.equinor.com/font/equinor-font.css
+  - https://cdn.eds.equinor.com/font/equinor-font.css
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
