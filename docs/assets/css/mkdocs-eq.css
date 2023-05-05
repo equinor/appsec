@@ -5,9 +5,18 @@
     --md-primary-fg-color--light: var(--mossgreen);
     --md-primary-fg-color--dark:  var(--mossgreen);
 }
-[data-md-color-scheme="slate"] {
-  --md-typeset-a-color: hsl(184, 100%, 34%); 
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
 }
+
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: hsl(184,100%,34%);
+  --md-default-bg-color: hsl(205.5,46.5%,13.9%)
+}
+
+
+
 /**
 Using Equinor font from link below, defined in mkdocks.yml
 https://eds-static.equinor.com/font/equinor-font.css
