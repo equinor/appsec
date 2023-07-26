@@ -41,6 +41,7 @@ A good place to define these requirements would be in the Requirements Document 
     - Information security policies (ex. [WR1211](https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCID=1000011245))
     - Regulatory compliance documents (ex. SOX)
     - Security standards & guidelines (ex. [ASVS](https://raw.githubusercontent.com/OWASP/ASVS/v4.0.3/4.0/OWASP%20Application%20Security%20Verification%20Standard%204.0.3-en.pdf))
+    - Identity and access management requirements IT900 ([Identity and Access Management](https://statoilsrm.sharepoint.com/sites/IAMnetwork/SitePages/IAM%20Front%20page.aspx))
 
     Output:
 
