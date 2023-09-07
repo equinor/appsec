@@ -7,8 +7,9 @@ email address.
 After your first time sign in, you will be able to list organizations available at the Equinor Group overview (top level). If you see a relevant org to join, request one of the listed org admins to add you to the org.
 
 ## Crash Course: Common Snyk Situations
-We have built a short curriculum, to help you learn the basics of Snyk. 
-Take a look [here](curriculum/index.md)
+We have built a short curriculum, to help you learn the basics of Snyk. Take a look [here](curriculum/index.md).
+
+The curriculum is tailored to using Snyk in Equinor.
 
 ## Creating projects
 Snyk has many different kinds of integrations, we recommend starting with adding your github repositories. Doing that will create
