@@ -21,5 +21,5 @@ Check below some interesting conversations:
 -   [Cross site scripting in Flask Api](https://equinor.slack.com/archives/CMM6FSW5V/p1694177329826129)
 -   [A discussion around path traversal](https://equinor.slack.com/archives/CMM6FSW5V/p1678959767870559)
 
-## 4. How do I address vulnerabilities ?
+## 4. How would I address vulnerabilities ?
 Read more about dealing with vulnerabilities [here.](../4-vulnerabilities.md)
