@@ -8,7 +8,7 @@ Integrations are merely ways to connect and interact with Snyk. You can find all
 
 We recommend starting with adding your github repositories. The easiest way to do this is by adding the [Github integration](https://docs.snyk.io/integrations/git-repository-scm-integrations/snyk-github-integration#how-to-connect-github-to-snyk). Doing this will create one snyk project for each source file it understands, e.g. `requirements.txt` or `package-lock.json`. 
 
-Configuration settings for this integration can be found [here.](docs/snyk/guidelines/1-gh-integration.md)
+Configuration settings for this integration can be found here.
 
 Please ensure the following:
 
@@ -18,7 +18,7 @@ Please ensure the following:
 -   [Automatic Dependency Upgrade PRs](https://docs.snyk.io/scan-applications/snyk-open-source/open-source-basics/upgrading-dependencies-with-automatic-prs) 
 -   [Verify PR checks are configured.](https://docs.snyk.io/scan-applications/run-pr-checks/configure-pr-checks#configure-pr-checks-at-the-integration-level)
 
-### 2. IDE Integraion 
+### 2. IDE Integration 
 
 It is recommended to use Snyk IDE plugins while developing applications. This is in addition to the Github integration.
 
