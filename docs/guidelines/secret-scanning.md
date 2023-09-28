@@ -18,11 +18,11 @@ Please note that:
 
 - False positives is a sizeable challenge, scanners need to be fine tuned to your context (detectors, testing, verification +++)
 - Incremental scans would be helpful, you may not want to scan everything all the time
-- Don't underestimate the cultural change when changing how you work. Document how your team does Secure Development, use in on-boarding, use in retrospectives - especially when you identity "interesting" pattern's.
+- Don't underestimate the cultural change when changing how you work. Good practices are to document how your team does Secure Development and to threat model how you work. Use/revisit this information regularly in on-boarding of new team members and in retrospectives.
 
 ## Where to scan for secrets in our SDLC
 
-The general idea is to catch secrets in code (and other places) as early as possible. Our recommendation for most teams would be;
+The general idea is to catch secrets in code (and other places) as early as possible. Our recommendation for most teams is:
 
 While your are developing, in your development environment
 
