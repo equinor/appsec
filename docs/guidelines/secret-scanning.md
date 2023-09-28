@@ -2,7 +2,7 @@
 
 As developers, we know that secrets like passwords, API keys, and access tokens are critical to our work. But what happens when these secrets accidentally end up in our code, logs or error messages?
 
-This guideline aim to present relevant tools, some good practices for managing this risk and what to do when we have messed up. The AppSec team provides a 4 hour hands-on workshop to get started with secret scanning.
+This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up. The AppSec team provides a 4 hour hands-on workshop to get started with secret scanning.
 
 - [Recommended tools](#recommended-tools)
 - [Where to scan for secrets in our SDLC](#where-to-scan-for-secrets-in-our-sdlc)
@@ -16,7 +16,7 @@ This guideline aim to present relevant tools, some good practices for managing t
 
 Please note that:
 
-- False positives is a sizable challenge, scanners needs to be fine tuned to your context (detectors, testing, verification +++)
+- False positives is a sizeable challenge, scanners need to be fine tuned to your context (detectors, testing, verification +++)
 - Incremental scans would be helpful, you may not want to scan everything all the time
 - Don't underestimate the cultural change when changing how you work. Document how your team does Secure Development, use in on-boarding, use in retrospectives - especially when you identity "interesting" pattern's.
 
@@ -35,13 +35,13 @@ In your CI pipeline
 - Scan as part of PR checks (using Trufflehog)
 - Scan container images as well (using Trufflehog)
 
-Other options:
+Other places:
 
 - Scanning logs (using Trufflehog)
 
 ## What to do when we have messed up
 
-We will, or someone - not we, will always mess up. So be prepared, both as a individual developers and as teams!
+We will mess up sooner or later. So be prepared, both as an individual developer and as teams!
 
 ### Steps to mitigate a leak
 
