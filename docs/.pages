@@ -1,7 +1,8 @@
 nav:
     - index.md
-    - resources
+    - guidelines
     - security-champion
     - snyk
     - threat-modeling
+    - resources
     - about
