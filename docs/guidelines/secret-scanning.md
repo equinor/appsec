@@ -6,7 +6,7 @@ This guideline aims to present relevant tools, some good practices for managing 
 
 - [Recommended tools](#recommended-tools)
 - [Where to scan for secrets in our SDLC](#where-to-scan-for-secrets-in-our-sdlc)
-- [What to do when we have messed up](#what-to-do-when-we-have-messed-up)
+- [What to do when we have messed up 🤯](#what-to-do-when-we-have-messed-up)
 - [How do we manage secrets in our dev environments?](#how-do-we-manage-secrets-in-our-dev-environments)
 
 ## Recommended tools
@@ -19,6 +19,8 @@ Please note that:
 - False positives is a sizeable challenge, scanners need to be fine tuned to your context (detectors, testing, verification +++)
 - Incremental scans would be helpful, you may not want to scan everything all the time
 - Don't underestimate the cultural change when changing how you work. Good practices are to document how your team does Secure Development and to threat model how you work. Use/revisit this information regularly in on-boarding of new team members and in retrospectives.
+
+(Check out the [appsec tools section](/appsec/resources/tools) for more tooling)
 
 ## Where to scan for secrets in our SDLC
 
@@ -39,7 +41,7 @@ Other places:
 
 - Scanning logs (using Trufflehog)
 
-## What to do when we have messed up
+## 🤯 What to do when we have messed up 🤯
 
 We will mess up sooner or later. So be prepared, both as an individual developer and as teams!
 
