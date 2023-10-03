@@ -7,12 +7,10 @@
 Everyone who considers themselves part of a development team can become a Security Champion. If you are a developer, ux-designer, tester, citizen developer or anything in-between, you are welcome to join. There is no requirement to be an Equinor employee to join, we invite consultants as well!
 
 ### Does being a Security Champion result in a lot of extra work?
-It depends on what _you_ want to do. It can be everything from just informing the team about security related issues/questions you hear about in the network, to facilitating regular threat modelling sessions, or implementing Snyk in your pipelines, and a ton of
-other activites one _can_ do. There are events organized by the network one can attend; e.g. weekly "morning coffee" and monthly semninars (both can be joined digitally).
+It depends on what _you_ want to do. It can be everything from just informing the team about security related issues/questions you hear about in the network, to facilitating regular threat modelling sessions, or implementing Snyk in your pipelines, and a ton of other activites one _can_ do. There are events organized by the network one can attend; e.g. weekly "morning coffee" and monthly semninars (both can be joined digitally).
 
 ### Am I _required_ to contribute/have talks in the network?
-No, but we highly recommend everyone on sharing. It might also be that you hear about a problem or solution from a team member or co-worker that can be shared.
-Asking questions is also contributing!
+No, but we highly recommend everyone on sharing. It might also be that you hear about a problem or solution from a team member or co-worker that can be shared. Asking questions is also contributing!
 
 ### So I joined, what now?
 Say hi in to your fellow Security Champions in [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04), join the channel [#appsec](https://app.slack.com/client/T02JL00JU/CMM6FSW5V) for security related questions and updates.
