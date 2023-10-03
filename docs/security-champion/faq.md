@@ -7,7 +7,7 @@
 Everyone who considers themselves part of a development team can become a Security Champion. If you are a developer, ux-designer, tester, citizen developer or anything in-between, you are welcome to join. There is no requirement to be an Equinor employee to join, we invite consultants as well!
 
 ### Does being a Security Champion result in a lot of extra work?
-It depends on what _you_ want to do. It can be everything from just informing the team about security related issues/questions you hear about in the network to facilitate regular threat modeling sessions, implement Snyk in your pipelines, performing pen-testing (i.e. hack your solutions) and a ton of
+It depends on what _you_ want to do. It can be everything from just informing the team about security related issues/questions you hear about in the network, to facilitating regular threat modelling sessions, or implementing Snyk in your pipelines, and a ton of
 other activites one _can_ do. There are events organized by the network one can attend; e.g. weekly "morning coffee" and monthly semninars (both can be joined digitally).
 
 ### Am I _required_ to contribute/have talks in the network?
