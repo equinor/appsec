@@ -5,8 +5,9 @@
 This repo contains the documentation and setup for hosting https://equinor.github.io/appsec/
 
 ## Development
-To start the project locally [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)
-needs to be installed.
+To start the project locally, install the following plugins
+1. [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)  
+1. [Awesome-Pages for MkDocs](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)   
 
 To start the project, simply run:
 ```

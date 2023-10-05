@@ -32,7 +32,7 @@ Snyk also provides a priority score from 0-1000 for each vulnerability. This sco
 ## Ignoring vulnerabilities
 If the detected vulnerability is not applicable to your project, it can be [ignored](https://docs.snyk.io/manage-issues/issue-management/ignore-issues#ignoring-issues-in-the-web-ui) with a comment explaining why it should be ignored.
 
-If the vulnerability is in a project not in production it can be tagged with the lifecycle tag "[sandbox](./guidelines/3-snyk_tagging_projects.md)" to exclude it from the aggregated dashboard.
+If the vulnerability is in a project not in production it can be tagged with the lifecycle tag "[sandbox](../snyk/curriculum/3-projects.md/#tagging-snyk-projects-in-equinor)" to exclude it from the aggregated dashboard.
 
 
 ## Who to contact
@@ -41,4 +41,4 @@ Please reach out to the AppSec team on [Slack](https://app.slack.com/client/T02J
 ## Further resources
 - [Snyk severity levels](https://docs.snyk.io/manage-issues/issue-management/severity-levels)
 - [Priority score](https://docs.snyk.io/manage-issues/issue-management/priority-score)
-- [Guideline: Interpreting and prioritizing Snyk findings](./guidelines/2-snyk_interpret_and_prioritize.md)
+- [Guideline: Interpreting and prioritizing Snyk findings](../snyk/curriculum/4-scan_results.md)

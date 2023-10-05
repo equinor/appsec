@@ -88,8 +88,6 @@ Some useful resources are listed bellow:
 
 * [Snyk Learn - Open Source Licenses](https://snyk.io/learn/open-source-licenses/)
 
-* [IT Professional Network in Equinor's guidelines on choosing an open source license for your project](https://github.com/equinor/it-professional-network/blob/master/doc/open_source/licenses.md)
-
 * [Open Source Licenses Explained](https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-explained/)
 
 * [Open Source License Compliance Handbook](https://github.com/finos/OSLC-handbook/blob/master/output/adoc/OSLC-handbook.adoc)  
@@ -99,6 +97,7 @@ Some useful resources are listed bellow:
 Some examples of compliance failures:
 
 * [Common Open Source License Compliance Failures](https://www.linux.com/news/4-common-open-source-license-compliance-failures-and-how-avoid-them/)
+* [IT Professional Network in Equinor's guidelines on choosing an open source license for your project](https://github.com/equinor/it-professional-network/blob/master/doc/open_source/licenses.md)  
 * [Common Open Source IP Compliance Failures](https://www.linux.com/news/3-common-open-source-ip-compliance-failures-and-how-avoid-them/)
  
 
