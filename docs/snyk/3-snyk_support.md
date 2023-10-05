@@ -6,7 +6,7 @@ Consult the _documentation_ part. If you cannot find your solution, considering 
 
 ## Documentation and relevant community resources
 
-- Consult the Equinor [Snyk Guidelines](../guidelines/)
+- Consult the Equinor [Snyk Guidelines](../snyk/index.md)
 - Consult the official [Snyk Doc](https://docs.snyk.io/)
 - Search the knowledge base at the official [Snyk Support](https://support.snyk.io/hc/en-us)
 - Consult the official [Snyk Learn](https://learn.snyk.io/) security education

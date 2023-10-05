@@ -14,7 +14,7 @@ There are different ways of implementing SAST-tools into your SDLC: doing period
 
 !!! example "An example of how to get started:"
     Scanner:  
-    1. [Sign up to Snyk](/appsec/snyk) (if you have not already)  
+    1. [Sign up to Snyk](../snyk/index.md) (if you have not already)  
     2. Import your project, and make sure that "Snyk Code" is enabled  
     3. Review and prioritize the findings  
 

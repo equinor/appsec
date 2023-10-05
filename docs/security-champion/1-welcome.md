@@ -12,7 +12,7 @@ Join the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) and [#security-
 
 ## Reading Material
 
-- Guidelines will be added [here](/appsec/resources/) and you are invited to contribute.
+- Guidelines will be added [here](../guidelines/index.md) and you are invited to contribute.
 - Participate in cool events, conferences and network meetings in the [Security Champion's group calendar](https://statoilsrm.sharepoint.com/sites/securitychampion9)
 
 ## Hands-on Activities
