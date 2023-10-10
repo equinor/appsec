@@ -4,6 +4,7 @@
 ## Welcome young padawan
 
 Now that you've signed up for Equinor's Security Champion environment, I bet you're wondering what you've gotten your self in to?
+If you haven't had a onboarding meeting since you joined, please request one in the Security Champion slack channel! We hope to get everyone automagically invited, but mistakes can happen.
 
 ## Expectations
 
@@ -74,8 +75,4 @@ In the Security Champions environment we have a "core team" that tries to facili
 
 ## Further activities
 
-✅ Introduce yourself in the [Security Champion channel](https://equinor.slack.com/archives/C036HGPBJ04) 👋  
-✅ Ensure all your code is scanned by a SAST (ex. by Snyk)  
-✅ Have a discussion in your team about [security requirements](../resources/security_requirements.md), and get a common understanding of what can't go wrong (and maybe write some requirements down)  
-✅ Facilitate a [threat modelling session](../threat-modeling/resources/threat_modelling.md), looking at the high level architecture of your project  
-✅ Read through the content of this site
+Please check out [the activities section](security_champion_activities.md) for more activities for you and your team!
