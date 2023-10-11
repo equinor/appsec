@@ -8,7 +8,7 @@ If you haven't had a onboarding meeting since you joined, please request one in 
 
 ## Expectations
 
-Security is _everyones_ responsibility! You as a Security Champion are a voice for security. Your role is to bring security on the agenda within your team, helping the "shift left security" mentality.
+Security is _everyone's_ responsibility! You as a Security Champion are a voice for security. Your role is to bring security on the agenda within your team, helping the "shift left security" mentality.
 
 The Security Champions environment is a community made up of people interested in security where the _people_ are in the center. You and your experiences will drive this community, and we will rely on you to participate in discussions, activities and ask questions. Don't worry, we won't bite!
 
@@ -19,16 +19,16 @@ You will help form this community, as your voice and your experiences matter. La
 
 ## Merch
 
-- Stickers: A large sortiment of stickers to help show that you are the voice of security! With the amount of stickers we have, you will get a propper workout while carying your laptop?
+- Stickers: A large assortment of stickers to help show that you are the voice of security! With the amount of stickers we have, you will get a proper workout while carrying your laptop?
 - Hoodie: You act the part? Great! The only thing lacking is dressing for the part! Contribute in a Security Champion Seminar to get an awesome hoodie!
-- Socks: Socks decorated with The Security Champion shields! Would they have protected Achillies? Maybe not. Will they protect you from cyber criminals? Who knows! But you will certanly look stylish while being hacked!
+- Socks: Socks decorated with The Security Champion shields! Would they have protected Achilles? Maybe not. Will they protect you from cyber criminals? Who knows! But you will certainly look stylish while being hacked!
 - Book (Alice and Bob Learn Application Security): Complete the challenge at [this form](https://forms.microsoft.com/r/cLRPzRtPGQ)
 - AbbSack: You have to see it to believe it! Keep your items _secure_ while traveling.
 - Lanyard: Decorate your neck with shields to ward off evil _phishing_ attacks. It even holds your card!
 - Pins: Decorate your lanyard or clothes with shields to further increase your _phishing_ protection.
 - Christmas ornament: No christmas is secure without your own Security Champion christmas tree ornament.
 
-To get these items, you can find out where the AppSec office is, socual engineer your way in to the building, find our seats and ask for one or more of the items.
+To get these items, you can find out where the AppSec office is, social engineer your way in to the building, find our seats and ask for one or more of the items.
 
 OR
 
@@ -59,19 +59,7 @@ In the Security Champions, **YOU** are the key ingredient. We have multiple meet
 
 In the Security Champions environment we have a "core team" that tries to facilitate activities and content. These are people from  different consultant firms and the AppSec team themselves. The objective is to drive and engage the Security Champions community. If you have any questions, please do not hesitate to ask one of them.
 
-- Anders Erling Aabakken
-- Anton Eskov
-- Arne Kristian Jansen
-- Benjamin Løkling
-- Eirik Andre Stalesen
-- Even Tillerli
-- Ipsita Mishra
-- Kristian Reed
-- Nicole Silva
-- Rutger Rovers
-- Stein-Arne Sivertsen
-- Thomas Kalve
-- Sean Tollefsen Sinclair
+For more information, please check out the [Security Champion sharepoint](https://statoilsrm.sharepoint.com/sites/securitychampion9/)
 
 ## Further activities
 
