@@ -28,7 +28,7 @@ You will help form this community, as your voice and your experiences matter. La
 - Pins: Decorate your lanyard or clothes with shields to further increase your _phishing_ protection.
 - Christmas ornament: No christmas is secure without your own Security Champion christmas tree ornament.
 
-To get these items, you can find out where the AppSec office is, socual engineer your way in to the building, find our seats and ask for one or more of the items.
+To get these items, you can find out where the AppSec office is, social engineer your way in to the building, find our seats and ask for one or more of the items.
 
 OR
 
