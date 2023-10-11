@@ -1,13 +1,17 @@
 
-# Security Champion Example Activities 🦸‍♀️
+# Security Champion Activities 🦸‍♀️
+
+## Introduce yourself
+
+Say hello in the [Security Champion channel](https://equinor.slack.com/archives/C036HGPBJ04) 👋 Always fun to meet new champions
 
 ## Ensure that all your code is being scanned by SAST
 
-Ensure all your projects code is scanned by a SAST (ex. by Snyk) + and all developers are using a linter
+Ensure all your projects code is scanned by Snyk, and that you have Snyk Code enabled for your projects. Using a linter is always good when you develop!
 
 ## Define [security requirements](../resources/security_requirements.md)
 
-Have a look at our [security requirements](../resources/security_requirements.md)-page and define some for your project.
+Have a look at our [security requirements](../resources/security_requirements.md) page and define some for your project
 
 ## Threat Modelling activities
 
@@ -20,7 +24,7 @@ As of now, a lot of the content on this site is written by the AppSec-team. This
 
 If you have anything to share that you think will be useful for others, don't hesitate. Same goes for editing the content that already exists.
 
-Just go to our github-repo and make a PR :)
+Just go to our github-repo and make a PR. Pro tip: You can use Visual Studio Code directly from your browser by pressing "." when you are on a page. Contributing has never been easier!
 
 ## Have the team work through the OWASP Juice Shop
 
