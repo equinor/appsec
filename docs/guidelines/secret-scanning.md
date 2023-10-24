@@ -2,7 +2,7 @@
 
 As developers, we know that secrets like passwords, API keys, and access tokens are critical to our work. But what happens when these secrets accidentally end up in our code, logs or error messages?
 
-This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up. The AppSec team provides a 4 hour hands-on workshop to get started with secret scanning.
+This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up. The AppSec team provides a 3 hour hands-on workshop on getting started with secret scanning - [https://github.com/equinor/appsec-fundamentals-secret-scanning](https://github.com/equinor/appsec-fundamentals-secret-scanning).
 
 - [Recommended tools](#recommended-tools)
 - [Where to scan for secrets in our SDLC](#where-to-scan-for-secrets-in-our-sdlc)
@@ -49,7 +49,7 @@ We will mess up sooner or later. So be prepared, both as an individual developer
 
 - Revoke/rotate the exposed secret - `THIS IS PRIORITY #1`
 - Depending on risk consequence - considering contacting IT-Security for assistance
-    - Email [it-security@equinor.com](it-security@equinor.com) or contact Help Desk at (+47) 51 999 222
+    - Contact Help Desk at (+47) 51 999 222
 - Clean the git history
     - If the repo is public/internal, consider making it `private` until the secrets are removed
 - Potentially inspect logs
