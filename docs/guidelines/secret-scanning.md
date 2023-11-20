@@ -30,7 +30,7 @@ While your are developing, in your development environment
 
 - Scan in your IDE (using Snyk Code)
 - Scan in your local build process (using Trufflehog)
-- Scan in git pre-commits (using Trufflehog)
+- Scan in git [pre-commits](../faq/pre-commit-faq.md) (Run a trufflehog scan on commit for example?)
 
 In your CI pipeline
 
