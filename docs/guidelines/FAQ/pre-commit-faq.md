@@ -16,7 +16,7 @@ Pre-commit can be installed in two ways, using Python pip or Homebrew.
 #### Homebrew (Mac/Linux)
 
 - Verify that brew is installed with `brew -v`
-- If it isn't installed, install using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- If it isn't installed, install using `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`</br>(As usual, verify all install scripts before executing)
 - Remember to perform the next steps that are shown after install.
 
 ### Installing pre-commit
