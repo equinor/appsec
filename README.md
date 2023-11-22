@@ -2,27 +2,33 @@
 
 # Equinor AppSec public site
 
-This repo contains the documentation and setup for hosting https://equinor.github.io/appsec/
+This repo contains the documentation and setup for hosting <https://equinor.github.io/appsec/>
 
 ## Development
-To start the project locally, install the following plugins
-1. [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)  
-1. [Awesome-Pages for MkDocs](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)   
+
+Install the dependencies using
+
+```bash
+pip install -r requirements.txt
+```
 
 To start the project, simply run:
-```
+
+```bash
 mkdocs serve
 ```
+
 and the server will start on `localhost:8000`.
 
 .. or use e.g. Gitpod by click the Gitpod image/link above.
 
 ### Adding content
+
 To add content add markdown inside the `docs` folder, and link
 it from the rest of the site.
 
-
 ### Runbook
+
 A runbook of how the site is deployed and maintained can be found in [Runbook](./runbook.md).
 
 ## How to contribute
