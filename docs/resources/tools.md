@@ -24,7 +24,7 @@ These built in tools are quite extensive, and you can get very far in inspecting
 [Burp Suite](https://portswigger.net/burp/communitydownload) is a graphical platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application's attack surface, through to finding and exploiting security vulnerabilities.
 
 ### Pre-commit framework
-[Pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks. Check out our [FAQ](../faq/pre-commit-faq.md) to get started using pre-commit!
+[Pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks. Check out our [FAQ](../guidelines/FAQ/pre-commit-faq.md) to get started using pre-commit!
 
 ## Expert
 ### Kali Linux

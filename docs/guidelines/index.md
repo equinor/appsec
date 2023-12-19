@@ -7,6 +7,6 @@ title: Appsec guidelines
 
 This section contains guidelines relevant anyone writing code in Equinor.
 
-- [Snyk](../snyk/)
-- [Scanning for Secrets in code](secret-scanning)
-- [Postman](postman)
+- [Snyk](../snyk/index.md)
+- [Scanning for Secrets in code](secret-scanning.md)
+- [Postman](postman.md)
