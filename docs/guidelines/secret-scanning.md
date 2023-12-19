@@ -20,7 +20,7 @@ Please note that:
 - Incremental scans would be helpful, you may not want to scan everything all the time
 - Don't underestimate the cultural change when changing how you work. Good practices are to document how your team does Secure Development and to threat model how you work. Use/revisit this information regularly in on-boarding of new team members and in retrospectives.
 
-(Check out the [appsec tools section](/appsec/resources/tools) for more tooling)
+(Check out the [appsec tools section](../resources/tools.md) for more tooling)
 
 ## Where to scan for secrets in our SDLC
 
@@ -30,7 +30,7 @@ While your are developing, in your development environment
 
 - Scan in your IDE (using Snyk Code)
 - Scan in your local build process (using Trufflehog)
-- Scan in git [pre-commits](../faq/pre-commit-faq.md) (Run a trufflehog scan on commit for example?)
+- Scan in git [pre-commits](FAQ/pre-commit-faq.md) (Run a trufflehog scan on commit for example?)
 
 In your CI pipeline
 
