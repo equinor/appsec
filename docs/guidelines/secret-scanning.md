@@ -13,6 +13,7 @@ This guideline aims to present relevant tools, some good practices for managing 
 
 - Snyk Code (in IDE)
 - [Trufflehog](https://github.com/trufflesecurity/trufflehog) (elsewhere)
+- [GitHub Advanced Security - Secret Scanning](#github-advanced-security-secret-scanning)
 
 Please note that:
 
@@ -21,6 +22,23 @@ Please note that:
 - Don't underestimate the cultural change when changing how you work. Good practices are to document how your team does Secure Development and to threat model how you work. Use/revisit this information regularly in on-boarding of new team members and in retrospectives.
 
 (Check out the [appsec tools section](../resources/tools.md) for more tooling)
+
+### GitHub Advanced Security: Secret Scanning
+
+GitHub Advanced Security is integrated into GitHub, providing features like the secret scanning module free for public repositories. This module supports these [secret types](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) so far.
+
+#### How to turn it on for your repository
+
+- Go to your repository settings
+- Under security find Code security and analysis
+- Enable secret scanning. 
+- Consider enabling push protection for added security.
+
+#### Global push protection
+
+GitHub provides a beta feature that will block commits that contain [supported secrets](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) across all public repositories.
+
+- Enable by going to your user settings, code security and analysis and enable the beta feature push protection for yourself.
 
 ## Where to scan for secrets in our SDLC
 
