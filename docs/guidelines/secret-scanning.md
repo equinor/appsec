@@ -1,6 +1,6 @@
 # Secret Scanning
 
-As developers, we know that secrets like passwords, API keys, and access tokens are critical to our work. But what happens when these secrets accidentally end up in our code, logs or error messages?
+> As developers, we know that secrets like passwords, API keys, and access tokens are critical to our work. But what happens when these secrets accidentally end up in our code, logs or error messages?
 
 This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up. The AppSec team provides a 3 hour hands-on workshop on getting started with secret scanning - [https://github.com/equinor/appsec-fundamentals-secret-scanning](https://github.com/equinor/appsec-fundamentals-secret-scanning).
 
@@ -11,7 +11,7 @@ This guideline aims to present relevant tools, some good practices for managing 
 
 ## Recommended tools
 
-- Snyk Code (in IDE)
+- [Snyk Code](https://docs.snyk.io/scan-using-snyk/snyk-code/scan-code) (in IDE)
 - [Trufflehog](https://github.com/trufflesecurity/trufflehog) (elsewhere)
 - [GitHub Advanced Security - Secret Scanning](#github-advanced-security-secret-scanning)
 
@@ -36,9 +36,10 @@ GitHub Advanced Security is integrated into GitHub, providing features like the 
 
 #### Global push protection
 
-GitHub provides a beta feature that will block commits that contain [supported secrets](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) across all public repositories.
+GitHub provides a **beta feature** that will prevent pushes from you that contain [supported secrets](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) across all public repositories.
 
 - Enable by going to your user settings, code security and analysis and enable the beta feature push protection for yourself.
+- *Note that this is an experimental feature*
 
 ## Where to scan for secrets in our SDLC
 
