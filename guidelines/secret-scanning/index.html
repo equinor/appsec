@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.2">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
     
     
       
@@ -563,6 +563,45 @@
       Recommended tools
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Recommended tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-advanced-security-secret-scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Advanced Security: Secret Scanning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Advanced Security: Secret Scanning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-turn-it-on-for-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to turn it on for your repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-push-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global push protection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2361,6 +2400,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Recommended tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-advanced-security-secret-scanning" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Advanced Security: Secret Scanning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GitHub Advanced Security: Secret Scanning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-turn-it-on-for-your-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to turn it on for your repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#global-push-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Global push protection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2490,7 +2568,9 @@
 
 
 <h1 id="secret-scanning">Secret Scanning<a class="headerlink" href="#secret-scanning" title="Permanent link">&para;</a></h1>
+<blockquote>
 <p>As developers, we know that secrets like passwords, API keys, and access tokens are critical to our work. But what happens when these secrets accidentally end up in our code, logs or error messages?</p>
+</blockquote>
 <p>This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up. The AppSec team provides a 3 hour hands-on workshop on getting started with secret scanning - <a href="https://github.com/equinor/appsec-fundamentals-secret-scanning">https://github.com/equinor/appsec-fundamentals-secret-scanning</a>.</p>
 <ul>
 <li><a href="#recommended-tools">Recommended tools</a></li>
@@ -2500,8 +2580,9 @@
 </ul>
 <h2 id="recommended-tools">Recommended tools<a class="headerlink" href="#recommended-tools" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Snyk Code (in IDE)</li>
+<li><a href="https://docs.snyk.io/scan-using-snyk/snyk-code/scan-code">Snyk Code</a> (in IDE)</li>
 <li><a href="https://github.com/trufflesecurity/trufflehog">Trufflehog</a> (elsewhere)</li>
+<li><a href="#github-advanced-security-secret-scanning">GitHub Advanced Security - Secret Scanning</a></li>
 </ul>
 <p>Please note that:</p>
 <ul>
@@ -2510,6 +2591,21 @@
 <li>Don't underestimate the cultural change when changing how you work. Good practices are to document how your team does Secure Development and to threat model how you work. Use/revisit this information regularly in on-boarding of new team members and in retrospectives.</li>
 </ul>
 <p>(Check out the <a href="../../resources/tools/">appsec tools section</a> for more tooling)</p>
+<h3 id="github-advanced-security-secret-scanning">GitHub Advanced Security: Secret Scanning<a class="headerlink" href="#github-advanced-security-secret-scanning" title="Permanent link">&para;</a></h3>
+<p>GitHub Advanced Security is integrated into GitHub, providing features like the secret scanning module free for public repositories. This module supports these <a href="https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets">secret types</a> so far.</p>
+<h4 id="how-to-turn-it-on-for-your-repository">How to turn it on for your repository<a class="headerlink" href="#how-to-turn-it-on-for-your-repository" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Go to your repository settings</li>
+<li>Under security find Code security and analysis</li>
+<li>Enable secret scanning. </li>
+<li>Consider enabling push protection for added security.</li>
+</ul>
+<h4 id="global-push-protection">Global push protection<a class="headerlink" href="#global-push-protection" title="Permanent link">&para;</a></h4>
+<p>GitHub provides a <strong>beta feature</strong> that will prevent pushes from you that contain <a href="https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets">supported secrets</a> across all public repositories.</p>
+<ul>
+<li>Enable by going to your user settings, code security and analysis and enable the beta feature push protection for yourself.</li>
+<li><em>Note that this is an experimental feature</em></li>
+</ul>
 <h2 id="where-to-scan-for-secrets-in-our-sdlc">Where to scan for secrets in our SDLC<a class="headerlink" href="#where-to-scan-for-secrets-in-our-sdlc" title="Permanent link">&para;</a></h2>
 <p>The general idea is to catch secrets in code (and other places) as early as possible. Our recommendation for most teams is:</p>
 <p>While your are developing, in your development environment</p>
@@ -2624,7 +2720,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 2, 2024</span>
   </span>
 
     
