@@ -25,4 +25,5 @@ Check below some interesting conversations:
 Read more about dealing with vulnerabilities [here.](../4-vulnerabilities.md)
 
 ## 5. Where can I check the status of Snyk services ?
-The status of snyk services can be checked at https://snyk.statuspage.io/
+The status of snyk services can be checked at
+[https://snyk.statuspage.io/](https://snyk.statuspage.io/).
