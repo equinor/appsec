@@ -1,5 +1,3 @@
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/equinor/appsec)
-
 # Equinor AppSec public site
 
 This repo contains the documentation and setup for hosting <https://equinor.github.io/appsec/>
