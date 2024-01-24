@@ -12,13 +12,13 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/security-champion/security_champion_activities/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/authn-authz/">
       
       
-        <link rel="prev" href="../getting-in-touch/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../useful-links/">
+        <link rel="next" href="../postman/">
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Security Champion Activities 🦸‍♀️ - Equinor AppSec</title>
+        <title>Authentication and Authorization guidelines - Equinor AppSec</title>
       
     
     
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#security-champion-activities" class="md-skip">
+        <a href="#authentication-and-authorization-guidelines" class="md-skip">
           Skip to content
         </a>
       
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security Champion Activities 🦸‍♀️
+              Authentication and Authorization guidelines
             
           </span>
         </div>
@@ -237,11 +237,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -257,13 +259,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -424,6 +424,8 @@
       
   
   
+    
+  
   
   
     
@@ -448,19 +450,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -477,7 +477,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -490,10 +490,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guidelines/authn-authz/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Authentication and Authorization guidelines
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -502,6 +522,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#best-current-practices-and-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best current practices and guidelines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equinor-quirks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equinor "quirks"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Training
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -514,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/postman/" class="md-nav__link">
+      <a href="../postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -535,7 +602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -599,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -632,8 +699,6 @@
       
   
   
-    
-  
   
   
     
@@ -668,17 +733,19 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -695,7 +762,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Security champion
@@ -711,7 +778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-welcome/" class="md-nav__link">
+      <a href="../../security-champion/1-welcome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../2-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/2-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../security-champion/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../security-champion/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +862,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../getting-in-touch/" class="md-nav__link">
+      <a href="../../security-champion/getting-in-touch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -813,30 +880,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Security Champion Activities 🦸‍♀️
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../security-champion/security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -845,98 +892,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduce-yourself" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduce yourself
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ensure-that-all-your-code-is-being-scanned-by-sast" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ensure that all your code is being scanned by SAST
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#define-security-requirements" class="md-nav__link">
-    <span class="md-ellipsis">
-      Define security requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-modelling-activities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Threat Modelling activities
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-to-this-site" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute to this site
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#have-the-team-work-through-the-owasp-juice-shop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Have the team work through the OWASP Juice Shop
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-out-the-owasp-asvs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check out the OWASP ASVS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manually-security-test-your-application" class="md-nav__link">
-    <span class="md-ellipsis">
-      Manually security test your application
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -949,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../useful-links/" class="md-nav__link">
+      <a href="../../security-champion/useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,7 +951,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1074,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1095,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1167,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1226,7 +1181,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../success-stories/" class="md-nav__link ">
+            <a href="../../security-champion/success-stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2333,72 +2288,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduce-yourself" class="md-nav__link">
+  <a href="#best-current-practices-and-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduce yourself
+      Best current practices and guidelines
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ensure-that-all-your-code-is-being-scanned-by-sast" class="md-nav__link">
+  <a href="#equinor-quirks" class="md-nav__link">
     <span class="md-ellipsis">
-      Ensure that all your code is being scanned by SAST
+      Equinor "quirks"
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#define-security-requirements" class="md-nav__link">
+  <a href="#training" class="md-nav__link">
     <span class="md-ellipsis">
-      Define security requirements
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-modelling-activities" class="md-nav__link">
-    <span class="md-ellipsis">
-      Threat Modelling activities
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute-to-this-site" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute to this site
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#have-the-team-work-through-the-owasp-juice-shop" class="md-nav__link">
-    <span class="md-ellipsis">
-      Have the team work through the OWASP Juice Shop
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-out-the-owasp-asvs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check out the OWASP ASVS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manually-security-test-your-application" class="md-nav__link">
-    <span class="md-ellipsis">
-      Manually security test your application
+      Training
     </span>
   </a>
   
@@ -2422,33 +2332,51 @@
   
 
 
-<h1 id="security-champion-activities">Security Champion Activities 🦸‍♀️<a class="headerlink" href="#security-champion-activities" title="Permanent link">&para;</a></h1>
-<h2 id="introduce-yourself">Introduce yourself<a class="headerlink" href="#introduce-yourself" title="Permanent link">&para;</a></h2>
-<p>Say hello in the <a href="https://equinor.slack.com/archives/C036HGPBJ04">Security Champion channel</a> 👋 Always fun to meet new champions</p>
-<h2 id="ensure-that-all-your-code-is-being-scanned-by-sast">Ensure that all your code is being scanned by SAST<a class="headerlink" href="#ensure-that-all-your-code-is-being-scanned-by-sast" title="Permanent link">&para;</a></h2>
-<p>Ensure all your projects code is scanned by Snyk, and that you have Snyk Code enabled for your projects. Using a linter is always good when you develop!</p>
-<h2 id="define-security-requirements">Define <a href="../../resources/security_requirements/">security requirements</a><a class="headerlink" href="#define-security-requirements" title="Permanent link">&para;</a></h2>
-<p>Have a look at our <a href="../../resources/security_requirements/">security requirements</a> page and define some for your project</p>
-<h2 id="threat-modelling-activities">Threat Modelling activities<a class="headerlink" href="#threat-modelling-activities" title="Permanent link">&para;</a></h2>
+<h1 id="authentication-and-authorization-guidelines">Authentication and Authorization guidelines<a class="headerlink" href="#authentication-and-authorization-guidelines" title="Permanent link">&para;</a></h1>
+<p>Authentication and Authorization are complex topics. Things are often very context specific. Answers are often not straight forward, we often have more than one option. In the sections below we will give advice on protocols, tools and principle we find helpful.</p>
+<p>The scope for this guideline is web application and api's.</p>
+<h2 id="best-current-practices-and-guidelines">Best current practices and guidelines<a class="headerlink" href="#best-current-practices-and-guidelines" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Facilitate a <a href="../../threat-modeling/resources/threat_modelling/">threat modelling session</a> with your team - looking at the high level architecture of your system(s)</li>
-<li>Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)</li>
+<li>Microsoft's <a href="https://learn.microsoft.com/en-us/entra/identity-platform/">Identity Platform</a> is the primary component in our set-up.</li>
+<li>We use Microsoft Entra ID (was Azure AD) as our primary identity provider and authorization server.</li>
+<li>We use oAuth2 to facilitate authorization<ul>
+<li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow">Authorization Code Flow</a> is often the preferred flow </li>
+<li>We avoid the "Implicit Grant Flow"</li>
+<li>Public Clients should use Auth Code Flow with PKCE</li>
 </ul>
-<h2 id="contribute-to-this-site">Contribute to this site<a class="headerlink" href="#contribute-to-this-site" title="Permanent link">&para;</a></h2>
-<p>As of now, a lot of the content on this site is written by the AppSec-team. This site is meant to be a resource for the Security Champion community, and thus contribution from the community is crucial for making this site useful.</p>
-<p>If you have anything to share that you think will be useful for others, don't hesitate. Same goes for editing the content that already exists.</p>
-<p>Just go to our github-repo and make a PR. Pro tip: You can use Visual Studio Code directly from your browser by pressing "." when you are on a page. Contributing has never been easier!</p>
-<h2 id="have-the-team-work-through-the-owasp-juice-shop">Have the team work through the OWASP Juice Shop<a class="headerlink" href="#have-the-team-work-through-the-owasp-juice-shop" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/juice-shop/juice-shop">OWASP JuiceShop</a> is a great resource for security training and getting familiar with OWASP Top Ten. There are many ways to utilize this project for training, with some of them being:</p>
+</li>
+<li>We use OpenId Connect (OIDC) as an authentication layer on top of oAuth2 </li>
+<li>We use SAML2/OIDC for federation</li>
+<li>We refer to the MS Identity Platform for implementation guidelines</br> (guides for web, api, desktop, mobile, service, deamon/script, example code, sdk and libraries)</li>
+<li>We prefer <a href="https://learn.microsoft.com/en-us/entra/identity-platform/msal-overview">Microsoft Authentication Library (MSAL)</a> to implement AuthN and AuthZ in our code.</li>
+</ul>
+<p></br></p>
 <ul>
-<li>Run it in CTF-mode, and agree on what challenges are to be solved during this sprint. At the end of the sprint, go through the challenges</li>
-<li>Set aside a couple of days for going through the challenges together</li>
-<li>Go though one challenge each stand-up</li>
+<li>For Web applications we prefer the Backend-For-Frontend Pattern (BFF)</li>
+<li>We usually do not develop "multitenant applications". If we do we are aware of the risks.</li>
 </ul>
-<h2 id="check-out-the-owasp-asvs">Check out the OWASP ASVS<a class="headerlink" href="#check-out-the-owasp-asvs" title="Permanent link">&para;</a></h2>
-<p><a href="https://owasp.org/www-project-application-security-verification-standard/">OWASP ASVS</a> is a collection of web application technical security controls and requirements. Have a look and see if this makes sense to use for your project :)</p>
-<h2 id="manually-security-test-your-application">Manually security test your application<a class="headerlink" href="#manually-security-test-your-application" title="Permanent link">&para;</a></h2>
-<p>Have a look at <a href="https://owasp.org/www-project-web-security-testing-guide/">WSTG</a></p>
+<p></br></p>
+<ul>
+<li>Using oAuth2 proxies as a front door to app authentication is ok as long as the team understand and manage the risks involved.</li>
+<li>We advocate a "Security in depth" mindset, only protecting the front-door will not do it</li>
+<li>We prefer managed identities over service principals when available (<a href="https://learn.microsoft.com/en-us/entra/workload-id/workload-identities-overview">MS Workload Identities</a>)</li>
+</ul>
+<p></br></p>
+<ul>
+<li>We refer to the Appsec Fundamentals A&amp;A workshop for training (below)</li>
+<li>We strongly suggest doing continuous threatmodeling for A&amp;A work</li>
+<li>We strongly state that teams must have sufficient knownledge on A&amp;A</li>
+</ul>
+<h2 id="equinor-quirks">Equinor "quirks"<a class="headerlink" href="#equinor-quirks" title="Permanent link">&para;</a></h2>
+<ul>
+<li>We use conditional access for most our accounts and identities. Parts of this is implemented as "managed device"<ul>
+<li>The <a href="https://datatracker.ietf.org/doc/html/rfc8628">Device Code Flow</a> will not work on a managed device. </li>
+</ul>
+</li>
+<li>The <a href="https://docs.omnia.equinor.com/services/data/concept/authentication-the-basics/">Omnia Docs</a> contains important information on AuthN, AuthZ, Entra ID, consent etc.</li>
+</ul>
+<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h2>
+<p>We have a 2 day workshop in Authn &amp; AuthZ, it's open source and available at <a href="https://github.com/equinor/appsec-fundamentals-authn-authz-cs">https://github.com/equinor/appsec-fundamentals-authn-authz-cs</a></p>
 
 
 
@@ -2469,7 +2397,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 10, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 24, 2024</span>
   </span>
 
     
