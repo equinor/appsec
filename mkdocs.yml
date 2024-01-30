@@ -39,6 +39,8 @@ extra:
       link: https://github.com/equinor
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/EquinorASA
+    - icon: fontawesome/brands/slack
+      link: https://equinor.slack.com/archives/CMM6FSW5V
 extra_css:
   - assets/css/mkdocs-eq.css
   - https://cdn.eds.equinor.com/font/equinor-font.css
