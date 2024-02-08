@@ -20,9 +20,11 @@ When using GitHub Actions, it is good practice to:
             - The default should be "Require approval for first-time contributors".
   - All external actions that you plan to use should be examined/audited. This could include examining the repos and using services like [StepSecurity's Action Advisor](https://app.stepsecurity.io/action-advisor).
 - Pin the versions of actions that you are using (use SHA).
-- Use OpenID Connect for access to Azure Resources.
-- Manage secrets securely; they should only be available to workflows and branches where needed.
-    - If available, consider using managed identity/OIDC and Azure Key Vaults for secrets.
+- Use OpenID Connect for access to Azure Resources ([Configuring OpenID Connect in Azure](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), [MS Workload Identity Federation](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation))
+- Manage secrets securely; they should only be available to workflows and branches where needed
+    - Use **environments** to protect code and secrets [Github Doc](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
+    - Investigate [Using secrets in GitHub Actions](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
+    - If available, consider using managed identity/[OIDC](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure) and Azure Key Vaults for secrets.
 - Limit the permissions/scope of all tokens/credentials, especially the GITHUB_TOKEN.
 - Only refer to values that you control in an action (think risks related to non-validated input).
 - Use branch protection for your repository (workflows should be treated as "sensitive", use branch protection and careful review for any changes).
@@ -50,8 +52,8 @@ When using GitHub Actions with **self-hosted runners**, it is good practice to:
     - Network egress/ingress should be managed (firewall, NSG rules, ++).
     - The runner code should execute with the least possible privilege level.
     - Environments should be refreshed regularly (update, patch) (weekly).
-    - Each job should do a proper clean-up.
     - The GitHub runner software should be on auto-update (which is default unless disabled).
+    - **Each job should do a proper clean-up!**
 - Have routines and practices for monitoring/examining run/runner logs.
 
 ## The Future, The GH Roadmap
