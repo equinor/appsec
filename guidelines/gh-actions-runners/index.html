@@ -12,28 +12,28 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/resources/stories/meet_the_appsec_team/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/gh-actions-runners/">
       
       
-        <link rel="prev" href="../../tools/">
+        <link rel="prev" href="../authn-authz/">
       
       
-        <link rel="next" href="../../../about/">
+        <link rel="next" href="../postman/">
       
       
-      <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
+      <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
     
     
       
-        <title>Meet the appsec team - Equinor AppSec</title>
+        <title>GitHub Actions and Self-Hosted Runners Guideline - Equinor AppSec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f2e4d321.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f2e4d321.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/css/mkdocs-eq.css">
+      <link rel="stylesheet" href="../../assets/css/mkdocs-eq.css">
     
       <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-font.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#meet-the-equinor-appsec-team" class="md-skip">
+        <a href="#github-actions-and-self-hosted-runners-guideline" class="md-skip">
           Skip to content
         </a>
       
@@ -96,9 +96,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Meet the appsec team
+              GitHub Actions and Self-Hosted Runners Guideline
             
           </span>
         </div>
@@ -222,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -237,11 +237,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -261,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../security-champion/" class="md-tabs__link">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -281,7 +283,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../snyk/" class="md-tabs__link">
+        <a href="../../snyk/" class="md-tabs__link">
           
   
     
@@ -301,7 +303,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../threat-modeling/" class="md-tabs__link">
+        <a href="../../threat-modeling/" class="md-tabs__link">
           
   
     
@@ -317,13 +319,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -343,7 +343,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../about/" class="md-tabs__link">
+        <a href="../../about/" class="md-tabs__link">
           
   
     
@@ -378,9 +378,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     Equinor AppSec
@@ -407,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,6 +424,8 @@
       
   
   
+    
+  
   
   
     
@@ -446,21 +448,22 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -471,13 +474,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -493,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,10 +514,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../guidelines/gh-actions-runners/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GitHub Actions and Self-Hosted Runners Guideline
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -523,6 +546,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-actions-in-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Actions in General
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-self-hosted-runners" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Self-Hosted Runners
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-future-the-gh-roadmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Future, The GH Roadmap
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-3rd-party-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      External 3rd Party Resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -535,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/postman/" class="md-nav__link">
+      <a href="../postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,7 +777,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -731,7 +810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/1-welcome/" class="md-nav__link">
+      <a href="../../security-champion/1-welcome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/2-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/2-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/about/" class="md-nav__link">
+      <a href="../../security-champion/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/faq/" class="md-nav__link">
+      <a href="../../security-champion/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/getting-in-touch/" class="md-nav__link">
+      <a href="../../security-champion/getting-in-touch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/security_champion_activities/" class="md-nav__link">
+      <a href="../../security-champion/security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -857,7 +936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/useful-links/" class="md-nav__link">
+      <a href="../../security-champion/useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +984,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -984,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1005,7 +1084,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1217,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/success-stories/" class="md-nav__link ">
+            <a href="../../security-champion/success-stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1212,7 +1291,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../snyk/" class="md-nav__link ">
+            <a href="../../snyk/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1245,7 +1324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/2-about-snyk/" class="md-nav__link">
+      <a href="../../snyk/2-about-snyk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1266,7 +1345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/3-snyk_support/" class="md-nav__link">
+      <a href="../../snyk/3-snyk_support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1287,7 +1366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/4-vulnerabilities/" class="md-nav__link">
+      <a href="../../snyk/4-vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1343,7 +1422,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../snyk/curriculum/" class="md-nav__link ">
+            <a href="../../snyk/curriculum/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1376,7 +1455,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
+      <a href="../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1397,7 +1476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/2-integrations/" class="md-nav__link">
+      <a href="../../snyk/curriculum/2-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1418,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/3-projects/" class="md-nav__link">
+      <a href="../../snyk/curriculum/3-projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1439,7 +1518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/4-scan_results/" class="md-nav__link">
+      <a href="../../snyk/curriculum/4-scan_results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1460,7 +1539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/5-advanced/" class="md-nav__link">
+      <a href="../../snyk/curriculum/5-advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1481,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/6-faq/" class="md-nav__link">
+      <a href="../../snyk/curriculum/6-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1544,7 +1623,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/" class="md-nav__link ">
+            <a href="../../threat-modeling/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1614,7 +1693,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
+            <a href="../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1647,7 +1726,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1668,7 +1747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1689,7 +1768,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1710,7 +1789,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1731,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1752,7 +1831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1773,7 +1852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1848,7 +1927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1869,7 +1948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/zgamified/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/zgamified/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1902,8 +1981,6 @@
       
   
   
-    
-  
   
   
     
@@ -1926,22 +2003,21 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../resources/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1952,13 +2028,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Resources
@@ -1974,7 +2050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learning-material/" class="md-nav__link">
+      <a href="../../resources/learning-material/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1995,7 +2071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security_requirements/" class="md-nav__link">
+      <a href="../../resources/security_requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2016,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../security_testing/" class="md-nav__link">
+      <a href="../../resources/security_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2037,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tools/" class="md-nav__link">
+      <a href="../../resources/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2055,8 +2131,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2070,11 +2144,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_6" >
         
           
           <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
@@ -2088,7 +2164,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_6">
             <span class="md-nav__icon md-icon"></span>
             Stories
@@ -2099,30 +2175,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Meet the appsec team
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2131,62 +2187,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#championing-application-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      Championing application security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benefit-from-a-collective-of-knowledge" class="md-nav__link">
-    <span class="md-ellipsis">
-      Benefit from a collective of knowledge
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-how-to-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      Understanding how to help
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#automate-scanning-your-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Automate scanning your code
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2239,7 +2239,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../about/" class="md-nav__link ">
+            <a href="../../about/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2272,7 +2272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/privacy/" class="md-nav__link">
+      <a href="../../about/privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2320,36 +2320,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#championing-application-security" class="md-nav__link">
+  <a href="#github-actions-in-general" class="md-nav__link">
     <span class="md-ellipsis">
-      Championing application security
+      GitHub Actions in General
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#benefit-from-a-collective-of-knowledge" class="md-nav__link">
+  <a href="#using-self-hosted-runners" class="md-nav__link">
     <span class="md-ellipsis">
-      Benefit from a collective of knowledge
+      Using Self-Hosted Runners
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#understanding-how-to-help" class="md-nav__link">
+  <a href="#the-future-the-gh-roadmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Understanding how to help
+      The Future, The GH Roadmap
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#automate-scanning-your-code" class="md-nav__link">
+  <a href="#external-3rd-party-resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Automate scanning your code
+      External 3rd Party Resources
     </span>
   </a>
   
@@ -2373,308 +2373,86 @@
   
 
 
-<!-- markdownlint-disable MD033 -->
-
-<h1 id="meet-the-equinor-appsec-team">Meet the Equinor AppSec Team<a class="headerlink" href="#meet-the-equinor-appsec-team" title="Permanent link">&para;</a></h1>
-<p><img alt="Members of the Equinor AppSec-team walking through the office" src="../assets/appsec-header.webp" /></p>
-<h2 id="championing-application-security">Championing application security<a class="headerlink" href="#championing-application-security" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>How do we build a stronger culture around application security? And how can your team take part in making us more secure? Meet the AppSec team and find out!</p>
-</blockquote>
-<p>Once upon a time, the almighty firewall served as our castle moat. It protected us from any possible threat to our castle walls, or systems and applications if you will, but those days are behind us. Now, we’re headed away from castles and moats and into the cloud.</p>
-<p>This means the way we think about security has evolved and requires us to respond.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 40% 60%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/lars-kare-skjorestad.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <blockquote> “As we move into the cloud and onto the internet, we become much more exposed, and more of the responsibility to keep us secure falls on our developers. Coupled with >increasingly complex technologies and a heavy cognitive load, we need to build a culture around security to give our teams the tools and mindset they need.”
-
-        </br>- Lars Kåre Skjørestad
-    </blockquote>
-    </div>
-
-</div>
-
-<p>Lars Kåre is part of the Application Security (AppSec) team. He explains that while the goal is to have our development teams be cross-functional and long-lived, we’re still not quite there yet. Now, most of our developer teams are smaller units with a few members. It falls to these very members to handle all aspects of development from frontend to backend – and everything else. As a result, the mindset of “someone else will probably handle security” can take hold.</p>
-<p>To avoid just that and make sure our teams have the help they need, the AppSec team was assembled in 2022.</p>
-<p>“For us, it’s all about enabling our teams to write more secure code and help them build competence in application security. This means we must understand the context of our teams,” Lars Kåre explains.</p>
-<p><img alt="Members of the Equinor AppSec team during a discussion" src="../assets/appsec-team-members-discussing.webp" />
-<small>Currently, the AppSec team totals 6 people split between Bergen and Stavanger.</small></p>
-<p>And for Equinor, the context is an important part to understand. We don’t have thousands of developers working on a couple of applications, we have thousands of developers working on hundreds of applications.</p>
-<p>“A one-size solution is just not feasible for a context like ours. To make sure that we’re able to maintain secure applications, we need to understand what our teams need and want. We’re here to serve our community of developers and help them develop more secure applications,” Lars Kåre says.</p>
-<p>“But ultimately, our goal is that our team won’t be around at all in a couple of years – because security has become such an ingrained part of all our work that we’re no longer needed,” he adds.</p>
-<p>So, how do you go about building this culture and making yourself obsolete? Some of the first steps along the way are recruiting security champions, focusing on open source vulnerability management and threat modeling. Let’s find out more!</p>
-<hr />
-<h2 id="benefit-from-a-collective-of-knowledge">Benefit from a collective of knowledge<a class="headerlink" href="#benefit-from-a-collective-of-knowledge" title="Permanent link">&para;</a></h2>
-<p>With so many developers spread across all these teams, you need a direct line to each and every one of them for a culture to truly spread. One way of doing that is by building a network of security champions – people with a keen interest in learning more and championing security in their team.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 60% 40%;">
-
-    <div style="grid-area: 1 / 1">
-
-       <blockquote> “Being a security champion doesn’t mean you’re ‘Head of Security’ for your team. It means you’re interested in, want to learn more about security and be someone who champions that work in your team.”
-
-        </br>- Kristian Reed
-
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-            <img src="../assets/kristian-reed.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </blockquote>
-    </div>
-
-</div>
-
-<p>Just a month into the network’s lifespan they already have more than 140 members, with numbers growing each week. The network officially kicked off with an in-person gathering in Stavanger, where we hosted a Capture the Flag (CTF) competition and community building.</p>
-<p>The network also hosts a variety of events; from weekly virtual coffees to monthly seminars on relevant topics. But the heart of everything the network and the AppSec team do is the Slack channel.</p>
-<p>“We wanted to create a place where our champions can benefit from the collective knowledge of the entire network and somewhere people could ask for help when they had any questions. Slack was the natural choice to do so,” Kristian says.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/secchampkickoff1.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>In September 2022, the Security Champion Network kicked off</small>
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <img src="../assets/secchampkickoff2.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>More than 40 Security Champions gathered in Stavanger for the kickoff.</small>
-
-    </div>
-
-</div>
-
-<p>Security champion networks are no brand-new concept. NAV, the Norwegian Labor and Welfare Administration, NRK, Telenor, Finn.no and the Norwegian Police all have their own security champions network. There’s also a Norwegian security champions network Slack-community, with participants from a variety of companies, available for anyone who speaks Norwegian.</p>
-<p>And all the information on the AppSec GitHub is available to the world – inspired by NAV’s own approach.</p>
-<p>“Sharing our knowledge and competence with the world outside of Equinor is just as important as sharing it with our colleagues. If we can help build a community focused around security, we’ll benefit from that in the end,” Kristian says.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 60% 40%;">
-
-    <div style="grid-area: 1 / 1">
-    <b>The Equinor Security Champion Network</b>
-    <ul>
-        <li>Grow your security mindset</li>
-        <li>Be an advocate of stronger code</li>
-        <li>Be an evangelist for security requirements</li>
-        <li>Access to exclusive resources and training</li>
-        <li>Stay in touch with security teams</li>
-    </ul>
-
-    <a href="../../../security-champion">Read more</a>
-
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <img src="../assets/secchampnetwork.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </div>
-
-</div>
-
-<hr />
-<h2 id="understanding-how-to-help">Understanding how to help<a class="headerlink" href="#understanding-how-to-help" title="Permanent link">&para;</a></h2>
-<p>Together with Kristian, Ipsita Mishra also runs the security champion network. Her experience was that people were rarely all that interested in security. Many considered it ‘someone else’s responsibility’, but it was the other way around in Equinor:</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 40% 60%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/ipsita-mishra.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <blockquote> “A“After we got our first couple of members, the response was overwhelming. We didn’t expect that so many people would be interested in security, nor that they would be so knowledgeable from the start. I think Equinor’s emphasis on safety might have something to do with that.”
-
-        </br>- Ipsita Mishra
-    </blockquote>
-    </div>
-
-</div>
-
-<p>“What we’ve started with is getting teams to interact, talk about issues, and do it in a constructive way. This hopefully means we can have progress come out of the conversation and put that into action later,” Ipsita explains.</p>
-<p>Getting people to come together is no simple task, but it’s one they’ve already made great progress on with the network. The next step is to find out what direction to take it further in - and create a platform where people can learn and get value from together with the rest of the community.</p>
-<p>“We’re still a young team, so we’re focusing on trying to understand how we can help people improve their processes and help teams be in a better place. Either through talking to teams and advising them when needed or through introducing people to the tools and software we use," Ipsita explains.</p>
-<p><img alt="Members of the Equinor AppSec team during a discussion" src="../assets/appsec-team-scanning-code.webp" /></p>
-<hr />
-<h2 id="automate-scanning-your-code">Automate scanning your code<a class="headerlink" href="#automate-scanning-your-code" title="Permanent link">&para;</a></h2>
-<p>The last years, there’s been a solid increase in malicious attacks through third-party dependencies. Just about all Equinor’s software development projects contain open source components and manually keeping up to date on potential security breaches in all of them would be an impossible task. Luckily, Snyk now automates that job.</p>
-<p>“Snyk lets us scan all the dependencies in a project for vulnerabilities or malware. Thanks to this, we have an overview of all the possible vulnerabilities in our projects,” Petter Moe Kvalvaag says.</p>
-<p>How each team uses the tool in their daily work is up to them to decide, but the most common approach is to tell the tool where your code and GitHub repo is.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 40% 60%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/petter-moe-kvalvaag.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <blockquote> “Snyk will automatically and continuously scan your code and give you a overview of your status; how many vulnerabilities you have, what they are and what you need to do. Snyk can make a developer's life much easier and can even create pull requests automatically for you.”
-
-        </br>- Petter Moe Kvalvaag
-    </blockquote>
-    </div>
-
-</div>
-
-<p>Together with Ipsita, Petter has been running onboarding sessions and workshops to help spread the word of Snyk to the developer community. They’ also spent time working on a backend solution to Snyk that will help give us even better reporting capabilities.</p>
-<p>“Since Snyk itself has limited reporting capabilities, we’ve had to make our own way around it. We’ve used their API, imported vulnerability data into our own database and created visualizations based on this,” Petter explains.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/appsec_sca_1.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>Petter works with vulnerability management as part of the AppSec-team.</small>
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <img src="../assets/appsec_tm_1.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>Benjamin focuses on threat modelling.</small>
-
-
-    </div>
-
-</div>
-
-<p>But why bother with a workaround to visualize data, you might ask? To be able to take an analytical approach and see a bigger picture – of course!</p>
-<p>“This could let us see that many different teams are facing the same problem, for example vulnerabilities with Docker Images. We could then help the teams find each other to discuss their problems, but we could also target this issue specifically and provide workshops or training to help solve it. This means we can help the community as a whole,” Petter says.</p>
-<blockquote>
-“Getting to work with taking an analytical and data-driven approach to the work is really interesting – and very motivating. Not only are we able to find potential problems, but we can also use the data to see if what we did helped or not.”
-
-</br>- Petter Moe Kvalvaag
-
-</blockquote>
-
-<p>“Once we have identified an issue and launched an initiative to mitigate it, we're able to see in retrospect how effective our initiative was. This helps us find the most effective way to reach out and assist the teams in the future,” Ipsita explains.</p>
-<hr />
-<p><img alt="Why should you prepare for an attack" src="../assets/appsec_prepare_for_attack.webp" /></p>
-<h1 id="why-you-should-prepare-for-an-attack">Why you should prepare for an attack<a class="headerlink" href="#why-you-should-prepare-for-an-attack" title="Permanent link">&para;</a></h1>
-<p>Knowing what weaknesses you have is one thing, but you should also plan for someone to exploit them right from the start. Welcome to the world of threat modeling. Simply put, it means identifying and discussing the possible threats and weaknesses to your system.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 60% 40%;">
-
-    <div style="grid-area: 1 / 1">
-
-       <blockquote> “There are many different methods to do threat modeling, but what they all have in common is that you draw up a diagram of your system. Then, you use this to think of ways that someone could attack your system – and how to prevent or deal with it. You need to think like an attacker to identify your weaknesses. It’s a big cliché but it’s incredibly efficient.”
-
-        </br>- Benjamin Løkling Randeberg
-
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-            <img src="../assets/benjamin-lokling-randeberg.webp" width="80%" height="auto" display="block" margin-left="auto" margin-right="auto">
-
-    </blockquote>
-    </div>
-
-</div>
-
-<p>The team even hosted a threat modeling workshop at EDC 2022, which acts as the foundation for future workshops for threat modeling. So far, they’ve introduced several teams to the concept and are hoping to add even more in the future.</p>
-<p>“We’re hosting an in-person workshop, but we’re also following up on the teams in the months after their introduction. This makes sure we can help them with any questions, build upon anything they find and help them become even more secure – based on their team’s context. We really hope threat modeling is something people will adapt, because it’s such a great tool to have,” Benjamin explains.</p>
-<div style="display: grid;grid-column-gap: 1%; grid-auto-columns: 50% 50%;">
-
-    <div style="grid-area: 1 / 1">
-
-        <img src="../assets/appsec_merch.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>What kind of team would the AppSec team be without their own merch?</small>
-
-    </div>
-
-    <div  style="grid-area: 1 / 2; font-size:1.0 em; justify-items:left"">
-
-        <img src="../assets/appsec_white_board.webp" width="100%" height="auto" display="block" margin-left="auto" margin-right="auto">
-        <small>What else is there to do when a colleague has a question than to bust out the good old whiteboard?</small>
-
-
-    </div>
-
-</div>
-
-<hr />
-<h2 id="learn-and-consider-how-things-work">Learn and consider how things work<a class="headerlink" href="#learn-and-consider-how-things-work" title="Permanent link">&para;</a></h2>
-<p>We’ve heard about what the team does, but what is it like to work in the AppSec team? Being part of an enabler team, whose aim is to enable others to be better, can feel quite different from a regular development team.</p>
-<p>“Being part of a team that also aims to build a wider culture in the community is new to me, and even though we’re still new it’s really inspiring to see the effect of the work we’re doing,” Petter explains.</p>
-<p>Working with security is just like working with technology in general – to keep up you need an eagerness to learn and keep up with what’s new. You also get to understand and explore the bigger picture:</p>
-<blockquote><a style="color:red">
-    “Working in security means not only do you get to learn how everything works, but you also get to think about how someone could exploit things. Together, you get an all-round view of what you can do with different things. It’s not just software either, it’s hardware or gadgets too. This combination is what makes it so incredibly interesting. You get to do new things every day and learn new things every day.”
-
-    </br>- Ipsita Mishra
-
-</a></blockquote>
-
-<p>You’ll get to learn a lot, but you’ll also get to be a teacher in order to spread the good word of application security – for example at internal conferences and workshops. But the gospel of AppSec stretches outside of Equinor as well: Lars Kåre even held a <a href="https://www.appsecvillage.com/events/dc-2022/running-system-tests-with-active-authn-z">presentation at Defcon in Las Vegas of 2022</a>.</p>
-<p>“Being part of a team with people who are all so dedicated to and interested in the world of AppSec is really exciting. I get to do what I’m interested in, I get to learn – both on my own and through the team – and the purpose is to make all our teams’ security better,” Benjamin smiles.</p>
-<p>As a newly started team, they’re still charting the course for the future.</p>
-<p>“We have a lot of freedom to shape the future ourselves and decide the tasks we want to take on. That played a big part in my motivation to join, and still does,” Kristian says.</p>
-<p>“And we’re always open to suggestions and are looking to expand the team, so keep an eye out in the future if you would like to join us. Or get in touch directly,” Kristian smiles.</p>
-<p>Only time will show if the AppSec team are successful in building a culture around security in our developer community. We’ll be sure to get back to them in a while to get an update on they’re doing.</p>
-<hr />
-<h1 id="people">People<a class="headerlink" href="#people" title="Permanent link">&para;</a></h1>
-<div style="display: grid;grid-column-gap: 5%; grid-row-gap:5%">
-
-    <div style="grid-area: 1 / 1; text-align:center">
-
-        <img src="../assets/lars-kare-skjorestad.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Lars Kåre Skjørestad</small>
-
-    </div>
-
-    <div style="grid-area: 1 / 2; text-align:center">
-
-         <img src="../assets/kristian-reed.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Kristian Reed</small>
-
-    </div>
-
-    <div style="grid-area: 1 / 3; text-align:center">
-
-         <img src="../assets/benjamin-lokling-randeberg.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Benjamin Løkling Randeberg</small>
-
-    </div>
-
-
-    <div style="grid-area: 2 / 1; text-align:center">
-
-        <img src="../assets/ipsita-mishra.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Ipsita Mishra</small>
-
-    </div>
-
-    <div style="grid-area: 2 / 2; text-align:center">
-
-        <img src="../assets/petter-moe-kvalvaag.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Petter Moe Kvalvaag</small>
-
-    </div>
-
-    <div style="grid-area: 2 / 3; text-align:center">
-
-        <img src="../assets/andrea-brambilla.webp" width="80%" height="auto" display="inline-block" style="border-radius:50%">
-        </br><small>Andrea Brambilla</small>
-
-    </div>
-
-</div>
-
-<hr />
-<p style="text-align:center;">Story, text and photographs: Torstein Lund Eik. Published January 2023</p>
+<h1 id="github-actions-and-self-hosted-runners-guideline">GitHub Actions and Self-Hosted Runners Guideline<a class="headerlink" href="#github-actions-and-self-hosted-runners-guideline" title="Permanent link">&para;</a></h1>
+<p>The scope of this guideline is to provide generic security advice for GitHub Actions and specific security advice for using self-hosted runners.</p>
+<p>(To have a holistic view on security and threats in a system, we recommend that teams have a <strong>Threat Model for their Software Development Lifecycle</strong>. More informaton on threat modeling can be found <a href="../../threat-modeling/">here</a>)</p>
+<h2 id="github-actions-in-general">GitHub Actions in General<a class="headerlink" href="#github-actions-in-general" title="Permanent link">&para;</a></h2>
+<p>When using GitHub Actions, it is good practice to:</p>
+<ul>
+<li>Investigate and familiarize yourself with the <a href="https://docs.github.com/en/actions/security-guides">Security Guides</a> provided by GitHub and take appropriate actions.</li>
+<li>Investigate and align on repository configuration (repository settings)<ul>
+<li><em>Actions -&gt; General</em><ul>
+<li><em>Action permissions</em><ul>
+<li>If you don't use GitHub Actions, set this to "Disable actions" </li>
+<li>If you want to use GitHub Actions, set this to "Allow enterprise, and select non-enterprise, actions and reusable workflows"</li>
+<li>You can check "Allow actions created by GitHub"</li>
+<li>Add the specific actions you are going to use into the "Allow specified actions and reusable workflows" section</li>
+</ul>
+</li>
+<li><em>Fork pull request workflows from outside collaborators</em> (public repos)<ul>
+<li>The default should be "Require approval for all outside collaborators"</li>
+</ul>
+</li>
+<li><em>Fork pull request workflows</em> (non-public repos)<ul>
+<li>"Run workflows from fork pull requests" should not be checked. Change only i you have a good understanding og the risks involved.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>All external actions that you plan to use should be examined/audited. This could include examining the repos and using services like <a href="https://app.stepsecurity.io/action-advisor">StepSecurity's Action Advisor</a>.</li>
+<li>Pin actions to the full length commit-hash (example "uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 #v4.1.1). You can pin to a tag (version) if you trust the creator (Example: "uses: actions/checkout@v4.1.1")</li>
+<li>Use OpenID Connect for access to Azure Resources (<a href="https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure">Configuring OpenID Connect in Azure</a>, <a href="https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation">MS Workload Identity Federation</a>)</li>
+<li>Manage secrets securely; they should only be available to workflows and branches where needed<ul>
+<li>Use <strong>environments</strong> to protect code and secrets <a href="https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment">Github Doc</a></li>
+<li>Investigate <a href="https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions">Using secrets in GitHub Actions</a></li>
+<li>If available, consider using managed identity/<a href="https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure">OIDC</a> and Azure Key Vaults for secrets.</li>
+</ul>
+</li>
+<li>Limit the permissions/scope of all tokens/credentials, especially the GITHUB_TOKEN.</li>
+<li>Only refer to values that you control in an action (think risks related to non-validated input).</li>
+<li>Use branch protection for your repository (workflows should be treated as "sensitive", use branch protection and careful review for any changes).</li>
+</ul>
+<h2 id="using-self-hosted-runners">Using Self-Hosted Runners<a class="headerlink" href="#using-self-hosted-runners" title="Permanent link">&para;</a></h2>
+<p>When using GitHub Actions with <strong>self-hosted runners</strong>, it is good practice to:</p>
+<ul>
+<li>Investigate and familiarize yourself with the <a href="https://docs.github.com/en/actions/hosting-your-own-runners">Hosting your own runners</a> documentation.</li>
+<li>Investigate and familiarize yourself with the <a href="https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#hardening-for-self-hosted-runners">Hardening for self-hosted runners</a>.</li>
+<li><strong>NEVER</strong> use with <strong>public</strong> repos.</li>
+<li>Involve the team, create, and keep up to date a <strong>threat model</strong> of your self-hosted runner setup. The threat model should at least include:<ul>
+<li>A data flow/architecture diagram including key components and code/information flows.</li>
+<li>A list of identified threats/risks.</li>
+<li>Information on how identified threats/risks are managed.</li>
+<li>The threat model should be accepted by product owners/risk owners.</li>
+</ul>
+</li>
+<li>For the hosting environment:<ul>
+<li>We prefer ephemeral environments, non-persistent environments.</li>
+<li><a href="https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions#using-just-in-time-runners">Just-in-time runners</a> may be an option.</li>
+<li>Use dedicated hosts/machines.</li>
+<li>Only do one job at a time on the runner (don't do auto-scaling with persistent runners, use the --ephemeral flag).</li>
+<li>Follow hardening guidelines for the hosting platform (if they exist).</li>
+<li>The environment should be isolated by default.</li>
+<li>Network egress/ingress should be managed (firewall, NSG rules, ++).</li>
+<li>The runner code should execute with the least possible privilege level.</li>
+<li>Environments should be refreshed regularly (update, patch) (weekly).</li>
+<li>The GitHub runner software should be on auto-update (which is default unless disabled).</li>
+<li><strong>Each job should do a proper clean-up!</strong></li>
+</ul>
+</li>
+<li>Have routines and practices for monitoring/examining run/runner logs.</li>
+</ul>
+<h2 id="the-future-the-gh-roadmap">The Future, The GH Roadmap<a class="headerlink" href="#the-future-the-gh-roadmap" title="Permanent link">&para;</a></h2>
+<ul>
+<li>We are exploring company-provided runners (organization, enterprise).</li>
+<li>Using Azure Virtual Networks with GitHub hosted runners may be an option in the future (<a href="https://docs.github.com/en/enterprise-cloud@latest/admin/configuration/configuring-private-networking-for-hosted-compute-products/about-using-github-hosted-runners-in-your-azure-virtual-network">link</a>).</li>
+<li>The <a href="https://github.com/orgs/github/projects/4247/views/1?filterQuery=is%3Aopen+label%3Aactions+">GitHub Public Roadmap</a> is evolving.</li>
+</ul>
+<h2 id="external-3rd-party-resources">External 3rd Party Resources<a class="headerlink" href="#external-3rd-party-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://blog.gitguardian.com/github-actions-security-cheat-sheet/">GitGuardian, GitHub Actions Security Cheat Sheet</a></li>
+</ul>
 
 
 
@@ -2695,7 +2473,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 6, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 12, 2024</span>
   </span>
 
     
@@ -2779,10 +2557,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
       
     
   </body>
