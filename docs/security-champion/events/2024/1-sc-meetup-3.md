@@ -8,7 +8,7 @@ We will have cool merch and prizes to hand out. You will not want to miss it.
 
 ## Agenda
 
-#### 7th June 2023
+#### 7th March 2024
 
 | **When** | **What** |
 |---|---|
