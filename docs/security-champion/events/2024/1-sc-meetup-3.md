@@ -16,7 +16,7 @@ We will have cool merch and prizes to hand out. You will not want to miss it.
 | 8:30 - 9:00 | Safety Moment, Introduction & Team Building |
 | 9:00 - 9:45 | LLM Hacking |
 | 9:45 - 10:00 | Break |
-| 10:00 - 11:00 | GitHub Copilot Hands-On Demo |
+| 10:00 - 11:00 | GitHub Copilot introduction |
 | 11:00 - 12:00 | Lunch |
 | 12:00 - 12:20 | How to set up your home office securely |
 | 12:20 - 12:30 | Ctrl+Alt+Deceit: The Game Jam Scam |
