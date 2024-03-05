@@ -22,9 +22,10 @@ We will have cool merch and prizes to hand out. You will not want to miss it.
 | 12:20 - 12:30 | Ctrl+Alt+Deceit: The Game Jam Scam |
 | 12:30 - 13:00 | How to communicate security to your team |
 | 13:00 - 13:15 | Break |
-| 13:15 - 14:15 | Mad Rabbit & Hacking Workshop |
+| 13:15 - 13:45 | Lifting the lid on last summer's QR code phishing attacks |
+| 13:45 - 14:15 | Mad Rabbit & Hacking Workshop |
 | 14:15 - 14:35 | Break |
-| 14:35 - 15:05 | Lifting the lid on last summer's QR code phishing attacks |
+| 14:35 - 15:05 | Hacking Workshop Cont. |
 | 15:05 - 15:50 | Red & Blue teams threat modeling |
 | 15:50 - 16:00 | Conclusion |
 | 16:00 - 18:00 | Pizza After Party |
