@@ -7,9 +7,10 @@ site_description: >-
 
 edit_uri: edit/main/docs
 copyright: >
-  Copyright &copy; Equinor ASA
+  Copyright &copy; Equinor ASA (<a href="https://appsec.equinor.com/about/privacy/" target="_blank">Privacy Policy</a>)
 theme:
   name: material
+  custom_dir: overrides/
   logo: assets/icons/appsec-icon-white.svg
   favicon: assets/icons/appsec-iconenergyred.svg
   palette:
@@ -56,3 +57,5 @@ plugins:
     - awesome-pages
     - git-revision-date-localized:
         type: date
+
+
