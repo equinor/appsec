@@ -18,4 +18,6 @@ To check all events, and add them to your own calendar, go to your outlook calen
 
 ![Security Champion Calendar](./add_SecurityChampions_calendar.png)
 
+_Note: This option might not be available on Mac, if that is your case, another option is to use outlook through connectit to add the events._   
+
 You can also find a calendar of events on [SharePoint](https://statoilsrm.sharepoint.com/sites/securitychampion9).
