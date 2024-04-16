@@ -72,6 +72,11 @@ Setting your user name for a global scope would look like this:
 git config --global user.name "Peter Pan"
 ```
 
+!!! tip Showing location of all git config
+
+    Using the command `git config --list --show-origin` will expand all git config across the different levels.
+
+
 ### Recommended generic basic config
 
 This section contains the recommended basic generic configuration for Git.
@@ -129,11 +134,11 @@ Example; Creating a SSH key for the Github user `larskaare`
 ssh-keygen -t ed25519 -f ~/.ssh/github_larskaare_1 -C "Github SSH auth key for machine 1"
 ```
 
-Two files are created, one named `github_larskaare_1` and one named `github_larskaare_1.pub`. The file with the `.pub` extension contains the public part of the key.
+You will be asked "Enter passphrase (empty for no passphrase)", we strongly recommend using a passphrase!. Two files are created, one named `github_larskaare_1` and one named `github_larskaare_1.pub`. The file with the `.pub` extension contains the public part of the key. The file `github_larskaare_1` contains the private part of the key which should be protected and never shared.
 
 !!! Tip "Re-using keys?"
 
-    We advice on creating separate SSH keys for separate machines and devices and not to re-use the same key on them all.
+    We advice on creating separate SSH keys for separate machines and devices and not to re-use the same key on them all. This is good security practice in case of compromise - don't have one key to the whole kingdom. A more fine grained approach will also be good when keys are to be revoked or updated. You could also consider using different keys for professional versus personal usage.
 
 !!! Tip "Passphrases"
 
@@ -143,7 +148,7 @@ Two files are created, one named `github_larskaare_1` and one named `github_lars
 
 Adding the generated SSH key to the `ssh-agent` gives you a secure repository for your private keys's passphrases. Adding keys and passphrases to the key agent eliminates the need to repeatedly enter the passphrase.
 
-Follow the [official documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent) of and add the SSH key to the ssh-agent. Be aware of the operating system selector at the top of the page - it will give you instructions for **Mac**, **Windows** and **Linux**.
+Follow the [official documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent) of and add the SSH key to the ssh-agent. Be aware of the operating system selector at the top of the page - it will give you instructions for **Mac**, **Windows** and **Linux**. The sections below covers a minimal set-up of how to add the SSH key to the agent. The official version has more details - you can follow either. 
 
 #### Adding SSH config
 
@@ -184,7 +189,7 @@ We now have a SSH key that we can use when communicating with github.com. To be 
 cat ~/.ssh/github_larskaare_1.pub
 ```
 
-- Copy the public key and add it as a new SSH Authentication key to your Github profile at [https://github.com/settings/keys](https://github.com/settings/keys)
+- Copy the public key (algorithm and key) and add it as a new SSH Authentication key to your Github profile at [https://github.com/settings/keys](https://github.com/settings/keys)
 
 - Verify that Github accepts the key, test the connection
 
@@ -255,10 +260,10 @@ We recommend the following settings:
 #### [Password and authentication](https://github.com/settings/security)
 
 - Enable Two-Factor authentication
-  - This is **not** the Two-Factor for your Equinor account, this is for your account at github.com
+    - This is **not** the Two-Factor for your Equinor account, this is for your account at github.com
 - Enable multiple Two-Factor methods
-  - Authenticator App
-  - SMS/Text
+    - Authenticator App
+    - SMS/Text
 - Preferred 2FA method should be Authenticator app
 - (Experiment with PassKeys or Security Keys)
 - Extract "Recovery codes" and store in your password manager
@@ -267,27 +272,27 @@ We recommend the following settings:
 
 - Enable GPG verification
 - Validate the "Editor preference"
-  - "Visual Studio Code for the Web" is a good option for many
+    - "Visual Studio Code for the Web" is a good option for many
 - Validate "Default retention period"
-  - 14 days may be a good period (Codespaces incurs storage charges)
+    - 14 days may be a good period (Codespaces incurs storage charges)
 - Region
-  - Set manually to "Europe West"
+    - Set manually to "Europe West"
 
 #### [Code security an analysis](https://github.com/settings/security_analysis)
 
 - "Push protection for yourself" should be enabled
-  - Block push with supported secrets against public repos
+     - Block push with supported secrets against public repos
 
 #### [Applications](https://github.com/settings/installations)
 
 - On a regular basis (at least once a year) - review apps that you have authorised to act on your behalf
 - Github Apps
-  - Limit access to specific repos
-  - Uninstall apps that not are in use
+    - Limit access to specific repos
+    - Uninstall apps that not are in use
 - Authorized OAuth Apps
-  - Review permissions
-  - Review organization access
-  - Revoke access if not in use
+    - Review permissions
+    - Review organization access
+    - Revoke access if not in use
   
 #### [Security log](https://github.com/settings/security-log)
 
@@ -296,11 +301,20 @@ We recommend the following settings:
 #### [Developer settings](https://github.com/settings/developers)
 
 - Review Personal access tokens (PAT)
-  - Review scope
-  - Review organizational access
-  - Review repository access (fine grained)
-  - Review permissions (fine grained)
-  - Rotate token (maximum token life time should be 12 months)
-  - Delete if not in use
+    - Review scope
+    - Review organizational access
+    - Review repository access (fine grained)
+    - Review permissions (fine grained)
+    - Rotate token (maximum token life time should be 12 months)
+    - Delete if not in use
 
 Fine-grained tokens are in beta (March 2024). Don't use beta features for anything production.
+
+## What's next
+
+If you have reached this far - the next natural steps would be to continue the journey with [getting your git commits signed](git-signed-commits.md)
+
+## External resources
+
+- [Git downloads](https://git-scm.com/downloads)
+- The [Github Cli](https://docs.github.com/en/github-cli) can be used as a [credential helper](https://cli.github.com/manual/gh_auth_setup-git) for git.

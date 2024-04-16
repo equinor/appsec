@@ -59,7 +59,7 @@ To create a new SSH key for signing you can use the following command (alter the
 ssh-keygen -t ed25519 -f ~/.ssh/git_ssh_signing_key_1 -C "Created on <date>, for larskaare on github.com"
 ```
 
-This will create a SSH signing key and add a comment on date and purpose. Add a passphrase to the key. Success full key generation will output the key fingerprint and a randomart image (randomart is supposed to be a visualisation making it easier to validate keys - and identify changes)
+This will create a SSH signing key and add a comment on date and purpose. Add a passphrase to the key. Success full key generation will output the key fingerprint and a randomart image (randomart is supposed to be a visualisation making it easier to validate keys - and identify changes)(You can also find more info on SSH keys on our [git guideline](git-github.md#generate-a-new-ssh-key))
 
 Add the new key to the ssh-agent
 
@@ -73,7 +73,7 @@ We will configure the git global settings to use the new SSH key for signing com
 
 ```shell
 git config --global gpg.format ssh
-git config --global user.signingkey $HOME/.ssh/git_ssh_signing_key_1.pub
+git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
 git config --global commit.gpgsign true
 ```
 
@@ -87,12 +87,12 @@ To verify that commits are signed locally you can use the following command:
 git log --show-signature
 ```
 
-When you run this command on a newly configured system you may get an error message like `error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification` In order for git to verify signatures locally you need to add the public keys that are used to sign to a file that Git will use.
+When you run this command on a newly configured system you may get an error message like `error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification`. *This error will easily be overlooked in the wall of text from the log*. In order for git to verify signatures locally you need to add the public keys that are used to sign to a file that Git will use.
 
 We will create the allowed_signers file. It typically has the format like "signer email" "key-type" "key-body". The key in question is the public key of the SSH key we use to sign our commits.
 
 ```shell
-git config --global gpg.ssh.allowedSignersFile $HOME/.ssh/allowed_signers
+git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
 echo $(git config --get user.email) \
      $(cat ~/.ssh/git_ssh_signing_key_1.pub) \
      | awk '{print $1,$2,$3}' >> ~/.ssh/allowed_signers
@@ -118,6 +118,10 @@ Use the verbose parameter to get more information:
 ```shell
 git verify-commit -v HEAD
 ```
+
+!!! tip Git can only verify known keys
+
+    You may have noticed that your local git only will show a good signature for your own signed commits. For your local git to show a good signature for other contributing team members you will have to add their public key to your local allowed_signers file. The status on github.com will be correct as it hopefully knows the public keys for the signers.
 
 !!! tip Sign git tags
 
@@ -170,3 +174,8 @@ We recommend the following **minimum** protection for important branches:
     - UnCheck "Allow force pushes"
     - UnCheck "Allow deletions"
   
+## External resources
+
+- We disagree with the premise of signed git commits not being useful in the [Should We Sign Git Commits? Probably Not!](https://medium.com/@michael.vittrup.larsen/should-we-sign-git-commits-probably-not-c09ad3c18393). Using git signatures are useful, but it's a not a silver bullet. The article contains relevant reflections advocating for focusing on building a foundation of trust through the review and approval of pull requests by multiple trusted individuals and the importance of a collective scrutiny process. **This we fully support**
+- We are monitoring the [Git Sign project](https://docs.sigstore.dev/signing/gitsign/) of Sigstore. It contains a very interesting approach to the trust chain.
+ 
