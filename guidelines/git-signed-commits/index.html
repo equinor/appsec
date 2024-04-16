@@ -12,13 +12,13 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/security-champion/useful-links/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/git-signed-commits/">
       
       
-        <link rel="prev" href="../security_champion_activities/">
+        <link rel="prev" href="../git-github/">
       
       
-        <link rel="next" href="../events/">
+        <link rel="next" href="../postman/">
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Useful links - Equinor AppSec</title>
+        <title>Signed git commits - Equinor AppSec</title>
       
     
     
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#useful-links" class="md-skip">
+        <a href="#signed-git-commits" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Useful links
+              Signed git commits
             
           </span>
         </div>
@@ -255,11 +255,13 @@ cfg: { // Application Insights Configuration
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -275,13 +277,11 @@ cfg: { // Application Insights Configuration
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -442,6 +442,8 @@ cfg: { // Application Insights Configuration
       
   
   
+    
+  
   
   
     
@@ -468,21 +470,22 @@ cfg: { // Application Insights Configuration
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -493,13 +496,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -515,7 +518,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -536,7 +539,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/gh-actions-runners/" class="md-nav__link">
+      <a href="../gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -557,7 +560,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/git-github/" class="md-nav__link">
+      <a href="../git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -575,10 +578,30 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guidelines/git-signed-commits/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Signed git commits
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -587,6 +610,128 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLDR;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signing-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-local-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure your local development environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure your local development environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-ssh-key-for-signing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a SSH key for signing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-git-to-use-the-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Git to use the SSH key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examining-the-git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examining the git log
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Github
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-public-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding public keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch protection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      External resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,7 +744,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/postman/" class="md-nav__link">
+      <a href="../postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,7 +765,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,7 +830,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -718,8 +863,6 @@ cfg: { // Application Insights Configuration
       
   
   
-    
-  
   
   
     
@@ -750,22 +893,21 @@ cfg: { // Application Insights Configuration
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -776,13 +918,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Security champion
@@ -798,7 +940,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../1-welcome/" class="md-nav__link">
+      <a href="../../security-champion/1-welcome/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -819,7 +961,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../2-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/2-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -840,7 +982,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../../security-champion/about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -861,7 +1003,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../security-champion/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -882,7 +1024,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../getting-in-touch/" class="md-nav__link">
+      <a href="../../security-champion/getting-in-touch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -903,7 +1045,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../security_champion_activities/" class="md-nav__link">
+      <a href="../../security-champion/security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -921,19 +1063,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../security-champion/useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -942,7 +1075,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
     </li>
   
 
@@ -984,7 +1116,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1063,7 +1195,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1216,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1157,7 +1289,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1230,7 +1362,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2024/1-sc-meetup-3/" class="md-nav__link">
+      <a href="../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1290,7 +1422,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../success-stories/" class="md-nav__link ">
+            <a href="../../security-champion/success-stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2386,6 +2518,116 @@ cfg: { // Application Insights Configuration
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLDR;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#signing-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-your-local-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure your local development environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure your local development environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-ssh-key-for-signing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a SSH key for signing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-git-to-use-the-ssh-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Git to use the SSH key
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examining-the-git-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examining the git log
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Github
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-public-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding public keys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch protection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      External resources
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2402,15 +2644,190 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="useful-links">Useful links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h1>
-<p>These are some relevant resources for security champions</p>
+<h1 id="signed-git-commits">Signed git commits<a class="headerlink" href="#signed-git-commits" title="Permanent link">&para;</a></h1>
+<p>The code from our software configuration management system (SCM) is the starting point for a lot of secure coding practices. Signed Git commits are an essential security practice which provides a layer of verification that helps mitigate several threats. Some of these threats are:</p>
 <ul>
-<li><a href="https://statoilsrm.sharepoint.com/sites/securitychampion9">Sharepoint site for security champions</a></li>
-<li><a href="https://equinor.slack.com/archives/CMM6FSW5V">#appsec on Equinor slack</a></li>
-<li><a href="https://security-champions-no.slack.com">Security Champions Norge</a> Slack channel - contact the appsec team to get an invite.</li>
-<li><a href="https://sikkerhet.nav.no/docs/security-champion-rolle/">Security champions @ NAV</a></li>
-<li><a href="https://owasp.org/www-project-security-culture/stable/4-Security_Champions/">OWASP security champions</a>
-OWASP information and recommendations about security champions networks</li>
+<li>
+<p><strong>Impersonation</strong>: Signed commits use keys to sign the work. By doing so, they certify that the commit was made by the claimed individual. This helps prevent an attacker from impersonating a developer and submitting malicious code.</p>
+</li>
+<li>
+<p><strong>Code tampering</strong>: Signing commits ensures the integrity of the code from the time it was committed. If the code is altered in any way after it was signed, the signature will no longer be valid. This helps protect against unauthorized code modifications, which could introduce vulnerabilities or malicious code.</p>
+</li>
+<li>
+<p><strong>Replay attacks</strong>: Signed commits can help mitigate replay attacks where an attacker attempts to re-submit a legitimate commit to a different context, potentially causing unintended consequences. The signature verifies not just the content of the commit but also its context within the repository history.</p>
+</li>
+<li>
+<p><strong>Long-term repository integrity</strong>: By using signed commits, organizations can ensure the long-term integrity of their codebase. This is crucial for auditing and tracking the provenance of code changes, making it easier to trace back and verify the authenticity of commits over time.</p>
+</li>
+<li>
+<p><strong>Increased trust and compliance</strong>: For projects that require strict compliance and governance standards, signed commits provide a mechanism to enforce these policies. They increase trust among contributors and users by ensuring that all changes are authenticated and authorized by the rightful committers.</p>
+</li>
+</ul>
+<h2 id="tldr">TLDR;<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sign all your Git commits</li>
+<li>Use SSH, with a passphrase protected private key, to sign your Git commits</li>
+<li>Use separate SSH keys for signing and authentication</li>
+<li>Use branch protection and required signed Git commits</li>
+</ul>
+<h2 id="signing-methods">Signing methods<a class="headerlink" href="#signing-methods" title="Permanent link">&para;</a></h2>
+<p>The official <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification">github documentation</a> on signature verification shows that commits can be signed using GPG, SSH or S/MIME. The 3 different methods have their pros and cons.</p>
+<table>
+<thead>
+<tr>
+<th>Feature/Aspect</th>
+<th>SSH Signing</th>
+<th>GPG Signing</th>
+<th>S/MIME Signing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Basic Mechanism</strong></td>
+<td>Uses SSH keys for both authentication and signing.</td>
+<td>Utilizes a public-private key pair specifically for signing.</td>
+<td>Uses certificates issued by a Certificate Authority (CA).</td>
+</tr>
+<tr>
+<td><strong>Identity Verification</strong></td>
+<td>SSH public keys are used to verify the signature.</td>
+<td>Verification is based on a web of trust or direct key sharing.</td>
+<td>Relies on certificates verified and issued by trusted CAs.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure</strong></td>
+<td>Requires SSH key setup; already needed for repository access.</td>
+<td>Requires GPG software and management of key pairs.</td>
+<td>Requires obtaining and managing a certificate from a CA. Potential complex PKI</td>
+</tr>
+<tr>
+<td><strong>Ease of Setup</strong></td>
+<td>Simple for users already using SSH keys for Git operations.</td>
+<td>Can be complex due to key generation, management, and sharing.</td>
+<td>Varies; obtaining a certificate can be straightforward or complex depending on the provider.</td>
+</tr>
+<tr>
+<td><strong>Cross-platform Support</strong></td>
+<td>Broad support across various platforms and Git tools.</td>
+<td>Well-supported, with widespread integration in Git tools.</td>
+<td>Support varies; some tools may not support S/MIME directly.</td>
+</tr>
+<tr>
+<td><strong>Pros</strong></td>
+<td>- Simplifies workflow by using the same keys for authentication and signing. <br> - Integrated into SSH, which is commonly used for secure Git operations.</td>
+<td>- Decentralized and flexible, with a variety of algorithms and key sizes. <br> - Well-established in the open-source community.</td>
+<td>- Trust model is straightforward, based on established CAs. <br> - May align with existing certificate-based security practices (e.g., email).</td>
+</tr>
+<tr>
+<td><strong>Cons</strong></td>
+<td>- Primarily verifies the commit was pushed by an authenticated user, not necessarily the commit's author. <br> - SSH key management is crucial; compromised keys pose a risk.</td>
+<td>- Key management and the web of trust model can be complex. <br> - Requires active key maintenance (revocation, expiration).</td>
+<td>- Dependent on third-party CAs for issuance and trust. <br> - Certificates have expiration dates and may incur costs.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note signing method">
+<p class="admonition-title">Note</p>
+<p>We recommend using self-signed SSH keys for signing your git commits (In the future we may switch to a certificate based approach)</p>
+</div>
+<h2 id="configure-your-local-development-environment">Configure your local development environment<a class="headerlink" href="#configure-your-local-development-environment" title="Permanent link">&para;</a></h2>
+<p>For this guideline our reference is using Git from the command line. </p>
+<p>We assume that Git and SSH is installed on your system. </p>
+<p>We assume that you are using SSH to authenticate Git with github.com. Consult our <a href="../git-github/">guideline</a> for more information on this topic.</p>
+<p>The Github documentation on <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification">SSH commit signature verification</a> is a good source for detailed information.</p>
+<h3 id="adding-a-ssh-key-for-signing">Adding a SSH key for signing<a class="headerlink" href="#adding-a-ssh-key-for-signing" title="Permanent link">&para;</a></h3>
+<div class="admonition note use multiple ssh keys">
+<p class="admonition-title">Note</p>
+<p>We recommend using different SSH keys for authentication and signing. This may add some extra complexity and it may provide a more robust set-up with looser coupling of key components of the SDLC.</p>
+</div>
+<p>To create a new SSH key for signing you can use the following command (alter the date manually):</p>
+<pre><code class="language-shell">ssh-keygen -t ed25519 -f ~/.ssh/git_ssh_signing_key_1 -C &quot;Created on &lt;date&gt;, for larskaare on github.com&quot;
+</code></pre>
+<p>This will create a SSH signing key and add a comment on date and purpose. Add a passphrase to the key. Success full key generation will output the key fingerprint and a randomart image (randomart is supposed to be a visualisation making it easier to validate keys - and identify changes)(You can also find more info on SSH keys on our <a href="../git-github/#generate-a-new-ssh-key">git guideline</a>)</p>
+<p>Add the new key to the ssh-agent</p>
+<pre><code class="language-shell">ssh-add ~/.ssh/git_ssh_signing_key_1
+</code></pre>
+<h3 id="configure-git-to-use-the-ssh-key"><a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key">Configure Git</a> to use the SSH key<a class="headerlink" href="#configure-git-to-use-the-ssh-key" title="Permanent link">&para;</a></h3>
+<p>We will configure the git global settings to use the new SSH key for signing commits locally. Examples assume you created the key as defined above.</p>
+<pre><code class="language-shell">git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
+git config --global commit.gpgsign true
+</code></pre>
+<p>These lines will tell git to use SSH for signing commit, tell git where to find the key that should be used and then tell git to always sign commits. If you do not add this last line you will specifically have to add the <code>-S</code> parameter for each commit you can to sign.</p>
+<h3 id="examining-the-git-log">Examining the git log<a class="headerlink" href="#examining-the-git-log" title="Permanent link">&para;</a></h3>
+<p>To verify that commits are signed locally you can use the following command:</p>
+<pre><code class="language-shell">git log --show-signature
+</code></pre>
+<p>When you run this command on a newly configured system you may get an error message like <code>error: gpg.ssh.allowedSignersFile needs to be configured and exist for ssh signature verification</code>. <em>This error will easily be overlooked in the wall of text from the log</em>. In order for git to verify signatures locally you need to add the public keys that are used to sign to a file that Git will use.</p>
+<p>We will create the allowed_signers file. It typically has the format like "signer email" "key-type" "key-body". The key in question is the public key of the SSH key we use to sign our commits.</p>
+<pre><code class="language-shell">git config --global gpg.ssh.allowedSignersFile ~/.ssh/allowed_signers
+echo $(git config --get user.email) \
+     $(cat ~/.ssh/git_ssh_signing_key_1.pub) \
+     | awk '{print $1,$2,$3}' &gt;&gt; ~/.ssh/allowed_signers
+</code></pre>
+<ul>
+<li>The first line tells Git which file we are going to use for allowed_signers</li>
+<li>The second line emits the information on our key and adds it to the allowed_signers file. The file is created if it does not exist</li>
+</ul>
+<p>When this is done you can view the git log and verify the signature.</p>
+<pre><code class="language-shell">git log --show-signature
+</code></pre>
+<p>The <code>git verify-commit</code> options is also available. To verify the commit on HEAD you can use the following command:</p>
+<pre><code class="language-shell">git verify-commit HEAD
+</code></pre>
+<p>Use the verbose parameter to get more information:</p>
+<pre><code class="language-shell">git verify-commit -v HEAD
+</code></pre>
+<div class="admonition tip git can only verify known keys">
+<p class="admonition-title">Tip</p>
+<p>You may have noticed that your local git only will show a good signature for your own signed commits. For your local git to show a good signature for other contributing team members you will have to add their public key to your local allowed_signers file. The status on github.com will be correct as it hopefully knows the public keys for the signers.</p>
+</div>
+<div class="admonition tip sign git tags">
+<p class="admonition-title">Tip</p>
+<p>We have shown how to sign git commits. You can also sign git tags!</p>
+</div>
+<h2 id="configure-github">Configure Github<a class="headerlink" href="#configure-github" title="Permanent link">&para;</a></h2>
+<p>At this stage in the guideline we are able to sign and verify the signature of locally committed changes. If you push your changes to github.com they will get the <code>Unverified</code> status. This indicate that Github has found a signature in the commit but it is not able to verify it. You can find more detailed information on the Github docs on <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification">About commit signature verification</a></p>
+<p>This makes sense. Github can not verify our signature, it does not have our public key. Telling Github about the public key we used to sign our commit is the next step.</p>
+<h3 id="adding-public-keys">Adding public keys<a class="headerlink" href="#adding-public-keys" title="Permanent link">&para;</a></h3>
+<p>We will add the public part of our SSH key to github.com.</p>
+<ul>
+<li>Print the public part of the key</li>
+</ul>
+<pre><code class="language-shell">cat ~/.ssh/git_ssh_signing_key_1.pub
+</code></pre>
+<ul>
+<li>Copy the public key and add it as a new <a href="https://github.com/settings/ssh/new">Signing key</a> to your profile on github.com. Provide a proper title. Key type must be "Signing Key".</li>
+</ul>
+<p>If you now go back and look at the commits on github.com, those that were signed with the new key should have status <code>Verified</code></p>
+<p>If you select the <code>Verified</code> badge you will get information on the signer and the fingerprint of the public key that was used. You can find the finger print by <a href="https://github.com/settings/keys">looking at the key</a> on your Github profile or by running ssh-keygen with the option to generate fingerprint locally:</p>
+<pre><code class="language-shell">ssh-keygen -lf ~/.ssh/git_ssh_signing_key_1
+</code></pre>
+<div class="admonition tip vigilant mode">
+<p class="admonition-title">Tip</p>
+<p>Explore Github's <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits#about-vigilant-mode">Vigilant Mode</a> It should increase the trust level of signed commits yet another level.</p>
+</div>
+<h3 id="branch-protection">Branch protection<a class="headerlink" href="#branch-protection" title="Permanent link">&para;</a></h3>
+<p>We recommend that you protect important branches with branch protection rules on. This is a feature of Github that requires a Github Team or Github enterprise account.</p>
+<p>The official documentation can be found in <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches">Managing protected branches</a></p>
+<p>We recommend the following <strong>minimum</strong> protection for important branches:</p>
+<ul>
+<li>Protect matching branches<ul>
+<li>Check "Require a pull request before merging" </li>
+<li>Check "<strong>Require signed commits</strong>"</li>
+<li>Check "Do not allow bypassing the above settings"</li>
+</ul>
+</li>
+<li>Rules applied to everyone including administrators<ul>
+<li>UnCheck "Allow force pushes"</li>
+<li>UnCheck "Allow deletions"</li>
+</ul>
+</li>
+</ul>
+<h2 id="external-resources">External resources<a class="headerlink" href="#external-resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>We disagree with the premise of signed git commits not being useful in the <a href="https://medium.com/@michael.vittrup.larsen/should-we-sign-git-commits-probably-not-c09ad3c18393">Should We Sign Git Commits? Probably Not!</a>. Using git signatures are useful, but it's a not a silver bullet. The article contains relevant reflections advocating for focusing on building a foundation of trust through the review and approval of pull requests by multiple trusted individuals and the importance of a collective scrutiny process. <strong>This we fully support</strong></li>
+<li>We are monitoring the <a href="https://docs.sigstore.dev/signing/gitsign/">Git Sign project</a> of Sigstore. It contains a very interesting approach to the trust chain.</li>
 </ul>
 
 
@@ -2432,7 +2849,7 @@ OWASP information and recommendations about security champions networks</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2024</span>
   </span>
 
     
