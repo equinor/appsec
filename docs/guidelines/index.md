@@ -12,3 +12,5 @@ This section contains guidelines relevant anyone writing code in Equinor.
 - [Postman](postman.md)
 - [Authentication and Authorization](authn-authz.md)
 - [Github Actions and Self-Hosted Runners](gh-actions-runners.md)
+- [Git and Github](git-github.md)
+- [Signed git commits](git-signed-commits.md)
