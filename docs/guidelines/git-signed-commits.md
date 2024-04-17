@@ -10,7 +10,7 @@ The code from our software configuration management system (SCM) is the starting
 
 - **Long-term repository integrity**: By using signed commits, organizations can ensure the long-term integrity of their codebase. This is crucial for auditing and tracking the provenance of code changes, making it easier to trace back and verify the authenticity of commits over time.
 
-- **Increased trust and compliance**: For projects that require strict compliance and governance standards, signed commits provide a mechanism to enforce these policies. They increase trust among contributors and users by ensuring that all changes are authenticated and authorized by the rightful committers.
+- **Increased trust and compliance**: For projects that require strict compliance and governance standards, signed commits provide a mechanism to enforce such policies. They increase trust among contributors and users by ensuring that all changes are authenticated and authorized by the rightful committers.
 
 ## TLDR;
 
@@ -21,7 +21,7 @@ The code from our software configuration management system (SCM) is the starting
 
 ## Signing methods
 
-The official [github documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) on signature verification shows that commits can be signed using GPG, SSH or S/MIME. The 3 different methods have their pros and cons.
+The official [GitHub documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification) on signature verification shows that commits can be signed using GPG, SSH or S/MIME. The 3 different methods have their pros and cons.
 
 | Feature/Aspect             | SSH Signing                                                | GPG Signing                                                    | S/MIME Signing                                               |
 |----------------------------|------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------|
@@ -45,7 +45,7 @@ We assume that Git and SSH is installed on your system.
 
 We assume that you are using SSH to authenticate Git with github.com. Consult our [guideline](git-github.md) for more information on this topic.
 
-The Github documentation on [SSH commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification) is a good source for detailed information.
+The GitHub documentation on [SSH commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification#ssh-commit-signature-verification) is a good source for detailed information.
 
 ### Adding a SSH key for signing
 
