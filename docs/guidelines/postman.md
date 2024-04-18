@@ -38,5 +38,3 @@ Following the best practices will mitigate some of those concerns.
 - [Postman Security & Trust Portal](https://security.postman.com/)
 - [Security | Postman Trust Center](https://www.postman.com/trust/security/)
 - [Announcement to new API client](https://blog.postman.com/announcing-new-lightweight-postman-api-client/)
-
-
