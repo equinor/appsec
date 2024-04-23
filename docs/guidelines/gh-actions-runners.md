@@ -1,4 +1,4 @@
-# GitHub Actions and Self-Hosted Runners Guideline
+# GitHub Actions and Self-Hosted Runners
 
 The scope of this guideline is to provide generic security advice for GitHub Actions and specific security advice for using self-hosted runners.
 

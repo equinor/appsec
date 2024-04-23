@@ -1,4 +1,4 @@
-# Authentication and Authorization guidelines
+# Authentication and Authorization
 
 Authentication and Authorization are complex topics. Things are often very context specific. Answers are often not straight forward, we often have more than one option. In the sections below we will give advice on protocols, tools and principle we find helpful.
 

@@ -1,4 +1,4 @@
-# Signed git commits
+# Signed commits
 
 The code from our software configuration management system (SCM) is the starting point for a lot of secure coding practices. Signed Git commits are an essential security practice which provides a layer of verification that helps mitigate several threats. Some of these threats are:
 
