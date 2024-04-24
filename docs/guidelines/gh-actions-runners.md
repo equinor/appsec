@@ -19,9 +19,9 @@ When using GitHub Actions, it is good practice to:
         - _Fork pull request workflows from outside collaborators_ (public repos)
             - The default should be "Require approval for all outside collaborators"
         - _Fork pull request workflows_ (non-public repos)
-            - "Run workflows from fork pull requests" should not be checked. Change only i you have a good understanding og the risks involved.
+            - "Run workflows from fork pull requests" should not be checked. Change only if you have a good understanding of the risks involved.
   - All external actions that you plan to use should be examined/audited. This could include examining the repos and using services like [StepSecurity's Action Advisor](https://app.stepsecurity.io/action-advisor).
-- Pin actions to the full length commit-hash (example "uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 #v4.1.1). You can pin to a tag (version) if you trust the creator (Example: "uses: actions/checkout@v4.1.1")
+- Pin actions to the full length commit-hash (example "uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 #v4.1.1"). You can pin to a tag (version) if you trust the creator (Example: "uses: actions/checkout@v4.1.1")
 - Use OpenID Connect for access to Azure Resources ([Configuring OpenID Connect in Azure](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-azure), [MS Workload Identity Federation](https://learn.microsoft.com/en-us/entra/workload-id/workload-identity-federation))
 - Manage secrets securely; they should only be available to workflows and branches where needed
     - Use **environments** to protect code and secrets [Github Doc](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment)
