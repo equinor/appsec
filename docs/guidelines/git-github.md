@@ -29,7 +29,7 @@ The official [Git documentation](https://git-scm.com/doc) is a good source for a
 
 ### How Git manages config
 
-Git is dependent on proper configuration to work. Configuration can be read from the command line (using the `-c` option), environment variables or files. The [official guide]([authoritative](https://git-scm.com/docs/git-config#_configuration)) provides the details. 
+Git is dependent on proper configuration to work. Configuration can be read from the command line (using the `-c` option), environment variables or files. The [official guide](https://git-scm.com/docs/git-config#_configuration) provides the details. 
 
 We usually store Git config in files. Git will read config from multiple locations depending on their availability. The files are read in the order shown below, the `last value read` will take precedence over values read earlier.
 
