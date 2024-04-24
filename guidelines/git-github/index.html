@@ -2941,21 +2941,21 @@ cfg: { // Application Insights Configuration
 </div>
 <div class="admonition info">
 <p class="admonition-title">The SCM Policy</p>
-<p><a href="https://developer.equinor.com/">The Equinor Developer Portal</a> contain our <a href="https://developer.equinor.com/governance/scm-policy/">Source Code Management System Policy</a>. Please make sure you are familiar with the content.</p>
+<p><a href="https://developer.equinor.com/">The Equinor Developer Portal</a> contains our <a href="https://developer.equinor.com/governance/scm-policy/">Source Code Management System Policy</a>. Please make sure you are familiar with the content.</p>
 </div>
 <h2 id="tldr">TLDR;<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Configure your local Git with proper name and email. Use your full name with the profile. Use privacy options for hiding your github.com primary email.</li>
 <li>For authentication and communication with github.com, use Git with SSH and passphrase protected private keys.</li>
 <li>Use separate SSH keys for different client devices.</li>
-<li>Book a yearly re-occurring event with yourself to rotate SSH keys.</li>
+<li>Book a yearly reccurring event with yourself to rotate SSH keys.</li>
 </ul>
 <h2 id="git">Git<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
 <p>For this guideline we use Git from the command line. Be aware, there are many tools that hide the internal mechanics of Git within the tool. For these tools most settings are defined within the tool itself.</p>
 <p>We assume that <code>git</code> and <code>ssh</code> are installed on your system. We do not cover the installation process besides mentioning the fact that git and ssh like any other piece of software must be kept up-to-date.</p>
 <p>The official <a href="https://git-scm.com/doc">Git documentation</a> is a good source for authoritative answers and deep dives.</p>
 <h3 id="how-git-manages-config">How Git manages config<a class="headerlink" href="#how-git-manages-config" title="Permanent link">&para;</a></h3>
-<p>Git is dependent on proper configuration to work. Configuration can be read from the command line (using the <code>-c</code> option), environment variables or files. The <a href="[authoriative](https://git-scm.com/docs/git-config#_configuration)">official guide</a> provides the details. </p>
+<p>Git is dependent on proper configuration to work. Configuration can be read from the command line (using the <code>-c</code> option), environment variables or files. The <a href="https://git-scm.com/docs/git-config#_configuration">official guide</a> provides the details. </p>
 <p>We usually store Git config in files. Git will read config from multiple locations depending on their availability. The files are read in the order shown below, the <code>last value read</code> will take precedence over values read earlier.</p>
 <ol>
 <li>System config (usually <code>/etc/gitconfig</code>)</li>
@@ -3257,7 +3257,7 @@ origin  git@github.com:equinor/appsec.git (push)
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2024</span>
   </span>
 
     
