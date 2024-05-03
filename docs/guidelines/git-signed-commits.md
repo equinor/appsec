@@ -30,8 +30,10 @@ The official [GitHub documentation](https://docs.github.com/en/authentication/ma
 | **Infrastructure**         | Requires SSH key setup; already needed for repository access. | Requires GPG software and management of key pairs.             | Requires obtaining and managing a certificate from a CA. Potential complex PKI     |
 | **Ease of Setup**          | Simple for users already using SSH keys for Git operations.  | Can be complex due to key generation, management, and sharing. | Varies; obtaining a certificate can be straightforward or complex depending on the provider. |
 | **Cross-platform Support** | Broad support across various platforms and Git tools.        | Well-supported, with widespread integration in Git tools.      | Support varies; some tools may not support S/MIME directly.   |
-| **Pros**                   | - Simplifies workflow by using the same keys for authentication and signing. <br> - Integrated into SSH, which is commonly used for secure Git operations. | - Decentralized and flexible, with a variety of algorithms and key sizes. <br> - Well-established in the open-source community. | - Trust model is straightforward, based on established CAs. <br> - May align with existing certificate-based security practices (e.g., email). |
+| **Pros**                   | - Simplifies workflow by using the same keys for authentication and signing†. <br> - Integrated into SSH, which is commonly used for secure Git operations. | - Decentralized and flexible, with a variety of algorithms and key sizes. <br> - Well-established in the open-source community. | - Trust model is straightforward, based on established CAs. <br> - May align with existing certificate-based security practices (e.g., email). |
 | **Cons**                   | - Primarily verifies the commit was pushed by an authenticated user, not necessarily the commit's author. <br> - SSH key management is crucial; compromised keys pose a risk. | - Key management and the web of trust model can be complex. <br> - Requires active key maintenance (revocation, expiration). | - Dependent on third-party CAs for issuance and trust. <br> - Certificates have expiration dates and may incur costs. |
+
+† *while reusing the SSH key is a recognized advantage of SSH signing, we recommend against this practice, see below.*
 
 !!! Note Signing method
 
