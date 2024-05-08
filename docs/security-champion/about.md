@@ -16,9 +16,9 @@ The main communication channel for the community is [Slack](https://app.slack.co
 
 We have a weekly SecChampion morning coffee on wednesdays. You will find instructions on how to attend on the [event](./events/index.md) site.
 
-We plan to have a montly virtual event for the network with some presentations and deep dive into topics. Please reach out if you have something you are interested in sharing!
+We have a monthly virtual event for the network with some presentations and deep dive into topics. Please reach out if you have something you are interested in sharing!
 
-Of course we cannot build a community solely on virtual meetings, we need to see each other phsyically too! When we get the network up and running, we intend to have 1-2 physical gatherings for all Champions per year :handshake: :pizza:.
+Of course we cannot build a community solely on virtual meetings, we need to see each other physically too! When we get the network up and running, we intend to have 1-2 physical gatherings for all Champions per year :handshake: :pizza:.
 
 ## Responsibilities
 
