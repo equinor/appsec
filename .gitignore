@@ -6,3 +6,4 @@ venv/
 .venv/
 .dccache
 .DS_STORE
+./idea
