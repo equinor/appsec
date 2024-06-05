@@ -2,267 +2,267 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://equinor.github.io/appsec/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/privacy/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/authn-authz/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/gh-actions-runners/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/git-github/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/git-signed-commits/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/secret-scanning/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/guidelines/FAQ/pre-commit-faq/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/learning-material/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/security_requirements/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/security_testing/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/tools/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/resources/stories/meet_the_appsec_team/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/1-welcome/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/2-new_security_champion/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/3-offboarding/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/about/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/faq/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/getting-in-touch/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/security_champion_activities/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/useful-links/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/events/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/events/2022/1-sc-info-meeting/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/events/2022/sc-kickoff-agenda/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/events/2023/1-sc-meetup-2/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/events/2024/1-sc-meetup-3/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/success-stories/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/2-about-snyk/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/3-snyk_support/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/4-vulnerabilities/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/1-snyk_products/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/2-integrations/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/3-projects/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/4-scan_results/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/5-advanced/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/snyk/curriculum/6-faq/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/resources/threat_modelling/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/resources/zgamified/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/1-about/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/2-next-steps/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-explore/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-privacy/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-remote-tm/</loc>
-         <lastmod>2024-05-14</lastmod>
+         <lastmod>2024-06-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
