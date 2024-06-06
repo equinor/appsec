@@ -1,7 +1,15 @@
 # Postman
 
 !!! info
-    Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster.
+    Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster [🔗](https://www.postman.com/).
+
+## TLDR;
+- Postman announced a change in 2023 that makes it mainly "cloud only", meaning users must always have an account and being logged in¹
+- If needing an account, only use SSO
+- Be aware of the data classification on requests and responses 
+- Use Postman Vault for storing sensitive data during local development
+
+¹ For simple usage one can use the [Lightweight AP Client](#lightweight-api-client) without any account.
 
 ## Changes in 2023
 
@@ -15,14 +23,16 @@ Logging in with a user account enables most of the features within Postman, incl
 - Sharing and collaboration
 - **Automatic synchronization to the cloud / backup**
 
-However, the automatic synchronization to the cloud imposes both security and regulationary concerns. Here are the results of a _a simple_ Threat Model exercise:
+However, the automatic synchronization to the cloud imposes both security and regulationary concerns. Here are the results of _a simple_ Threat Model exercise:
 
 | Threat | Description | Mitigation |
 |---|---|---|
-|Information disclosure|The API being tested has sensitive data in the responses - could be `confidential` or `personal` data - which would automatically be uploaded to the cloud|Know what data classification the data in the **requests and responses** belongs to and if uncertain, try to avoid using Postman. When using automatic testing, ensure tests are being performed against a "synthetic" test environment|
+|Information disclosure|The API being tested has sensitive data in the responses - could be `confidential` or `personal` data - which would automatically be uploaded to the cloud|Understand the data classification of the information in requests and responses, and if unsure, avoid using Postman. When conducting automated testing, ensure that tests are executed against a "synthetic" test environment|
 |Account takeover / session hijacking|The account is breached and malicious actors can log in to Postman using your account|Only use SSO as there are protective and preventive measures in place to avoid/detect malicious actors logging in|
-|Data breach at Postman servers|A malicious actor has obtained data residing on the Postman servers|Avoid storing sensitive data that is being synchronized towards Postman servers|
-|Credentials stored unencrypted|Storing credentials in plain-text fields, in local plain-text files|Use proper solutions when handling credentials, like Postman Vault or use OAuth 2.0 authorization flows without client secrets (require user to log in through SSO)|
+|Data breach at Postman servers|A malicious actor has obtained data residing on the Postman servers|Refrain from storing sensitive data that is synchronized with Postman servers, and implement additional controls such as logging and auditing for API logins and secret rotation|
+|Credentials stored unencrypted|Storing credentials in (masked) plain-text fields, in local plain-text files can easily be extracted|Use proper solutions when handling credentials, like Postman Vault or use OAuth 2.0 authorization flows without client secrets (require user to log in through SSO)|
+|Sensitive data being exported|Anyone with access to the Workspace (collections) can export it, including any variables and enviornments within|Avoiding storing sensitive data in collections or environments|
+|Sensitive data exposed|Anyone with access to the Workspace can read environment variables, including masked secrets|Avoid storing sensitive data in environments and be aware of who can access the Workspace. Export your collections and see what data is exposed.|
 
 
 ## Best practices
@@ -31,7 +41,9 @@ Following the best practices will mitigate some of those concerns.
 
 ### SSO
 _Never_ use a private or non-Equinor account in an Equinor context.
-If needing the full feature set of Postman, request access through AccessIT and use SSO for login. 
+
+If needing the full feature set of Postman, request access through AccessIT and use SSO for login. Login either directly in the Desktop Client or [through the browser 🔗](https://identity.getpostman.com/enterprise/login).
+
 This ensures 
   - that the proper security checks on the account can be enforced (e.g. avoid logins from completely strange IPs, known malicious IP)
   - that access control is properly enforced
@@ -54,7 +66,7 @@ If sensitive data is being stored in the environment, you should set the type to
 [Postman Vault 🔗](https://learning.postman.com/docs/sending-requests/postman-vault/postman-vault-secrets/) is a way of handling sensitive data in Postman, without it leaving your local environment. Use the link to do a bit more of a deep-dive of the Postman Vault capabilities. Note that Postman Vault is only available when using the Desktop Client and will not function when using the Web Client (using Postman through the browser).
 If unsure on how to set up and open a vault, use the link above.
 
-The syntax to use a vault variable is quite similar to how other variables are refrenced, but with a prefix of "vault:". For example to reference a value called "MY_SECRET" stored in the Vault, one would reference it by `{{vault:MY_SECRET}}`.
+The syntax to use a vault variable is quite similar to how other variables are referenced, but with a prefix of "vault:". For example to reference a value called "MY_SECRET" stored in the Vault, one would reference it by `{{vault:MY_SECRET}}`.
 
 !!! important
     Note that you can't set or access vault secrets in scripts [🔗](https://learning.postman.com/docs/sending-requests/variables/variables/#defining-variables-in-scripts).
@@ -105,6 +117,8 @@ Some considerations on this workflow:
 
 
 ## Lightweight API Client
+It is possible to run Postman without logging in or needing an account (without applying for it in AccessIT), which Postman has coined "Lightweight API Client".
+
 The "old" lightweight API client, based on "Scratch Pad", has been discountinued and there is only a single official API Client that can be downloaded.
 After downloading and executing the file, there is a choice of `Or continue with the lightweight API client.` (as of April 2024, this represents itself as a small text below the login-button on starting the application). Running the application in this mode will ensure that everything stays local - nothing is being synchronized to the cloud. However, it will not be possible to use the full set of features Postman provides and the usage in this mode will be limited to simple manual API testing.
 
