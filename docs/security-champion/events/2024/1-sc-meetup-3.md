@@ -1,4 +1,4 @@
-# Security Champions Meetup 3
+# Security Champions Meetup #3
 
 We are excited to announce our upcoming security champion's meetup!
 
