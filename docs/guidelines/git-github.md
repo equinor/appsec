@@ -265,7 +265,13 @@ We recommend the following settings:
     - Authenticator App
     - SMS/Text
 - Preferred 2FA method should be Authenticator app
-- (Experiment with PassKeys or Security Keys)
+- Go passwordless using Biometric passkeys:  
+      1.  In GitHub settings, under Password and authentication in the Passkeys section, choose Add a passkey. 
+      2.  Click on add a passkey and then Windows Hello or external security key. 
+      3.  Scan your face and click OK. Name the passkey for example "Biometric login".
+      4.  Next time you log on GitHub, use "or sign in with a passkey".
+      5.  Click sign in with a passkey, scan your face and click OK.
+- Extract "Recovery codes" and store in your password manager
 - Extract "Recovery codes" and store in your password manager
 
 #### [Codespaces](https://github.com/settings/codespaces)
