@@ -12,13 +12,13 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/resources/security_testing/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/postman/">
       
       
-        <link rel="prev" href="../security_requirements/">
+        <link rel="prev" href="../git-signed-commits/">
       
       
-        <link rel="next" href="../tools/">
+        <link rel="next" href="../secret-scanning/">
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Security Testing - Equinor AppSec</title>
+        <title>Postman - Equinor AppSec</title>
       
     
     
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#security-testing" class="md-skip">
+        <a href="#postman" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Security Testing
+              Postman
             
           </span>
         </div>
@@ -255,11 +255,13 @@ cfg: { // Application Insights Configuration
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -335,13 +337,11 @@ cfg: { // Application Insights Configuration
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -442,6 +442,8 @@ cfg: { // Application Insights Configuration
       
   
   
+    
+  
   
   
     
@@ -468,21 +470,22 @@ cfg: { // Application Insights Configuration
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -493,13 +496,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -515,7 +518,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -536,7 +539,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/gh-actions-runners/" class="md-nav__link">
+      <a href="../gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -557,7 +560,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/git-github/" class="md-nav__link">
+      <a href="../git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -578,7 +581,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/git-signed-commits/" class="md-nav__link">
+      <a href="../git-signed-commits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -596,10 +599,30 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guidelines/postman/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Postman
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -608,6 +631,146 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TLDR;
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-in-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes in 2023
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-being-logged-in-with-an-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of being logged in with an user account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avoid-storing-sensitive-data-in-an-insecure-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoid storing sensitive data (in an insecure way)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postman-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postman Vault
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Postman Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-not-share-collections-uncritically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do not share collections (uncritically)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-right-access-on-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set right access on Workspace
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lightweight-api-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lightweight API Client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-to-read-more-on-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources to read more on Postman
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -620,7 +783,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,7 +848,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2064,8 +2227,6 @@ cfg: { // Application Insights Configuration
       
   
   
-    
-  
   
   
     
@@ -2088,22 +2249,21 @@ cfg: { // Application Insights Configuration
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../resources/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2114,13 +2274,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Resources
@@ -2136,7 +2296,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../learning-material/" class="md-nav__link">
+      <a href="../../resources/learning-material/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2157,7 +2317,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../security_requirements/" class="md-nav__link">
+      <a href="../../resources/security_requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2175,30 +2335,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Security Testing
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../resources/security_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2207,86 +2347,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#automated" class="md-nav__link">
-    <span class="md-ellipsis">
-      Automated
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Automated">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sast" class="md-nav__link">
-    <span class="md-ellipsis">
-      SAST ⬜
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dast" class="md-nav__link">
-    <span class="md-ellipsis">
-      DAST ⬛
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iast" class="md-nav__link">
-    <span class="md-ellipsis">
-      IAST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rasp" class="md-nav__link">
-    <span class="md-ellipsis">
-      RASP
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#manual" class="md-nav__link">
-    <span class="md-ellipsis">
-      Manual
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2299,7 +2359,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../tools/" class="md-nav__link">
+      <a href="../../resources/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2364,7 +2424,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../stories/meet_the_appsec_team/" class="md-nav__link">
+      <a href="../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2506,46 +2566,55 @@ cfg: { // Application Insights Configuration
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#automated" class="md-nav__link">
+  <a href="#tldr" class="md-nav__link">
     <span class="md-ellipsis">
-      Automated
+      TLDR;
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Automated">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#changes-in-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes in 2023
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-being-logged-in-with-an-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits of being logged in with an user account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Best practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Best practices">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sast" class="md-nav__link">
+  <a href="#sso" class="md-nav__link">
     <span class="md-ellipsis">
-      SAST ⬜
+      SSO
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dast" class="md-nav__link">
+  <a href="#avoid-storing-sensitive-data-in-an-insecure-way" class="md-nav__link">
     <span class="md-ellipsis">
-      DAST ⬛
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#iast" class="md-nav__link">
-    <span class="md-ellipsis">
-      IAST
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rasp" class="md-nav__link">
-    <span class="md-ellipsis">
-      RASP
+      Avoid storing sensitive data (in an insecure way)
     </span>
   </a>
   
@@ -2557,9 +2626,60 @@ cfg: { // Application Insights Configuration
 </li>
       
         <li class="md-nav__item">
-  <a href="#manual" class="md-nav__link">
+  <a href="#postman-vault" class="md-nav__link">
     <span class="md-ellipsis">
-      Manual
+      Postman Vault
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Postman Vault">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#do-not-share-collections-uncritically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Do not share collections (uncritically)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-right-access-on-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set right access on Workspace
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lightweight-api-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lightweight API Client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-to-read-more-on-postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources to read more on Postman
     </span>
   </a>
   
@@ -2583,61 +2703,156 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="security-testing">Security Testing<a class="headerlink" href="#security-testing" title="Permanent link">&para;</a></h1>
-<h2 id="automated">Automated <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot_face:" /><a class="headerlink" href="#automated" title="Permanent link">&para;</a></h2>
-<h3 id="sast">SAST ⬜<a class="headerlink" href="#sast" title="Permanent link">&para;</a></h3>
-<p>Stands for "<strong>Static</strong> Application Security Testing" (tests that are ran towards applications currently not running,  i.e code). That means that this activity can take place very early in the SDLC, as it does not require a working application.</p>
+<h1 id="postman">Postman<a class="headerlink" href="#postman" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
-<p class="admonition-title">SAST is considered a form of <a href="https://en.wikipedia.org/wiki/White-box_testing">White Box Testing</a></p>
+<p class="admonition-title">Info</p>
+<p>Postman is an API platform for building and using APIs. Postman simplifies each step of the API lifecycle and streamlines collaboration so you can create better APIs—faster <a href="https://www.postman.com/">🔗</a>.</p>
 </div>
-<p>A SAST-tool will report on known vulnerabilities and security misconfigurations in your code. Catching these things early, dramatically decrease the cost of fixing these issues.</p>
-<p>There are different ways of implementing SAST-tools into your SDLC: doing periodically full scans of your codebase, and having a <a href="https://en.wikipedia.org/wiki/Lint_(software)">linter</a> present in your dev-environment (IDE) to catch issues as you code. You should do both <img alt="💪" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f4aa.svg" title=":muscle:" /></p>
-<div class="admonition example">
-<p class="admonition-title">An example of how to get started:</p>
-<p>Scanner:<br />
-1. <a href="../../snyk/">Sign up to Snyk</a> (if you have not already)<br />
-2. Import your project, and make sure that "Snyk Code" is enabled<br />
-3. Review and prioritize the findings  </p>
-<p>Linter:<br />
-1. Download <a href="https://snyk.io/ide-plugins/">Snyk's IDE plugin</a> for your IDE (usually done from the marketplace)<br />
-2. Sign in<br />
-3. Review and prioritize the findings as you code </p>
+<h2 id="tldr">TLDR;<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Postman announced a change in 2023 that makes it mainly "cloud only", meaning users must always have an account and being logged in¹</li>
+<li>If needing an account, only use SSO</li>
+<li>Be aware of the data classification on requests and responses </li>
+<li>Use Postman Vault for storing sensitive data during local development</li>
+</ul>
+<p>¹ For simple usage one can use the <a href="#lightweight-api-client">Lightweight AP Client</a> without any account.</p>
+<h2 id="changes-in-2023">Changes in 2023<a class="headerlink" href="#changes-in-2023" title="Permanent link">&para;</a></h2>
+<p>During 2023, Postman <a href="https://blog.postman.com/announcing-new-lightweight-postman-api-client/">announced a change 🔗</a> on how the solution works by making it mainly "cloud only", meaning they expect any users of the solution to always have an account and being logged in. When utilizing Postman, it's crucial to note that being logged in will <em>automatically</em> sync data to the cloud. As a result, users must exercise caution regarding the nature of data being transmitted. It's especially important to pay attention to the <strong>data's classification</strong>, both within the <strong>requests</strong> (such as API keys and personal information) and in the <strong>responses</strong>.</p>
+<h2 id="benefits-of-being-logged-in-with-an-user-account">Benefits of being logged in with an user account<a class="headerlink" href="#benefits-of-being-logged-in-with-an-user-account" title="Permanent link">&para;</a></h2>
+<p>Logging in with a user account enables most of the features within Postman, including:</p>
+<ul>
+<li>Workspaces</li>
+<li>Collections</li>
+<li>Sharing and collaboration</li>
+<li><strong>Automatic synchronization to the cloud / backup</strong></li>
+</ul>
+<p>However, the automatic synchronization to the cloud imposes both security and regulationary concerns. Here are the results of <em>a simple</em> Threat Model exercise:</p>
+<table>
+<thead>
+<tr>
+<th>Threat</th>
+<th>Description</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Information disclosure</td>
+<td>The API being tested has sensitive data in the responses - could be <code>confidential</code> or <code>personal</code> data - which would automatically be uploaded to the cloud</td>
+<td>Understand the data classification of the information in requests and responses, and if unsure, avoid using Postman. When conducting automated testing, ensure that tests are executed against a "synthetic" test environment</td>
+</tr>
+<tr>
+<td>Account takeover / session hijacking</td>
+<td>The account is breached and malicious actors can log in to Postman using your account</td>
+<td>Only use SSO as there are protective and preventive measures in place to avoid/detect malicious actors logging in</td>
+</tr>
+<tr>
+<td>Data breach at Postman servers</td>
+<td>A malicious actor has obtained data residing on the Postman servers</td>
+<td>Refrain from storing sensitive data that is synchronized with Postman servers, and implement additional controls such as logging and auditing for API logins and secret rotation</td>
+</tr>
+<tr>
+<td>Credentials stored unencrypted</td>
+<td>Storing credentials in (masked) plain-text fields, in local plain-text files can easily be extracted</td>
+<td>Use proper solutions when handling credentials, like Postman Vault or use OAuth 2.0 authorization flows without client secrets (require user to log in through SSO)</td>
+</tr>
+<tr>
+<td>Sensitive data being exported</td>
+<td>Anyone with access to the Workspace (collections) can export it, including any variables and enviornments within</td>
+<td>Avoiding storing sensitive data in collections or environments</td>
+</tr>
+<tr>
+<td>Sensitive data exposed</td>
+<td>Anyone with access to the Workspace can read environment variables, including masked secrets</td>
+<td>Avoid storing sensitive data in environments and be aware of who can access the Workspace. Export your collections and see what data is exposed.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="best-practices">Best practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h2>
+<p>The automatic synchronization to the cloud imposes both security and regulationary concerns.
+Following the best practices will mitigate some of those concerns.</p>
+<h3 id="sso">SSO<a class="headerlink" href="#sso" title="Permanent link">&para;</a></h3>
+<p><em>Never</em> use a private or non-Equinor account in an Equinor context.</p>
+<p>If needing the full feature set of Postman, request access through AccessIT and use SSO for login. Login either directly in the Desktop Client or <a href="https://identity.getpostman.com/enterprise/login">through the browser 🔗</a>.</p>
+<p>This ensures 
+  - that the proper security checks on the account can be enforced (e.g. avoid logins from completely strange IPs, known malicious IP)
+  - that access control is properly enforced
+  - that access can properly be revoked
+  - that policies are followed and are enforced
+  - and others ...</p>
+<h3 id="avoid-storing-sensitive-data-in-an-insecure-way">Avoid storing sensitive data (in an insecure way)<a class="headerlink" href="#avoid-storing-sensitive-data-in-an-insecure-way" title="Permanent link">&para;</a></h3>
+<p>If needing to store credentials or other sensitive data, use <a href="https://learning.postman.com/docs/sending-requests/postman-vault/postman-vault-secrets/">Postman Vault 🔗</a>. Note that the latter is <em>not</em> being synchronized with Postman and anything in the Vault remains local.</p>
+<p>If sensitive data is being stored in the environment, you should set the type to "secret". This will mask the input.</p>
+<div class="admonition important">
+<p class="admonition-title">Be careful</p>
+<p>Even though one uses the "secret" type in an Environment, the secret is readable in plain-text by anyone who has access to it. If the access of the Workspace is set to Team, anyone in Equinor with a Postman account will be able to read the secret.</p>
 </div>
-<h3 id="dast">DAST ⬛<a class="headerlink" href="#dast" title="Permanent link">&para;</a></h3>
-<p>Stands for "<strong>Dynamic</strong> Application Security Testing". Emulating a malicious user by attacking and probing, a DAST-tool will test a running web application to detect vulnerabilities.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Storing variable values <strong>only</strong> in the <code>Current value</code> field, will ensure that the data is never shared with Postman. For more comprehensive explanation between <code>Initial value</code> and <code>Current value</code> <a href="https://learning.postman.com/docs/sending-requests/variables/variables/#initial-and-current-values">see Postman documentation 🔗</a>.</p>
+</div>
+<h2 id="postman-vault">Postman Vault<a class="headerlink" href="#postman-vault" title="Permanent link">&para;</a></h2>
+<p><a href="https://learning.postman.com/docs/sending-requests/postman-vault/postman-vault-secrets/">Postman Vault 🔗</a> is a way of handling sensitive data in Postman, without it leaving your local environment. Use the link to do a bit more of a deep-dive of the Postman Vault capabilities. Note that Postman Vault is only available when using the Desktop Client and will not function when using the Web Client (using Postman through the browser).
+If unsure on how to set up and open a vault, use the link above.</p>
+<p>The syntax to use a vault variable is quite similar to how other variables are referenced, but with a prefix of "vault:". For example to reference a value called "MY_SECRET" stored in the Vault, one would reference it by <code>{{vault:MY_SECRET}}</code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Note that you can't set or access vault secrets in scripts <a href="https://learning.postman.com/docs/sending-requests/variables/variables/#defining-variables-in-scripts">🔗</a>.</p>
+</div>
+<h3 id="do-not-share-collections-uncritically">Do not share collections (uncritically)<a class="headerlink" href="#do-not-share-collections-uncritically" title="Permanent link">&para;</a></h3>
+<p>If needing to share collections within the team, ensure proper processes are in place to give and <em>revoke</em> access. Note that collaborators might get access and see any sensitive information in the collections, including any sensitive information either in the Workspace variables or the configured environments.</p>
+<h3 id="set-right-access-on-workspace">Set right access on Workspace<a class="headerlink" href="#set-right-access-on-workspace" title="Permanent link">&para;</a></h3>
+<p>The default access is "Eveyone from team Equinor", which makes is visible to <em>everyone</em> in Equinor who have an Postman account, which. The access will give anyone in the "team" access to the entire workspace, including the environments and the secrets within, <em>might</em> not be desirable.</p>
+<p>To change the access of a workspace, go to the workspace "root page" and click on the "Workspace Settings" button. Under the new page set the "Who can access this workspace?" to "Only invited team members". </p>
 <div class="admonition info">
-<p class="admonition-title">DAST is considered a form of <a href="https://en.wikipedia.org/wiki/Black-box_testing">Black Box Testing</a></p>
+<p class="admonition-title">Info</p>
+<p>Changing to "Only invited team members" imposes additional administrative work, as the administrator of the Workspace needs to onboard <em>and offboard</em> team members.</p>
 </div>
-<p>As with SAST, there are a lot of tools out there that perform this type of testing.</p>
-<p>One noteworthy that I can recommend is <a href="https://www.zaproxy.org/">OWASP ZAP</a>.</p>
-<div class="admonition example">
-<p class="admonition-title">An example of how to get started:</p>
-<p>Download OWASP ZAP and get familiar with the tool.</p>
-<p>Browse through your application through the ZAP proxy, run the passive and active crawlers, and see if it finds any vulnerabilities.</p>
-<p>Next steps would be to explore the <a href="https://www.zaproxy.org/docs/desktop/start/features/scripts/">scripting</a> functionality, and look at <a href="https://github.com/zaproxy/community-scripts">ZAP Community Scripts repo</a>.</p>
-<p>OWASP ZAP is quite versatile, and is well suited for integration with your CI/CD. </p>
-</div>
-<h3 id="iast">IAST<a class="headerlink" href="#iast" title="Permanent link">&para;</a></h3>
-<p>Stands for "<strong>Interactive</strong> Application Security Testing". IAST is dynamic and gets its feedback from <em>sensor modules</em> that are included with – and run in context with the application that is subject to the test.</p>
+<h2 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h2>
+<p>It is possible to run Postman collections automatically in a CI/CD pipeline. One way of achieving this is using the <a href="https://learning.postman.com/docs/collections/using-newman-cli/command-line-integration-with-newman/">Newman CLI 🔗</a>, a CLI tool by Postman.</p>
+<p>Assuming 
+* one has exported the desired collection to a <code>collection.json</code> file, 
+* set up <a href="https://learning.postman.com/docs/developer/postman-api/authentication/#generate-a-postman-api-key">Postman API Key 🔗</a>
+* configured <code>POSTMANAPIKEY</code> as a github action secret
+* <a href="https://support.postman.com/hc/en-us/articles/5063785095319-How-to-find-the-ID-of-an-element-in-Postman">obtained 🔗</a> the <code>collectionId</code></p>
+<p>a GitHub Action workflow <em>could</em> look something like:</p>
+<pre><code class="language-YAML">name: Running API tests
+run-name: ${{ github.actor }} is testing the API
+on: [pull_request]
+jobs:
+    api_tests:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Set up Node
+              uses: actions/setup-node@v4
+            - name: Install Newman
+              run: npm install -g newman 
+            - name: Run API tests
+              run: newman run &quot;https://api.getpostman.com/collections/${{collectionID}}?apikey=${{ secrets.POSTMANAPIKEY }}&quot; --environment &quot;https://api.getpostman.com/environments/${{ environmentID }}?apikey=${{ secrets.POSTMANAPIKEY }}&quot;
+
+</code></pre>
+<p>Some considerations on this workflow:</p>
+<ul>
+<li><a href="https://learning.postman.com/docs/developer postman-api/postman-api-rate-limits/">The Postman API is rate-limited</a>, so keep that in mind when running automatic workflows.</li>
+<li>The generated <code>POSTMANAPIKEY</code> should be considered as a PAT - it gives the workflow the same access as <em>your</em> account.</li>
+<li>This example uses the enivornment obtained through the Postman API <em>as-is</em>. Consider if the environment could contain sensitive data (e.g. client secrets). These entries could then instead be placed in a secure Vault (e.g. Azure KeyVault), which would introduce some extra steps in the workflow; extracting Postman environment in separate step, logging into Azure, extracting data from the KeyVault, <a href="https://github.com/postmanlabs/newman?tab=readme-ov-file#newman-run-collection-file-source-options">using secrets as input parameters 🔗</a> to Newman</li>
+</ul>
+<h2 id="lightweight-api-client">Lightweight API Client<a class="headerlink" href="#lightweight-api-client" title="Permanent link">&para;</a></h2>
+<p>It is possible to run Postman without logging in or needing an account (without applying for it in AccessIT), which Postman has coined "Lightweight API Client".</p>
+<p>The "old" lightweight API client, based on "Scratch Pad", has been discountinued and there is only a single official API Client that can be downloaded.
+After downloading and executing the file, there is a choice of <code>Or continue with the lightweight API client.</code> (as of April 2024, this represents itself as a small text below the login-button on starting the application). Running the application in this mode will ensure that everything stays local - nothing is being synchronized to the cloud. However, it will not be possible to use the full set of features Postman provides and the usage in this mode will be limited to simple manual API testing.</p>
 <div class="admonition info">
-<p class="admonition-title">IAST is considered a form of <a href="https://en.wikipedia.org/wiki/Gray-box_testing">Grey Box Testing</a></p>
+<p class="admonition-title">Info</p>
+<p>Using the Lightweight client is free and one does not need to apply for access in AccessIT. In many cases this will be sufficient.</p>
 </div>
-<p>As the application is being externally triggered through automated or manual events, the internal instrumentation or <em>sensor modules</em> evaluate the application and report in real-time – making this an interactive process.</p>
-<p>IAST is performed in production or a production-like environment, and in contrast to SAST will be able to identify vulnerabilities based on the systems behaviour and not only its static codebase. 
-This results in a more holistic approach to evaluating the system. 
-It balances some of the false positives given by other more static approaches, and evaluates the system in a context determined by configuration, control and dataflow and other characteristics given by the environment where the application is running.</p>
-<p>Proper utilization of IAST, as being included in the CI/CD pipeline will then be able to <em>"shift left"</em> the types of tests that bring information about posible observable runtime vulnerabilities into the development stage.</p>
-<h3 id="rasp">RASP<a class="headerlink" href="#rasp" title="Permanent link">&para;</a></h3>
-<p>Stands for "<strong>Runtime</strong> application self-protection". 
-RASP enabled systems have both the capability to identify and monitor, as well as actively stopping an attack.</p>
-<p>As opposed to simply protecting the application from an external perspective by securing its interfaces (e.g firewall protection), RASP protects the system by also taking the internal state of the application into evaluation.
-By establishing protection mechanisms at the application/server layer, RASP-protected systems are less dependent on perimeter based protection.</p>
-<p>As for IAST the mechanicm is enabled by instrumentation embedded in the system. 
-However while IAST identifies vulnerabilities as part of the testing phase, RASP protects the application for direct attacks at runtime.</p>
-<h2 id="manual">Manual <img alt="🖐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f590.svg" title=":raised_hand_with_fingers_splayed:" /><a class="headerlink" href="#manual" title="Permanent link">&para;</a></h2>
-<div class="admonition example">
-<p class="admonition-title">Have a look at <a href="https://owasp.org/www-project-web-security-testing-guide/">WSTG</a></p>
-</div>
+<h2 id="resources-to-read-more-on-postman">Resources to read more on Postman<a class="headerlink" href="#resources-to-read-more-on-postman" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://blog.postman.com/announcing-new-lightweight-postman-api-client/">Announcement to new API client</a></li>
+<li><a href="https://github.com/postmanlabs/newman">Newman repository</a></li>
+<li><a href="https://security.postman.com/">Postman Security &amp; Trust Portal</a></li>
+<li><a href="https://www.postman.com/trust/security/">Postman Trust Center</a></li>
+<li><a href="https://learning.postman.com/docs/sending-requests/postman-vault/postman-vault-secrets/">Postman Vault</a></li>
+</ul>
 
 
 
@@ -2658,7 +2873,7 @@ However while IAST identifies vulnerabilities as part of the testing phase, RASP
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 5, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 11, 2024</span>
   </span>
 
     
@@ -2694,7 +2909,7 @@ However while IAST identifies vulnerabilities as part of the testing phase, RASP
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../security_requirements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Security Requirements">
+          <a href="../git-signed-commits/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Signed commits">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2704,20 +2919,20 @@ However while IAST identifies vulnerabilities as part of the testing phase, RASP
                 Previous
               </span>
               <div class="md-ellipsis">
-                Security Requirements
+                Signed commits
               </div>
             </div>
           </a>
         
         
           
-          <a href="../tools/" class="md-footer__link md-footer__link--next" aria-label="Next: Security Tools">
+          <a href="../secret-scanning/" class="md-footer__link md-footer__link--next" aria-label="Next: Secret Scanning">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Security Tools
+                Secret Scanning
               </div>
             </div>
             <div class="md-footer__button md-icon">
