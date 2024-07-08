@@ -8,4 +8,3 @@ These are some relevant resources for security champions
 - [Security champions @ NAV](https://sikkerhet.nav.no/docs/security-champion-rolle/)
 - [OWASP security champions](https://owasp.org/www-project-security-culture/stable/4-Security_Champions/)
 OWASP information and recommendations about security champions networks
-
