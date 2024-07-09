@@ -6,7 +6,7 @@ This is where the fun begins.
 
 - Join the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) channel on Slack
 - You will get an invitation to the [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) channel within a few days
-- Check out what's listed in our [activities](./2-security_champion_activities.md) section
+- Check out our [activities](./2-security_champion_activities.md)
 - Check out our [FAQ](./3-faq.md)
 
 !!! question "Here's a puzzle for you :"
