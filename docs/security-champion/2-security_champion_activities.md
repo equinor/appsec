@@ -22,7 +22,7 @@ We have created a few [guidelines](../guidelines/index.md). Please check them ou
 
 ## Threat Modelling activities
 
-If you want an introduction to threat modeling, please reach out to the AppSec team on our Slack channel [#appsec](https://equinor.slack.com/archives/CMM6FSW5V).
+We can organize introductory sessions to threat modelling, simply reach out to the `@appsecteam` on our Slack channel [#appsec](https://equinor.slack.com/archives/CMM6FSW5V).
 
 - Facilitate a [threat modelling session](../threat-modeling/resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
 - Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)
