@@ -10,7 +10,7 @@ A Security Champion in our context is a person who has a interest in security an
 ## What do we expect from you?
 
 - See something, say something. You are the voice of security, so please use it
-- Join meetings where able
+- Join our coffees/seminars/meetups
 - Share experiences, both good and bad
 - Ask questions and be curious
 - Respond to feedback requests
