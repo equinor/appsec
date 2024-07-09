@@ -18,7 +18,7 @@ No, but we highly recommend everyone on sharing. It might also be that you hear 
 
 ## I don't know anything that's worth sharing
 
-Are you sure? Everyone knows something, and how you apply certain tools or how you've implemented security testing could be very interesting! ``Imposter syndrome`` is real, and we need to combat it.
+Are you sure? Everyone knows something, and how you apply certain tools or how you've implemented security testing could be very interesting! The [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) is real, and we need to combat it.
 
 ## I have a success story I want to share
 
