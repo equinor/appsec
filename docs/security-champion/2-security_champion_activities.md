@@ -18,7 +18,7 @@ Have a look at our [security requirements](../resources/security_requirements.md
 We have created a few [guidelines](../guidelines/index.md). Please check them out and consider implementing them in your projects where it makes sense.
 
 !!! info
-    Feedback is good, so if you have any, please create a PR at our [github repo](https://github.com/equinor/appsec/)!
+    Feedback is good, so if you have any, feel free to contact us, or even create a PR on our [github repo](https://github.com/equinor/appsec/)!
 
 ## Threat Modelling activities
 
