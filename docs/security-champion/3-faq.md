@@ -40,7 +40,7 @@ If you feel like the team do not get the needed time to work on security, please
 
 ## Can we have more Security Champions in our team?
 
-Ideally, each development team should have one or more team-members who takes on the role of Security Champion. When an **area** are supported by many small teams (1-2 persons) this **area** should be represented by one or more security champions.
+Ideally, each development team should have one or more team-members who takes on the role of Security Champion. If you are unsure if you have too many, don't hesitate in reaching out to ask.
 
 Remember that it is the entire team that is responsible for the security of applications in the team's portfolio. The Security champions will support the team, but not bear any extended responsibility.
 

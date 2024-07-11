@@ -28,7 +28,7 @@ You can also find a calendar of events on [SharePoint](https://statoilsrm.sharep
 - [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V): Information regarding AppSec
 
 !!! info
-    [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V) Most general information should be posted here so everyone in Equinor has access to it and can participate!
+    [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V) Most general information should be posted here so everyone in Equinor has access to it and can participate! Dropping a ```@appsecteam``` in this channel will get our attention immediately.
 
 ## Relevant events
 

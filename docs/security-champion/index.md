@@ -14,7 +14,7 @@ A Security Champion in our context is a person who has a interest in security an
 - Share experiences, both good and bad
 - Ask questions and be curious
 - Respond to feedback requests
-- Teach and tell what you learn to your team
+- Share what you learn with your team
 
 !!! info
     A Security Champion is the voice of security, and security is a _team effort_.
