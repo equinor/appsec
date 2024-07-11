@@ -26,4 +26,4 @@ Would you like to take on some extra responsibilities when it comes to organizin
 
 ## Contact us
 
-If you are reading this from across the web and want to reach out about the program and how we do things, please do so by sending an e-mail to ``appsec[at]equinor.com`` or reach us through the ``Security Champions Norge`` Slack.
+If you are reading this from across the web and want to reach out about the program and how we do things, please do so by sending an e-mail to ``appsec[at]equinor.com`` or reach us through the [Security Champions Norge](https://security-champions-no.slack.com/) Slack.
