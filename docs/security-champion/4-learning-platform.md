@@ -18,6 +18,7 @@ We are testing out a secure coding learning platform. You as a champion are a pe
 There is a wide arrangement of subjects, and you can do them all if you wish! So there are tracks for:
 
 - AppSec
+- Azure
 - Docker security
 - DevSecOps
 - Data Scientist
