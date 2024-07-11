@@ -16,18 +16,33 @@ It depends on what _you_ want to do. It can be everything from just informing th
 
 No, but we highly recommend everyone on sharing. It might also be that you hear about a problem or solution from a team member or co-worker that can be shared. Asking questions is also contributing!
 
+## I don't know anything that's worth sharing
+
+Are you sure? Everyone knows something, and how you apply certain tools or how you've implemented security testing could be very interesting! The [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) is real, and we need to combat it.
+
+## I have a success story I want to share
+
+Awesome! We want to hear about what you did. Reach out to the AppSec team on Slack. Maybe we will award this with unique merch as well?
+
+Even if it was something "bad" you discovered in your project, why not share? It's important to highlight the issues we have as well as the good, as everything can be used to learn from.
+
 ## So I joined, what now?
 
-Say hi in to your fellow Security Champions in [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04), join the channel [#appsec](https://app.slack.com/client/T02JL00JU/CMM6FSW5V) for security related questions and updates.
-Add the Morning Coffee to your calendar by downloading the calendar invite [here](https://statoilsrm.sharepoint.com/sites/securitychampion9).
+Check out what you can do in the [activities](./2-security_champion_activities.md) section.
 
 ## I want to attend one of the Security Champion events / meetups. Do you provide a WBS for hours and travel expenses?
 
 The Security Champion initiative is a network we invite IT professionals to join and share experiences. Members need to ask their project managers or line leaders for approval to travel and spend time on the network.
 
+## I don't have enough time to spend on security related work
+
+If you feel like the team do not get the needed time to work on security, please reach out to the AppSec team on Slack. We can help convey the importance and help highlight risk in your team.
+
 ## Can we have more Security Champions in our team?
 
-We recommend each team to have 1-2 champions, and share their learnings with the rest of the team. Remember that it is the entire team that is responsible for the security of applications in the team's portfolio. The Security champions will support the team, but not bear any extended responsibility.
+Ideally, each development team should have one or more team-members who takes on the role of Security Champion. If you are unsure if you have too many, don't hesitate in reaching out to ask.
+
+Remember that it is the entire team that is responsible for the security of applications in the team's portfolio. The Security champions will support the team, but not bear any extended responsibility.
 
 ## How can sign up to become a Security Champion?
 

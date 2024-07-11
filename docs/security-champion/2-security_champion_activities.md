@@ -3,7 +3,7 @@
 
 ## Introduce yourself
 
-Say hello in the [Security Champion channel](https://equinor.slack.com/archives/C036HGPBJ04) 👋 Always fun to meet new champions
+Say hello in the [Security Champion channel](https://equinor.slack.com/archives/C036HGPBJ04) 👋 Always fun to meet new champions.
 
 ## Ensure that all your code is being scanned by SAST
 
@@ -11,9 +11,18 @@ Ensure all your projects code is scanned by Snyk, and that you have Snyk Code en
 
 ## Define [security requirements](../resources/security_requirements.md)
 
-Have a look at our [security requirements](../resources/security_requirements.md) page and define some for your project
+Have a look at our [security requirements](../resources/security_requirements.md) page and define some for your project.
+
+## Check out our guidelines
+
+We have created a few [guidelines](../guidelines/index.md). Please check them out and consider implementing them in your projects where it makes sense.
+
+!!! info
+    Feedback is good, so if you have any, feel free to contact us, or even create a PR on our [github repo](https://github.com/equinor/appsec/)!
 
 ## Threat Modelling activities
+
+We can organize introductory sessions to threat modelling, simply reach out to the `@appsecteam` on our Slack channel [#appsec](https://equinor.slack.com/archives/CMM6FSW5V).
 
 - Facilitate a [threat modelling session](../threat-modeling/resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
 - Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)
@@ -40,4 +49,4 @@ Just go to our github-repo and make a PR. Pro tip: You can use Visual Studio Cod
 
 ## Manually security test your application
 
-Have a look at [WSTG](https://owasp.org/www-project-web-security-testing-guide/)
+Have a look at [WSTG](https://owasp.org/www-project-web-security-testing-guide/).

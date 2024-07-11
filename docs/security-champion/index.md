@@ -1,30 +1,38 @@
-# Security Champion
+# What is a Security Champion
 
-## Info about Security Champion
+You are probably wondering what a Security Champion is in Equinor context and what you can expect if you join? Well then you are on the right track.
 
-Ideally, each development team should have one or more team-members who takes on the role of Security Champion. When an **area** are supported by many small teams (1-2 persons) this **area** should be represented by one or more security champions.
-
-A Security Champion is a team-member who amplifies the security message at the team level.
-
-In practice, this means to act as the "security conscience" of the team.
-You do not need to be a security expert to become a Security Champion, an interest for security is more than enough.
+A Security Champion in our context is a person who has a interest in security and want to expand on this interest. The Security Champions Network (SCN) is a network where people and security is in the center.
 
 !!! info
-    Please note that security is a team responsibility, and the Security Champion is not more accountable for security than any other team member
+    You do not need to have any security knowledge to join, but the eagerness to learn and share
 
-Tasks *could* involve:
+## What do we expect from you?
 
-- Staying up-to-date with best practices and security related news
-- Attend security related conferences/training/workshops
-- Raising awareness of security issues within the development team
-- Being part of the Security Champion community
-- Facilitate threat modelling
-- Conduct and/or verify automated scans
-- Be the point of contact for security related stuff
-- Drive internal bug-bounty
+- See something, say something. You are the voice of security, so please use it
+- Join our coffees/seminars/meetups
+- Share experiences, both good and bad
+- Ask questions and be curious
+- Respond to feedback requests
+- Share what you learn with your team
 
-As a Security Champion you would be a target audience for a lot of the work done by the Equinor AppSec team.
-The AppSec team will be providing workshops, training, resources and support where needed.
+!!! info
+    A Security Champion is the voice of security, and security is a _team effort_.
 
-!!! todo "Signup Information"
-    Use [this form](https://forms.office.com/r/3C2vwEh2i0) for signing up to the security champion's network
+You as a champion are the heart of this network. We know time might be tight, but we greatly appreciate all participation.
+
+## What can you expect?
+
+- You get to take part in a community of like-minded people
+- You can attend activities only catered to Security Champions
+- You will help form this network, as your voice and your experiences matter
+- You will get experiences and knowledge that might help advance your career
+- Last but not least: Awesome merch!
+
+## How to become a Security Champion?
+
+Becoming a Security Champion is as easy as filling out [this form](https://forms.microsoft.com/r/3C2vwEh2i0).
+
+## Questions?
+
+Try checking out our [FAQ](./3-faq.md).
