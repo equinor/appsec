@@ -51,7 +51,6 @@ Please help contribute with useful activities that make sense in Equinor context
 - Share a write-up of a security activity you/your team did on Slack
 - Speak at a seminar/meetup
 - Set up Secret scanning for your project [using our guidelines](https://appsec.equinor.com/guidelines/secret-scanning/)
-- Make a pull-request to an Equinor internal repository with a security-enhancing feature
 - Have a Security Champion from another team join/review your threat model
 - Join/review another team's threat model
 - Publish or suggest changes to guidelines on [appsec.equinor.com](https://appsec.equinor.com/guidelines/)
