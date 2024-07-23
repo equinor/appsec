@@ -1,7 +1,7 @@
 # Stories 🏆
 
-We want to highlight stories from our teams to promote learning and sharing culture in the context of security. What _is_ a story? Below are a few examples:
-- Something that went wrong in a project, how it was fixed and lesson learned
+We want to highlight stories from our teams, to promote both learning and sharing culture, in the context of security. What _is_ a story? Below are a few examples:
+- Something that went wrong in a project, how it was fixed and lessons learned
 - New feature added to improve security
 - New routines or ceremonies that has helped the team
 
