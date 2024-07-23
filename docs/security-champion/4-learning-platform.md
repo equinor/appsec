@@ -57,7 +57,7 @@ Please help contribute with useful activities that make sense in Equinor context
 - Gain three ```white``` belts
 - Gain two ```yellow``` belts
 - Gain two ```green``` belts
-- Create a success story about something your team did. Check out [success stories](./success-stories/index.md) for template
+- Create a story about something your team did. Check out [stories](./stories/index.md) for template
 
 !!! note
     The list of activities might change based on your feedback.

@@ -20,9 +20,9 @@ No, but we highly recommend everyone on sharing. It might also be that you hear 
 
 Are you sure? Everyone knows something, and how you apply certain tools or how you've implemented security testing could be very interesting! The [Impostor syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) is real, and we need to combat it.
 
-## I have a success story I want to share
+## I have a story I want to share
 
-Awesome! We want to hear about what you did. Reach out to the AppSec team on Slack. Maybe we will award this with unique merch as well?
+Awesome! We want to hear about what you did. Reach out to the AppSec team on Slack after reading the [stories](./stories/index.md) page. Maybe we will award this with unique merch as well?
 
 Even if it was something "bad" you discovered in your project, why not share? It's important to highlight the issues we have as well as the good, as everything can be used to learn from.
 
