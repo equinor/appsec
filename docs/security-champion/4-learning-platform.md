@@ -53,7 +53,6 @@ Please help contribute with useful activities that make sense in Equinor context
 - Set up Secret scanning for your project [using our guidelines](https://appsec.equinor.com/guidelines/secret-scanning/)
 - Have a Security Champion from another team join/review your threat model
 - Join/review another team's threat model
-- Publish or suggest changes to guidelines on [appsec.equinor.com](https://appsec.equinor.com/guidelines/)
 - Attend a Security Journey tournament
 - Gain three ```white``` belts
 - Gain two ```yellow``` belts
