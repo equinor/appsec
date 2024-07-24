@@ -17,7 +17,10 @@ A few examples:
 
 ## How to get started
 
-This is just a guidance, you do you when telling this story. Feel free to include pictures to illustrate, and provide sources where applicable.
+Feel free to include pictures to illustrate, and provide sources where applicable. 
+
+- **The title:**<br>
+Every story needs a snappy title.
 
 - **The team:**<br>
 This is normally you and your team.
