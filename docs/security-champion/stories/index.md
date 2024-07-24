@@ -1,10 +1,10 @@
 # Stories 🏆
 
-We want to highlight stories from our teams, to promote both learning and sharing culture, in the context of security. 
+We want to highlight stories from our teams, to promote both learning and sharing culture, in the context of security.
 
 ## What _is_ a story?
-A few examples:
 
+A few examples:
 
 - Something that went wrong in a project, how it was fixed, and lessons learned
 - New feature added to improve security and the road to implementation
@@ -17,7 +17,7 @@ A few examples:
 
 ## How to get started
 
-Feel free to include pictures to illustrate, and provide sources where applicable. 
+Feel free to include pictures to illustrate, and provide sources where applicable.
 
 - **The title:**<br>
 Every story needs a snappy title.
@@ -36,6 +36,3 @@ What was the outcome? Did it improve the initial situation and give some new lea
 
 !!! tip "Tips"
     Try to add technical and quantifiable information to the story to better showcase the value.
-
-!!! Warning "Note"
-    Please keep in mind that the site is accessible publicly to everyone across the internet, therefore avoid sharing information that is sensitive or should not be available to the public.
