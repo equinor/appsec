@@ -29,12 +29,15 @@ However, the automatic synchronization to the cloud imposes both security and re
 
 | Threat | Description | Mitigation |
 |---|---|---|
-|Information disclosure|The API being tested has sensitive data in the responses - could be `restricted`, `confidential` or `personal` data - which would automatically be uploaded to the cloud|Understand the data classification of the information in requests and responses, and if unsure, avoid using Postman. When conducting automated testing, ensure that tests are executed against a "synthetic" test environment|
 |Account takeover / session hijacking|The account is breached and malicious actors can log in to Postman using your account|Only use your Enterprise Account and SSO, as there are protective and preventive measures in place to avoid/detect malicious actors logging in|
 |Data breach at Postman servers|A malicious actor has obtained data residing on the Postman servers|Refrain from storing sensitive data that is synchronized with Postman servers, and implement additional controls such as logging and auditing for API logins and secret rotation|
 |Credentials stored unencrypted|Storing credentials in (masked) plain-text fields or in local plain-text files can easily be extracted|Use proper solutions when handling credentials, like Postman Vault|
 |Sensitive data being exported|Anyone with access to the Workspace (collections) can export/extract it, including any variables and enviornments within|Avoiding storing sensitive data in collections or environments|
 |Sensitive data exposed|Anyone with access to the Workspace can read environment variables, including masked secrets|Avoid storing sensitive data in environments and be aware of who can access the Workspace. Export your collections and see what data is exposed.|
+
+Previously we also had an entry regarding `Information disclosure`, where we highlighted "The API being tested has sensitive data in the responses - could be `restricted`, `confidential` or `personal` data - which _could_ automatically be uploaded to the cloud or being exposed in pipelines" and the recommendation "Understand the data classification of the information in requests and responses, and if unsure, avoid using Postman for these requests. When conducting automated testing, ensure that tests are executed against a "synthetic" test environment". As [stated by Postman themselves](https://www.postman.com/trust/security-faq/), _currently_ the responses are **NOT** synchronized. However, be aware where the requests are being run from and assert that the responses are handled according to their data classification.
+
+
 
 ## Best practices
 
