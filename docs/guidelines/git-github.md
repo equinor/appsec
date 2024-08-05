@@ -270,13 +270,13 @@ We recommend the following settings:
 
 #### [Codespaces](https://github.com/settings/codespaces)
 
-- Enable GPG verification
 - Validate the "Editor preference"
     - "Visual Studio Code for the Web" is a good option for many
 - Validate "Default retention period"
     - 14 days may be a good period (Codespaces incurs storage charges)
 - Region
     - Set manually to "Europe West"
+- For signing commits from a codespace, see our guideline on [Signed Commits](./git-signed-commits.md)
 
 #### [Code security an analysis](https://github.com/settings/security_analysis)
 
