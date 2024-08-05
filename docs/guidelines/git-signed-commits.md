@@ -18,6 +18,7 @@ The code from our software configuration management system (SCM) is the starting
 - Use SSH, with a passphrase protected private key, to sign your Git commits
 - Use separate SSH keys for signing and authentication
 - Use branch protection and required signed Git commits
+- GitHub Codespaces sign commits for you, but be aware of a few [caveats](signing-on-github-codespaces)
 
 ## Signing methods
 
@@ -69,7 +70,7 @@ Add the new key to the ssh-agent
 ssh-add ~/.ssh/git_ssh_signing_key_1
 ```
 
-### [Configure Git](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key) to use the SSH key
+### Configure git to use the SSH key
 
 We will configure the git global settings to use the new SSH key for signing commits locally. Examples assume you created the key as defined above.
 
@@ -80,6 +81,9 @@ git config --global commit.gpgsign true
 ```
 
 These lines will tell git to use SSH for signing commit, tell git where to find the key that should be used and then tell git to always sign commits. If you do not add this last line you will specifically have to add the `-S` parameter for each commit you can to sign.
+
+More information on this step can be found in the [GitHub documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key)
+
 
 ### Examining the git log
 
@@ -160,7 +164,7 @@ ssh-keygen -lf ~/.ssh/git_ssh_signing_key_1
 
     Explore Github's [Vigilant Mode](https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits#about-vigilant-mode) It should increase the trust level of signed commits yet another level.
 
-### Branch protection
+## Enforce signed commits via Branch protection
 
 We recommend that you protect important branches with branch protection rules on. This is a feature of Github that requires a Github Team or Github enterprise account.
 
@@ -175,6 +179,21 @@ We recommend the following **minimum** protection for important branches:
 - Rules applied to everyone including administrators
     - UnCheck "Allow force pushes"
     - UnCheck "Allow deletions"
+
+## Signing on GitHub Codespaces
+
+GitHub Codespaces can take care of setting up GPG signing keys inside the codespace on your behalf. It is trivial to set it up, but it has some security implications, so **do this exclusively for repositories you trust**. 
+
+If you trust the repository (and its maintainers), signing in Codespaces can be enabled by following these steps:
+- Open the [Codespaces settings](https://github.com/settings/codespaces) on GitHub
+- Enable "GPG Verification"
+- Choose `Selected Repositories` in the "Trusted Repositories" section, and add the relevant repository
+
+See also [the official GitHub Documentation](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-gpg-verification-for-github-codespaces)
+
+If you cannot trust the content or the maintainers of a repository (eg, if you are contributing to a project owned by another company, or to an open source projects) and you want/need to sign your commits, it is better to use a local development setup rather than GitHub Codespaces. The problem is that the codespace could have been configured to run malicious code. That code could syphon the GPG signing keys that GitHub would automatically drop into the environment (and all other sorts of sensitive data you enter in the codespace). For more details, see [here](https://docs.github.com/en/codespaces/reference/security-in-github-codespaces).
+
+
   
 ## External resources
 
