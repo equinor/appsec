@@ -271,6 +271,7 @@ We recommend the following settings:
 #### [Codespaces](https://github.com/settings/codespaces)
 
 - Enable GPG verification
+- If you are working on a repository that requires signed commits, add that repository to the list of "Trusted Repositories"
 - Validate the "Editor preference"
     - "Visual Studio Code for the Web" is a good option for many
 - Validate "Default retention period"
