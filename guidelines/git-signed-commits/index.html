@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -666,7 +666,7 @@ cfg: { // Application Insights Configuration
           <li class="md-nav__item">
   <a href="#configure-git-to-use-the-ssh-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Git to use the SSH key
+      Configure git to use the SSH key
     </span>
   </a>
   
@@ -705,17 +705,26 @@ cfg: { // Application Insights Configuration
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#branch-protection" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enforce-signed-commits-via-branch-protection" class="md-nav__link">
     <span class="md-ellipsis">
-      Branch protection
+      Enforce signed commits via Branch protection
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#signing-on-github-codespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing on GitHub Codespaces
+    </span>
+  </a>
   
 </li>
       
@@ -2587,7 +2596,7 @@ cfg: { // Application Insights Configuration
           <li class="md-nav__item">
   <a href="#configure-git-to-use-the-ssh-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Git to use the SSH key
+      Configure git to use the SSH key
     </span>
   </a>
   
@@ -2626,17 +2635,26 @@ cfg: { // Application Insights Configuration
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#branch-protection" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enforce-signed-commits-via-branch-protection" class="md-nav__link">
     <span class="md-ellipsis">
-      Branch protection
+      Enforce signed commits via Branch protection
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#signing-on-github-codespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing on GitHub Codespaces
+    </span>
+  </a>
   
 </li>
       
@@ -2692,6 +2710,7 @@ cfg: { // Application Insights Configuration
 <li>Use SSH, with a passphrase protected private key, to sign your Git commits</li>
 <li>Use separate SSH keys for signing and authentication</li>
 <li>Use branch protection and required signed Git commits</li>
+<li>GitHub Codespaces sign commits for you, but be aware of a few <a href="signing-on-github-codespaces">caveats</a></li>
 </ul>
 <h2 id="signing-methods">Signing methods<a class="headerlink" href="#signing-methods" title="Permanent link">&para;</a></h2>
 <p>The official <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification">GitHub documentation</a> on signature verification shows that commits can be signed using GPG, SSH or S/MIME. The 3 different methods have their pros and cons.</p>
@@ -2771,13 +2790,14 @@ cfg: { // Application Insights Configuration
 <p>Add the new key to the ssh-agent</p>
 <pre><code class="language-shell">ssh-add ~/.ssh/git_ssh_signing_key_1
 </code></pre>
-<h3 id="configure-git-to-use-the-ssh-key"><a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key">Configure Git</a> to use the SSH key<a class="headerlink" href="#configure-git-to-use-the-ssh-key" title="Permanent link">&para;</a></h3>
+<h3 id="configure-git-to-use-the-ssh-key">Configure git to use the SSH key<a class="headerlink" href="#configure-git-to-use-the-ssh-key" title="Permanent link">&para;</a></h3>
 <p>We will configure the git global settings to use the new SSH key for signing commits locally. Examples assume you created the key as defined above.</p>
 <pre><code class="language-shell">git config --global gpg.format ssh
 git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
 git config --global commit.gpgsign true
 </code></pre>
 <p>These lines will tell git to use SSH for signing commit, tell git where to find the key that should be used and then tell git to always sign commits. If you do not add this last line you will specifically have to add the <code>-S</code> parameter for each commit you can to sign.</p>
+<p>More information on this step can be found in the <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key">GitHub documentation</a></p>
 <h3 id="examining-the-git-log">Examining the git log<a class="headerlink" href="#examining-the-git-log" title="Permanent link">&para;</a></h3>
 <p>To verify that commits are signed locally you can use the following command:</p>
 <pre><code class="language-shell">git log --show-signature
@@ -2831,7 +2851,7 @@ echo $(git config --get user.email) \
 <p class="admonition-title">Tip</p>
 <p>Explore Github's <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits#about-vigilant-mode">Vigilant Mode</a> It should increase the trust level of signed commits yet another level.</p>
 </div>
-<h3 id="branch-protection">Branch protection<a class="headerlink" href="#branch-protection" title="Permanent link">&para;</a></h3>
+<h2 id="enforce-signed-commits-via-branch-protection">Enforce signed commits via Branch protection<a class="headerlink" href="#enforce-signed-commits-via-branch-protection" title="Permanent link">&para;</a></h2>
 <p>We recommend that you protect important branches with branch protection rules on. This is a feature of Github that requires a Github Team or Github enterprise account.</p>
 <p>The official documentation can be found in <a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches">Managing protected branches</a></p>
 <p>We recommend the following <strong>minimum</strong> protection for important branches:</p>
@@ -2848,6 +2868,14 @@ echo $(git config --get user.email) \
 </ul>
 </li>
 </ul>
+<h2 id="signing-on-github-codespaces">Signing on GitHub Codespaces<a class="headerlink" href="#signing-on-github-codespaces" title="Permanent link">&para;</a></h2>
+<p>GitHub Codespaces can take care of setting up GPG signing keys inside the codespace on your behalf. It is trivial to set it up, but it has some security implications, so <strong>do this exclusively for repositories you trust</strong>. </p>
+<p>If you trust the repository (and its maintainers), signing in Codespaces can be enabled by following these steps:
+- Open the <a href="https://github.com/settings/codespaces">Codespaces settings</a> on GitHub
+- Enable "GPG Verification"
+- Choose <code>Selected Repositories</code> in the "Trusted Repositories" section, and add the relevant repository</p>
+<p>See also <a href="https://docs.github.com/en/codespaces/managing-your-codespaces/managing-gpg-verification-for-github-codespaces">the official GitHub Documentation</a></p>
+<p>If you cannot trust the content or the maintainers of a repository (eg, if you are contributing to a project owned by another company, or to an open source projects) and you want/need to sign your commits, it is better to use a local development setup rather than GitHub Codespaces. The problem is that the codespace could have been configured to run malicious code. That code could syphon the GPG signing keys that GitHub would automatically drop into the environment (and all other sorts of sensitive data you enter in the codespace). For more details, see <a href="https://docs.github.com/en/codespaces/reference/security-in-github-codespaces">here</a>.</p>
 <h2 id="external-resources">External resources<a class="headerlink" href="#external-resources" title="Permanent link">&para;</a></h2>
 <ul>
 <li>We disagree with the premise of signed git commits not being useful in the <a href="https://medium.com/@michael.vittrup.larsen/should-we-sign-git-commits-probably-not-c09ad3c18393">Should We Sign Git Commits? Probably Not!</a>. Using git signatures are useful, but it's a not a silver bullet. The article contains relevant reflections advocating for focusing on building a foundation of trust through the review and approval of pull requests by multiple trusted individuals and the importance of a collective scrutiny process. <strong>This we fully support</strong></li>
@@ -2873,7 +2901,7 @@ echo $(git config --get user.email) \
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 3, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 5, 2024</span>
   </span>
 
     
