@@ -8,7 +8,7 @@ Snyk is available to all teams who code in Equinor.
         - NOTE: If you recently gained access, it may take up to 2 hours for system synchronization.
     - Ask your org-admin to add you to your teams organization
 
-After your first time sign in, you will be able to list organizations available at the Equinor Group overview (top level). If you see a relevant org to join, request one of the listed org admins to add you to the org.
+After your first time sign in, you will be able to see organizations you are a member of.
 
 ## Crash Course: Common Snyk Situations
 We have built a short curriculum, to help you learn the basics of Snyk. Take a look [here](./curriculum/index.md).
