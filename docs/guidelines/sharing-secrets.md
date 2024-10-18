@@ -2,7 +2,7 @@
 
 YoPass is a tool designed to securely share sensitive information, such as passwords and API keys, within our organization. Our internally hosted instance can be accessed [here](https://secrets.equinor.com).
 
-## TLDR;
+## TL;DR 
 
 - Use YoPass to securely share sensitive information such as passwords or API keys.
 - Always set an appropriate expiration time for secrets.
