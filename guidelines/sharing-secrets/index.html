@@ -26,7 +26,7 @@
     
     
       
-        <title>Sharing secrets (YoPass) - Equinor AppSec</title>
+        <title>Sharing secrets (Yopass) - Equinor AppSec</title>
       
     
     
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sharing secrets (YoPass)
+              Sharing secrets (Yopass)
             
           </span>
         </div>
@@ -659,7 +659,7 @@ cfg: { // Application Insights Configuration
           
   
   <span class="md-ellipsis">
-    Sharing secrets (YoPass)
+    Sharing secrets (Yopass)
   </span>
   
 
@@ -670,7 +670,7 @@ cfg: { // Application Insights Configuration
         
   
   <span class="md-ellipsis">
-    Sharing secrets (YoPass)
+    Sharing secrets (Yopass)
   </span>
   
 
@@ -703,7 +703,7 @@ cfg: { // Application Insights Configuration
         <li class="md-nav__item">
   <a href="#key-risks-yopass-mitigates" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Risks YoPass Mitigates
+      Key Risks Yopass Mitigates
     </span>
   </a>
   
@@ -2507,7 +2507,7 @@ cfg: { // Application Insights Configuration
         <li class="md-nav__item">
   <a href="#key-risks-yopass-mitigates" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Risks YoPass Mitigates
+      Key Risks Yopass Mitigates
     </span>
   </a>
   
@@ -2540,29 +2540,29 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="sharing-secrets-yopass">Sharing secrets (YoPass)<a class="headerlink" href="#sharing-secrets-yopass" title="Permanent link">&para;</a></h1>
-<p>YoPass is a tool designed to securely share sensitive information, such as passwords and API keys, within our organization. Our internally hosted instance can be accessed <a href="https://secrets.equinor.com">here - secrets.equinor.com</a>.</p>
+<h1 id="sharing-secrets-yopass">Sharing secrets (Yopass)<a class="headerlink" href="#sharing-secrets-yopass" title="Permanent link">&para;</a></h1>
+<p>Yopass is a tool designed to securely share sensitive information, such as passwords and API keys, within our organization. Our internally hosted instance can be accessed <a href="https://secrets.equinor.com">here - secrets.equinor.com</a>.</p>
 <h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Use YoPass</strong> to securely share sensitive information like passwords or API keys.</li>
+<li><strong>Use Yopass</strong> to securely share sensitive information like passwords or API keys.</li>
 <li><strong>Always set an appropriate expiration time</strong> for secrets.</li>
-<li><strong>Transmit the YoPass link and decode key via separate, secure channels</strong> whenever possible.</li>
-<li><strong>Verify YoPass links before accessing them</strong>.</li>
+<li><strong>Transmit the Yopass link and decode key via separate, secure channels</strong> whenever possible.</li>
+<li><strong>Verify Yopass links before accessing them</strong>.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Weekly Cache Clearance</p>
-<p>Our hosted instance of YoPass clears its cache every Sunday. Ensure any secrets are accessed within the intended timeframe, as they may be deleted during this routine maintenance.</p>
+<p>Our hosted instance of Yopass clears its cache every Sunday. Ensure any secrets are accessed within the intended timeframe, as they may be deleted during this routine maintenance.</p>
 </div>
-<h2 id="key-risks-yopass-mitigates">Key Risks YoPass Mitigates<a class="headerlink" href="#key-risks-yopass-mitigates" title="Permanent link">&para;</a></h2>
+<h2 id="key-risks-yopass-mitigates">Key Risks Yopass Mitigates<a class="headerlink" href="#key-risks-yopass-mitigates" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>Data interception</strong>: By encrypting shared information, YoPass protects secrets from being intercepted during transmission.</p>
+<p><strong>Data interception</strong>: By encrypting shared information, Yopass protects secrets from being intercepted during transmission.</p>
 </li>
 <li>
 <p><strong>Credential leakage</strong>: Setting expiration times on shared secrets ensures they are only accessible for a limited time, reducing the window for potential leakage.</p>
 </li>
 <li>
-<p><strong>Unintended access</strong>: YoPass helps mitigate unauthorized access by enforcing one-time access policies.</p>
+<p><strong>Unintended access</strong>: Yopass helps mitigate unauthorized access by enforcing one-time access policies.</p>
 </li>
 </ul>
 <h2 id="secure-sharing-guidelines">Secure Sharing Guidelines<a class="headerlink" href="#secure-sharing-guidelines" title="Permanent link">&para;</a></h2>
@@ -2570,13 +2570,13 @@ cfg: { // Application Insights Configuration
 <li>
 <p><strong>Protect the Combination of Link and Decode Key</strong></p>
 <ul>
-<li>Individually, the YoPass link and decode key are harmless. However, when <strong>combined</strong>, they grant access to the secret and should collectively be handled with the same level of confidentiality as the secret itself.</li>
+<li>Individually, the Yopass link and decode key are harmless. However, when <strong>combined</strong>, they grant access to the secret and should collectively be handled with the same level of confidentiality as the secret itself.</li>
 </ul>
 </li>
 <li>
 <p><strong>Transmit Link and Decode Key Separately</strong></p>
 <ul>
-<li>Whenever possible, send the YoPass link and the decode key via <strong>separate communication channels</strong> to minimize the risk of unauthorized access.<ul>
+<li>Whenever possible, send the Yopass link and the decode key via <strong>separate communication channels</strong> to minimize the risk of unauthorized access.<ul>
 <li><em>Example</em>: Send the link via email and the decode key via a direct message on teams.</li>
 </ul>
 </li>
@@ -2586,7 +2586,7 @@ cfg: { // Application Insights Configuration
 <p><strong>Use Secure Communication Channels</strong></p>
 <ul>
 <li>
-<p>Share the YoPass link and decode key through <strong>secure channels</strong> (e.g. email, secure messaging apps).</p>
+<p>Share the Yopass link and decode key through <strong>secure channels</strong> (e.g. email, secure messaging apps).</p>
 </li>
 <li>
 <p><strong>Avoid using public or unsecured networks</strong> to transmit sensitive information.</p>
@@ -2607,19 +2607,19 @@ cfg: { // Application Insights Configuration
 <li>
 <p><strong>Password Policies</strong></p>
 <ul>
-<li>Secrets shared via YoPass should comply with <a href="https://aris.equinor.com/#default/search/~AfBbImNvbXBvbmVudF9jb21tZW50U3RyZWFtMTUzIl0~">internal security policies</a> and <strong>should not be reused across services</strong>.</li>
+<li>Secrets shared via Yopass should comply with <a href="https://aris.equinor.com/#default/search/~AfBbImNvbXBvbmVudF9jb21tZW50U3RyZWFtMTUzIl0~">internal security policies</a> and <strong>should not be reused across services</strong>.</li>
 </ul>
 </li>
 <li>
 <p><strong>Link Verification</strong></p>
 <ul>
-<li><strong>Verify YoPass links before accessing them</strong> to ensure they originate from trusted sources.</li>
+<li><strong>Verify Yopass links before accessing them</strong> to ensure they originate from trusted sources.</li>
 </ul>
 </li>
 <li>
-<p><strong>Use YoPass for Temporary Sharing</strong></p>
+<p><strong>Use Yopass for Temporary Sharing</strong></p>
 <ul>
-<li>Avoid using YoPass for long-term secrets. If the secret is expected to be in use for an extended period, consider other methods such as managed secrets vaults.</li>
+<li>Avoid using Yopass for long-term secrets. If the secret is expected to be in use for an extended period, consider other methods such as managed secrets vaults.</li>
 </ul>
 </li>
 </ol>
