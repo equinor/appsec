@@ -12,28 +12,28 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/snyk/curriculum/5-advanced/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/sharing-secrets/">
       
       
-        <link rel="prev" href="../4-scan_results/">
+        <link rel="prev" href="../secret-scanning/">
       
       
-        <link rel="next" href="../6-faq/">
+        <link rel="next" href="../FAQ/pre-commit-faq/">
       
       
-      <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
+      <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
-        <title>Advanced Resources - Equinor AppSec</title>
+        <title>Sharing secrets (YoPass) - Equinor AppSec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/css/mkdocs-eq.css">
+      <link rel="stylesheet" href="../../assets/css/mkdocs-eq.css">
     
       <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-font.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#advanced-resources" class="md-skip">
+        <a href="#sharing-secrets-yopass" class="md-skip">
           Skip to content
         </a>
       
@@ -114,9 +114,9 @@ cfg: { // Application Insights Configuration
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Advanced Resources
+              Sharing secrets (YoPass)
             
           </span>
         </div>
@@ -240,7 +240,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -255,11 +255,13 @@ cfg: { // Application Insights Configuration
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -279,7 +281,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../security-champion/" class="md-tabs__link">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -295,13 +297,11 @@ cfg: { // Application Insights Configuration
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../snyk/" class="md-tabs__link">
           
   
     
@@ -321,7 +321,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../threat-modeling/" class="md-tabs__link">
+        <a href="../../threat-modeling/" class="md-tabs__link">
           
   
     
@@ -341,7 +341,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../resources/" class="md-tabs__link">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -361,7 +361,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../about/" class="md-tabs__link">
+        <a href="../../about/" class="md-tabs__link">
           
   
     
@@ -396,9 +396,9 @@ cfg: { // Application Insights Configuration
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     Equinor AppSec
@@ -425,7 +425,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -442,6 +442,8 @@ cfg: { // Application Insights Configuration
       
   
   
+    
+  
   
   
     
@@ -470,21 +472,22 @@ cfg: { // Application Insights Configuration
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -495,13 +498,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -517,7 +520,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -538,7 +541,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/gh-actions-runners/" class="md-nav__link">
+      <a href="../gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -559,7 +562,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/git-github/" class="md-nav__link">
+      <a href="../git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -580,7 +583,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/git-signed-commits/" class="md-nav__link">
+      <a href="../git-signed-commits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -601,7 +604,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/postman/" class="md-nav__link">
+      <a href="../postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -622,7 +625,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -640,10 +643,30 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../guidelines/sharing-secrets/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Sharing secrets (YoPass)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -652,6 +675,53 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-risks-yopass-mitigates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Risks YoPass Mitigates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-sharing-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Sharing Guidelines
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -708,7 +778,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -787,7 +857,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -820,7 +890,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/1-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/1-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -841,7 +911,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/2-security_champion_activities/" class="md-nav__link">
+      <a href="../../security-champion/2-security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -862,7 +932,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/3-faq/" class="md-nav__link">
+      <a href="../../security-champion/3-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -883,7 +953,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/4-learning-platform/" class="md-nav__link">
+      <a href="../../security-champion/4-learning-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +974,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/5-merch/" class="md-nav__link">
+      <a href="../../security-champion/5-merch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -925,7 +995,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/6-offboarding/" class="md-nav__link">
+      <a href="../../security-champion/6-offboarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -946,7 +1016,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/7-about/" class="md-nav__link">
+      <a href="../../security-champion/7-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -967,7 +1037,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/8-useful-links/" class="md-nav__link">
+      <a href="../../security-champion/8-useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1017,7 +1087,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1096,7 +1166,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1117,7 +1187,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1190,7 +1260,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1263,7 +1333,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
+      <a href="../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1323,7 +1393,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/stories/" class="md-nav__link ">
+            <a href="../../security-champion/stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1363,8 +1433,6 @@ cfg: { // Application Insights Configuration
       
   
   
-    
-  
   
   
     
@@ -1385,22 +1453,21 @@ cfg: { // Application Insights Configuration
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../snyk/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1411,13 +1478,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Snyk
@@ -1433,7 +1500,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../2-about-snyk/" class="md-nav__link">
+      <a href="../../snyk/2-about-snyk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1454,7 +1521,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../3-snyk_support/" class="md-nav__link">
+      <a href="../../snyk/3-snyk_support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1475,7 +1542,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../4-vulnerabilities/" class="md-nav__link">
+      <a href="../../snyk/4-vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1493,8 +1560,6 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
-  
   
   
     
@@ -1522,16 +1587,18 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_5" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../snyk/curriculum/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1548,7 +1615,7 @@ cfg: { // Application Insights Configuration
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_5">
             <span class="md-nav__icon md-icon"></span>
             Curriculum
@@ -1564,7 +1631,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../1-snyk_products/" class="md-nav__link">
+      <a href="../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1585,7 +1652,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../2-integrations/" class="md-nav__link">
+      <a href="../../snyk/curriculum/2-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1606,7 +1673,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../3-projects/" class="md-nav__link">
+      <a href="../../snyk/curriculum/3-projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1627,7 +1694,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../4-scan_results/" class="md-nav__link">
+      <a href="../../snyk/curriculum/4-scan_results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,19 +1712,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../snyk/curriculum/5-advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1666,7 +1724,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
     </li>
   
 
@@ -1679,7 +1736,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../6-faq/" class="md-nav__link">
+      <a href="../../snyk/curriculum/6-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1742,7 +1799,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/" class="md-nav__link ">
+            <a href="../../threat-modeling/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1812,7 +1869,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
+            <a href="../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1845,7 +1902,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1866,7 +1923,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,7 +1944,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1908,7 +1965,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1929,7 +1986,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1950,7 +2007,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1971,7 +2028,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2046,7 +2103,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2067,7 +2124,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/zgamified/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/zgamified/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2136,7 +2193,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../resources/" class="md-nav__link ">
+            <a href="../../resources/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2169,7 +2226,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/learning-material/" class="md-nav__link">
+      <a href="../../resources/learning-material/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2190,7 +2247,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/security_requirements/" class="md-nav__link">
+      <a href="../../resources/security_requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2211,7 +2268,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/security_testing/" class="md-nav__link">
+      <a href="../../resources/security_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2232,7 +2289,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/tools/" class="md-nav__link">
+      <a href="../../resources/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2297,7 +2354,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
+      <a href="../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2358,7 +2415,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../about/" class="md-nav__link ">
+            <a href="../../about/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2391,7 +2448,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../about/privacy/" class="md-nav__link">
+      <a href="../../about/privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2432,6 +2489,41 @@ cfg: { // Application Insights Configuration
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-risks-yopass-mitigates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Risks YoPass Mitigates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#secure-sharing-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Sharing Guidelines
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2448,22 +2540,97 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="advanced-resources">Advanced Resources<a class="headerlink" href="#advanced-resources" title="Permanent link">&para;</a></h1>
+<h1 id="sharing-secrets-yopass">Sharing secrets (YoPass)<a class="headerlink" href="#sharing-secrets-yopass" title="Permanent link">&para;</a></h1>
+<p>YoPass is a tool designed to securely share sensitive information, such as passwords and API keys, within our organization. Our internally hosted instance can be accessed <a href="https://secrets.equinor.com">here - secrets.equinor.com</a>.</p>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://docs.snyk.io/snyk-cli/test-for-vulnerabilities/the-.snyk-file">Policy file</a></li>
-<li><a href="https://docs.snyk.io/snyk-cli/getting-started-with-the-cli">CLI</a></li>
-<li><a href="https://docs.snyk.io/snyk-api-info">APIs </a><ul>
-<li>E.g. API for setting project attributes (metadata such as sandbox) <ul>
-<li><a href="https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes" title="https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes">https://snyk.docs.apiary.io/#reference/projects/project-attributes/applying-attributes</a></li>
+<li><strong>Use YoPass</strong> to securely share sensitive information like passwords or API keys.</li>
+<li><strong>Always set an appropriate expiration time</strong> for secrets.</li>
+<li><strong>Transmit the YoPass link and decode key via separate, secure channels</strong> whenever possible.</li>
+<li><strong>Verify YoPass links before accessing them</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Weekly Cache Clearance</p>
+<p>Our hosted instance of YoPass clears its cache every Sunday. Ensure any secrets are accessed within the intended timeframe, as they may be deleted during this routine maintenance.</p>
+</div>
+<h2 id="key-risks-yopass-mitigates">Key Risks YoPass Mitigates<a class="headerlink" href="#key-risks-yopass-mitigates" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Data interception</strong>: By encrypting shared information, YoPass protects secrets from being intercepted during transmission.</p>
+</li>
+<li>
+<p><strong>Credential leakage</strong>: Setting expiration times on shared secrets ensures they are only accessible for a limited time, reducing the window for potential leakage.</p>
+</li>
+<li>
+<p><strong>Unintended access</strong>: YoPass helps mitigate unauthorized access by enforcing one-time access policies.</p>
+</li>
+</ul>
+<h2 id="secure-sharing-guidelines">Secure Sharing Guidelines<a class="headerlink" href="#secure-sharing-guidelines" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>Protect the Combination of Link and Decode Key</strong></p>
+<ul>
+<li>Individually, the YoPass link and decode key are harmless. However, when <strong>combined</strong>, they grant access to the secret and should collectively be handled with the same level of confidentiality as the secret itself.</li>
 </ul>
 </li>
-<li>E.g. API to import multiple GH repositories into snyk. There is also sample code available. <ul>
-<li><a href="https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets" title="https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets">https://snyk.docs.apiary.io/#reference/import-projects/import/import-targets</a></li>
+<li>
+<p><strong>Transmit Link and Decode Key Separately</strong></p>
+<ul>
+<li>Whenever possible, send the YoPass link and the decode key via <strong>separate communication channels</strong> to minimize the risk of unauthorized access.<ul>
+<li><em>Example</em>: Send the link via email and the decode key via a direct message on teams.</li>
 </ul>
 </li>
 </ul>
 </li>
+<li>
+<p><strong>Use Secure Communication Channels</strong></p>
+<ul>
+<li>
+<p>Share the YoPass link and decode key through <strong>secure channels</strong> (e.g. email, secure messaging apps).</p>
+</li>
+<li>
+<p><strong>Avoid using public or unsecured networks</strong> to transmit sensitive information.</p>
+</li>
 </ul>
+</li>
+<li>
+<p><strong>Limit the Expiration Period</strong></p>
+<ul>
+<li>
+<p>Set an appropriate <strong>expiration time</strong> when sharing a secret. This limits the exposure window and ensures secrets are available only for the required duration.</p>
+</li>
+<li>
+<p>Use the <strong>one-time retrieval</strong> feature to ensure the secret can only be accessed once.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Password Policies</strong></p>
+<ul>
+<li>Secrets shared via YoPass should comply with <a href="https://aris.equinor.com/#default/search/~AfBbImNvbXBvbmVudF9jb21tZW50U3RyZWFtMTUzIl0~">internal security policies</a> and <strong>should not be reused across services</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Link Verification</strong></p>
+<ul>
+<li><strong>Verify YoPass links before accessing them</strong> to ensure they originate from trusted sources.</li>
+</ul>
+</li>
+<li>
+<p><strong>Use YoPass for Temporary Sharing</strong></p>
+<ul>
+<li>Avoid using YoPass for long-term secrets. If the secret is expected to be in use for an extended period, consider other methods such as managed secrets vaults.</li>
+</ul>
+</li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title"><strong>Exceptions and Practical Considerations</strong></p>
+<p>In scenarios where sending both the link and decode key together is necessary (e.g., time-sensitive situations or recipient limitations), ensure that:</p>
+<ul>
+<li>A <strong>secure communication channel</strong> is used.</li>
+<li>The recipient is instructed to <strong>access the secret promptly</strong>.</li>
+</ul>
+</div>
 
 
 
@@ -2484,7 +2651,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 12, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 25, 2024</span>
   </span>
 
     
@@ -2520,7 +2687,7 @@ cfg: { // Application Insights Configuration
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../4-scan_results/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Scan Results">
+          <a href="../secret-scanning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Secret Scanning">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2530,20 +2697,20 @@ cfg: { // Application Insights Configuration
                 Previous
               </span>
               <div class="md-ellipsis">
-                Scan Results
+                Secret Scanning
               </div>
             </div>
           </a>
         
         
           
-          <a href="../6-faq/" class="md-footer__link md-footer__link--next" aria-label="Next: Frequently Asked Questions">
+          <a href="../FAQ/pre-commit-faq/" class="md-footer__link md-footer__link--next" aria-label="Next: Pre-commit">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Frequently Asked Questions
+                Pre-commit
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2608,10 +2775,10 @@ cfg: { // Application Insights Configuration
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
