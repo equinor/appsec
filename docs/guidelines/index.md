@@ -13,4 +13,5 @@ This section contains guidelines relevant anyone writing code in Equinor.
 - [Postman](postman.md)
 - [Signed commits](git-signed-commits.md)
 - [Scanning for Secrets in code](secret-scanning.md)
+- [Sharing secrets using Yopass](sharing-secrets.md)
 - [Snyk](../snyk/index.md)
