@@ -12,13 +12,13 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/security-champion/8-useful-links/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/logging-monitoring/">
       
       
-        <link rel="prev" href="../7-about/">
+        <link rel="prev" href="../git-signed-commits/">
       
       
-        <link rel="next" href="../events/">
+        <link rel="next" href="../postman/">
       
       
       <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Useful links - Equinor AppSec</title>
+        <title>Web Application Logging and Monitoring - Equinor AppSec</title>
       
     
     
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#useful-links" class="md-skip">
+        <a href="#web-application-logging-and-monitoring" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Useful links
+              Web Application Logging and Monitoring
             
           </span>
         </div>
@@ -255,11 +255,13 @@ cfg: { // Application Insights Configuration
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../guidelines/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -275,13 +277,11 @@ cfg: { // Application Insights Configuration
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -442,6 +442,8 @@ cfg: { // Application Insights Configuration
       
   
   
+    
+  
   
   
     
@@ -472,21 +474,22 @@ cfg: { // Application Insights Configuration
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../guidelines/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -497,13 +500,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -519,7 +522,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +543,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/gh-actions-runners/" class="md-nav__link">
+      <a href="../gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +564,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/git-github/" class="md-nav__link">
+      <a href="../git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,7 +585,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/git-signed-commits/" class="md-nav__link">
+      <a href="../git-signed-commits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,10 +603,30 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guidelines/logging-monitoring/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Web Application Logging and Monitoring
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -612,6 +635,152 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-specific-logging-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Specific Logging &amp; Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Specific Logging & Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Logging
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Logging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-to-store-security-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where to store security logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance-operational-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance &amp; Operational Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-identifiable-information-pii-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Identifiable Information (PII) &amp; GDPR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-on-the-back-end-vs-front-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging on the back-end vs front-end
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retention Period
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-monitoring-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging &amp; Monitoring Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logging & Monitoring Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-alerting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring &amp; Alerting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -624,7 +793,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/postman/" class="md-nav__link">
+      <a href="../postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +814,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +835,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/sharing-secrets/" class="md-nav__link">
+      <a href="../sharing-secrets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +900,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
+      <a href="../FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,8 +933,6 @@ cfg: { // Application Insights Configuration
       
   
   
-    
-  
   
   
     
@@ -798,22 +965,21 @@ cfg: { // Application Insights Configuration
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -824,13 +990,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Security champion
@@ -846,7 +1012,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../1-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/1-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -867,7 +1033,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../2-security_champion_activities/" class="md-nav__link">
+      <a href="../../security-champion/2-security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -888,7 +1054,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../3-faq/" class="md-nav__link">
+      <a href="../../security-champion/3-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -909,7 +1075,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../4-learning-platform/" class="md-nav__link">
+      <a href="../../security-champion/4-learning-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -930,7 +1096,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../5-merch/" class="md-nav__link">
+      <a href="../../security-champion/5-merch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -951,7 +1117,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../6-offboarding/" class="md-nav__link">
+      <a href="../../security-champion/6-offboarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -972,7 +1138,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../7-about/" class="md-nav__link">
+      <a href="../../security-champion/7-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -990,19 +1156,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../security-champion/8-useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1011,7 +1168,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
     </li>
   
 
@@ -1053,7 +1209,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1132,7 +1288,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1153,7 +1309,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1226,7 +1382,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1299,7 +1455,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../events/2024/1-sc-meetup-3/" class="md-nav__link">
+      <a href="../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1359,7 +1515,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../stories/" class="md-nav__link ">
+            <a href="../../security-champion/stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2455,6 +2611,140 @@ cfg: { // Application Insights Configuration
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr" class="md-nav__link">
+    <span class="md-ellipsis">
+      TL;DR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-specific-logging-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Specific Logging &amp; Monitoring
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application Specific Logging & Monitoring">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#security-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Security Logging
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Security Logging">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#where-to-store-security-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where to store security logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance-operational-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance &amp; Operational Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-identifiable-information-pii-gdpr" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personal Identifiable Information (PII) &amp; GDPR
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logging-on-the-back-end-vs-front-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging on the back-end vs front-end
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retention-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retention Period
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logging-monitoring-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging &amp; Monitoring Best Practices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logging & Monitoring Best Practices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-alerting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring &amp; Alerting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2471,15 +2761,88 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="useful-links">Useful links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h1>
-<p>These are some relevant resources for security champions</p>
+<h1 id="web-application-logging-and-monitoring">Web Application Logging and Monitoring<a class="headerlink" href="#web-application-logging-and-monitoring" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is a work in progress. Any thoughts? Reach out to us on <a href="https://app.slack.com/client/T02JL00JU/CMM6FSW5V">Slack</a> or e-mail at <code>appsec[at]equinor.com</code></p>
+</div>
+<p><strong>Target Audience</strong> - Application teams maintaining or implementing web applications.</p>
+<p>Logging and Monitoring are core components of a robust security posture.
+They contribute for the operational health of the application, assist non-repudiation controls, allow for detection of security incidents and support it's investigation.</p>
+<p>In this guideline we address logging for security, maintenance and operational purposes. This is not a single truth, as each application is different. Additional requirements might apply based on the criticality of the application and classification of information managed by it.</p>
+<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://statoilsrm.sharepoint.com/sites/securitychampion9">Sharepoint site for security champions</a></li>
-<li><a href="https://equinor.slack.com/archives/CMM6FSW5V">#appsec on Equinor slack</a></li>
-<li><a href="https://security-champions-no.slack.com">Security Champions Norge</a> Slack channel - contact the appsec team to get an invite.</li>
-<li><a href="https://sikkerhet.nav.no/docs/security-champion-rolle/">Security champions @ NAV</a></li>
-<li><a href="https://owasp.org/www-project-security-culture/stable/4-Security_Champions/">OWASP security champions</a>
-OWASP information and recommendations about security champions networks</li>
+<li>Application teams should ensure that logging and monitoring is in place for operational and maintenance purposes</li>
+<li>Security Logging should be logged to it's own <strong>Azure Log Analytics</strong> workspace</li>
+<li>Do a <strong>threat model</strong> to see where security logging would benefit you the most</li>
+</ul>
+<h2 id="application-specific-logging-monitoring">Application Specific Logging &amp; Monitoring<a class="headerlink" href="#application-specific-logging-monitoring" title="Permanent link">&para;</a></h2>
+<h3 id="security-logging">Security Logging<a class="headerlink" href="#security-logging" title="Permanent link">&para;</a></h3>
+<p>Security logging is a huge topic, so we will limit our scope. You should not log "just to log", and <em>what</em> you log should make sense. Consider the below points based on your <strong>risk appetite</strong>, <strong>sensitivity of data</strong> and your applications <strong>threat model</strong>.</p>
+<div class="admonition warn">
+<p class="admonition-title">Note</p>
+<p>This is <strong>not</strong> a complete list, <strong>not</strong> a minimum requirement, but a <strong>good start</strong> to get ideas.</p>
+</div>
+<ul>
+<li>Log when state of data changes occur</li>
+<li>Log when someone tries to gain access to resources they do not have access to</li>
+<li>Log actions done by administrators</li>
+<li>Log access to sensitive documents</li>
+</ul>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>Scans:</code> Somebody keeps poking our end-points, testing known end-points, or trying different malicious inputs. A fitting mitigation for this threat can be throttling / rate limiting. Logging would not properly mitigate the issue, because the application team would be unable to take action to stop such an attack. Such an attack would be up to CDC to detect and respond</li>
+<li><code>Access control:</code> Assume an application holds data that is owned by specific users, and it is required that data can be accessed only by its owner. A risk is identified that, due to either errors or malicious action, user Alice could access user Bob's data. In this case, logging is an acceptable mitigation to this risk. The application can log whenever a user accesses a piece of data. Controls can be set up to check the logs in real time and detect if some accesses are incompatible, or this could happen on a regular basis (e.g. once a month a validation routine is run on the logs)</li>
+<li><code>Privileged (admin) access:</code> Some applications may include special permissions for admins. What application admins can do is determined by the application, so misuse of admin credentials is a threat in the scope of the application. Logging accesses and actions performed by admins is a valid mitigation strategy</li>
+</ul>
+<h4 id="where-to-store-security-logs">Where to store security logs<a class="headerlink" href="#where-to-store-security-logs" title="Permanent link">&para;</a></h4>
+<p>We recommend security logs being stored in a Azure Log Analytics workspace separate from your <a href="#maintenance--operational-logging">Maintenance &amp; Operational Logging</a>. This is so it can be easily consumed if you are asked for your security logs.</p>
+<h3 id="maintenance-operational-logging">Maintenance &amp; Operational Logging<a class="headerlink" href="#maintenance-operational-logging" title="Permanent link">&para;</a></h3>
+<p>The application teams should ensure, that logging and monitoring is in place for operational and maintenance purposes.</p>
+<p>We recommend that teams address and put into place a logging strategy as soon as possible in the software development life cycle. We have experienced that the later logging is addressed the harder it is to put into place.</p>
+<div class="admonition tip">
+<p class="admonition-title">A logging strategy should address</p>
+<ul>
+<li>Why you are logging</li>
+<li>Where to send logs</li>
+<li>Where to store the logs</li>
+<li>How to maintain the logs</li>
+</ul>
+</div>
+<p>The granularity of logging and frequency of monitoring will depend on the criticality of the application and of the information managed by it.</p>
+<p>Iterative <strong>threat modeling sessions</strong> should be conducted to access the level of logging and monitoring required. These sessions should involve the BSO/TPM as they will be the best equipped to provide insight into the business and security requirements of the application.</p>
+<p><code>Critical or sensitive information, access tokens, secrets, source code, keys, certificates, etc.. are examples of what should never be logged.</code></p>
+<h3 id="personal-identifiable-information-pii-gdpr">Personal Identifiable Information (PII) &amp; GDPR<a class="headerlink" href="#personal-identifiable-information-pii-gdpr" title="Permanent link">&para;</a></h3>
+<p>The team should pay particular attention to minimize to the absolute minimum the collection and storage of any kind of private or personal identifiable information (PII) in the log files.</p>
+<p>We recommend consulting the <a href="https://wiki.equinor.com/wiki/Software:Gdpr_guideline">GDPR - Privacy by Design Guideline</a> for further guidance.</p>
+<h3 id="logging-on-the-back-end-vs-front-end">Logging on the back-end vs front-end<a class="headerlink" href="#logging-on-the-back-end-vs-front-end" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <strong>back-end</strong> is a <strong>confidential client</strong>, the logs prevenient from it can be trusted.</p>
+<p>The <strong>front-end</strong> is a <strong>public client</strong> as such the logs prevenient from it cannot be trusted.</p>
+</div>
+<p>Ideally, if <strong>front-end</strong> logging is necessary, a separate logging instance should be set up for both the <strong>back-end</strong> and <strong>front-end</strong>.
+If sharing the same logging instance, we suggest you tag the logs with the source when prevenient from the backend, so it can be easily identified and distinguished which are trusted logs and which are untrusted logs.</p>
+<h3 id="retention-period">Retention Period<a class="headerlink" href="#retention-period" title="Permanent link">&para;</a></h3>
+<p>In accordance to <a href="https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127">TR2375 SR133039</a>, if the logs contain personal information they shall be stored for 3 months, other logs shall be stored for 18 months.</p>
+<h2 id="logging-monitoring-best-practices">Logging &amp; Monitoring Best Practices<a class="headerlink" href="#logging-monitoring-best-practices" title="Permanent link">&para;</a></h2>
+<p>There are some best practices that we recommend teams to keep in mind when implementing logging and monitoring into their applications.</p>
+<h3 id="monitoring-alerting">Monitoring &amp; Alerting<a class="headerlink" href="#monitoring-alerting" title="Permanent link">&para;</a></h3>
+<p>When it comes to monitoring and alerting, each team should decide on how much is necessary, this depends on the criticality of the application and of the information handled by it.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Monitoring and alerts should not take most of the time from the team.</p>
+</div>
+<p>Monitoring and alerts can quickly become overwhelming. It can be considered for teams that want to be proactive on identifying issues in the application before their users or it can be a good mitigation strategy for a threat identified during a threat modeling session.</p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p>Here are some resources on logging and monitoring we can recommend:</p>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html#logging-cheat-sheet">OWASP Logging Cheat Sheet</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Vocabulary_Cheat_Sheet.html#the-vocabulary">OWASP Logging Vocabulary</a></li>
+<li><a href="https://owasp.org/www-project-application-security-verification-standard/">OWASP ASVS</a></li>
+<li><a href="https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging">OWASP Implement Security Logging and Monitoring</a></li>
+<li><a href="https://owasp.org/www-project-developer-guide/release/design/web_app_checklist/security_logging_and_monitoring/">OWASP Security Logging and Monitoring Checklist</a></li>
+<li><a href="https://learn.snyk.io/lesson/logging-vulnerabilities/#step-12d534ed-b232-4f6d-b52b-f06b8897f99a">Snyk Lesson on Logging Vulnerabilities</a></li>
 </ul>
 
 
@@ -2501,7 +2864,7 @@ OWASP information and recommendations about security champions networks</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2022</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2024</span>
   </span>
 
     
@@ -2537,7 +2900,7 @@ OWASP information and recommendations about security champions networks</li>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../7-about/" class="md-footer__link md-footer__link--prev" aria-label="Previous: About the network">
+          <a href="../git-signed-commits/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Signed commits">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2547,20 +2910,20 @@ OWASP information and recommendations about security champions networks</li>
                 Previous
               </span>
               <div class="md-ellipsis">
-                About the network
+                Signed commits
               </div>
             </div>
           </a>
         
         
           
-          <a href="../events/" class="md-footer__link md-footer__link--next" aria-label="Next: Events 📣">
+          <a href="../postman/" class="md-footer__link md-footer__link--next" aria-label="Next: Postman">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Events 📣
+                Postman
               </div>
             </div>
             <div class="md-footer__button md-icon">
