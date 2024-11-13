@@ -13,7 +13,7 @@ In this guideline we address logging for security, maintenance and operational p
 ## TL;DR
 
 - Application teams should ensure that logging and monitoring is in place for operational and maintenance purposes
-- Security Logging should be logged to it's own **Azure Log Analytics** workspace
+- The front-end is a **public client** and the logs from it **cannot be trusted**
 - Do a **threat model** to see where security logging would benefit you the most
 
 ## Application Specific Logging & Monitoring
@@ -39,7 +39,7 @@ Security logging is a huge topic, so we will limit our scope. You should not log
 
 #### Where to store security logs
 
-We recommend security logs being stored in a Azure Log Analytics workspace separate from your [Maintenance & Operational Logging](#maintenance--operational-logging). This is so it can be easily consumed if you are asked for your security logs.
+It depends on your situation is the "boring answer". If you have a small application, it might be practical to have the security logs with your application logs. If you have a big application, it might be useful to store security logs in a Azure Log Analytics workspace separate from your [Maintenance & Operational Logging](#maintenance--operational-logging). This is so it can be easily consumed if you are asked for your security logs.
 
 ### Maintenance & Operational Logging
 
@@ -58,6 +58,8 @@ The granularity of logging and frequency of monitoring will depend on the critic
 
 Iterative **threat modeling sessions** should be conducted to access the level of logging and monitoring required. These sessions should involve the BSO/TPM as they will be the best equipped to provide insight into the business and security requirements of the application.
 
+Depending on your selected log strategy, you should consider having **immutable logs**, especially if you are handling confidential data.
+
 ```Critical or sensitive information, access tokens, secrets, source code, keys, certificates, etc.. are examples of what should never be logged.```
 
 ### Personal Identifiable Information (PII) & GDPR
@@ -70,16 +72,22 @@ We recommend consulting the [GDPR - Privacy by Design Guideline](https://wiki.eq
 
 !!! tip
 
-    The **back-end** is a **confidential client**, the logs prevenient from it can be trusted.
+    The **back-end** is a **confidential client**, the logs presented from it can be trusted.
 
-    The **front-end** is a **public client** as such the logs prevenient from it cannot be trusted.
+    The **front-end** is a **public client** as such the logs presented from it cannot be trusted.
 
 Ideally, if **front-end** logging is necessary, a separate logging instance should be set up for both the **back-end** and **front-end**.
 If sharing the same logging instance, we suggest you tag the logs with the source when prevenient from the backend, so it can be easily identified and distinguished which are trusted logs and which are untrusted logs.
 
 ### Retention Period
 
-In accordance to [TR2375 SR133039](https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127), if the logs contain personal information they shall be stored for 3 months, other logs shall be stored for 18 months.
+In accordance to [TR2375 SR133039](https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127):
+
+- Access logs from solutions containing personal data shall be stored for 3 months
+- Logs that enable detection and investigation of incidents shall be stored for 3 months
+- Logs are from applications and systems processing confidential information shall be stored for 18 months
+
+We do recommend setting up auto deletion of logs after they have passed the intended retention period to reduce cost and manual maintenance.
 
 ## Logging & Monitoring Best Practices
 
@@ -93,7 +101,7 @@ When it comes to monitoring and alerting, each team should decide on how much is
 
     Monitoring and alerts should not take most of the time from the team.
 
-Monitoring and alerts can quickly become overwhelming. It can be considered for teams that want to be proactive on identifying issues in the application before their users or it can be a good mitigation strategy for a threat identified during a threat modeling session.
+Monitoring and alerts can quickly become overwhelming. It can be considered for teams that want to be proactive on identifying issues in the application before their users or it can be a good mitigation strategy for a threat identified during a **threat modeling session.**
 
 ### Resources
 
