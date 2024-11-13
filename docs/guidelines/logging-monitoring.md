@@ -41,8 +41,6 @@ Security logging is a huge topic, so we will limit our scope. You should not log
 
 It depends on your situation is the "boring answer". If you have a small application, it might be practical to have the security logs with your application logs. If you have a big application, it might be useful to store security logs in a Azure Log Analytics workspace separate from your [Maintenance & Operational Logging](#maintenance--operational-logging). This is so it can be easily consumed if you are asked for your security logs.
 
-Logs should be immutable, so they cannot be changed/deleted.
-
 ### Maintenance & Operational Logging
 
 The application teams should ensure, that logging and monitoring is in place for operational and maintenance purposes.
@@ -59,6 +57,8 @@ We recommend that teams address and put into place a logging strategy as soon as
 The granularity of logging and frequency of monitoring will depend on the criticality of the application and of the information managed by it.
 
 Iterative **threat modeling sessions** should be conducted to access the level of logging and monitoring required. These sessions should involve the BSO/TPM as they will be the best equipped to provide insight into the business and security requirements of the application.
+
+Depending on your selected log strategy, you should consider having **immutable logs**, especially if you are handling confidential data.
 
 ```Critical or sensitive information, access tokens, secrets, source code, keys, certificates, etc.. are examples of what should never be logged.```
 
