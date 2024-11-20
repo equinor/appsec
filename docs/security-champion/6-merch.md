@@ -25,7 +25,7 @@ As SCN age, we will have different merch come and go. Below we have a record of 
 
 ## Merch for belts
 
-Since we are launching a new belt system connected to the secure coding platform, we need fresh merch! Below is a list of what you can get at the different belt systems. The items will be shipped via mail unless you can pick it up in the building (Forus Øst).
+Since we are launching a new belt system connected to the secure coding platform, we need fresh merch! Below is a list of what you can get at the different belt systems. The items will be shipped via mail unless you can pick it up in the building (Stavanger Forus Øst).
 
 - ```White``` belt:
     - Your very own white lanyard decorated with placeholders for those hard-earned pins.
