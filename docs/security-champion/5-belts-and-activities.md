@@ -56,6 +56,7 @@ Please help contribute with useful activities that make sense in Equinor context
 - Attend a meetup
 - Hold a security moment at a seminar/meetup
 - Set up ```Snyk``` scanning for your repository
+- Assess and address all issues in Snyk (achieve a 0-issue dashboard)
 - Set up ```Secret scanning``` for your project [using our guidelines](https://appsec.equinor.com/guidelines/secret-scanning/)
 - Attend a Security Journey tournament ```(learning platform)```
 - Gain three ```white``` belts ```(learning platform)```
