@@ -25,6 +25,9 @@ Please note that:
 
 ### GitHub Advanced Security: Secret Scanning
 
+!!! info
+    The "Secret Scanning" feature of GitHub Advanced Security is currently not enabled for "Internal" or "Private" repositories within Equinor. It is available only for "Public" repositories.
+
 GitHub Advanced Security is integrated into GitHub, providing features like the secret scanning module free for public repositories. This module supports these [secret types](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) so far.
 
 #### How to turn it on for your repository
