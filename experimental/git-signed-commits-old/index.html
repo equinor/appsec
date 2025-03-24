@@ -12,28 +12,28 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/guidelines/FAQ/pre-commit-faq/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/experimental/git-signed-commits-old/">
       
       
-        <link rel="prev" href="../../sharing-secrets/">
+        <link rel="prev" href="../../about/privacy/">
       
       
-        <link rel="next" href="../../../security-champion/">
+        <link rel="next" href="../git-signed-commits-young/">
       
       
-      <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
+      <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>Pre-commit - Equinor AppSec</title>
+        <title>🔏 Git Signed Commits: A Guide for Proper Folks Who Ain’t Raised by Wolves 🧐 - Equinor AppSec</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/css/mkdocs-eq.css">
+      <link rel="stylesheet" href="../../assets/css/mkdocs-eq.css">
     
       <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-font.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#pre-commit" class="md-skip">
+        <a href="#git-signed-commits-a-guide-for-proper-folks-who-aint-raised-by-wolves" class="md-skip">
           Skip to content
         </a>
       
@@ -114,9 +114,9 @@ cfg: { // Application Insights Configuration
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pre-commit
+              🔏 Git Signed Commits: A Guide for Proper Folks Who Ain’t Raised by Wolves 🧐
             
           </span>
         </div>
@@ -240,7 +240,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -255,13 +255,11 @@ cfg: { // Application Insights Configuration
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../guidelines/" class="md-tabs__link">
           
   
     
@@ -281,7 +279,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../security-champion/" class="md-tabs__link">
+        <a href="../../security-champion/" class="md-tabs__link">
           
   
     
@@ -301,7 +299,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../snyk/" class="md-tabs__link">
+        <a href="../../snyk/" class="md-tabs__link">
           
   
     
@@ -321,7 +319,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../threat-modeling/" class="md-tabs__link">
+        <a href="../../threat-modeling/" class="md-tabs__link">
           
   
     
@@ -341,7 +339,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../resources/" class="md-tabs__link">
+        <a href="../../resources/" class="md-tabs__link">
           
   
     
@@ -361,7 +359,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../../about/" class="md-tabs__link">
+        <a href="../../about/" class="md-tabs__link">
           
   
     
@@ -396,9 +394,9 @@ cfg: { // Application Insights Configuration
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     Equinor AppSec
@@ -425,7 +423,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -443,8 +441,6 @@ cfg: { // Application Insights Configuration
       
   
   
-    
-  
   
   
     
@@ -475,22 +471,21 @@ cfg: { // Application Insights Configuration
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../guidelines/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -502,13 +497,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -524,7 +519,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../authn-authz/" class="md-nav__link">
+      <a href="../../guidelines/authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -546,7 +541,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../gh-actions-runners/" class="md-nav__link">
+      <a href="../../guidelines/gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -568,7 +563,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../git-github/" class="md-nav__link">
+      <a href="../../guidelines/git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -590,7 +585,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../git-signed-commits/" class="md-nav__link">
+      <a href="../../guidelines/git-signed-commits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -612,7 +607,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../logging-monitoring/" class="md-nav__link">
+      <a href="../../guidelines/logging-monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +629,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../postman/" class="md-nav__link">
+      <a href="../../guidelines/postman/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -656,7 +651,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../secret-scanning/" class="md-nav__link">
+      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -678,7 +673,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../sharing-secrets/" class="md-nav__link">
+      <a href="../../guidelines/sharing-secrets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -697,8 +692,6 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
-  
   
   
     
@@ -712,11 +705,13 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
         
           
           <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
@@ -731,7 +726,7 @@ cfg: { // Application Insights Configuration
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_10">
             <span class="md-nav__icon md-icon"></span>
             FAQ
@@ -742,31 +737,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Pre-commit
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../guidelines/FAQ/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,116 +750,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-do-i-install-pre-commit" class="md-nav__link">
-    <span class="md-ellipsis">
-      How do I install pre-commit?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How do I install pre-commit?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#homebrew-maclinux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Homebrew (Mac/Linux)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installing-pre-commit" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installing pre-commit
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing pre-commit">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#note-if-pre-commit-is-not-available-after-install-it-might-be-needed-to-manually-add-it-to-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      NOTE: If pre-commit is not available after install, it might be needed to manually add it to PATH.
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-do-i-add-pre-commit-to-my-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      How do I add pre-commit to my repository?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#do-i-need-to-setup-pre-commit-for-each-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      Do I need to setup pre-commit for each repository?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -958,7 +822,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/" class="md-nav__link ">
+            <a href="../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -992,7 +856,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/1-new_security_champion/" class="md-nav__link">
+      <a href="../../security-champion/1-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1014,7 +878,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/2-security_champion_activities/" class="md-nav__link">
+      <a href="../../security-champion/2-security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1036,7 +900,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/3-faq/" class="md-nav__link">
+      <a href="../../security-champion/3-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1058,7 +922,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/4-learning-platform/" class="md-nav__link">
+      <a href="../../security-champion/4-learning-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1080,7 +944,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/5-belts-and-activities/" class="md-nav__link">
+      <a href="../../security-champion/5-belts-and-activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1102,7 +966,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/6-merch/" class="md-nav__link">
+      <a href="../../security-champion/6-merch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1124,7 +988,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/7-about/" class="md-nav__link">
+      <a href="../../security-champion/7-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1146,7 +1010,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/8-offboarding/" class="md-nav__link">
+      <a href="../../security-champion/8-offboarding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1168,7 +1032,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/9-useful-links/" class="md-nav__link">
+      <a href="../../security-champion/9-useful-links/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1219,7 +1083,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/events/" class="md-nav__link ">
+            <a href="../../security-champion/events/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1300,7 +1164,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/1-sc-info-meeting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1322,7 +1186,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
+      <a href="../../security-champion/events/2022/sc-kickoff-agenda/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1397,7 +1261,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
+      <a href="../../security-champion/events/2023/1-sc-meetup-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1472,7 +1336,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
+      <a href="../../security-champion/events/2024/1-sc-meetup-3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1533,7 +1397,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../security-champion/stories/" class="md-nav__link ">
+            <a href="../../security-champion/stories/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1608,7 +1472,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../snyk/" class="md-nav__link ">
+            <a href="../../snyk/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1642,7 +1506,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/2-about-snyk/" class="md-nav__link">
+      <a href="../../snyk/2-about-snyk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1664,7 +1528,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/3-snyk_support/" class="md-nav__link">
+      <a href="../../snyk/3-snyk_support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1686,7 +1550,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/4-vulnerabilities/" class="md-nav__link">
+      <a href="../../snyk/4-vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1743,7 +1607,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../snyk/curriculum/" class="md-nav__link ">
+            <a href="../../snyk/curriculum/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1777,7 +1641,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
+      <a href="../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1799,7 +1663,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/2-integrations/" class="md-nav__link">
+      <a href="../../snyk/curriculum/2-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1821,7 +1685,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/3-projects/" class="md-nav__link">
+      <a href="../../snyk/curriculum/3-projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1843,7 +1707,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/4-scan_results/" class="md-nav__link">
+      <a href="../../snyk/curriculum/4-scan_results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1865,7 +1729,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/5-advanced/" class="md-nav__link">
+      <a href="../../snyk/curriculum/5-advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1887,7 +1751,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../snyk/curriculum/6-faq/" class="md-nav__link">
+      <a href="../../snyk/curriculum/6-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1951,7 +1815,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/" class="md-nav__link ">
+            <a href="../../threat-modeling/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2022,7 +1886,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
+            <a href="../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2056,7 +1920,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/1-about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2078,7 +1942,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2100,7 +1964,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2122,7 +1986,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2144,7 +2008,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-explore/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2166,7 +2030,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2188,7 +2052,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/extention-remote-tm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2265,7 +2129,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/threat_modelling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2287,7 +2151,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../threat-modeling/resources/zgamified/" class="md-nav__link">
+      <a href="../../threat-modeling/resources/zgamified/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2357,7 +2221,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../resources/" class="md-nav__link ">
+            <a href="../../resources/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2391,7 +2255,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/learning-material/" class="md-nav__link">
+      <a href="../../resources/learning-material/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2413,7 +2277,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/security_requirements/" class="md-nav__link">
+      <a href="../../resources/security_requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2435,7 +2299,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/security_testing/" class="md-nav__link">
+      <a href="../../resources/security_testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2321,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/tools/" class="md-nav__link">
+      <a href="../../resources/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2524,7 +2388,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
+      <a href="../../resources/stories/meet_the_appsec_team/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2586,7 +2450,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../about/" class="md-nav__link ">
+            <a href="../../about/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2620,7 +2484,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../../about/privacy/" class="md-nav__link">
+      <a href="../../about/privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2669,69 +2533,48 @@ cfg: { // Application Insights Configuration
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-install-pre-commit" class="md-nav__link">
+  <a href="#the-rules-and-you-better-follow-em-yhear" class="md-nav__link">
     <span class="md-ellipsis">
-      How do I install pre-commit?
+      📜 The Rules (And You Better Follow ‘Em, Y’hear?)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How do I install pre-commit?">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-key-signing-the-best-way-for-most-folks" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔐 SSH Key Signing (The Best Way for Most Folks)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔐 SSH Key Signing (The Best Way for Most Folks)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#1-generate-a-signing-ssh-key" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Prerequisites">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#python" class="md-nav__link">
-    <span class="md-ellipsis">
-      Python
+      1. 🛠️ Generate a Signing SSH Key
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#homebrew-maclinux" class="md-nav__link">
+  <a href="#2-add-the-key-to-your-ssh-agent" class="md-nav__link">
     <span class="md-ellipsis">
-      Homebrew (Mac/Linux)
+      2. 🧠 Add the Key to Your SSH Agent
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installing-pre-commit" class="md-nav__link">
+  <a href="#3-tell-git-to-use-this-key-for-signing" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing pre-commit
+      3. 🧾 Tell Git to Use This Key for Signing
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Installing pre-commit">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#note-if-pre-commit-is-not-available-after-install-it-might-be-needed-to-manually-add-it-to-path" class="md-nav__link">
-    <span class="md-ellipsis">
-      NOTE: If pre-commit is not available after install, it might be needed to manually add it to PATH.
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2741,18 +2584,42 @@ cfg: { // Application Insights Configuration
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-do-i-add-pre-commit-to-my-repository" class="md-nav__link">
+  <a href="#4-check-that-your-commits-are-signed" class="md-nav__link">
     <span class="md-ellipsis">
-      How do I add pre-commit to my repository?
+      4. 🔍 Check That Your Commits Are Signed
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 🔍 Check That Your Commits Are Signed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-add-your-public-signing-key-to-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 🗝️ Add Your Public Signing Key to GitHub
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#6-require-signed-commits-on-protected-branches-optional-but-smart" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 🚪 Require Signed Commits on Protected Branches (Optional but Smart)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#do-i-need-to-setup-pre-commit-for-each-repository" class="md-nav__link">
+  <a href="#final-words-from-an-old-timer-whos-seen-some-things" class="md-nav__link">
     <span class="md-ellipsis">
-      Do I need to setup pre-commit for each repository?
+      🎤 Final Words from an Old-Timer Who’s Seen Some Things
     </span>
   </a>
   
@@ -2777,51 +2644,58 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="pre-commit">Pre-commit<a class="headerlink" href="#pre-commit" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><a href="https://pre-commit.com/index.html">Pre-commit</a> is a framework for managing and maintaining multi-language pre-commit hooks. In short it allows for a self-maintained list of checks to be performed before any commit.</p>
-</blockquote>
-<h2 id="how-do-i-install-pre-commit">How do I install pre-commit?<a class="headerlink" href="#how-do-i-install-pre-commit" title="Permanent link">&para;</a></h2>
-<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
-<p>Pre-commit can be installed in two ways, using Python pip or Homebrew.</p>
-<h4 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Verify that pip is installed with <code>pip -V</code>.</li>
-<li>If it isn't installed download and install a newer version of Python, it should include pip as well.</li>
-</ul>
-<h4 id="homebrew-maclinux">Homebrew (Mac/Linux)<a class="headerlink" href="#homebrew-maclinux" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Verify that brew is installed with <code>brew -v</code></li>
-<li>If it isn't installed, install using <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></br>(As usual, verify all install scripts before executing)</li>
-<li>Remember to perform the next steps that are shown after install.</li>
-</ul>
-<h3 id="installing-pre-commit">Installing pre-commit<a class="headerlink" href="#installing-pre-commit" title="Permanent link">&para;</a></h3>
-<table>
-<thead>
-<tr>
-<th>Python</th>
-<th>Homebrew</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>pip install pre-commit</code></td>
-<td><code>brew install pre-commit</code></td>
-</tr>
-</tbody>
-</table>
-<p>Once pre-commit is installed you need to set up the git hook scripts by running <code>pre-commit install</code>. Now pre-commit wil automatically run on git commit!</p>
-<h6 id="note-if-pre-commit-is-not-available-after-install-it-might-be-needed-to-manually-add-it-to-path">NOTE: If <code>pre-commit</code> is not available after install, it might be needed to manually add it to PATH.<a class="headerlink" href="#note-if-pre-commit-is-not-available-after-install-it-might-be-needed-to-manually-add-it-to-path" title="Permanent link">&para;</a></h6>
-<h2 id="how-do-i-add-pre-commit-to-my-repository">How do I add pre-commit to my repository?<a class="headerlink" href="#how-do-i-add-pre-commit-to-my-repository" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Once pre-commit is installed you can add plugins to the <code>.pre-commit-config.yaml</code> file</li>
-<li>The config file should be added to the root of your project.</li>
-<li>More guides can be found on the <a href="https://pre-commit.com/index.html#adding-pre-commit-plugins-to-your-project">pre-commit website</a></li>
-<li>You can also generate a basic configuration using <code>pre-commit sample-config</code></li>
-</ul>
-<h2 id="do-i-need-to-setup-pre-commit-for-each-repository">Do I need to setup pre-commit for each repository?<a class="headerlink" href="#do-i-need-to-setup-pre-commit-for-each-repository" title="Permanent link">&para;</a></h2>
-<p>Yes.</p>
-<p>Each repository that uses pre-commit needs to have the <code>.pre-commit-config.yaml</code> file.</p>
+<h1 id="git-signed-commits-a-guide-for-proper-folks-who-aint-raised-by-wolves">🔏 Git Signed Commits: A Guide for Proper Folks Who Ain’t Raised by Wolves 🧐<a class="headerlink" href="#git-signed-commits-a-guide-for-proper-folks-who-aint-raised-by-wolves" title="Permanent link">&para;</a></h1>
+<p>Now gather ‘round, you young scallywags, and let an old hand set you straight. Back in my day, a man’s word was his bond, and a signature was as good as gold. Nowadays, any two-bit scoundrel with a typewriter hooked up to a lightning machine can go fiddlin’ with your code, impersonatin’ honest folk, and muckin’ things up faster than a hog in a henhouse. 💨  </p>
+<p><strong>That’s why you gotta sign your Git commits, just like an honest citizen signs a check down at the bank.</strong> 🏦  </p>
+<p>If you don’t, well… don’t come cryin’ when some rascal tampers with your code and the whole shebang crumbles like a biscuit in hot coffee. ☕🍪  </p>
+<h2 id="the-rules-and-you-better-follow-em-yhear">📜 The Rules (And You Better Follow ‘Em, Y’hear?)<a class="headerlink" href="#the-rules-and-you-better-follow-em-yhear" title="Permanent link">&para;</a></h2>
+<p>✅ <strong>Sign every Git commit you make.</strong> A commit without a signature is like a contract written in invisible ink—ain’t worth a plugged nickel. 💰  </p>
+<p>✅ <strong>Use SSH keys with a passphrase.</strong> That’s a password, son. And make it a good one. "123456" ain’t a passphrase, it’s an invitation for hooligans.  </p>
+<p>✅ <strong>Keep separate keys for signin’ and loggin’ in.</strong> You wouldn’t use the same key for your house and your barn, would ya? </p>
+<p>✅ <strong>Make sure your branch rules require signed commits.</strong> Otherwise, you might as well leave your front door wide open and hope the raccoons don’t move in.</p>
+<p>✅ <strong>GitHub Codespaces might sign commits for ya, but don’t trust it more than your own two hands.</strong> Machines are tricky little devils, and you never know when one’s gonna go haywire. 🤖🔥  </p>
+<h2 id="ssh-key-signing-the-best-way-for-most-folks">🔐 SSH Key Signing (The Best Way for Most Folks)<a class="headerlink" href="#ssh-key-signing-the-best-way-for-most-folks" title="Permanent link">&para;</a></h2>
+<h3 id="1-generate-a-signing-ssh-key">1. 🛠️ Generate a Signing SSH Key<a class="headerlink" href="#1-generate-a-signing-ssh-key" title="Permanent link">&para;</a></h3>
+<p>Open up your terminal and generate a dedicated SSH key just for signing your Git commits:</p>
+<pre><code class="language-bash">ssh-keygen -t ed25519 -f ~/.ssh/git_ssh_signing_key_1 -C &quot;Created on &lt;date&gt;, for [your_username] on github.com&quot;
+</code></pre>
+<p>Make sure to give it a good passphrase, not something like password123. A weak passphrase is like lockin’ your door with a shoelace.</p>
+<h3 id="2-add-the-key-to-your-ssh-agent">2. 🧠 Add the Key to Your SSH Agent<a class="headerlink" href="#2-add-the-key-to-your-ssh-agent" title="Permanent link">&para;</a></h3>
+<p>To save yourself from typing the passphrase every time, add the key to your SSH agent:</p>
+<pre><code class="language-bash">ssh-add ~/.ssh/git_ssh_signing_key_1
+</code></pre>
+<h3 id="3-tell-git-to-use-this-key-for-signing">3. 🧾 Tell Git to Use This Key for Signing<a class="headerlink" href="#3-tell-git-to-use-this-key-for-signing" title="Permanent link">&para;</a></h3>
+<p>Git’s like a mule—it only listens when you speak plain. So tell it exactly what to do:</p>
+<pre><code class="language-bash">git config --global gpg.format ssh
+git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
+git config --global commit.gpgsign true
+</code></pre>
+<p>Now Git will sign your commits automatically, no fuss, no muss. </p>
+<h2 id="4-check-that-your-commits-are-signed">4. 🔍 Check That Your Commits Are Signed<a class="headerlink" href="#4-check-that-your-commits-are-signed" title="Permanent link">&para;</a></h2>
+<p>To make sure it’s working and you didn’t fat-finger anything, run this:</p>
+<pre><code class="language-bash">git log --show-signature
+</code></pre>
+<p>If it shows your signature, you did it right. If not, go back and double-check your setup. 🎩</p>
+<h3 id="5-add-your-public-signing-key-to-github">5. 🗝️ Add Your Public Signing Key to GitHub<a class="headerlink" href="#5-add-your-public-signing-key-to-github" title="Permanent link">&para;</a></h3>
+<p>GitHub ain’t a mind reader. You’ve got to tell it about your key.</p>
+<p>First, get your public key:</p>
+<pre><code class="language-bash">cat ~/.ssh/git_ssh_signing_key_1.pub
+</code></pre>
+<h3 id="6-require-signed-commits-on-protected-branches-optional-but-smart">6. 🚪 Require Signed Commits on Protected Branches (Optional but Smart)<a class="headerlink" href="#6-require-signed-commits-on-protected-branches-optional-but-smart" title="Permanent link">&para;</a></h3>
+<p>To keep your project clean and avoid unwanted shenanigans, enforce signed commits:</p>
+<ol>
+<li>Go to your <strong>GitHub repository</strong>  </li>
+<li>Navigate to <strong>Settings → Branches</strong>  </li>
+<li>Under <strong>Branch protection rules</strong>, click <strong>Add rule</strong>  </li>
+<li>Select your main branch (usually <code>main</code> or <code>master</code>)  </li>
+<li>Check <strong>Require signed commits</strong></li>
+</ol>
+<p>Now only signed commits can get through, like a proper gated community. 🚧  </p>
+<h2 id="final-words-from-an-old-timer-whos-seen-some-things">🎤 Final Words from an Old-Timer Who’s Seen Some Things<a class="headerlink" href="#final-words-from-an-old-timer-whos-seen-some-things" title="Permanent link">&para;</a></h2>
+<p>Now listen, I ain’t sayin’ you gotta follow these rules. You’re a grown person, you can do what you want. <strong>But if you don’t sign your commits,</strong> don’t come bellyachin’ when some no-good scoundrel impersonates you and sneaks nonsense into your project. 🎭  </p>
+<p>Back in my day, we didn’t have none of this "Git" business. We wrote our code by hand, uphill both ways, in the snow, and we liked it! 📝 <strong>But if we had Git, you better believe we’d sign our work.</strong>  </p>
+<p>So quit yer lollygaggin’, set up signed commits, and keep your code cleaner than a Sunday suit. 👔  </p>
+<p>Or don’t. But don’t come cryin’ when your project turns into a three-ring circus. 🎪  </p>
 
 
 
@@ -2842,7 +2716,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 5, 2024 10:46:03">June 5, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 24, 2025 10:43:33">March 24, 2025</span>
   </span>
 
     
@@ -2878,7 +2752,7 @@ cfg: { // Application Insights Configuration
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../sharing-secrets/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sharing secrets (Yopass)">
+          <a href="../../about/privacy/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Privacy Policy">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2888,20 +2762,20 @@ cfg: { // Application Insights Configuration
                 Previous
               </span>
               <div class="md-ellipsis">
-                Sharing secrets (Yopass)
+                Privacy Policy
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../../security-champion/" class="md-footer__link md-footer__link--next" aria-label="Next: What is a Security Champion">
+          <a href="../git-signed-commits-young/" class="md-footer__link md-footer__link--next" aria-label="Next: 🔥 Yo, Code Warriors! 🧑‍💻 Let&#39;s Get Sigma with Signed Commits! 🦸‍♂️">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                What is a Security Champion
+                🔥 Yo, Code Warriors! 🧑‍💻 Let's Get Sigma with Signed Commits! 🦸‍♂️
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2966,10 +2840,10 @@ cfg: { // Application Insights Configuration
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
