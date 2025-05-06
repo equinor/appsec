@@ -308,8 +308,6 @@ We recommend the following settings:
     - Rotate token (maximum token life time should be 12 months)
     - Delete if not in use
 
-Fine-grained tokens are in beta (March 2024). Don't use beta features for anything production.
-
 ## What's next
 
 If you have reached this far - the next natural steps would be to continue the journey with [getting your git commits signed](git-signed-commits.md)
