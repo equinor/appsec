@@ -9,10 +9,6 @@ Say hello in the [Security Champion channel](https://equinor.slack.com/archives/
 
 Ensure all your projects code is scanned by Snyk, and that you have Snyk Code enabled for your projects. Using a linter is always good when you develop!
 
-## Define [security requirements](../resources/security_requirements.md)
-
-Have a look at our [security requirements](../resources/security_requirements.md) page and define some for your project.
-
 ## Check out our guidelines
 
 We have created a few [guidelines](../guidelines/index.md). Please check them out and consider implementing them in your projects where it makes sense.
@@ -24,7 +20,7 @@ We have created a few [guidelines](../guidelines/index.md). Please check them ou
 
 We can organize introductory sessions to threat modelling, simply reach out to the `@appsecteam` on our Slack channel [#appsec](https://equinor.slack.com/archives/CMM6FSW5V).
 
-- Facilitate a [threat modelling session](../threat-modeling/resources/threat_modelling.md) with your team - looking at the high level architecture of your system(s)
+- Facilitate a threat modelling session with your team - looking at the high level architecture of your system(s)
 - Introduce "Abuser stories" for all your tasks (ex add it some template you are using for detailing tasks)
 
 ## Contribute to this site

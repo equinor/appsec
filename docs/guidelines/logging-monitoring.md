@@ -39,7 +39,7 @@ Security logging is a huge topic, so we will limit our scope. You should not log
 
 #### Where to store security logs
 
-It depends on your situation is the "boring answer". If you have a small application, it might be practical to have the security logs with your application logs. If you have a big application, it might be useful to store security logs in a Azure Log Analytics workspace separate from your [Maintenance & Operational Logging](#maintenance--operational-logging). This is so it can be easily consumed if you are asked for your security logs.
+It depends on your situation is the "boring answer". If you have a small application, it might be practical to have the security logs with your application logs. If you have a big application, it might be useful to store security logs in a Azure Log Analytics workspace separate from your [Maintenance & Operational Logging](#maintenance-operational-logging). This is so it can be easily consumed if you are asked for your security logs.
 
 ### Maintenance & Operational Logging
 
