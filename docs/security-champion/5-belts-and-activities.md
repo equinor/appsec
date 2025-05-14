@@ -52,7 +52,6 @@ Please help contribute with useful activities that make sense in Equinor context
 - Speak at a seminar/meetup
 - Have a Security Champion from another team join/review your ```threat model```
 - Join/review another team's ```threat model```
-- Create an [AppSec story](./stories/index.md) about something your team did
 - Attend a meetup
 - Hold a security moment at a seminar/meetup
 - Set up ```Snyk``` scanning for your repository

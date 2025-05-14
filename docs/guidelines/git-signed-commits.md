@@ -18,7 +18,7 @@ The code from our software configuration management system (SCM) is the starting
 - Use SSH, with a passphrase protected private key, to sign your Git commits
 - Use separate SSH keys for signing and authentication
 - Use branch protection and required signed Git commits
-- GitHub Codespaces sign commits for you, but be aware of a few [caveats](signing-on-github-codespaces)
+- GitHub Codespaces sign commits for you, but be aware of a few [caveats](#signing-on-github-codespaces)
 
 ## Signing methods
 
