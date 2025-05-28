@@ -14,7 +14,7 @@ In this guideline we address logging for security, maintenance and operational p
 
 - Application teams should ensure that logging and monitoring is in place for operational and maintenance purposes
 - The front-end is a **public client** and the logs from it **cannot be trusted**
-- Do a **threat model** to see where security logging would benefit you the most
+- Do a **[threat model](../threat-modeling/index.md)** to see where security logging would benefit you the most
 
 ## Application Specific Logging & Monitoring
 
