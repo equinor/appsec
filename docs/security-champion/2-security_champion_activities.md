@@ -11,7 +11,7 @@ Ensure all your projects code is scanned by Snyk, and that you have Snyk Code en
 
 ## Check out our guidelines
 
-We have created a few [guidelines](../guidelines/index.md). Please check them out and consider implementing them in your projects where it makes sense.
+We have created a few guidelines. Please check them out in our [toolbox](../toolbox/index.md) and consider implementing them in your projects where it makes sense.
 
 !!! info
     Feedback is good, so if you have any, feel free to contact us, or even create a PR on our [github repo](https://github.com/equinor/appsec/)!

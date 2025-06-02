@@ -29,7 +29,7 @@ GitHub Advanced Security is integrated into GitHub, providing features like the 
 
 - Go to your repository settings
 - Under security find Code security and analysis
-- Enable secret scanning. 
+- Enable secret scanning.
 - Consider enabling push protection for added security.
 
 #### Global push protection
@@ -47,7 +47,7 @@ While your are developing, in your development environment
 
 - Scan in your IDE (using Snyk Code)
 - Scan in your local build process (using Trufflehog)
-- Scan in git [pre-commits](pre-commit-faq.md) (Run a trufflehog scan on commit for example?)
+- Scan in git [pre-commits](../tools/pre-commit-faq.md) (Run a trufflehog scan on commit for example?)
 
 In your CI pipeline
 
@@ -66,9 +66,9 @@ We will mess up sooner or later. So be prepared, both as an individual developer
 
 - Revoke/rotate the exposed secret - `THIS IS PRIORITY #1`
 - Depending on risk consequence - considering contacting IT-Security for assistance
-    - Contact Help Desk at (+47) 51 999 222
+  - Contact Help Desk at (+47) 51 999 222
 - Clean the git history
-    - If the repo is public/internal, consider making it `private` until the secrets are removed
+  - If the repo is public/internal, consider making it `private` until the secrets are removed
 - Potentially inspect logs
 - Do a retrospective with your team
 
@@ -79,10 +79,10 @@ This part can be very easy to super hard, it all depends on what, where and when
 #### You are working locally, the secret is in the last commit, not pushed
 
 - The secret is the only file in the last commit
-    - Consider dropping the last commit, doing a `git reset --hard HEAD~1`
+  - Consider dropping the last commit, doing a `git reset --hard HEAD~1`
 - The secret is not the only file in the last commit
-    - Consider altering files and then amend the last commit
-    - `git add [files]; git commit --amend`
+  - Consider altering files and then amend the last commit
+  - `git add [files]; git commit --amend`
 
 #### You are working locally, the secret is beyond the last commit
 
