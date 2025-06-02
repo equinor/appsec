@@ -2,162 +2,154 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://equinor.github.io/appsec/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/privacy/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/experimental/git-signed-commits-old/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/experimental/git-signed-commits-young/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/authn-authz/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/gh-actions-runners/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/git-github/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/git-signed-commits/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/logging-monitoring/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/pre-commit-faq/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/secret-scanning/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/security_requirements/</loc>
-         <lastmod>2025-05-14</lastmod>
-    </url>
-    <url>
-         <loc>https://equinor.github.io/appsec/guidelines/sharing-secrets/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/1-new_security_champion/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/2-security_champion_activities/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/4-learning-platform/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/5-belts-and-activities/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/6-merch/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/2-about-snyk/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/3-snyk_support/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/faq/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/4-vulnerabilities/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/guidelines/authn-authz/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/guidelines/logging-monitoring/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/1-snyk_products/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/guidelines/secret-scanning/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/2-integrations/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/guidelines/security-requirements/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/3-projects/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/4-scan_results/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/2-about-snyk/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/5-advanced/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/3-snyk_support/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/snyk/curriculum/6-faq/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/4-vulnerabilities/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/1-snyk_products/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/2-next-steps/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/2-integrations/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/3-projects/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-EOP-cardgame/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/4-scan_results/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-explore/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/5-advanced/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-privacy/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/snyk/curriculum/6-faq/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
     <url>
-         <loc>https://equinor.github.io/appsec/threat-modeling/threat-modeling-101-workshop/extention-remote-tm/</loc>
-         <lastmod>2025-05-14</lastmod>
+         <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/2-next-steps/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/tools/pre-commit-faq/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/tools/sharing-secrets/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/version-control/gh-actions-runners/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/version-control/git-github/</loc>
+         <lastmod>2025-06-02</lastmod>
+    </url>
+    <url>
+         <loc>https://equinor.github.io/appsec/toolbox/version-control/git-signed-commits/</loc>
+         <lastmod>2025-06-02</lastmod>
     </url>
 </urlset>
