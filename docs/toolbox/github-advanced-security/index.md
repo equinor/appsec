@@ -4,6 +4,15 @@ We're excited to announce that we will be transitioning to GitHub Advanced Secur
 
 We have been collecting your questions and answering them in the [FAQ](faq.md).
 
+!!! note "TL;DR"
+    🗓️ GHAS will be available for all Equinor developers on the 1st of October.
+
+    🤷 We will lose access to Snyk on the 1st of November.
+
+    🌎 We recommend enabling GHAS features in your public repositories.
+
+    🗣️ Let us know in the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) channel if you have any questions
+
 ## What this means for you?
 
 **Unified Platform:** Code and code security will now be managed under the same platform, eliminating the need for a separate dashboard.
