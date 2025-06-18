@@ -113,7 +113,7 @@ We recommend enabling this option.
 <br/><br/>
 (4) Dependabot security updates will automatically create pull requests to upgrade dependencies to safe, non-vulnerable versions.<br/>
 We recommend enabling this option.
-<br/>
+<br/><br/>
 (5) Grouped security updates allows Dependabot to combine multiple security updates into a single pull request. This helps reduce the number or PRs but might require moer thorough testing to ensure the combined upgrades do not break existing functionality.<br/>
 The enablement of this option is up to the team.
 <br/><br/>
