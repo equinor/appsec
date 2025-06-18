@@ -2,9 +2,7 @@
 # GitHub Advanced Security Enablement and Setup
 
 >[!IMPORTANT]
-> NOT BEFORE 1st OF OCTOBER
->Internal and Private Repositories must wait until 1st of October before proceding
->Public Repositories or teams we have gotten in touch with can start using GHAS
+>Internal and Private Repositories must wait until 1st of October before enabling GHAS.
 
 > [!NOTE]
 > You must be a repository Admin to procceed
