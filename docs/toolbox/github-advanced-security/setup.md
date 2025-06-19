@@ -123,4 +123,4 @@ The enablement of this option is up to the team.
 (7) Dependabot on Actions runners enables Dependabot to create pull requests suggesting security and version updates for your GitHub Actions workflows.<br/>
 The enablement of this option is up to the team.
 <br/><br/>
-If you have any futher questions please reach out to us on the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) slack.
+If you have any further questions please reach out to us on the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) slack.
