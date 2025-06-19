@@ -135,7 +135,7 @@ This has be configured for code security to work. Once enabled a GitHub action w
 
 ### (3) Other Tools
 
-Enables you to integrate third party code scanning tools such as [Trivy](https://trivy.dev/latest/) for IaC and conatiner scanning. <br/>
+Enables you to integrate third party code scanning tools such as [Trivy](https://trivy.dev/latest/) for IaC and container scanning. <br/>
 <br/>
 🤷 If you think setting up other tools would be useful, let us know so we can help you configure it.
 
