@@ -4,7 +4,7 @@
 >[!IMPORTANT]
 >- Internal and Private Repositories must wait until **1st of October** before enabling GHAS.
 ><br/><br/>
->- You must be a repository Admin to procceed.
+>- You must be a repository Admin to proceed.
 
 <br/>
 This document is intended to give teams an overview of the options available in GitHub Advanced Security (GHAS), including a short summary of each feature, which ones we recommend enabling, which ones we don't and which are up to your team.
