@@ -11,7 +11,7 @@ Navigate to your repository and under Settings -> Security -> Advanced Security.
 
 ![Navigation to GHAS](<Screenshot 2025-06-12 at 14.32.53.png>)
 
-Bellow you can find a table summary of the options we recommend to enable:
+Below you can find a table summary of the options we recommend to enable:
 
 | **Feature**                           | **Options**                                       | **Recommendation** |
 |---------------------------------------|---------------------------------------------------|--------------------|
