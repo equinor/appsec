@@ -59,7 +59,7 @@ The goal is to detect exposed secrets early on thus reducing risk in the SDLC. <
 
 ### (1) Secret Protection
 
-Enabling Secret Protection will enable secret scanning on the repository. Upon enabling github will start scanning the whole **history** of the repository for secrets, this scan will include commits, pull requests, issues, comments, discussions and wikis. <br/>
+Enabling Secret Protection will enable secret scanning on the repository. Upon enabling GitHub will start scanning the whole **history** of the repository for secrets, this scan will include commits, pull requests, issues, comments, discussions and wikis. <br/>
 <br/>
 ✅ Secret Protection should be enabled.
 
