@@ -234,4 +234,4 @@ Enables Dependabot to run on a self-hosted action runner.<br/>
 ## Further Questions & Comments
 
 We encourage you to share your experiences, issues and improvement points with us.<br/>
-If you have any futher questions or comments please reach out to us on the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) slack.
+If you have any further questions or comments please reach out to us on the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) slack.
