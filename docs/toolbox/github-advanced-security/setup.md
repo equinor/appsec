@@ -190,7 +190,7 @@ For this to work, your repository must include a lock or manifest file. [In some
 
 This allows GitHub to detect and report dependencies automatically. It helps keep your Dependency Graph up to date without manual intervention.<br/>
 <br/>
-✅ Automatic dependency submission should be enableb with the default settings.
+✅ Automatic dependency submission should be enabled with the default settings.
 
 ### (3) [Dependabot alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
