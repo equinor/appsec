@@ -131,7 +131,7 @@ This has be configured for code security to work. Once enabled a GitHub action w
 > If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
 > If you encounter this get in touch with us.
 
-![alt text](image-2.png)
+![Screenshot showing the Code Scanning section in the Security tab of a GitHub repository](image-2.png)
 
 ### (3) Other Tools
 
