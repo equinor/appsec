@@ -5,7 +5,7 @@
 >Internal and Private Repositories must wait until 1st of October before enabling GHAS.
 
 > [!NOTE]
-> You must be a repository Admin to procceed
+> You must be a repository Admin to proceed
 
 Navigate to your repository and under Settings -> Security -> Advanced Security.
 
