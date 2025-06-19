@@ -84,12 +84,12 @@ Uses Copilot AI to identify passwords that don’t follow standard or known patt
 ### (5) [Push Protection](https://docs.github.com/en/code-security/secret-scanning/introduction/about-push-protection)
 
 Scans commits for [supported secrets](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets) and blocks them before they’re pushed to a remote branch. This helps stop secrets from ever reaching the repository history, making cleanup easier or even unnecessary. <br/>
-Pushes are only blocked if GitHub is very confident that the detected string is a valid secret from a known provider (like Azure, AWS, etc.). It does not block on non-provider patterns or generic passwords detected by AI to keep false positives low. <br/>
+Pushes are only blocked if GitHub is *very confident* that the detected string is a valid secret from a known provider (like Azure, AWS, etc.). It **does not block on non-provider patterns or generic passwords** detected by AI to keep false positives low. <br/>
 That said, developers will see push failures when secrets are detected even if they’re false positives, some errors may be a bit hard to figure out and might require digging into logs, so it’s important to prepare your team for this behavior. The alerts can be bypassed (6). <br/>
 <br/>
 ✅ We recommend enabling Push Protection to prevent secrets at the source. But make sure your team is aware of the tradeoff: it may occasionally block a push, but it’s far less painful than cleaning up leaked secrets later.
 
-### (6) Who can bypass push protection for secret scanning
+### (6) [Who can bypass push protection for secret scanning](https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/delegated-bypass-for-push-protection/about-delegated-bypass-for-push-protection)
 
 This option is only available when push protection (5) is enabled and it configures who is allowed to bypass the block if a secret is detected.<br/>
 <br/>
@@ -101,7 +101,7 @@ This Setting requires teams to submit a request before they can dismiss a secret
 <br/>
 ❌ We do not recommend enabling prevent direct alert dismissals. The AppSec team believes that teams are in the best position to assess alerts in their context and should have the autonomy to manage them.
 
-### (8) Custom Patterns
+### (8) [Custom Patterns](https://docs.github.com/en/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/custom-patterns/defining-custom-patterns-for-secret-scanning)
 
 Lets you define your own regex rules to detect secrets specific to your team or application, things GitHub doesn’t catch by default, this can be useful for internal tokens, credentials, or configuration values that follow a custom format. <br/>
 <br/>
@@ -114,20 +114,22 @@ Code Security manages the configuration of GitHub’s Static Application Securit
 
 ![Code Security Options](<Screenshot 2025-06-12 at 15.20.32.png>)
 
-### (1) Code Security
+### (1) [Code Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning)
 
 The setup of CodeQL may vary depending on the language and ecosystem, some will work out of the box, while others may require configuring a workflow file in the repo. Once enabled, it continuously scans code for common vulnerabilities.<br/>
 <br/>
 ✅ Code Security should be enabled.
 
-### (2) CodeQL Analysis
+### (2) [CodeQL Analysis](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql)
 
 This has be configured for code security to work. Once enabled a GitHub action will run to scan your code automatically.<br/>
 <br/>
-⚙️ We recommend choosing the default setup for CodeQL Analysis, which works well for most repositories and languages.
+⚙️ We recommend choosing the [default setup](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning) for CodeQL Analysis, which works well for most repositories and languages.
 
-> [!NOTE]
-> After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning, if the default setup is not working properly you will see the following warning, if this happens get in touch with us.
+> [!WARNING]
+> After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
+> If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
+> If you encounter this get in touch with us.
 
 ![alt text](image-2.png)
 
@@ -137,12 +139,12 @@ Enables you to integrate third party code scanning tools such as [Trivy](https:/
 <br/>
 🤷 If you think setting up other tools would be useful, let us know so we can help you configure it.
 
-### (4) Copilot Autofix
+### (4) [Copilot Autofix](https://docs.github.com/en/code-security/code-scanning/managing-code-scanning-alerts/responsible-use-autofix-code-scanning)
 
 Allows Copilot to automatically generate a pull request to fix vulnerabilities identified by CodeQL. When enabled, you’ll see suggested fixes, and you can choose to let Copilot create a PR with the proposed changes.<br/>
 It’s a helpful way to quickly address straight forward issues but we always recommend to review the fix before merging.<br/>
 <br/>
-✅ We recommend enabling this Copilot Autofix.
+✅ We recommend enabling Copilot Autofix (it does not need a copilot license).
 
 ### (5) Copilot Autofix for third-party tools
 
@@ -163,7 +165,7 @@ You can choose the alert severity level that will cause the Code Scanning check 
 <br/>
 ⚙️ The recommended set up of protection rules should be good for most teams, let us know if you need help setting up a more advanced ruleset.
 
-### (8) Private vulnerability reporting
+### (8) [Private vulnerability reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability)
 
 This is only available for public repositories, it provides a standardized and secure way for the community to report security vulnerabilities directly to the maintainers of the repository.<br/>
 <br/>
@@ -180,48 +182,50 @@ Dependabot helps ensure your supply chain is monitored for risks and helps you i
 ### (1) Dependency Graph
 
 Must be enabled to use Dependabot, this allows GitHub to upload your dependencies and scan them for known vulnerabilities
-For this to work, your repository must include a lock or manifest file. In some ecosystems, like .NET, Java and Jupiter Notebooks you may need to run a dotnet restore (more guidance on this will come) to generate the required files.<br/>
+For this to work, your repository must include a lock or manifest file. [In some ecosystems](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/dependency-graph-supported-package-ecosystems), like .NET, Java and Jupiter Notebooks you may need to run a dotnet restore (more guidance on this will come) to generate the required files.<br/>
 <br/>
 ✅ Dependency Graph should be enabled.
 
-### (2) Automatic dependency submission
+### (2) [Automatic dependency submission](https://docs.github.com/en/enterprise-cloud@latest/code-security/supply-chain-security/understanding-your-software-supply-chain/configuring-automatic-dependency-submission-for-your-repository)
 
 This allows GitHub to detect and report dependencies automatically. It helps keep your Dependency Graph up to date without manual intervention.<br/>
 <br/>
 ✅ Automatic dependency submission should be enableb with the default settings.
 
-### (3) Dependabot alerts
+### (3) [Dependabot alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
-Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email.<br/>
-Note: Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.<br/>
-<br/>
+Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a seperate folder (e.g. by using the "security" keyword).<br/>
+
+>[!Note]
+>Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.
+
 ✅ We recommend enabling Dependabot alerts.
 
-### (4) Dependabot security updates
+### (4) [Dependabot security updates](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates)
 
 This will automatically create pull requests to upgrade dependencies to safe, non-vulnerable versions.<br/>
 <br/>
 ✅ We recommend enabling Dependabot security updates.
 
-### (5) Grouped security updates
+### (5) [Grouped security updates](https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates#about-grouped-security-updates)
 
 This option allows Dependabot to combine multiple security updates into a single pull request. This helps reduce the number or PRs but might require more thorough testing to ensure the combined upgrades do not break existing functionality.<br/>
 <br/>
 🤷 The enablement of Grouped security updates is up to the team.
 
-### (6) Dependabot version updates
+### (6) [Dependabot version updates](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
 
 Allows Dependabot to open pull requests to keep your dependencies up to date, even if there are no known vulnerabilities. This helps reduce technical debt and makes it easier to stay updated to the latest versions.<br/>
 <br/>
 🤷 The enablement of Dependabot version updates is up to the team.
 
-### (7) Dependabot on action runners
+### (7) [Dependabot on action runners](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/about-dependabot-on-github-actions-runners)
 
 Enabling this option will result in Dependabot being run on an action runner, making it more transparent what Dependabot does. GitHub is moving to run by default on Action runners.<br/>
 <br/>
 ✅ We recommend enabling Dependabot on action runners.
 
-### (8) Dependabot on self-hosted runners
+### (8) [Dependabot on self-hosted runners](https://docs.github.com/en/code-security/dependabot/maintain-dependencies/managing-dependabot-on-self-hosted-runners)
 
 Enables Dependabot to run on a self-hosted action runner.<br/>
 <br/>
@@ -229,5 +233,5 @@ Enables Dependabot to run on a self-hosted action runner.<br/>
 
 ## Further Questions & Comments
 
+We encourage you to share your experiences, issues and improvement points with us.<br/>
 If you have any futher questions or comments please reach out to us on the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) slack.
-We also encourage you to share your experiences, issues and improvement points with us.
