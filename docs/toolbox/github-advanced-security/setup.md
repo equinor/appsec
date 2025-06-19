@@ -177,7 +177,7 @@ The Dependency Graph gives GitHub visibility into the dependencies used in your 
 This is the foundation for the features below, enabling GitHub to identify known vulnerabilities or outdated packages in your project.<br/>
 Dependabot helps ensure your supply chain is monitored for risks and helps you in keeping your dependencies secure and up to date.
 
-![Depdency graph options](image-1.png)
+![Dependency graph options](image-1.png)
 
 ### (1) Dependency Graph
 
