@@ -9,7 +9,7 @@
 <br/>
 This document is intended to give teams an overview of the options available in GitHub Advanced Security (GHAS), including a short summary of each feature, which ones we recommend enabling, which ones we don't and which are up to your team.
 <br/><br/>
-The document is structured into 3 sections, [Secret Protection](#1-secret-protection), [Code Security](#1-code-security) and [Dependency Graph](#1-dependency-graph), reflecting the structure you will find in Github's security settings.<br/><br/>
+The document is structured into 3 sections, Secret Protection, Code Security and Dependency Graph, reflecting the structure you will find in Github's security settings.<br/><br/>
 To start off, navigate to your repository and under Settings -> Security -> Advanced Security.
 <br/><br/>
 
