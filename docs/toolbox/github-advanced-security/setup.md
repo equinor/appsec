@@ -15,7 +15,7 @@ To start off, navigate to your repository and under Settings -> Security -> Adva
 
 ![Navigation to GHAS](image.png)
 
-Bellow you can find a table summary of the options we recommend to enable:
+Below you can find a table summary of the options we recommend to enable:
 
 
 | **Feature**                                       | **Options**                                                                          | **Recommendation**   |
