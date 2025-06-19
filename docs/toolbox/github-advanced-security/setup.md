@@ -182,7 +182,7 @@ Dependabot helps ensure your supply chain is monitored for risks and helps you i
 ### (1) Dependency Graph
 
 Must be enabled to use Dependabot, this allows GitHub to upload your dependencies and scan them for known vulnerabilities
-For this to work, your repository must include a lock or manifest file. [In some ecosystems](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/dependency-graph-supported-package-ecosystems), like .NET, Java and Jupiter Notebooks you may need to run a dotnet restore (more guidance on this will come) to generate the required files.<br/>
+For this to work, your repository must include a lock or manifest file. [In some ecosystems](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/dependency-graph-supported-package-ecosystems), like .NET, Java and Jupyter Notebooks you may need to run a dotnet restore (more guidance on this will come) to generate the required files.<br/>
 <br/>
 ✅ Dependency Graph should be enabled.
 
