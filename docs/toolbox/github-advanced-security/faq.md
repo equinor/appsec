@@ -11,7 +11,7 @@ Yes. Snyk will be the preferred tool of use until **1st of October**.
 ## Do we really only get one month to prepare?
 
 We unfortunately cannot have two solutions active for the entire transition period. This should however not be a major issue for most. Enabling GHAS is fairly straight forward and we are here to help you with the transition.
-During October you will have acess to both Snyk and GHAS, we will lose access to Snyk on 1st of November but it can be smart to disable alerts in Snyk once you have enabled GHAS in order to not receive double alerting.
+During October you will have access to both Snyk and GHAS, we will lose access to Snyk on 1st of November but it can be smart to disable alerts in Snyk once you have enabled GHAS in order to not receive double alerting.
 
 ## Is AppSec publishing some guidelines / best practices for enabling and configuring GHAS anytime soon?
 
