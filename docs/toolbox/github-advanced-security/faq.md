@@ -65,6 +65,6 @@ Absolutely, Trufflehog can be automated to run during a pre-commit hook which wi
 
 The default code scanning should be good for most cases. It scans on every commit. You may monitor the consumption in minutes on Github Actions. If that number goes above 1000 minutes a month, then contact the AppSec team. They'll first try to take that consumption down by fine tuning CodeQL. And if that fails, only then we can consider weekly scans instead of every commit.
 
-## What will happen to the Snyk vulnerability report in radix?
+## What will happen to the Snyk vulnerability report in Radix?
 
-Snyk will most likely be replaced with Trivy in radix, for more information contact the radix team.
+Snyk will most likely be replaced with Trivy in Radix, for more information contact the Radix team.
