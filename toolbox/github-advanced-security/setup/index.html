@@ -2422,12 +2422,13 @@ cfg: { // Application Insights Configuration
 
 
 <h1 id="github-advanced-security-enablement-and-setup">GitHub Advanced Security Enablement and Setup<a class="headerlink" href="#github-advanced-security-enablement-and-setup" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p>[!IMPORTANT]
-- Internal and Private Repositories must wait until <strong>1st of October</strong> before enabling GHAS.
-<br/><br/>
-- You must be a repository Admin to proceed.</p>
-</blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul>
+<li>Internal and Private Repositories must wait until <strong>1st of October</strong> before enabling GHAS.</li>
+<li>You must be a repository Admin to proceed.</li>
+</ul>
+</div>
 <p><br/>
 This document is intended to give teams an overview of the options available in GitHub Advanced Security (GHAS), including a short summary of each feature, which ones we recommend enabling, which ones we don't and which are up to your team.
 <br/><br/>
@@ -2619,12 +2620,10 @@ That said, developers will see push failures when secrets are detected even if t
 <p>This has be configured for code security to work. Once enabled a GitHub action will run to scan your code automatically.<br/>
 <br/>
 ⚙️ We recommend choosing the <a href="https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning">default setup</a> for CodeQL Analysis, which works well for most repositories and languages.</p>
-<blockquote>
-<p>[!WARNING]
-After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
-If the default setup is not working properly you will see the following warning. Check the <a href="https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page">tool status page</a> to get more information about the issue.<br/>
-If you encounter this get in touch with us.</p>
-</blockquote>
+<p>!!! warning
+      After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
+      If the default setup is not working properly you will see the following warning. Check the <a href="https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page">tool status page</a> to get more information about the issue.<br/>
+      If you encounter this get in touch with us.</p>
 <p><img alt="Screenshot showing the Code Scanning section in the Security tab of a GitHub repository" src="../image-2.png" /></p>
 <h3 id="3-other-tools">(3) Other Tools<a class="headerlink" href="#3-other-tools" title="Permanent link">&para;</a></h3>
 <p>Enables you to integrate third party code scanning tools such as <a href="https://trivy.dev/latest/">Trivy</a> for IaC and container scanning. <br/>
@@ -2668,10 +2667,10 @@ For this to work, your repository must include a lock or manifest file. <a href=
 ✅ Automatic dependency submission should be enabled with the default settings.</p>
 <h3 id="3-dependabot-alerts">(3) <a href="https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts">Dependabot alerts</a><a class="headerlink" href="#3-dependabot-alerts" title="Permanent link">&para;</a></h3>
 <p>Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).<br/></p>
-<blockquote>
-<p>[!Note]
-Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.</p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.</p>
+</div>
 <p>✅ We recommend enabling Dependabot alerts.</p>
 <h3 id="4-dependabot-security-updates">(4) <a href="https://docs.github.com/en/code-security/dependabot/dependabot-security-updates/about-dependabot-security-updates">Dependabot security updates</a><a class="headerlink" href="#4-dependabot-security-updates" title="Permanent link">&para;</a></h3>
 <p>This will automatically create pull requests to upgrade dependencies to safe, non-vulnerable versions.<br/>
@@ -2716,7 +2715,7 @@ If you have any further questions or comments please reach out to us on the <a h
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 20, 2025 09:24:56 UTC">June 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 20, 2025 11:59:03 UTC">June 20, 2025</span>
   </span>
 
     
