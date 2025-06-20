@@ -1,10 +1,9 @@
 
 # GitHub Advanced Security Enablement and Setup
 
->[!IMPORTANT]
->- Internal and Private Repositories must wait until **1st of October** before enabling GHAS.
-><br/><br/>
->- You must be a repository Admin to proceed.
+!!! important
+    - Internal and Private Repositories must wait until **1st of October** before enabling GHAS.
+    - You must be a repository Admin to proceed.
 
 <br/>
 This document is intended to give teams an overview of the options available in GitHub Advanced Security (GHAS), including a short summary of each feature, which ones we recommend enabling, which ones we don't and which are up to your team.
@@ -126,10 +125,10 @@ This has be configured for code security to work. Once enabled a GitHub action w
 <br/>
 ⚙️ We recommend choosing the [default setup](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning) for CodeQL Analysis, which works well for most repositories and languages.
 
-> [!WARNING]
-> After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
-> If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
-> If you encounter this get in touch with us.
+  !!! warning
+      After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
+      If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
+      If you encounter this get in touch with us.
 
 ![Screenshot showing the Code Scanning section in the Security tab of a GitHub repository](image-2.png)
 
@@ -196,8 +195,8 @@ This allows GitHub to detect and report dependencies automatically. It helps kee
 
 Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).<br/>
 
->[!Note]
->Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.
+!!! note
+    Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.
 
 ✅ We recommend enabling Dependabot alerts.
 
