@@ -6,7 +6,7 @@ No. There are no available licences until **1st of October**, unless your reposi
 
 ## Should we still import our new repositories into Snyk?
 
-Yes. Snyk will be the prefered tool of use until **1st of October**.
+Yes. Snyk will be the preferred tool of use until **1st of October**.
 
 ## Do we really only get one month to prepare?
 
