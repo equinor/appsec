@@ -8,3 +8,10 @@ updates:
     schedule:
       interval: weekly
       day: monday
+
+# Update Python dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: monday
