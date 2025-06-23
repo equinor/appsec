@@ -2509,7 +2509,7 @@ To start off, navigate to your repository and under Settings -&gt; Security -&gt
 <tr>
 <td></td>
 <td><a href="#5-copilot-autofix-for-third-party-tools">Copilot Autofix for Third Party Tools (5)</a></td>
-<td>✅ Yes</td>
+<td>🤷 Optional</td>
 </tr>
 <tr>
 <td></td>
@@ -2554,7 +2554,7 @@ To start off, navigate to your repository and under Settings -&gt; Security -&gt
 <tr>
 <td></td>
 <td><a href="#6-dependabot-version-updates">Dependabot Version Updates (6)</a></td>
-<td>🤷 Optional</td>
+<td>✅ Yes*</td>
 </tr>
 <tr>
 <td></td>
@@ -2568,6 +2568,7 @@ To start off, navigate to your repository and under Settings -&gt; Security -&gt
 </tr>
 </tbody>
 </table>
+<p>* Please see important note and warning on <a href="#6-dependabot-version-updates">Dependabot Version Updates (6)</a> section   </p>
 <h2 id="secret-protection"><a href="https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning">Secret Protection</a><a class="headerlink" href="#secret-protection" title="Permanent link">&para;</a></h2>
 <p>This section will guide you through the enablement of secret scanning for your repositories. <br/>
 It gives a brief explanation of each of the options available and our recommendation on whether to enable them. <br/>
@@ -2620,10 +2621,12 @@ That said, developers will see push failures when secrets are detected even if t
 <p>This has be configured for code security to work. Once enabled a GitHub action will run to scan your code automatically.<br/>
 <br/>
 ⚙️ We recommend choosing the <a href="https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning">default setup</a> for CodeQL Analysis, which works well for most repositories and languages.</p>
-<p>!!! warning
-      After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
-      If the default setup is not working properly you will see the following warning. Check the <a href="https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page">tool status page</a> to get more information about the issue.<br/>
-      If you encounter this get in touch with us.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
+If the default setup is not working properly you will see the following warning. Check the <a href="https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page">tool status page</a> to get more information about the issue.<br/>
+If you encounter this get in touch with us.</p>
+</div>
 <p><img alt="Screenshot showing the Code Scanning section in the Security tab of a GitHub repository" src="../image-2.png" /></p>
 <h3 id="3-other-tools">(3) Other Tools<a class="headerlink" href="#3-other-tools" title="Permanent link">&para;</a></h3>
 <p>Enables you to integrate third party code scanning tools such as <a href="https://trivy.dev/latest/">Trivy</a> for IaC and container scanning. <br/>
@@ -2635,9 +2638,13 @@ It’s a helpful way to quickly address straight forward issues but we always re
 <br/>
 ✅ We recommend enabling Copilot Autofix (it does not need a copilot license).</p>
 <h3 id="5-copilot-autofix-for-third-party-tools">(5) Copilot Autofix for third-party tools<a class="headerlink" href="#5-copilot-autofix-for-third-party-tools" title="Permanent link">&para;</a></h3>
-<p>Copilot Autofix also works with third-party security tools, not just CodeQL.<br/>
-<br/>
-✅ We recommend enabling Copilot Autofix for third-party tools.</p>
+<p>Copilot Autofix also works with third-party security tools, not just CodeQL. It will generate potential fixes based on issues identified by <a href="#3-other-tools">other tools</a> installed in the repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently this feature only supports ESLint.
+ESLint has to be configured in the repository through the <a href="#3-other-tools">other tools option</a>.</p>
+</div>
+<p>🤷 The enablement of Copilot Autofix for third-party tools should be decided by the team.</p>
 <h3 id="6-prevent-direct-alert-dismissals">(6) Prevent direct alert dismissals<a class="headerlink" href="#6-prevent-direct-alert-dismissals" title="Permanent link">&para;</a></h3>
 <p>If enabled, any attempt to dismiss a CodeQL alert will trigger a review request that’s sent to the AppSec team. This adds unnecessary overhead and delays. We believe teams should be trusted to manage and triage their own alerts based on what makes sense in their context.<br/>
 <br/>
@@ -2666,7 +2673,7 @@ For this to work, your repository must include a lock or manifest file. <a href=
 <br/>
 ✅ Automatic dependency submission should be enabled with the default settings.</p>
 <h3 id="3-dependabot-alerts">(3) <a href="https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts">Dependabot alerts</a><a class="headerlink" href="#3-dependabot-alerts" title="Permanent link">&para;</a></h3>
-<p>Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).<br/></p>
+<p>Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.</p>
@@ -2681,9 +2688,18 @@ For this to work, your repository must include a lock or manifest file. <a href=
 <br/>
 🤷 The enablement of Grouped security updates is up to the team.</p>
 <h3 id="6-dependabot-version-updates">(6) <a href="https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates">Dependabot version updates</a><a class="headerlink" href="#6-dependabot-version-updates" title="Permanent link">&para;</a></h3>
-<p>Allows Dependabot to open pull requests to keep your dependencies up to date, even if there are no known vulnerabilities. This helps reduce technical debt and makes it easier to stay updated to the latest versions.<br/>
-<br/>
-🤷 The enablement of Dependabot version updates is up to the team.</p>
+<p>Allows Dependabot to open pull requests to keep your dependencies up to date, even if there are no known vulnerabilities. This helps reduce technical debt and makes it easier to stay updated to the latest versions.<br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you're using GitHub Actions with SHA versioning, this option allows Dependabot to automatically update your GitHub Actions.
+If you're using GitHub Actions with semantic versioning, this option is optional, but we still recommend enabling it to maintain good security practices by keeping all your dependencies updated to latest versions.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Dependabot will suggest upgrading dependencies whenever new versions are available. Enabling this option can lead to a significant number of pull requests generated, requiring the team to actively manage them.
+It's beneficial to have a well defined process in place to handle these PRs effectively.</p>
+</div>
+<p>✅ We recommend enabling Dependabot version updates.</p>
 <h3 id="7-dependabot-on-action-runners">(7) <a href="https://docs.github.com/en/code-security/dependabot/working-with-dependabot/about-dependabot-on-github-actions-runners">Dependabot on action runners</a><a class="headerlink" href="#7-dependabot-on-action-runners" title="Permanent link">&para;</a></h3>
 <p>Enabling this option will result in Dependabot being run on an action runner, making it more transparent what Dependabot does. GitHub is moving to run by default on Action runners.<br/>
 <br/>
@@ -2715,7 +2731,7 @@ If you have any further questions or comments please reach out to us on the <a h
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 20, 2025 11:59:03 UTC">June 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 23, 2025 13:57:51 UTC">June 23, 2025</span>
   </span>
 
     
