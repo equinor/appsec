@@ -31,7 +31,7 @@ Below you can find a table summary of the options we recommend to enable:
 |                                                   | [CodeQL analysis (2)](#2-codeql-analysis)                                            | ⚙️ Default setup     |
 |                                                   | [Other tools (3)](#3-other-tools)                                                    | 🤷 Optional          |
 |                                                   | [Copilot Autofix (4)](#4-copilot-autofix)                                            | ✅ Yes               |
-|                                                   | [Copilot Autofix for Third Party Tools (5)](#5-copilot-autofix-for-third-party-tools)| ✅ Yes               |
+|                                                   | [Copilot Autofix for Third Party Tools (5)](#5-copilot-autofix-for-third-party-tools)| 🤷 Optional          |
 |                                                   | [Prevent Direct Alert Dismissal (6)](#6-prevent-direct-alert-dismissal)              | ❌ No                |
 |                                                   | [Protection Rules (7)](#7-protection-rules)                                          | ⚙️ Default setup     |
 |                                                   | [Private Vulnerability Reporting (8)](#8-private-vulnerability-reporting)            | 🤷 Optional          |
@@ -40,11 +40,11 @@ Below you can find a table summary of the options we recommend to enable:
 |                                                   | [Dependabot Alerts (3)](#3-dependabot-alerts)                                        | ✅ Yes               |
 |                                                   | [Dependabot Security Updates (4)](#4-dependabot-security-updates)                    | ✅ Yes               |
 |                                                   | [Grouped Security Updates (5)](#5-grouped-security-updates)                          | 🤷 Optional          |
-|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                      | 🤷 Optional          |
+|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                      | ✅ Yes\*             |
 |                                                   | [Dependabot on Action Runners (7)](#7-dependabot-on-action-runners)                  | ✅ Yes               |
 |                                                   | [Dependabot on Self-hosted Runners (8)](#8-dependabot-on-self-hosted-runners)        | ❌ No                |
 
-
+\* Please see important note and warning on [Dependabot Version Updates (6)](#6-dependabot-version-updates) section   
 
 
 ## [Secret Protection](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
@@ -125,10 +125,10 @@ This has be configured for code security to work. Once enabled a GitHub action w
 <br/>
 ⚙️ We recommend choosing the [default setup](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning) for CodeQL Analysis, which works well for most repositories and languages.
 
-  !!! warning
-      After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
-      If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
-      If you encounter this get in touch with us.
+!!! warning
+    After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
+    If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
+    If you encounter this get in touch with us.
 
 ![Screenshot showing the Code Scanning section in the Security tab of a GitHub repository](image-2.png)
 
@@ -147,9 +147,13 @@ It’s a helpful way to quickly address straight forward issues but we always re
 
 ### (5) Copilot Autofix for third-party tools
 
-Copilot Autofix also works with third-party security tools, not just CodeQL.<br/>
-<br/>
-✅ We recommend enabling Copilot Autofix for third-party tools.
+Copilot Autofix also works with third-party security tools, not just CodeQL. It will generate potential fixes based on issues identified by [other tools](#3-other-tools) installed in the repository.
+
+!!! note
+    Currently this feature only supports ESLint.
+    ESLint has to be configured in the repository through the [other tools option](#3-other-tools).
+
+🤷 The enablement of Copilot Autofix for third-party tools should be decided by the team.
 
 ### (6) Prevent direct alert dismissals
 
@@ -193,7 +197,7 @@ This allows GitHub to detect and report dependencies automatically. It helps kee
 
 ### (3) [Dependabot alerts](https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts)
 
-Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).<br/>
+Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).
 
 !!! note
     Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.
@@ -215,8 +219,16 @@ This option allows Dependabot to combine multiple security updates into a single
 ### (6) [Dependabot version updates](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates)
 
 Allows Dependabot to open pull requests to keep your dependencies up to date, even if there are no known vulnerabilities. This helps reduce technical debt and makes it easier to stay updated to the latest versions.<br/>
-<br/>
-🤷 The enablement of Dependabot version updates is up to the team.
+
+!!! note
+    If you're using GitHub Actions with SHA versioning, this option allows Dependabot to automatically update your GitHub Actions.
+    If you're using GitHub Actions with semantic versioning, this option is optional, but we still recommend enabling it to maintain good security practices by keeping all your dependencies updated to latest versions.
+
+!!! warning
+    Dependabot will suggest upgrading dependencies whenever new versions are available. Enabling this option can lead to a significant number of pull requests generated, requiring the team to actively manage them.
+    It's beneficial to have a well defined process in place to handle these PRs effectively.
+
+✅ We recommend enabling Dependabot version updates.
 
 ### (7) [Dependabot on action runners](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/about-dependabot-on-github-actions-runners)
 
