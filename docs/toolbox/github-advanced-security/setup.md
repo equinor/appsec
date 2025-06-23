@@ -40,11 +40,11 @@ Below you can find a table summary of the options we recommend to enable:
 |                                                   | [Dependabot Alerts (3)](#3-dependabot-alerts)                                        | ✅ Yes               |
 |                                                   | [Dependabot Security Updates (4)](#4-dependabot-security-updates)                    | ✅ Yes               |
 |                                                   | [Grouped Security Updates (5)](#5-grouped-security-updates)                          | 🤷 Optional          |
-|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                      | ✅ Yes               |
+|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                      | ✅ Yes\*             |
 |                                                   | [Dependabot on Action Runners (7)](#7-dependabot-on-action-runners)                  | ✅ Yes               |
 |                                                   | [Dependabot on Self-hosted Runners (8)](#8-dependabot-on-self-hosted-runners)        | ❌ No                |
 
-
+\* Please see important note and warning on [Dependabot Version Updates (6)](#6-dependabot-version-updates) section   
 
 
 ## [Secret Protection](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
