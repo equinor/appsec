@@ -33,15 +33,15 @@ jobs:
 
       - name: Install mkdocs plugins
         run: |
-          pip install mkdocs-techdocs-core==1.5.4
-
-      - name: Generate docs site
-        run: |
-          techdocs-cli generate --no-docker
+          pip install -r requirements.txt
 
       - name: Add techdocs-core plugin to mkdocs.yml
         run: |
           sed -i '/- awesome-pages/a\    - techdocs-core' mkdocs.yml
+
+      - name: Generate docs site
+        run: |
+          techdocs-cli generate --no-docker
 
       - name: Publish to blob storage
         run: |
