@@ -1,0 +1,53 @@
+name: Build TechDocs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    
+jobs:
+  techdocs:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    env:
+      STORAGE_ACCOUNT_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_ACCOUNT_NAME }}
+      STORAGE_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_NAME }}
+      STORAGE_ACCOUNT_KEY: ${{ secrets.BACKSTAGE_DEV_STORAGE_ACCOUNT_KEY }}
+      BACKSTAGE_ENTITY_NAME: appsec
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js and Python
+        uses: actions/setup-node@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Install techdocs-cli
+        run: npm install -g @techdocs/cli@1.9.4
+
+      - name: Install mkdocs plugins
+        run: |
+          pip install mkdocs-techdocs-core==1.5.4
+
+      - name: Generate docs site
+        run: |
+          techdocs-cli generate --no-docker
+
+      - name: Add techdocs-core plugin to mkdocs.yml
+        run: |
+          sed -i '/- awesome-pages/a\    - techdocs-core' mkdocs.yml
+
+      - name: Publish to blob storage
+        run: |
+          techdocs-cli publish \
+            --publisher-type azureBlobStorage \
+            --azureAccountName "$STORAGE_ACCOUNT_NAME" \
+            --azureAccountKey "$STORAGE_ACCOUNT_KEY" \
+            --storage-name "$STORAGE_NAME" \
+            --entity default/Component/${BACKSTAGE_ENTITY_NAME}
