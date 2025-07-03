@@ -10,6 +10,9 @@ jobs:
   techdocs:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
     env:
       STORAGE_ACCOUNT_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_ACCOUNT_NAME }}
       STORAGE_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_NAME }}
