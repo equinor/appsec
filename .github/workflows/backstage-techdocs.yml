@@ -39,6 +39,10 @@ jobs:
         run: |
           techdocs-cli generate --no-docker
 
+      - name: Add techdocs-core plugin to mkdocs.yml
+        run: |
+          sed -i '/- awesome-pages/a\    - techdocs-core' mkdocs.yml
+
       - name: Publish to blob storage
         run: |
           techdocs-cli publish \

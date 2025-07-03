@@ -55,7 +55,6 @@ markdown_extensions:
         permalink: true
 plugins:
     - search
-    - techdocs-core
     - awesome-pages
     - git-revision-date-localized:
         type: date
