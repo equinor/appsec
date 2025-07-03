@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "appsec-sasiv"
+  description: appsec.equinor.com
+  annotations:
+    github.com/project-slug: "equinor/appsec"
+    backstage.io/techdocs-ref: dir:./docs      
+  links:
+    - url: 'https://appsec.equinor.com/'
+      title: 'Official Equinor AppSec Website'
+spec:
+  type: website    # valid choices:  service | website | library | documentation
+  owner: appsec
+  lifecycle: production    # valid choices:  experimental | production | deprecated
