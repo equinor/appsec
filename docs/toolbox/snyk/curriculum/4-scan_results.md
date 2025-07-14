@@ -95,7 +95,7 @@ Some useful resources are listed bellow:
 
 * [Snyk Learn - Open Source Licenses](https://snyk.io/learn/open-source-licenses/)
 
-* [Open Source Licenses Explained](https://www.whitesourcesoftware.com/resources/blog/open-source-licenses-explained/)
+* [Open Source Licenses Explained](https://www.mend.io/blog/top-open-source-licenses-explained/)
 
 * [Open Source License Compliance Handbook](https://github.com/finos/OSLC-handbook/blob/master/output/adoc/OSLC-handbook.adoc)  
 
