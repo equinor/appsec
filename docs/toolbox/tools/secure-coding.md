@@ -29,4 +29,4 @@ There is a wide arrangement of subjects, and you can do them all if you wish! So
 
 ## Belts, merch and more!
 
-To read more on how we do belts, merch and activities (exclusivly for Security Champions), check out the [belts and activities section](../../security-champion/5-belts-and-activities.md) in the Security Champion corner. Spoiler: It's really worth it!
+To read more on how we do belts, merch and activities (exclusively for Security Champions), check out the [belts and activities section](../../security-champion/5-belts-and-activities.md) in the Security Champion corner. Spoiler: It's really worth it!
