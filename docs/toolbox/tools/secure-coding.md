@@ -1,6 +1,6 @@
 # Secure Code Learning platform
 
-We have a secure coding learning platform. Use [this form](https://forms.microsoft.com/e/7BTkd7gGJT) to sign up (given we have enough lisenses. We will reach out if not)
+We have a secure coding learning platform. Use [this form](https://forms.microsoft.com/e/7BTkd7gGJT) to sign up (given we have enough licenses; we will reach out if not).
 
 ## What can you expect?
 
