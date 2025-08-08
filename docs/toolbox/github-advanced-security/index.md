@@ -4,6 +4,8 @@ We're excited to announce that we will be transitioning to GitHub Advanced Secur
 
 We have been collecting your questions and answering them in the [FAQ](faq.md).
 
+Check out [this repository](https://github.com/equinor/appsec-ghas-examples) for our examples on advanced GHAS setups.
+
 !!! note "TL;DR"
     🗓️ GHAS will be available for all Equinor developers on the 1st of October.
 
