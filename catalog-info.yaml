@@ -5,8 +5,7 @@ metadata:
   description: appsec.equinor.com
   annotations:
     github.com/project-slug: "equinor/appsec"
-    backstage.io/techdocs-ref: dir:.
-    equinor.com/techdocs-builder: host
+    backstage.io/techdocs-ref: dir:./docs      
   links:
     - url: 'https://appsec.equinor.com/'
       title: 'Official Equinor AppSec Website'
