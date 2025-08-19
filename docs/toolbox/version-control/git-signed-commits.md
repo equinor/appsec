@@ -198,5 +198,5 @@ If you cannot trust the content or the maintainers of a repository (eg, if you a
 ## External resources
 
 - We disagree with the premise of signed git commits not being useful in the [Should We Sign Git Commits? Probably Not!](https://medium.com/@michael.vittrup.larsen/should-we-sign-git-commits-probably-not-c09ad3c18393). Using git signatures are useful, but it's a not a silver bullet. The article contains relevant reflections advocating for focusing on building a foundation of trust through the review and approval of pull requests by multiple trusted individuals and the importance of a collective scrutiny process. **This we fully support**
-- We are monitoring the [Git Sign project](https://docs.sigstore.dev/signing/gitsign/) of Sigstore. It contains a very interesting approach to the trust chain.
+- We are monitoring the [Git Sign project](https://docs.sigstore.dev/cosign/signing/gitsign/) of Sigstore. It contains a very interesting approach to the trust chain.
  
