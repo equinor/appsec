@@ -1,9 +1,9 @@
 name: Build TechDocs
 
 on:
-  #push:
-  #  branches:
-  #    - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
     
 jobs:
@@ -11,13 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      id-token: write
       contents: read
 
+
     env:
-      STORAGE_ACCOUNT_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_ACCOUNT_NAME }}
-      STORAGE_NAME: ${{ vars.BACKSTAGE_DEV_STORAGE_NAME }}
-      STORAGE_ACCOUNT_KEY: ${{ secrets.BACKSTAGE_DEV_STORAGE_ACCOUNT_KEY }}
-      BACKSTAGE_ENTITY_NAME: appsec
+      STORAGE_ACCOUNT_NAME: ${{ vars.BACKSTAGE_PROD_STORAGE_ACCOUNT_NAME }}
+      STORAGE_CONTAINER_NAME: techdocs
+      VARIA_ENTITY_KIND: component
+      VARIA_ENTITY_NAME: appsec
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -43,11 +45,17 @@ jobs:
         run: |
           techdocs-cli generate --no-docker
 
+      - name: Federated login
+        uses: azure/login@a457da9ea143d694b1b9c7c869ebb04ebe844ef5 # v2.3.0
+        with:
+          client-id: ${{ vars.APPSEC_VARIA_CLIENT_ID }}
+          tenant-id: ${{ vars.TENANT_ID }}
+          subscription-id: ${{ vars.SUBSCRIPTION_ID }}
+
       - name: Publish to blob storage
         run: |
-          techdocs-cli publish \
+          npx techdocs-cli publish \
             --publisher-type azureBlobStorage \
             --azureAccountName "$STORAGE_ACCOUNT_NAME" \
-            --azureAccountKey "$STORAGE_ACCOUNT_KEY" \
-            --storage-name "$STORAGE_NAME" \
-            --entity default/Component/${BACKSTAGE_ENTITY_NAME}
+            --storage-name "$STORAGE_CONTAINER_NAME" \
+            --entity "default/$VARIA_ENTITY_KIND/$VARIA_ENTITY_NAME"
