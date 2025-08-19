@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
+      id-token: write
       contents: read
+
 
     env:
       STORAGE_ACCOUNT_NAME: ${{ vars.BACKSTAGE_PROD_STORAGE_ACCOUNT_NAME }}
