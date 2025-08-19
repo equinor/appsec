@@ -22,7 +22,7 @@ jobs:
       VARIA_ENTITY_NAME: appsec
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js and Python
         uses: actions/setup-node@v4
