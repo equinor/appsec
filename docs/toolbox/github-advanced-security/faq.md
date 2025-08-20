@@ -23,7 +23,7 @@ We have scheduled five onboarding sessions in October, all Security Champions ha
 
 ## Does GHAS settings get applied to forks of the repository?
 
-No, we have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork.  
+No, GHAS settings do not get applied to forks. We have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork.
 
 ## What role do I need to enable GHAS?
 
