@@ -22,8 +22,8 @@ This guideline aims to present relevant tools, some good practices for managing 
 
 ## Recommended tools
 
-- [GitHub Advanced Security - Secret Scanning (GHAS)](#github-advanced-security-secret-scanning) </BR>(PRs, Push Protection, - focus around Github )
-- [Trufflehog](https://github.com/trufflesecurity/trufflehog)</BR>(local dev environment, pre-commits, containers, *CI/CD*)
+- [GitHub Advanced Security - Secret Scanning (GHAS)](#github-advanced-security-secret-scanning) <br>(PRs, Push Protection, - focus around Github )
+- [Trufflehog](https://github.com/trufflesecurity/trufflehog)<br>(local dev environment, pre-commits, containers, *CI/CD*)
 
 Please note that (mostly for Trufflehog since GHAS is driven from the Github portal):
 
