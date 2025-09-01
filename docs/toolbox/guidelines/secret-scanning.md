@@ -44,7 +44,7 @@ GitHub Advanced Security is integrated into GitHub, providing features like the 
 
 #### Global push protection
 
-GitHub provides a feature that will prevent pushes from you that contain [supported secrets](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) across all public repositories.
+GitHub provides a feature that will prevent pushes from you that contain [supported secrets](https://docs.github.com/en/code-security/secret-scanning/secret-scanning-patterns#supported-secrets) on all protected repositories.
 
 - Enable by going to your user settings, code security and analysis and enable the feature push protection for yourself.
 - Make sure you know how this works - their git push commands may be rejected with a message (which they need to read :) )
