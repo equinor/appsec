@@ -77,4 +77,3 @@ Here is a list of a few known attack vectors in the open source ecosystem:
 
 - Create a specific checklist with top 10 things to look at?
 - We have a general list of things to examine - could we make it even more concrete?
-- 
