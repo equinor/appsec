@@ -1,4 +1,4 @@
-# Screening open source packages
+# Security Screening Open Source packages
 
 How can we determine if an open source package is "safe to use"? This is a question we get quite often. Package in this context is any open source library, package, module or similar.
 
@@ -22,8 +22,7 @@ How can we determine if an open source package is "safe to use"? This is a quest
     - Scan continuously: Dependabot plus ecosystem audits (npm audit, pip-audit).
     - Update deliberately: apply critical patches fast; otherwise wait ~1 week before bumping—avoid blind auto-updates.
     - Explore safely: read source/install scripts; test in isolated containers/VMs/Codespaces; watch for common supply-chain attacks.
-
-## Signal intelligence
+# Signal intelligence
 
 ??? Info "Signals that can give an indication of an open source project's vitality and security risk"
 
@@ -81,6 +80,7 @@ Some 3rd party tools can give an idea about project health:
 ??? Note "Want to to know more about known attack vectors in the open source ecosystem?"
 
     - Typosquatting – Publishing packages with names similar to popular ones (e.g. reqeusts vs requests).
+    - Starjacking - Lack of package metadata validation. Associating a source code repository URL with lot of stars to the package 
     - Dependency Confusion – Registering a package name in a public registry that overrides an internal/private package.
     - Malicious Maintainer Update – A trusted maintainer intentionally adds backdoors or malware.
     - Account Takeover – Maintainer's credentials or tokens are compromised, attacker publishes malicious versions.
