@@ -12,13 +12,13 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/toolbox/tools/secure-coding/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/toolbox/guidelines/security-screening-os-packages/">
       
       
-        <link rel="prev" href="../pre-commit-faq/">
+        <link rel="prev" href="../security-requirements/">
       
       
-        <link rel="next" href="../sharing-secrets/">
+        <link rel="next" href="../../snyk/">
       
       
       <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Secure Code Learning platform - Equinor AppSec</title>
+        <title>Security Screening Open Source packages - Equinor AppSec</title>
       
     
     
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#secure-code-learning-platform" class="md-skip">
+        <a href="#security-screening-open-source-packages" class="md-skip">
           Skip to content
         </a>
       
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Secure Code Learning platform
+              Security Screening Open Source packages
             
           </span>
         </div>
@@ -592,8 +592,10 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
+  
     
     
       
@@ -613,13 +615,11 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -634,7 +634,7 @@ cfg: { // Application Insights Configuration
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -648,7 +648,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +670,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/logging-monitoring/" class="md-nav__link">
+      <a href="../logging-monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +692,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -714,7 +714,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../guidelines/security-requirements/" class="md-nav__link">
+      <a href="../security-requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -733,10 +733,19 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../guidelines/security-screening-os-packages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -746,6 +755,7 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
     </li>
   
 
@@ -1291,10 +1301,8 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
     
     
       
@@ -1310,11 +1318,13 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -1329,7 +1339,7 @@ cfg: { // Application Insights Configuration
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -1343,7 +1353,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../pre-commit-faq/" class="md-nav__link">
+      <a href="../../tools/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1362,31 +1372,10 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Secure Code Learning platform
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tools/secure-coding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1396,44 +1385,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-can-you-expect" class="md-nav__link">
-    <span class="md-ellipsis">
-      What can you expect?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#belts-merch-and-more" class="md-nav__link">
-    <span class="md-ellipsis">
-      Belts, merch and more!
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1446,7 +1397,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../sharing-secrets/" class="md-nav__link">
+      <a href="../../tools/sharing-secrets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1891,32 +1842,6 @@ cfg: { // Application Insights Configuration
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-can-you-expect" class="md-nav__link">
-    <span class="md-ellipsis">
-      What can you expect?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#belts-merch-and-more" class="md-nav__link">
-    <span class="md-ellipsis">
-      Belts, merch and more!
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1934,36 +1859,105 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="secure-code-learning-platform">Secure Code Learning platform<a class="headerlink" href="#secure-code-learning-platform" title="Permanent link">&para;</a></h1>
-<p>We have a secure coding learning platform. Use <a href="https://forms.microsoft.com/e/7BTkd7gGJT">this form</a> to sign up (given we have enough licenses; we will reach out if not).</p>
-<h2 id="what-can-you-expect">What can you expect?<a class="headerlink" href="#what-can-you-expect" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Learning about security and secure coding in "hands on" sessions in a sandbox environment</li>
-<li>View video lessons</li>
-<li>Have fun!</li>
-<li>Bragging rights</li>
-<li>Learn things that may help advance your career!</li>
-</ul>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>You can gain unique merch if you're a Security Champion while using this platform!</p>
+<h1 id="security-screening-open-source-packages">Security Screening Open Source packages<a class="headerlink" href="#security-screening-open-source-packages" title="Permanent link">&para;</a></h1>
+<p>How can we determine if an open source package is "safe to use"? This is a question we get quite often. Package in this context is any open source library, package, module or similar.</p>
+<details class="note">
+<summary>Read more</summary>
+<p>Safe to use" could mean a few things. We typically want to ensure that the projects that we consume have a good reputation, are reliable and don't contain any vulnerabilities. We want to reduce supply-chain risk, handle license risk and reduce operational drag.</p>
+<p>There is no such thing as 100% secure. Remember that packages are source code and dynamic - status is not static. Transitive dependencies are a thing - a package usually consumes other packages as well. It's a potentially fragile eco system. Having good AppSec and Software Engineering hygiene is vital.</p>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Your development environment requires vigilance</p>
+<p>Development environments often run with elevated privileges and hold sensitive data (tokens, keys, configs). Treat them as high‑value targets.</p>
+<p>Be cautious with package installs and scripts: review sources and prefer isolated containers/VMs/Codespaces for untrusted code. Avoid exposing real secrets in your local env.</p>
 </div>
-<p>There is a wide arrangement of subjects, and you can do them all if you wish! So there are tracks for:</p>
+<div class="admonition info">
+<p class="admonition-title">TL;DR</p>
 <ul>
-<li>AppSec</li>
-<li>Azure</li>
-<li>Docker security</li>
-<li>DevSecOps</li>
-<li>AI/LLM</li>
-<li>Data Scientist</li>
-<li>OWASP Mobile top 10 (ios/android)</li>
-<li>OWASP API top 10</li>
-<li>Web App Tester</li>
-<li>Web dev</li>
-<li>++</li>
+<li>Vet project health: multiple maintainers, recent releases, tests/docs, transparent governance, signed/provenanced releases.</li>
+<li>Check reputation signals: author/org, forks/usage (stars weak), Snyk Advisor/OpenHub, OpenSSF Scorecard.</li>
+<li>Scan continuously: Dependabot plus ecosystem audits (npm audit, pip-audit).</li>
+<li>Update deliberately: apply critical patches fast; otherwise wait ~1 week before bumping—avoid blind auto-updates.</li>
+<li>Explore safely: read source/install scripts; test in isolated containers/VMs/Codespaces; watch for common supply-chain attacks.</li>
 </ul>
-<h2 id="belts-merch-and-more">Belts, merch and more!<a class="headerlink" href="#belts-merch-and-more" title="Permanent link">&para;</a></h2>
-<p>To read more on how we do belts, merch and activities (exclusively for Security Champions), check out the <a href="../../../security-champion/5-belts-and-activities/">belts and activities section</a> in the Security Champion corner. Spoiler: It's really worth it!</p>
+</div>
+<h1 id="signal-intelligence">Signal intelligence<a class="headerlink" href="#signal-intelligence" title="Permanent link">&para;</a></h1>
+<details class="info">
+<summary>Signals that can give an indication of an open source project's vitality and security risk</summary>
+<ul>
+<li>Author / project reputation</li>
+<li>Number of maintainers, should be more than one</li>
+<li>Stars on Github (not a strong security signal)</li>
+<li>Number of clones and forks</li>
+<li>Transparency (README.md, CONTRIBUTING.md, SECURITY.md, changelog, community, ++)</li>
+<li>Code and release frequency, time since last update and release, should not be older than 12 months.</li>
+<li>Quality signals like tests and reasonable documentation</li>
+<li>Issue and PR handling</li>
+<li>License</li>
+<li>Automation, CI/CD</li>
+<li>Provenance, code signing, release signing, trusted registry</li>
+<li>Known vulnerabilities - time to resolution</li>
+<li>Number of dependencies</li>
+<li>(Does the project provide a SBOM (not just dependency lock files))</li>
+<li>(Look for OpenSSF Scorecard)</li>
+<li>(Examining the source code ...)</li>
+</ul>
+</details>
+<h2 id="3rd-party-tools-to-check-package-health">3rd party tools to check package health:<a class="headerlink" href="#3rd-party-tools-to-check-package-health" title="Permanent link">&para;</a></h2>
+<p>Some 3rd party tools can give an idea about project health:</p>
+<ul>
+<li><a href="https://snyk.io/advisor/">Snyk Advisor</a></li>
+<li><a href="https://openhub.net/">Blackduck Open Hub</a></li>
+</ul>
+<h2 id="sca-scanners-software-composition-analysis">SCA Scanners (Software Composition Analysis)<a class="headerlink" href="#sca-scanners-software-composition-analysis" title="Permanent link">&para;</a></h2>
+<details class="note">
+<summary>Use these to (continuously) scan packages for known vulnerabilities</summary>
+<p>When screening packages, you could consider downloading them (not installing and do a SCA scan)</p>
+<ul>
+<li>Github Dependabot</li>
+<li>Ecosystem's own scanners (like npm audit, pip-audit)</li>
+<li>Trivy</li>
+</ul>
+</details>
+<details class="tip">
+<summary>When to update versions?</summary>
+<p>We recommend having a strategy for when to do package version updates. Besides the usual features given by semantic versioning and breaking changes, don't auto-update to the latest version without some consideration. If not an important security patch, consider waiting until the new release is a week old before updating - malicious updates are usually identified within a few days.</p>
+</details>
+<h2 id="safe-screening">Safe screening<a class="headerlink" href="#safe-screening" title="Permanent link">&para;</a></h2>
+<details class="tip">
+<summary>Are the safe ways to explore a package?</summary>
+<ul>
+<li>Packages can contain malicious code in install scripts - examine source code</li>
+<li>Test / review packages in an isolated environment<ul>
+<li>Container</li>
+<li>Virtual Machines</li>
+<li>Github Codespace (on a "dumb" repo with no secrets ....)</li>
+</ul>
+</li>
+</ul>
+</details>
+<h2 id="attack-types">Attack types<a class="headerlink" href="#attack-types" title="Permanent link">&para;</a></h2>
+<details class="note">
+<summary>Want to to know more about known attack vectors in the open source ecosystem?</summary>
+<ul>
+<li>Typosquatting – Publishing packages with names similar to popular ones (e.g. reqeusts vs requests).</li>
+<li>Starjacking - Lack of package metadata validation. Associating a source code repository URL with lot of stars to the package </li>
+<li>Dependency Confusion – Registering a package name in a public registry that overrides an internal/private package.</li>
+<li>Malicious Maintainer Update – A trusted maintainer intentionally adds backdoors or malware.</li>
+<li>Account Takeover – Maintainer's credentials or tokens are compromised, attacker publishes malicious versions.</li>
+<li>Hijacked Package Ownership – Abandoned package transferred or sold to attacker, who inserts malware.</li>
+<li>Obfuscated / Hidden Payloads – Malicious code hidden in minified, obfuscated, or binary blobs.</li>
+<li>Install-Time Attacks – Malicious postinstall or build scripts executing during package installation.</li>
+<li>Transitive Dependency Attack – Malicious code hidden deep in a dependency chain.</li>
+<li>Watering Hole Attack – Compromise of the package registry itself (npm, PyPI, etc.).</li>
+<li>Version Shadowing – Publishing a "good" version and then later pushing a malicious patch version.</li>
+<li>Binary Planting – Shipping prebuilt binaries in packages with hidden malicious functionality.</li>
+<li>Credential Stealing / Data Exfiltration – Package attempts to read environment variables, SSH keys, or send data out.</li>
+<li>Cryptojacking – Package silently runs cryptocurrency miners on install or runtime.</li>
+<li>Protestware / Logic Bombs – Author inserts politically motivated or disruptive payloads.</li>
+<li>Backdoored Updates – A legitimate update introduces intentional or unintentional backdoors.</li>
+</ul>
+</details>
 
 
 
@@ -1984,7 +1978,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 15, 2025 12:14:49 UTC">July 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 8, 2025 11:56:32 UTC">September 8, 2025</span>
   </span>
 
     
@@ -2020,7 +2014,7 @@ cfg: { // Application Insights Configuration
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../pre-commit-faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Pre-commit">
+          <a href="../security-requirements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Security Requirements">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2030,20 +2024,20 @@ cfg: { // Application Insights Configuration
                 Previous
               </span>
               <div class="md-ellipsis">
-                Pre-commit
+                Security Requirements
               </div>
             </div>
           </a>
         
         
           
-          <a href="../sharing-secrets/" class="md-footer__link md-footer__link--next" aria-label="Next: Sharing secrets (Yopass)">
+          <a href="../../snyk/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting started">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Sharing secrets (Yopass)
+                Getting started
               </div>
             </div>
             <div class="md-footer__button md-icon">
