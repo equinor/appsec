@@ -1,14 +1,14 @@
 # Dockerfile linting
 
-Linting is a highly recommended software engineering practice. It could ensure consistency, prevent common mistakes and reduce manual review effort.
+!!! Tip "Linting is a highly recommended software engineering practice. It helps ensure consistency, prevent common mistakes, and reduce manual review effort."
 
-Linting of dockerfiles have two targets, the dockerfile and the docker image. The linting will happen at different steps in the lifecyle of a container image - and are both useful!
+Linting of Dockerfiles has two targets: the Dockerfile itself and the container image. The linting will happen at different steps in the lifecycle of a container image - and both are useful!
 
-For linting of docker **images** we have tools like [Dockle](https://github.com/goodwithtech/dockle) (focusing on linting for Security, using parts of the [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)). For linting of **dockerfiles** we have tools like [Hadolint](https://github.com/hadolint/hadolint) and [Trivy](https://trivy.dev/latest/). Dockle and Hadolint is focused on linting, while Trivy has more capabilities like finding misconfigurations (IAC) and vulnerabilities (CVE) across repositories, binary artifacts, container images and more.
+For linting of Docker **images** we have tools like [Dockle](https://github.com/goodwithtech/dockle) (focusing on linting for Security, using parts of the [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)). For linting of **Dockerfiles** we have tools like [Hadolint](https://github.com/hadolint/hadolint) and [Trivy](https://trivy.dev/latest/). Dockle and Hadolint are focused on linting, while Trivy has more capabilities like finding misconfigurations (IaC) and vulnerabilities (CVE) across repositories, binary artifacts, container images, and more.
 
-Linting will be part of the development lifecycle in local development environment as well as any CI process.
+Linting will be part of the development lifecycle in both the local development environment and any CI process.
 
-For this guide we focus on the linter Hadolint.
+For this guide, we focus on the linter Hadolint.
 
 ## Hadolint
 
@@ -18,45 +18,45 @@ From [hadolint](https://github.com/hadolint/hadolint):
 
 ### CI/CD
 
-A great way to ensure that your any changes being brought into your repository complies with the best practices is to add the linting on pull requests as a part of the code review
+A great way to ensure that any changes being brought into your repository comply with the best practices is to add linting on pull requests as part of the code review process.
 
 ??? Note "Read more"
 
 
-    Below is an example workflow that will run linting on our dockerfiles whenever there is a pull request that contains changes to any dockerfiles.
+    Below is an example workflow that will run linting on our Dockerfiles whenever there is a pull request that contains changes to any Dockerfiles.
 
         name: Lint Dockerfile
         permissions:
           contents: read
-        run-name: ${{ github.actor }} is running linting on dockerfiles
+        run-name: ${{ github.actor }} is running linting on Dockerfiles
         on:
           pull_request:
             branches: [main] # Limit the workflow to only run on pull requests made to the main branch
             paths:
-              - "**Dockerfile" # Ensure that we trigger on any dockerfile changes
+              - "**Dockerfile" # Ensure that we trigger on any Dockerfile changes
         jobs:
           lint-docker:
             runs-on: ubuntu-latest
             steps:
               - name: Checkout code
                 uses: actions/checkout@v5
-              - name: Linting dockerfiles
+              - name: Linting Dockerfiles
                 uses: hadolint/hadolint-action@v3.2.0
                 with:
-                  failure-threshold: info # Sets the level in which the step will fail on, default is info, other levels are warning and error
-                  recursive: true # This enables us to check all dockerfiles
+                  failure-threshold: info # Sets the level at which the step will fail, default is info, other levels are warning and error
+                  recursive: true # This enables us to check all Dockerfiles
 
 ### Run locally
 
-In order to keep the feedback loop short and write best practice code straight out of the gate it is a good idea to have a linter run on the code before we send it away somewhere.
+In order to keep the feedback loop short and write best practice code straight out of the gate, it is a good idea to have a linter run on the code before we send it away somewhere.
 
 #### CLI
 
-Having the CLI available means that we can manually run linting, or even better that we can attach it to a pre commit hook so that it is automatically without us having to think about it. Connecting it to a local **build** process is also a good idea.
+Having the CLI available means that we can manually run linting, or even better, that we can attach it to a pre-commit hook so that it runs automatically without us having to think about it. Connecting it to a local **build** process is also a good idea.
 
 ##### Install
 
-On OSX you can use [brew](https://brew.sh/) to install:
+On macOS you can use [brew](https://brew.sh/) to install:
 
 ```bash
 brew install hadolint
@@ -68,7 +68,7 @@ On Windows you can use [scoop](https://github.com/lukesampson/scoop) to install:
 scoop install hadolint
 ```
 
-In any of these do not work then you can refer to the [installation section](https://github.com/hadolint/hadolint?tab=readme-ov-file#install) in hadolint's repository.
+If any of these do not work, then you can refer to the [installation section](https://github.com/hadolint/hadolint?tab=readme-ov-file#install) in Hadolint's repository.
 
 #### Pre-commit
 
