@@ -23,7 +23,7 @@ We are planning on having a few open sessions in October to assist with setting 
 
 ## Dependabot? CodeQL? What are these?
 
-Dependabot will be your new best friend when it comes to dependacy scanning while CodeQL will scan your code and make sure there are no code vulnerabilities.
+Dependabot will be your new best friend when it comes to dependency scanning while CodeQL will scan your code and make sure there are no code vulnerabilities.
 Together they work to make your project as safe as it can be.
 
 ## What role do I need to enable GHAS?
