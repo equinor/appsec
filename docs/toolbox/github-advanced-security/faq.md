@@ -80,4 +80,4 @@ Snyk will most likely be replaced with Trivy in Radix, for more information cont
 
 ## Can I still use the Snyk VsCode extension after the decommission of Snyk?
 
-As all the Orgs and projects currently in Snyk will be deleted, we also recommend to moving away from using the Snyk VsCode extension.
+As all the Orgs and projects currently in Snyk will be deleted, we also recommend moving away from using the Snyk VsCode extension.
