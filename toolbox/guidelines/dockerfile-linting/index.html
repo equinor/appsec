@@ -12,28 +12,28 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/toolbox/github-advanced-security/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/toolbox/guidelines/dockerfile-linting/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../authn-authz/">
       
       
-        <link rel="next" href="faq/">
+        <link rel="next" href="../logging-monitoring/">
       
       
-      <link rel="icon" href="../../assets/icons/appsec-iconenergyred.svg">
+      <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
-        <title>GitHub Advanced Security (GHAS) - Equinor AppSec</title>
+        <title>Dockerfile linting - Equinor AppSec</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/mkdocs-eq.css">
+      <link rel="stylesheet" href="../../../assets/css/mkdocs-eq.css">
     
       <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-font.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -100,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#github-advanced-security-ghas" class="md-skip">
+        <a href="#dockerfile-linting" class="md-skip">
           Skip to content
         </a>
       
@@ -114,9 +114,9 @@ cfg: { // Application Insights Configuration
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitHub Advanced Security (GHAS)
+              Dockerfile linting
             
           </span>
         </div>
@@ -240,7 +240,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -261,7 +261,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -281,7 +281,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../security-champion/" class="md-tabs__link">
+        <a href="../../../security-champion/" class="md-tabs__link">
           
   
     
@@ -301,7 +301,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="../../about/" class="md-tabs__link">
+        <a href="../../../about/" class="md-tabs__link">
           
   
     
@@ -336,9 +336,9 @@ cfg: { // Application Insights Configuration
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="../../assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     Equinor AppSec
@@ -365,7 +365,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -424,7 +424,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -455,8 +455,6 @@ cfg: { // Application Insights Configuration
                 
   
   
-    
-  
   
   
     
@@ -478,16 +476,18 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../github-advanced-security/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -499,13 +499,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Github advanced security
@@ -521,7 +521,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
+      <a href="../../github-advanced-security/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -543,7 +543,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="multi-branch-setup-dependabot/" class="md-nav__link">
+      <a href="../../github-advanced-security/multi-branch-setup-dependabot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -565,7 +565,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="setup/" class="md-nav__link">
+      <a href="../../github-advanced-security/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,8 +592,10 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
+  
     
     
       
@@ -615,13 +617,11 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -636,7 +636,7 @@ cfg: { // Application Insights Configuration
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Guidelines
@@ -650,7 +650,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../guidelines/authn-authz/" class="md-nav__link">
+      <a href="../authn-authz/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,10 +669,31 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../guidelines/dockerfile-linting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Dockerfile linting
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -682,6 +703,98 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hadolint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hadolint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hadolint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run locally
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run locally">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -694,7 +807,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../guidelines/logging-monitoring/" class="md-nav__link">
+      <a href="../logging-monitoring/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -716,7 +829,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../secret-scanning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -738,7 +851,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../guidelines/security-requirements/" class="md-nav__link">
+      <a href="../security-requirements/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -760,7 +873,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../guidelines/security-screening-os-packages/" class="md-nav__link">
+      <a href="../security-screening-os-packages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -821,7 +934,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../snyk/" class="md-nav__link ">
+            <a href="../../snyk/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -855,7 +968,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/2-about-snyk/" class="md-nav__link">
+      <a href="../../snyk/2-about-snyk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,7 +990,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/3-snyk_support/" class="md-nav__link">
+      <a href="../../snyk/3-snyk_support/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +1012,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/4-vulnerabilities/" class="md-nav__link">
+      <a href="../../snyk/4-vulnerabilities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -956,7 +1069,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../snyk/curriculum/" class="md-nav__link ">
+            <a href="../../snyk/curriculum/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -990,7 +1103,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/1-snyk_products/" class="md-nav__link">
+      <a href="../../snyk/curriculum/1-snyk_products/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1012,7 +1125,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/2-integrations/" class="md-nav__link">
+      <a href="../../snyk/curriculum/2-integrations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,7 +1147,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/3-projects/" class="md-nav__link">
+      <a href="../../snyk/curriculum/3-projects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,7 +1169,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/4-scan_results/" class="md-nav__link">
+      <a href="../../snyk/curriculum/4-scan_results/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1078,7 +1191,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/5-advanced/" class="md-nav__link">
+      <a href="../../snyk/curriculum/5-advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1100,7 +1213,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../snyk/curriculum/6-faq/" class="md-nav__link">
+      <a href="../../snyk/curriculum/6-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1276,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../threat-modeling/" class="md-nav__link ">
+            <a href="../../threat-modeling/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1224,7 +1337,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
+            <a href="../../threat-modeling/threat-modeling-101-workshop/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1258,7 +1371,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/2-next-steps/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1280,7 +1393,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
+      <a href="../../threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1367,7 +1480,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../tools/pre-commit-faq/" class="md-nav__link">
+      <a href="../../tools/pre-commit-faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1389,7 +1502,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../tools/secure-coding/" class="md-nav__link">
+      <a href="../../tools/secure-coding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1411,7 +1524,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../tools/sharing-secrets/" class="md-nav__link">
+      <a href="../../tools/sharing-secrets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1490,7 +1603,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../version-control/gh-actions-runners/" class="md-nav__link">
+      <a href="../../version-control/gh-actions-runners/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1512,7 +1625,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../version-control/git-github/" class="md-nav__link">
+      <a href="../../version-control/git-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1534,7 +1647,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../version-control/git-signed-commits/" class="md-nav__link">
+      <a href="../../version-control/git-signed-commits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1604,7 +1717,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../security-champion/" class="md-nav__link ">
+            <a href="../../../security-champion/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1638,7 +1751,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../security-champion/1-new_security_champion/" class="md-nav__link">
+      <a href="../../../security-champion/1-new_security_champion/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1660,7 +1773,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../security-champion/2-security_champion_activities/" class="md-nav__link">
+      <a href="../../../security-champion/2-security_champion_activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1682,7 +1795,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../security-champion/4-learning-platform/" class="md-nav__link">
+      <a href="../../../security-champion/4-learning-platform/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1704,7 +1817,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../security-champion/5-belts-and-activities/" class="md-nav__link">
+      <a href="../../../security-champion/5-belts-and-activities/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1726,7 +1839,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../security-champion/6-merch/" class="md-nav__link">
+      <a href="../../../security-champion/6-merch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1780,7 +1893,7 @@ cfg: { // Application Insights Configuration
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../about/" class="md-nav__link ">
+            <a href="../../../about/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1814,7 +1927,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="../../about/privacy/" class="md-nav__link">
+      <a href="../../../about/privacy/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1863,11 +1976,74 @@ cfg: { // Application Insights Configuration
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-this-means-for-you" class="md-nav__link">
+  <a href="#hadolint" class="md-nav__link">
     <span class="md-ellipsis">
-      What this means for you?
+      Hadolint
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Hadolint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      CI/CD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-locally" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run locally
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run locally">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-commit
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1890,23 +2066,69 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="github-advanced-security-ghas">GitHub Advanced Security (GHAS)<a class="headerlink" href="#github-advanced-security-ghas" title="Permanent link">&para;</a></h1>
-<p>We're excited to announce that we will be transitioning to GitHub Advanced Security in October.</p>
-<p>We have been collecting your questions and answering them in the <a href="faq/">FAQ</a>.</p>
-<p>Check out <a href="https://github.com/equinor/appsec-ghas-examples">this repository</a> for our examples on advanced GHAS setups.</p>
-<div class="admonition note">
-<p class="admonition-title">TL;DR</p>
-<p>🗓️ GHAS will be available for all Equinor developers on the 1st of October.</p>
-<p>🤷 We will lose access to Snyk on the 1st of November.</p>
-<p>🌎 We recommend enabling GHAS features in your public repositories.</p>
-<p>🗣️ Let us know in the <a href="https://equinor.enterprise.slack.com/archives/CMM6FSW5V">#appsec</a> channel if you have any questions</p>
+<h1 id="dockerfile-linting">Dockerfile linting<a class="headerlink" href="#dockerfile-linting" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Linting is a highly recommended software engineering practice. It helps ensure consistency, prevent common mistakes, and reduce manual review effort.</p>
 </div>
-<h2 id="what-this-means-for-you">What this means for you?<a class="headerlink" href="#what-this-means-for-you" title="Permanent link">&para;</a></h2>
-<p><strong>Unified Platform:</strong> Code and code security will now be managed under the same platform, eliminating the need for a separate dashboard.</p>
-<p><strong>Current Usage</strong>: We will continue using Snyk until our licenses expire, so please keep utilizing the platform during this transition.</p>
-<p><strong>Overlap Period</strong>: In October, we’ll have a month where both Snyk and GHAS will be in use to ensure a smooth transition.</p>
-<p><strong>Container Scanning</strong>: Please note that GHAS does not currently offer container scanning solutions, we have explored other alternatives like Trivy so please reach out if you have any questions.</p>
-<p><strong>GHAS Features</strong>: We encourage you to enable GHAS features like secret scanning, Dependabot, and CodeQL in your public repositories. These features are free for open-source projects, so take advantage of them!</p>
+<p>Linting of Dockerfiles has two targets: the Dockerfile itself and the container image. The linting will happen at different steps in the lifecycle of a container image - and both are useful!</p>
+<p>For linting of Docker <strong>images</strong> we have tools like <a href="https://github.com/goodwithtech/dockle">Dockle</a> (focusing on linting for Security, using parts of the <a href="https://www.cisecurity.org/cis-benchmarks">CIS Benchmarks</a>). For linting of <strong>Dockerfiles</strong> we have tools like <a href="https://github.com/hadolint/hadolint">Hadolint</a> and <a href="https://trivy.dev/latest/">Trivy</a>. Dockle and Hadolint are focused on linting, while Trivy has more capabilities like finding misconfigurations (IaC) and vulnerabilities (CVE) across repositories, binary artifacts, container images, and more.</p>
+<p>Linting will be part of the development lifecycle in both the local development environment and any CI process.</p>
+<p>For this guide, we focus on the linter Hadolint.</p>
+<h2 id="hadolint">Hadolint<a class="headerlink" href="#hadolint" title="Permanent link">&para;</a></h2>
+<p>From <a href="https://github.com/hadolint/hadolint">hadolint</a>:</p>
+<blockquote>
+<p>A smarter Dockerfile linter that helps you build <a href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices">best practice</a> Docker images. The linter parses the Dockerfile into an AST and performs rules on top of the AST. It stands on the shoulders of <a href="https://github.com/koalaman/shellcheck">ShellCheck</a> to lint the Bash code inside RUN instructions.</p>
+</blockquote>
+<h3 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h3>
+<p>A great way to ensure that any changes being brought into your repository comply with the best practices is to add linting on pull requests as part of the code review process.</p>
+<details class="note">
+<summary>Read more</summary>
+<p>Below is an example workflow that will run linting on our Dockerfiles whenever there is a pull request that contains changes to any Dockerfiles.</p>
+<pre><code>name: Lint Dockerfile
+permissions:
+  contents: read
+run-name: ${{ github.actor }} is running linting on Dockerfiles
+on:
+  pull_request:
+    branches: [main] # Limit the workflow to only run on pull requests made to the main branch
+    paths:
+      - "**Dockerfile" # Ensure that we trigger on any Dockerfile changes
+jobs:
+  lint-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+      - name: Linting Dockerfiles
+        uses: hadolint/hadolint-action@v3.2.0
+        with:
+          failure-threshold: info # Sets the level at which the step will fail, default is info, other levels are warning and error
+          recursive: true # This enables us to check all Dockerfiles
+</code></pre>
+</details>
+<h3 id="run-locally">Run locally<a class="headerlink" href="#run-locally" title="Permanent link">&para;</a></h3>
+<p>In order to keep the feedback loop short and write best practice code straight out of the gate, it is a good idea to have a linter run on the code before we send it away somewhere.</p>
+<h4 id="cli">CLI<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h4>
+<p>Having the CLI available means that we can manually run linting, or even better, that we can attach it to a pre-commit hook so that it runs automatically without us having to think about it. Connecting it to a local <strong>build</strong> process is also a good idea.</p>
+<h5 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h5>
+<p>On macOS you can use <a href="https://brew.sh/">brew</a> to install:</p>
+<pre><code class="language-bash">brew install hadolint
+</code></pre>
+<p>On Windows you can use <a href="https://github.com/lukesampson/scoop">scoop</a> to install:</p>
+<pre><code class="language-bash">scoop install hadolint
+</code></pre>
+<p>If any of these do not work, then you can refer to the <a href="https://github.com/hadolint/hadolint?tab=readme-ov-file#install">installation section</a> in Hadolint's repository.</p>
+<h4 id="pre-commit">Pre-commit<a class="headerlink" href="#pre-commit" title="Permanent link">&para;</a></h4>
+<pre><code class="language-yaml">repos:
+  - repo: local
+    hooks:
+      - id: hadolint
+        name: Lint Dockerfiles
+        description: Runs hadolint to lint Dockerfiles
+        language: system
+        types: ['dockerfile']
+        entry: hadolint
+</code></pre>
 
 
 
@@ -1927,7 +2149,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 8, 2025 07:38:20 UTC">August 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 12, 2025 11:44:35 UTC">September 12, 2025</span>
   </span>
 
     
@@ -1963,7 +2185,7 @@ cfg: { // Application Insights Configuration
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: AppSec Toolbox">
+          <a href="../authn-authz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication and Authorization">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1973,20 +2195,20 @@ cfg: { // Application Insights Configuration
                 Previous
               </span>
               <div class="md-ellipsis">
-                AppSec Toolbox
+                Authentication and Authorization
               </div>
             </div>
           </a>
         
         
           
-          <a href="faq/" class="md-footer__link md-footer__link--next" aria-label="Next: GHAS Transition FAQ">
+          <a href="../logging-monitoring/" class="md-footer__link md-footer__link--next" aria-label="Next: Web Application Logging and Monitoring">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                GHAS Transition FAQ
+                Web Application Logging and Monitoring
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2051,10 +2273,10 @@ cfg: { // Application Insights Configuration
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
