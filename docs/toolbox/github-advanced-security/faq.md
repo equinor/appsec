@@ -21,6 +21,11 @@ Yes, we have published a [guide for enabling and configuring GHAS](../github-adv
 
 We are planning on having a few open sessions in October to assist with setting up GHAS. In most cases the documentation should be sufficient. We will also have some guided setup sessions where we show our recommended setup. We will announce these sessions at a later time.
 
+## Dependabot? CodeQL? What are these?
+
+Dependabot will be your new best friend when it comes to dependency scanning while CodeQL will scan your code and make sure there are no code vulnerabilities.
+Together they work to make your project as safe as it can be.
+
 ## What role do I need to enable GHAS?
 
 From 1st of October, repository **admins** will be able to enable GHAS, we recommend taking a look at our [guide for enabling and configuring GHAS](../github-advanced-security/setup.md).
@@ -40,6 +45,10 @@ At the moment, there are no guidelines on container scanner but we are working o
 
 No, we are looking into open source alternatives, like Trivy, to support teams with scanning their IaC.
 If you have any good experiences with an IaC open source tool, please let us know.
+
+## How do we perform code scanning on new code before pushing, locally, when moving forward? 
+
+We are exploring alternatives to the Snyk CLI, it seems that the [CodeQL CLI](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/about-the-codeql-cli) could be a good alternative. We are aiming to publish some more information regarding this soon.
 
 ## Should I also enable GHAS for repositories that only contain documentation?
 
@@ -68,3 +77,7 @@ The default code scanning should be good for most cases. It scans on every commi
 ## What will happen to the Snyk vulnerability report in Radix?
 
 Snyk will most likely be replaced with Trivy in Radix, for more information contact the Radix team.
+
+## Can I still use the Snyk VsCode extension after the decommission of Snyk?
+
+As all the Orgs and projects currently in Snyk will be deleted, we also recommend moving away from using the Snyk VsCode extension.
