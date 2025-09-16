@@ -614,6 +614,15 @@ cfg: { // Application Insights Configuration
 </li>
       
         <li class="md-nav__item">
+  <a href="#does-ghas-settings-get-applied-to-forks-of-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Does GHAS settings get applied to forks of the repository?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-role-do-i-need-to-enable-ghas" class="md-nav__link">
     <span class="md-ellipsis">
       What role do I need to enable GHAS?
@@ -2084,6 +2093,15 @@ cfg: { // Application Insights Configuration
 </li>
       
         <li class="md-nav__item">
+  <a href="#does-ghas-settings-get-applied-to-forks-of-the-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Does GHAS settings get applied to forks of the repository?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#what-role-do-i-need-to-enable-ghas" class="md-nav__link">
     <span class="md-ellipsis">
       What role do I need to enable GHAS?
@@ -2203,7 +2221,13 @@ During October you will have access to both Snyk and GHAS, we will lose access t
 <h2 id="is-appsec-publishing-some-guidelines-best-practices-for-enabling-and-configuring-ghas-anytime-soon">Is AppSec publishing some guidelines / best practices for enabling and configuring GHAS anytime soon?<a class="headerlink" href="#is-appsec-publishing-some-guidelines-best-practices-for-enabling-and-configuring-ghas-anytime-soon" title="Permanent link">&para;</a></h2>
 <p>Yes, we have published a <a href="../setup/">guide for enabling and configuring GHAS</a>.</p>
 <h2 id="will-there-be-an-onboarding-session">Will there be an onboarding session?<a class="headerlink" href="#will-there-be-an-onboarding-session" title="Permanent link">&para;</a></h2>
-<p>We are planning on having a few open sessions in October to assist with setting up GHAS. In most cases the documentation should be sufficient. We will also have some guided setup sessions where we show our recommended setup. We will announce these sessions at a later time.</p>
+<p>We have scheduled five onboarding sessions in October, all Security Champions have been invited and you can request access in the <a href="https://equinor.enterprise.slack.com/archives/CMM6FSW5V">#appsec</a> channel.</p>
+<h2 id="does-ghas-settings-get-applied-to-forks-of-the-repository">Does GHAS settings get applied to forks of the repository?<a class="headerlink" href="#does-ghas-settings-get-applied-to-forks-of-the-repository" title="Permanent link">&para;</a></h2>
+<p>When you fork a repository, Advanced Security features are not automatically enabled on the fork.
+This is because security settings (such as code scanning, secret protection, etc.) are managed per repository,
+and forking does not inherit these settings by default. </p>
+<p>If you want Advanced Security features in your fork, you need to enable them manually. </p>
+<p>We have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork. </p>
 <h2 id="what-role-do-i-need-to-enable-ghas">What role do I need to enable GHAS?<a class="headerlink" href="#what-role-do-i-need-to-enable-ghas" title="Permanent link">&para;</a></h2>
 <p>From 1st of October, repository <strong>admins</strong> will be able to enable GHAS, we recommend taking a look at our <a href="../setup/">guide for enabling and configuring GHAS</a>.</p>
 <h2 id="what-dashboards-will-i-have-access-to-how-can-i-see-vulnerability-trends">What dashboards will I have access to? How can I see vulnerability trends?<a class="headerlink" href="#what-dashboards-will-i-have-access-to-how-can-i-see-vulnerability-trends" title="Permanent link">&para;</a></h2>
@@ -2251,7 +2275,7 @@ Once you have completed the migration onto GHAS you should revoke the PAT tokens
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 20, 2025 11:14:55 UTC">June 20, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 21, 2025 11:08:53 UTC">August 21, 2025</span>
   </span>
 
     
