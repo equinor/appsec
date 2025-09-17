@@ -59,7 +59,7 @@ Having the CLI available means that we can manually run linting, or even better,
 You can run the linting fully within docker:
 
 ```bash
-cat .\Dockerfile | docker run --rm -i hadolint/hadolint
+cat Dockerfile | docker run --rm -i hadolint/hadolint
 ```
 
 ##### Install
