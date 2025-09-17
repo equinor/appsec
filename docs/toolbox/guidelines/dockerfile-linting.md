@@ -54,6 +54,14 @@ In order to keep the feedback loop short and write best practice code straight o
 
 Having the CLI available means that we can manually run linting, or even better, that we can attach it to a pre-commit hook so that it runs automatically without us having to think about it. Connecting it to a local **build** process is also a good idea.
 
+##### In Docker
+
+You can run the linting fully within docker:
+
+```PowerShell
+cat .\Dockerfile | docker run --rm -i hadolint/hadolint
+```
+
 ##### Install
 
 On macOS you can use [brew](https://brew.sh/) to install:
