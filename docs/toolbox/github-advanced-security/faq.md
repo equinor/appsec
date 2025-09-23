@@ -19,7 +19,17 @@ Yes, we have published a [guide for enabling and configuring GHAS](../github-adv
 
 ## Will there be an onboarding session?
 
-We are planning on having a few open sessions in October to assist with setting up GHAS. In most cases the documentation should be sufficient. We will also have some guided setup sessions where we show our recommended setup. We will announce these sessions at a later time.
+We have scheduled five onboarding sessions in October, all Security Champions have been invited and you can request access in the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) channel.
+
+## Does GHAS settings get applied to forks of the repository?
+
+When you fork a repository, Advanced Security features are not automatically enabled on the fork.
+This is because security settings (such as code scanning, secret protection, etc.) are managed per repository,
+and forking does not inherit these settings by default. 
+
+If you want Advanced Security features in your fork, you need to enable them manually. 
+
+We have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork. 
 
 ## Dependabot? CodeQL? What are these?
 
