@@ -14,8 +14,6 @@ in the navigation on the left you'll find categories of guidelines and tools.
 
 [Threat Modeling](threat-modeling/index.md)
 
-[Snyk](snyk/index.md)
-
 [Git & GitHub](version-control/git-github.md)
 
 [Sharing Secrets](tools/sharing-secrets.md)

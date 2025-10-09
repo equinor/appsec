@@ -5,10 +5,6 @@
 
 Say hello in the [Security Champion channel](https://equinor.slack.com/archives/C036HGPBJ04) 👋 Always fun to meet new champions.
 
-## Ensure that all your code is being scanned by SAST
-
-Ensure all your projects code is scanned by Snyk, and that you have Snyk Code enabled for your projects. Using a linter is always good when you develop!
-
 ## Check out our guidelines
 
 We have created a few guidelines. Please check them out in our [toolbox](../toolbox/index.md) and consider implementing them in your projects where it makes sense.
