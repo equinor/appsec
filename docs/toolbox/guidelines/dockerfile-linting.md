@@ -70,6 +70,28 @@ scoop install hadolint
 
 If any of these do not work, then you can refer to the [installation section](https://github.com/hadolint/hadolint?tab=readme-ov-file#install) in Hadolint's repository.
 
+##### In Docker
+
+You can run Hadolint fully within docker instead of installing it locally. The tool can be run either as a one-off command, or with shell access.
+
+If you want to run hadolint with default access you simply run this command:
+
+```bash
+cat Dockerfile | docker run --rm -i hadolint/hadolint
+```
+
+For more fine tuned control you can customize the behavior using the options found in the [documentation](https://github.com/hadolint/hadolint?tab=readme-ov-file#configure).
+
+Some examples:
+
+```bash
+cat Dockerfile | docker run --rm -i hadolint/hadolint:latest hadolint --failure-threshold=error -
+```
+
+```bash
+cat Dockerfile | docker run --rm -i hadolint/hadolint:latest hadolint --no-color -
+```
+
 #### Pre-commit
 
 ```yaml
@@ -83,4 +105,3 @@ repos:
         types: ['dockerfile']
         entry: hadolint
 ```
-
