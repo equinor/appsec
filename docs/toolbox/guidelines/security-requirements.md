@@ -2,7 +2,7 @@
 
 ## Why
 
-Defining your security requirements will help you out when performing various security related activities. When thinking of what can go wrong and trying to secure your system, having defined what is important to you just makes sense :shrug: In addition, it helps prioritizing security-work, ex. patching vulnerabilities found in Snyk, prioritizing threats as part of Threat Modelling or when doing Security Testing.
+Defining your security requirements will help you out when performing various security related activities. When thinking of what can go wrong and trying to secure your system, having defined what is important to you just makes sense :shrug: In addition, it helps prioritizing security-work, ex. patching vulnerabilities found in Github Advanced Security, prioritizing threats as part of Threat Modelling or when doing Security Testing.
 
 
 ## What

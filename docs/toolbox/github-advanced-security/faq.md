@@ -2,16 +2,7 @@
 
 ## Can we enable GHAS now?
 
-No. There are no available licences until **1st of October**, unless your repository is public, or we have gotten in touch with your team.
-
-## Should we still import our new repositories into Snyk?
-
-Yes. Snyk will be the preferred tool of use until **1st of October**.
-
-## Do we really only get one month to prepare?
-
-We unfortunately cannot have two solutions active for the entire transition period. This should however not be a major issue for most. Enabling GHAS is fairly straight forward and we are here to help you with the transition.
-During October you will have access to both Snyk and GHAS, we will lose access to Snyk on 1st of November but it can be smart to disable alerts in Snyk once you have enabled GHAS in order to not receive double alerting.
+Yes - it is enabled by default for all repos by policy (secret scannning and security alerts)
 
 ## Is AppSec publishing some guidelines / best practices for enabling and configuring GHAS anytime soon?
 
@@ -56,10 +47,6 @@ At the moment, there are no guidelines on container scanner but we are working o
 No, we are looking into open source alternatives, like Trivy, to support teams with scanning their IaC.
 If you have any good experiences with an IaC open source tool, please let us know.
 
-## How do we perform code scanning on new code before pushing, locally, when moving forward? 
-
-We are exploring alternatives to the Snyk CLI, it seems that the [CodeQL CLI](https://docs.github.com/en/code-security/codeql-cli/getting-started-with-the-codeql-cli/about-the-codeql-cli) could be a good alternative. We are aiming to publish some more information regarding this soon.
-
 ## Should I also enable GHAS for repositories that only contain documentation?
 
 From 1st of October, all repositories in the Equinor organization should be onboarded into GHAS.
@@ -73,7 +60,7 @@ GHAS alerts will also be shown in your repository Security tab.
 
 ## What should I do to offboard from Snyk?
 
-From 1st of October, once you have enabled GHAS, you can disable alerting in Snyk in order to not receive double alerting.
+From 1st of October you can disable alerting in Snyk in order to not receive double alerting.
 Once you have completed the migration onto GHAS you should revoke the PAT tokens that have been used with Snyk.
 
 ## Do you still recommending using Trufflehog?
@@ -83,10 +70,6 @@ Absolutely, Trufflehog can be automated to run during a pre-commit hook which wi
 ## Should we have a custom Code Scanning setup?
 
 The default code scanning should be good for most cases. It scans on every commit. You may monitor the consumption in minutes on Github Actions. If that number goes above 1000 minutes a month, then contact the AppSec team. They'll first try to take that consumption down by fine tuning CodeQL. And if that fails, only then we can consider weekly scans instead of every commit.
-
-## What will happen to the Snyk vulnerability report in Radix?
-
-Snyk will most likely be replaced with Trivy in Radix, for more information contact the Radix team.
 
 ## Can I still use the Snyk VsCode extension after the decommission of Snyk?
 
