@@ -1,6 +1,6 @@
 # GitHub Advanced Security (GHAS)
 
-GHAS is not active and available for all repositories.
+GHAS is now active and available for all repositories.
 
 We have been collecting your questions on GHAS and tried answering them in the [FAQ](faq.md).
 
