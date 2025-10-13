@@ -5,15 +5,15 @@
 This is where the fun begins.
 
 - Join the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) channel on Slack
-- You will get an invitation to the [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) channel within a few days
+- You will be added to the [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) channel on Slack within a few days
 - Check out our [activities](./2-security_champion_activities.md)
 
-!!! question "Here's a puzzle for you :"
-    Get your gift by _decoding_ this challenge - <https://forms.microsoft.com/r/cLRPzRtPGQ>
+!!! question "Do you like games?"
+    _Hack_ your way to victory and you might just get some socks: - <https://frontend-appsec-ctf-runner-prod.radix.equinor.com/>
 
 ## Add Security Champion events to your calendar
 
-To check all events, and add them to your own calendar, go to your outlook calendar and select the Security Champion Calendar from group calendars:
+To view all events, or add them to your own calendar, go to your outlook calendar and select the Security Champion Calendar from group calendars:
 
 ![Security Champion Calendar](./add_SecurityChampions_calendar.png)
 
@@ -27,4 +27,4 @@ You can also find a calendar of events on [SharePoint](https://statoilsrm.sharep
 - [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V): Information regarding AppSec
 
 !!! info
-    [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V) Most general information should be posted here so everyone in Equinor has access to it and can participate! Dropping a ```@appsecteam``` in this channel will get our attention immediately.
+    [#AppSec](https://equinor.slack.com/archives/CMM6FSW5V) Most general information and questions should be posted here so everyone in Equinor has access to it and can participate! Dropping a ```@appsecteam``` in this channel will get our attention immediately.
