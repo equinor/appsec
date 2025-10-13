@@ -9,7 +9,7 @@ This is where the fun begins.
 - Check out our [activities](./2-security_champion_activities.md)
 
 !!! question "Do you like games?"
-    _Hack_ your way to victory and you might just get some socks: - <https://frontend-appsec-ctf-runner-prod.radix.equinor.com/>
+    _Hack_ your way to victory and you might just get some socks: <https://frontend-appsec-ctf-runner-prod.radix.equinor.com/>
 
 ## Add Security Champion events to your calendar
 
