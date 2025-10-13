@@ -7,8 +7,9 @@ This is where the fun begins.
 - Join the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) channel on Slack
 - You will be added to the [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) channel on Slack within a few days
 - Check out our [activities](./2-security_champion_activities.md)
+- Explore our [learning platform](./4-learning-platform.md)
 
-!!! question "Do you like games?"
+!!! question "Here's a game for you:"
     _Hack_ your way to victory and you might just get some socks: <https://frontend-appsec-ctf-runner-prod.radix.equinor.com/>
 
 ## Add Security Champion events to your calendar
