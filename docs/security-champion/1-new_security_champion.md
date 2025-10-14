@@ -10,7 +10,7 @@ This is where the fun begins.
 - Explore our [learning platform](./4-learning-platform.md)
 
 !!! question "Here's a game for you:"
-    _Hack_ your way to victory and you might just get some socks: <https://frontend-appsec-ctf-runner-prod.radix.equinor.com/>
+    _Hack_ your way to victory and you might just get some socks: <https://forms.microsoft.com/r/cLRPzRtPGQ>
 
 ## Add Security Champion events to your calendar
 
