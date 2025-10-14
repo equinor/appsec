@@ -3,6 +3,7 @@
 ## Welcome young padawan 🛡️✨
 
 This is where the fun begins.
+
 - 💬 Join the [#appsec](https://equinor.slack.com/archives/CMM6FSW5V) channel on Slack
 - 🏆 You will be added to the [#security-champion](https://equinor.slack.com/archives/C036HGPBJ04) channel on Slack within a few days
 - 🌟 Check out our [activities](./2-security_champion_activities.md)
