@@ -10,6 +10,10 @@ Guidelines, tools and tips, brought to you by the AppSec team.
 
 Information about the Security Champion programme in Equinor. This site contains guidelines and information for Security Champions :hugging:
 
+## [GitHub Advanced Security](toolbox/github-advanced-security/index.md)
+
+Secret scanning, dependency scanning and code scanning. Here you'll find guidelines and information related to GHAS.
+
 ## [Threat Modeling](toolbox/threat-modeling/index.md)
 
 Here you can find some information about threat modeling, as well as information about how to get started and what resources the AppSec-team can provide.
