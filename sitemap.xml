@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://equinor.github.io/appsec/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/about/privacy/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/experimental/git-signed-commits-old/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/experimental/git-signed-commits-young/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/1-new_security_champion/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/2-security_champion_activities/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/4-learning-platform/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/5-belts-and-activities/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/security-champion/6-merch/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/faq/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/multi-branch-setup-dependabot/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/github-advanced-security/setup/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/authn-authz/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/dockerfile-linting/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/logging-monitoring/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/secret-scanning/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/security-requirements/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/guidelines/security-screening-os-packages/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/2-next-steps/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/threat-modeling/threat-modeling-101-workshop/3-cheat-sheet/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/tools/pre-commit-faq/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/tools/secure-coding/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/tools/sharing-secrets/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/version-control/gh-actions-runners/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/version-control/git-github/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
     <url>
          <loc>https://equinor.github.io/appsec/toolbox/version-control/git-signed-commits/</loc>
-         <lastmod>2025-10-10</lastmod>
+         <lastmod>2025-10-16</lastmod>
     </url>
 </urlset>
