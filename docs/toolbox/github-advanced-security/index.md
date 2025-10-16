@@ -52,7 +52,7 @@ In the Equinor GitHub Organization:
 
 ![Dependabot updates are paused](image-4.png)
 
-## Excemption from Automatic Dependency Submission
+## Exception from Automatic Dependency Submission
 
 Sometimes workflows fail due to automatic dependency submission when Dependabot fails in fetching packages from a private registry:
 
