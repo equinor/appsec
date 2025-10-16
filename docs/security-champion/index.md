@@ -31,4 +31,4 @@ You as a champion are the heart of this network. We know time might be tight, bu
 
 ## How to become a Security Champion?
 
-Becoming a Security Champion is as easy as filling out [this form](https://forms.microsoft.com/r/3C2vwEh2i0).
+Becoming a Security Champion is as easy as filling out [this form](https://forms.cloud.microsoft/e/SHwJ1Y1prg).
