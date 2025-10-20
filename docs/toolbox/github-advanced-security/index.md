@@ -19,6 +19,9 @@ Check out [this repository](https://github.com/equinor/appsec-ghas-examples) for
 
 **GHAS Features**: We encourage you to enable additional GHAS features like code scanning with CodeQL 
 
+!!! info
+    The following information offers guidance to internal Equinor teams and might not apply to the broader public.
+
 ## Compliance with Governance
 
 To comply with [TR2375](https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127) you must perform:
