@@ -51,7 +51,7 @@ In the Equinor GitHub Organization:
 
     If you ignore your Dependabot alerts for too long, **Dependabot will stop working**.
     In this case, you will see the following warning under Security → Dependabot.
-    This means you will be **uncompliant** with SCA requirements.
+    This means you will be **noncompliant** with SCA requirements.
 
 ![Dependabot updates are paused](image-4.png)
 
