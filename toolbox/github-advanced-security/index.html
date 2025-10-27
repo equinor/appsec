@@ -1568,6 +1568,39 @@ cfg: { // Application Insights Configuration
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#compliance-with-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compliance with Governance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Compliance with Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-do-you-need-to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      What do you need to do?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exception-from-automatic-dependency-submission" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exception from Automatic Dependency Submission
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1600,6 +1633,49 @@ cfg: { // Application Insights Configuration
 <p><strong>Unified Platform:</strong> Code and code security will now be managed under the same platform, eliminating the need for a separate dashboard.</p>
 <p><strong>Container Scanning</strong>: Please note that GHAS does not currently offer container scanning solutions, we have explored other alternatives like Trivy so please reach out if you have any questions.</p>
 <p><strong>GHAS Features</strong>: We encourage you to enable additional GHAS features like code scanning with CodeQL </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The information that follows offers guidance to internal Equinor teams and might not apply to the broader public.</p>
+</div>
+<h2 id="compliance-with-governance">Compliance with Governance<a class="headerlink" href="#compliance-with-governance" title="Permanent link">&para;</a></h2>
+<p>To comply with <a href="https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127">TR2375</a> you must perform:</p>
+<ul>
+<li><strong>SCA</strong> (Software Composition Analysis) - dependency scanning, handled by Dependency Graph.</li>
+<li><strong>SAST</strong> (Static Application Security Testing) - source code scanning, handled by Code Scanning (CodeQL).</li>
+</ul>
+<p>In the Equinor GitHub Organization:</p>
+<ul>
+<li><strong>Secret Scanning</strong> is enabled by default for all repositories </li>
+<li><strong>Dependency Scanning</strong> is enabled by default for most repositories</li>
+<li><strong>Code Scanning</strong> must be set up manually by a repository Admin</li>
+</ul>
+<h3 id="what-do-you-need-to-do">What do you need to do?<a class="headerlink" href="#what-do-you-need-to-do" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Check dependency scanning (SCA)
+    In your repository go to Security -&gt; Dependency Scanning and make sure it's active (alerts created)</li>
+<li>
+<p>Enable CodeQL (SAST)
+    CodeQL is not enabled by default. A repository Admin must:</p>
+<ul>
+<li>Navigate to Settings → Advanced Security → CodeQL analysis → Set up → Default</li>
+<li>If the default setup fails, you will see a message under Security → Code Scanning.
+  In that case, use an advanced setup. Examples of this are available in the <a href="https://github.com/equinor/appsec-ghas-examples">appsec-ghas-examples repository</a>.</li>
+</ul>
+<p><img alt="Code analysis tools not working" src="image-3.png" /></p>
+</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you ignore your Dependabot alerts for too long, <strong>Dependabot will stop working</strong>.
+In this case, you will see the following warning under Security → Dependabot.</p>
+</div>
+<p><img alt="Dependabot updates are paused" src="image-4.png" /></p>
+<h2 id="exception-from-automatic-dependency-submission">Exception from Automatic Dependency Submission<a class="headerlink" href="#exception-from-automatic-dependency-submission" title="Permanent link">&para;</a></h2>
+<p>Sometimes workflows fail due to automatic dependency submission when Dependabot fails in fetching packages from a private registry:</p>
+<ul>
+<li>First, try following <a href="https://docs.github.com/en/code-security/dependabot/working-with-dependabot/configuring-access-to-private-registries-for-dependabot#configuring-private-registries">this guide</a></li>
+<li>If that doesn't solve it, request an exception using <a href="https://forms.cloud.microsoft/e/1Zp1vBiN7Q">this form</a>.</li>
+</ul>
 
 
 
@@ -1620,7 +1696,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 10, 2025 06:23:40 UTC">October 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 27, 2025 10:50:19 UTC">October 27, 2025</span>
   </span>
 
     
