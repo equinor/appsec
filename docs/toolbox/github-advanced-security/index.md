@@ -26,7 +26,7 @@ Check out [this repository](https://github.com/equinor/appsec-ghas-examples) for
 
 To comply with [TR2375](https://docmap.equinor.com/Docmap/page/doc/dmDocIndex.html?DOCKEYID=1000005127) you must perform:
 
-- **SCA** (Software Composition Analysis) - dependency scanning, handled by Dependabot.
+- **SCA** (Software Composition Analysis) - dependency scanning, handled by Dependency Graph.
 - **SAST** (Static Application Security Testing) - source code scanning, handled by Code Scanning (CodeQL).
 
 In the Equinor GitHub Organization:
