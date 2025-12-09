@@ -4,21 +4,30 @@ This repo contains the documentation and setup for hosting <https://equinor.gith
 
 ## Development
 
+### Prerequisites
+
+This project uses [uv](https://docs.astral.sh/uv/) for dependency management. If you don't have `uv` installed, follow [the offical installation guides](https://docs.astral.sh/uv/getting-started/installation/).
+
+### Setup
 Install the dependencies using
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 To start the project, simply run:
 
 ```bash
-mkdocs serve
+uv run mkdocs serve
 ```
 
 and the server will start on `localhost:8000`.
 
-.. or use e.g. Gitpod by click the Gitpod image/link above.
+Alternatively, you can activate the virtual environment and run mkdocs directly:
+```bash
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+mkdocs serve
+```
 
 ### Adding content
 
