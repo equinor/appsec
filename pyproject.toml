@@ -1,7 +1,15 @@
 [project]
 name = "AppSec"
 version = "1.0.0"
+description = "Equinor AppSec information pages and documentation"
+readme = "README.md"
 requires-python = ">=3.14"
+license = {text = "MIT"}
+authors = [
+    {name = "Equinor AppSec Team"}
+]
+keywords = ["security", "appsec", "documentation"]
+
 dependencies = [
     "mkdocs-awesome-pages-plugin>=2.10.1",
     "mkdocs-git-revision-date-localized-plugin>=1.4.7",
@@ -9,3 +17,9 @@ dependencies = [
     "mkdocs-techdocs-core>=1.6.0",
     "requests>=2.32.5",
 ]
+
+[project.urls]
+Homepage = "https://github.com/equinor/appsec"
+Documentation = "https://github.com/equinor/appsec"
+Repository = "https://github.com/equinor/appsec"
+Issues = "https://github.com/equinor/appsec/issues"
