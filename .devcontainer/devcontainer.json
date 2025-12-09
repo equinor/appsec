@@ -21,7 +21,7 @@
   "remoteUser": "vscode",
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "pip install --user -r requirements.txt",
-  "postStartCommand": "mkdocs serve"
+  "postCreateCommand": ".devcontainer/post-create.sh",
+  "postStartCommand": "uv run mkdocs serve"
 
 }
