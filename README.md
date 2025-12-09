@@ -8,6 +8,9 @@ This repo contains the documentation and setup for hosting <https://equinor.gith
 
 This project uses [uv](https://docs.astral.sh/uv/) for dependency management. If you don't have `uv` installed, follow [the offical installation guides](https://docs.astral.sh/uv/getting-started/installation/).
 
+This project uses the Python version as specified in the `.python-version` file. When you run `uv sync`, it will automatically detect and use the correct Python version.
+The same yields for the workflows and Codespace setup.
+
 ### Setup
 Install the dependencies using
 
