@@ -22,6 +22,15 @@
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": ".devcontainer/post-create.sh",
-  "postStartCommand": "uv run mkdocs serve"
+  "postStartCommand": "uv run mkdocs serve",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "installYarnUsingApt": true,
+      "version": "lts",
+      "pnpmVersion": "latest",
+      "nvmVersion": "latest"
+    }
+  }
 
 }
