@@ -11,11 +11,11 @@ authors = [
 keywords = ["security", "appsec", "documentation"]
 
 dependencies = [
-    "mkdocs-awesome-pages-plugin>=2.10.1",
-    "mkdocs-git-revision-date-localized-plugin>=1.4.7",
-    "mkdocs-material>=9.6.19",
-    "mkdocs-techdocs-core>=1.6.0",
-    "requests>=2.32.5",
+    "mkdocs-awesome-pages-plugin==2.10.1",
+    "mkdocs-git-revision-date-localized-plugin==1.4.7",
+    "mkdocs-material==9.6.19",
+    "mkdocs-techdocs-core==1.6.0",
+    "requests==2.32.5",
 ]
 
 [project.urls]
