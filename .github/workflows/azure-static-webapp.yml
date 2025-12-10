@@ -28,5 +28,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
-          app_build_command: "mkdocs build"
+          app_build_command: "pip install -r requirements.txt && mkdocs build"
           output_location: "/site"
