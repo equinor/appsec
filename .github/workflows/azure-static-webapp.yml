@@ -28,4 +28,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
+          app_build_command: "mkdocs build"
           output_location: "/site"
