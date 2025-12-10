@@ -3,7 +3,7 @@ name = "AppSec"
 version = "1.0.0"
 description = "Equinor AppSec information pages and documentation"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 license = {text = "MIT"}
 authors = [
     {name = "Equinor AppSec Team"}
