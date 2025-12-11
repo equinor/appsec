@@ -19,8 +19,7 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@ed21f2f24f8dd64503750218de024bcf64c7250a # v7.1.5
 
-      - name: Generate requirements.txt
-        run: uv pip compile pyproject.toml -o requirements.txt
+      - run: uv sync
 
       - uses: Azure/static-web-apps-deploy@v1
         with:
@@ -28,5 +27,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/"
-          app_build_command: "pip install -r requirements.txt && mkdocs build"
-          output_location: "/site"
+          app_build_command: "uv run mkdocs build"
+          output_location: "site"
