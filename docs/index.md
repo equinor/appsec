@@ -1,4 +1,4 @@
-# AppSec Portal
+# The AppSec Portal
 
 Welcome to Equinor AppSec information pages. This site is primarily written by and for the people working with building/maintaining applications in Equinor, but could also function as a resource for others on the topic of application security.
 
