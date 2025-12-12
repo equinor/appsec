@@ -33,3 +33,4 @@ jobs:
           action: "upload"
           app_location: "/"
           output_location: "site"
+          skip_app_build: true
