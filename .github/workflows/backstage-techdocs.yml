@@ -42,7 +42,7 @@ jobs:
 
       - name: Generate docs site
         run: |
-          techdocs-cli generate --no-docker
+          uv run techdocs-cli generate --no-docker
 
       - name: Federated login
         uses: azure/login@a457da9ea143d694b1b9c7c869ebb04ebe844ef5 # v2.3.0
