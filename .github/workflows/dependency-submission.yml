@@ -1,0 +1,24 @@
+name: Dependency Submission
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['main']
+
+permissions: {}
+
+jobs:
+  dependency-submission:
+    name: Submit uv dependencies
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write # needs to submit dependency graph data
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Submit dependency snapshot
+        uses: rmuir/uv-dependency-submission@1c48aaac13e566e39fd04269ff1900b86c1105c5 # v1.0.0
