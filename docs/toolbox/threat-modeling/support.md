@@ -1,7 +1,7 @@
 # Getting Help
 
 !!! warning "Facilitation on pause"
-    The AppSec team currently has a pause on facilitating threat modeling sessions.
+    The AppSec team has paused facilitation of threat modeling sessions.
 
 Here are some ways to get started on your own:
 
