@@ -1,3 +1,7 @@
 nav:
     - index.md
-    - getting-started
+    - getting-started.md
+    - tools.md
+    - ai-assisted.md
+    - cheat-sheet.md
+    - support.md
