@@ -12,26 +12,28 @@
         <meta name="author" content="ISC AppSec, Equinor ASA">
       
       
-        <link rel="canonical" href="https://equinor.github.io/appsec/">
+        <link rel="canonical" href="https://equinor.github.io/appsec/toolbox/threat-modeling/ai-assisted/">
       
       
+        <link rel="prev" href="../tools/">
       
-        <link rel="next" href="toolbox/">
+      
+        <link rel="next" href="../cheat-sheet/">
       
       
-      <link rel="icon" href="assets/icons/appsec-iconenergyred.svg">
+      <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
-        <title>Equinor AppSec</title>
+        <title>AI-Assisted Threat Modeling - Equinor AppSec</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,11 +52,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/css/mkdocs-eq.css">
+      <link rel="stylesheet" href="../../../assets/css/mkdocs-eq.css">
     
       <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-font.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -98,7 +100,7 @@ cfg: { // Application Insights Configuration
     <div data-md-component="skip">
       
         
-        <a href="#the-appsec-portal" class="md-skip">
+        <a href="#ai-assisted-threat-modeling" class="md-skip">
           Skip to content
         </a>
       
@@ -112,9 +114,9 @@ cfg: { // Application Insights Configuration
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../../.." title="Equinor AppSec" class="md-header__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -131,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              The AppSec Portal
+              AI-Assisted Threat Modeling
             
           </span>
         </div>
@@ -240,11 +242,9 @@ cfg: { // Application Insights Configuration
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -261,11 +261,13 @@ cfg: { // Application Insights Configuration
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="toolbox/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -287,7 +289,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="security-champion/" class="md-tabs__link">
+        <a href="../../../security-champion/" class="md-tabs__link">
           
   
   
@@ -309,7 +311,7 @@ cfg: { // Application Insights Configuration
     
     
       <li class="md-tabs__item">
-        <a href="about/" class="md-tabs__link">
+        <a href="../../../about/" class="md-tabs__link">
           
   
   
@@ -345,9 +347,9 @@ cfg: { // Application Insights Configuration
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
+    <a href="../../.." title="Equinor AppSec" class="md-nav__button md-logo" aria-label="Equinor AppSec" data-md-component="logo">
       
-  <img src="assets/icons/appsec-icon-white.svg" alt="logo">
+  <img src="../../../assets/icons/appsec-icon-white.svg" alt="logo">
 
     </a>
     Equinor AppSec
@@ -371,32 +373,10 @@ cfg: { // Application Insights Configuration
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    The AppSec Portal
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -407,62 +387,6 @@ cfg: { // Application Insights Configuration
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#appsec-toolbox" class="md-nav__link">
-    <span class="md-ellipsis">
-      AppSec Toolbox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#security-champion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Security Champion
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github-advanced-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitHub Advanced Security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-modeling" class="md-nav__link">
-    <span class="md-ellipsis">
-      Threat Modeling
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -471,6 +395,8 @@ cfg: { // Application Insights Configuration
       
   
   
+    
+  
   
   
     
@@ -494,20 +420,21 @@ cfg: { // Application Insights Configuration
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="toolbox/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -520,13 +447,13 @@ cfg: { // Application Insights Configuration
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Toolbox
@@ -571,7 +498,7 @@ cfg: { // Application Insights Configuration
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="toolbox/github-advanced-security/" class="md-nav__link ">
+            <a href="../../github-advanced-security/" class="md-nav__link ">
               
   
   
@@ -606,7 +533,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/github-advanced-security/faq/" class="md-nav__link">
+      <a href="../../github-advanced-security/faq/" class="md-nav__link">
         
   
   
@@ -629,7 +556,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/github-advanced-security/multi-branch-setup-dependabot/" class="md-nav__link">
+      <a href="../../github-advanced-security/multi-branch-setup-dependabot/" class="md-nav__link">
         
   
   
@@ -652,7 +579,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/github-advanced-security/setup/" class="md-nav__link">
+      <a href="../../github-advanced-security/setup/" class="md-nav__link">
         
   
   
@@ -740,7 +667,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/authn-authz/" class="md-nav__link">
+      <a href="../../guidelines/authn-authz/" class="md-nav__link">
         
   
   
@@ -763,7 +690,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/dockerfile-linting/" class="md-nav__link">
+      <a href="../../guidelines/dockerfile-linting/" class="md-nav__link">
         
   
   
@@ -786,7 +713,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/logging-monitoring/" class="md-nav__link">
+      <a href="../../guidelines/logging-monitoring/" class="md-nav__link">
         
   
   
@@ -809,7 +736,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/secret-scanning/" class="md-nav__link">
+      <a href="../../guidelines/secret-scanning/" class="md-nav__link">
         
   
   
@@ -832,7 +759,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/security-requirements/" class="md-nav__link">
+      <a href="../../guidelines/security-requirements/" class="md-nav__link">
         
   
   
@@ -855,7 +782,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/guidelines/security-screening-os-packages/" class="md-nav__link">
+      <a href="../../guidelines/security-screening-os-packages/" class="md-nav__link">
         
   
   
@@ -883,6 +810,8 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
+  
   
   
     
@@ -909,17 +838,15 @@ cfg: { // Application Insights Configuration
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="toolbox/threat-modeling/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -938,7 +865,7 @@ cfg: { // Application Insights Configuration
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Threat modeling
@@ -954,7 +881,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/threat-modeling/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -977,7 +904,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/threat-modeling/tools/" class="md-nav__link">
+      <a href="../tools/" class="md-nav__link">
         
   
   
@@ -997,10 +924,32 @@ cfg: { // Application Insights Configuration
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="toolbox/threat-modeling/ai-assisted/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    AI-Assisted Threat Modeling
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1011,6 +960,53 @@ cfg: { // Application Insights Configuration
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ai-is-not-the-threat-modeler-you-are" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI is not the threat modeler - you are
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#make-it-machine-readable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Make it machine-readable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context-is-everything" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context is everything
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1023,7 +1019,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/threat-modeling/cheat-sheet/" class="md-nav__link">
+      <a href="../cheat-sheet/" class="md-nav__link">
         
   
   
@@ -1046,7 +1042,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/threat-modeling/support/" class="md-nav__link">
+      <a href="../support/" class="md-nav__link">
         
   
   
@@ -1128,7 +1124,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/tools/pre-commit-faq/" class="md-nav__link">
+      <a href="../../tools/pre-commit-faq/" class="md-nav__link">
         
   
   
@@ -1151,7 +1147,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/tools/secure-coding/" class="md-nav__link">
+      <a href="../../tools/secure-coding/" class="md-nav__link">
         
   
   
@@ -1174,7 +1170,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/tools/sharing-secrets/" class="md-nav__link">
+      <a href="../../tools/sharing-secrets/" class="md-nav__link">
         
   
   
@@ -1256,7 +1252,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/version-control/gh-actions-runners/" class="md-nav__link">
+      <a href="../../version-control/gh-actions-runners/" class="md-nav__link">
         
   
   
@@ -1279,7 +1275,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/version-control/git-github/" class="md-nav__link">
+      <a href="../../version-control/git-github/" class="md-nav__link">
         
   
   
@@ -1302,7 +1298,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="toolbox/version-control/git-signed-commits/" class="md-nav__link">
+      <a href="../../version-control/git-signed-commits/" class="md-nav__link">
         
   
   
@@ -1373,7 +1369,7 @@ cfg: { // Application Insights Configuration
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="security-champion/" class="md-nav__link ">
+            <a href="../../../security-champion/" class="md-nav__link ">
               
   
   
@@ -1408,7 +1404,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="security-champion/1-new_security_champion/" class="md-nav__link">
+      <a href="../../../security-champion/1-new_security_champion/" class="md-nav__link">
         
   
   
@@ -1431,7 +1427,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="security-champion/2-security_champion_activities/" class="md-nav__link">
+      <a href="../../../security-champion/2-security_champion_activities/" class="md-nav__link">
         
   
   
@@ -1454,7 +1450,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="security-champion/4-learning-platform/" class="md-nav__link">
+      <a href="../../../security-champion/4-learning-platform/" class="md-nav__link">
         
   
   
@@ -1477,7 +1473,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="security-champion/5-belts-and-activities/" class="md-nav__link">
+      <a href="../../../security-champion/5-belts-and-activities/" class="md-nav__link">
         
   
   
@@ -1500,7 +1496,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="security-champion/6-merch/" class="md-nav__link">
+      <a href="../../../security-champion/6-merch/" class="md-nav__link">
         
   
   
@@ -1555,7 +1551,7 @@ cfg: { // Application Insights Configuration
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="about/" class="md-nav__link ">
+            <a href="../../../about/" class="md-nav__link ">
               
   
   
@@ -1590,7 +1586,7 @@ cfg: { // Application Insights Configuration
   
   
     <li class="md-nav__item">
-      <a href="about/privacy/" class="md-nav__link">
+      <a href="../../../about/privacy/" class="md-nav__link">
         
   
   
@@ -1640,36 +1636,27 @@ cfg: { // Application Insights Configuration
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#appsec-toolbox" class="md-nav__link">
+  <a href="#ai-is-not-the-threat-modeler-you-are" class="md-nav__link">
     <span class="md-ellipsis">
-      AppSec Toolbox
+      AI is not the threat modeler - you are
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#security-champion" class="md-nav__link">
+  <a href="#make-it-machine-readable" class="md-nav__link">
     <span class="md-ellipsis">
-      Security Champion
+      Make it machine-readable
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-advanced-security" class="md-nav__link">
+  <a href="#context-is-everything" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub Advanced Security
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#threat-modeling" class="md-nav__link">
-    <span class="md-ellipsis">
-      Threat Modeling
+      Context is everything
     </span>
   </a>
   
@@ -1694,16 +1681,41 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="the-appsec-portal">The AppSec Portal<a class="headerlink" href="#the-appsec-portal" title="Permanent link">&para;</a></h1>
-<p>Welcome to Equinor AppSec information pages. This site is primarily written by and for the people working with building/maintaining applications in Equinor, but could also function as a resource for others on the topic of application security.</p>
-<h2 id="appsec-toolbox"><a href="toolbox/">AppSec Toolbox</a><a class="headerlink" href="#appsec-toolbox" title="Permanent link">&para;</a></h2>
-<p>Guidelines, tools and tips, brought to you by the AppSec team.</p>
-<h2 id="security-champion"><a href="security-champion/">Security Champion</a><a class="headerlink" href="#security-champion" title="Permanent link">&para;</a></h2>
-<p>Information about the Security Champion programme in Equinor. This site contains guidelines and information for Security Champions <img alt="🤗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f917.svg" title=":hugging:" /></p>
-<h2 id="github-advanced-security"><a href="toolbox/github-advanced-security/">GitHub Advanced Security</a><a class="headerlink" href="#github-advanced-security" title="Permanent link">&para;</a></h2>
-<p>Secret scanning, dependency scanning and code scanning. Here you'll find guidelines and information related to GHAS.</p>
-<h2 id="threat-modeling"><a href="toolbox/threat-modeling/">Threat Modeling</a><a class="headerlink" href="#threat-modeling" title="Permanent link">&para;</a></h2>
-<p>Here you can find some information about threat modeling, as well as information about how to get started and what resources the AppSec-team can provide.</p>
+<h1 id="ai-assisted-threat-modeling">AI-Assisted Threat Modeling<a class="headerlink" href="#ai-assisted-threat-modeling" title="Permanent link">&para;</a></h1>
+<h2 id="ai-is-not-the-threat-modeler-you-are">AI is not the threat modeler - you are<a class="headerlink" href="#ai-is-not-the-threat-modeler-you-are" title="Permanent link">&para;</a></h2>
+<p>Don't use AI to generate your threat models. The value of threat modeling comes from your team thinking through the system together. AI didn't build your system, doesn't understand your context, and will confidently miss what matters.</p>
+<p>Instead, use AI as a:</p>
+<ul>
+<li><strong>Reviewer</strong> - Have it challenge your threat model and point out what you might have missed</li>
+<li><strong>Sparring partner</strong> - Discuss attack scenarios and mitigations with it</li>
+<li><strong>Guide</strong> - Ask it to explain unfamiliar concepts, attack patterns, or security controls</li>
+</ul>
+<h2 id="make-it-machine-readable">Make it machine-readable<a class="headerlink" href="#make-it-machine-readable" title="Permanent link">&para;</a></h2>
+<p>To get the most out of AI assistance, store your threat models in a format it can actually work with. Tools like <a href="../tools/#owasp-threat-dragon">Threat Dragon</a> produce machine-readable output by default.</p>
+<ul>
+<li>Store threat models as code (YAML/JSON) alongside your source code</li>
+<li>Use GitHub Copilot to review and update them as you commit</li>
+<li>Keep it a living document that evolves with your system</li>
+</ul>
+<p>A machine-readable threat model in your repository means AI tools can access it in context, giving you better and more relevant feedback.</p>
+<h2 id="context-is-everything">Context is everything<a class="headerlink" href="#context-is-everything" title="Permanent link">&para;</a></h2>
+<p>AI is only as useful as the context you give it. A vague prompt gets a vague answer. If you want meaningful input, invest effort in documenting:</p>
+<ul>
+<li><strong>Runbooks</strong> - How the system is operated and maintained</li>
+<li><strong>Access control lists</strong> - Who and what has access to what</li>
+<li><strong>Data classifications</strong> - What data is sensitive and why</li>
+</ul>
+<p>The more context lives in your repo, the better Copilot can reason about your system.</p>
+<div class="admonition example">
+<p class="admonition-title">Example workflow</p>
+<ol>
+<li>Run a collaborative threat modeling session in <strong>Miro</strong> with your team</li>
+<li>Translate the model into <strong>Threat Dragon</strong> and store the JSON file alongside your source code</li>
+<li>Spar with <strong>GitHub Copilot</strong> to refine and update the model</li>
+<li>Revisit the threat model at major releases, after significant changes, or on a regular cadence</li>
+<li>Ask Copilot: <em>"Do these changes affect our current threat model?"</em></li>
+</ol>
+</div>
 
 
 
@@ -1724,7 +1736,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="December 12, 2025 08:03:47 UTC">December 12, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 13:00:52 UTC">February 12, 2026</span>
   </span>
 
     
@@ -1759,15 +1771,31 @@ cfg: { // Application Insights Configuration
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../tools/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tools">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Tools
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="toolbox/" class="md-footer__link md-footer__link--next" aria-label="Next: AppSec Toolbox">
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet (printable)">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                AppSec Toolbox
+                Cheat Sheet (printable)
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1835,10 +1863,10 @@ cfg: { // Application Insights Configuration
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
     
   </body>

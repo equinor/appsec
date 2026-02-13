@@ -26,7 +26,7 @@
     
     
       
-        <title>🚧 Threat Modeling - Equinor AppSec</title>
+        <title>Threat Modeling - Equinor AppSec</title>
       
     
     
@@ -133,7 +133,7 @@ cfg: { // Application Insights Configuration
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              🚧 Threat Modeling
+              Threat Modeling
             
           </span>
         </div>
@@ -823,6 +823,14 @@ cfg: { // Application Insights Configuration
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -872,73 +880,13 @@ cfg: { // Application Insights Configuration
   
   
   
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4_2" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="getting-started/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    Getting started
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            Getting started
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="getting-started/3-cheat-sheet/" class="md-nav__link">
+      <a href="getting-started/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Cheat Sheet
+    Getting Started
     
   </span>
   
@@ -949,9 +897,93 @@ cfg: { // Application Insights Configuration
 
               
             
-          </ul>
-        </nav>
-      
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ai-assisted/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AI-Assisted Threat Modeling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cheat Sheet (printable)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Help
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1528,6 +1560,23 @@ cfg: { // Application Insights Configuration
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-threat-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why threat model?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1545,8 +1594,20 @@ cfg: { // Application Insights Configuration
   
 
 
-<h1 id="threat-modeling">🚧 Threat Modeling<a class="headerlink" href="#threat-modeling" title="Permanent link">&para;</a></h1>
-<p>We are currently revising and improving our threat modeling guidelines. Stay tuned, updated content is on the way!</p>
+<h1 id="threat-modeling">Threat Modeling<a class="headerlink" href="#threat-modeling" title="Permanent link">&para;</a></h1>
+<p>If the term <em>threat modeling</em> is new to you, don't worry. You have almost certainly done it before, just under a different name. Whenever you have thought about the risks facing a system, what data needs protection, or how a feature could be misused, you were threat modeling. It is simply the industry-adopted term for systematically thinking through <strong>what can go wrong</strong> in IT systems.</p>
+<p>More precisely, the <a href="https://www.threatmodelingmanifesto.org/">Threat Modeling Manifesto</a> defines it as:</p>
+<blockquote>
+<p><strong>Threat modeling is analyzing representations of a system to highlight concerns about security and privacy characteristics.</strong></p>
+</blockquote>
+<p>This is the definition we use in the AppSec team, and the foundation for how we present and train development teams to adopt the practice.</p>
+<h2 id="why-threat-model">Why threat model?<a class="headerlink" href="#why-threat-model" title="Permanent link">&para;</a></h2>
+<p>Threat modeling answers the <em>why</em> behind your security efforts. If you don't base your security work on assessed risk, you are essentially doing security in the dark. You might still implement good controls, but you are bound to have blind spots.</p>
+<p>Threat modeling gives you a structured way to identify what actually matters, so your security work is driven by real risks rather than assumptions or checklists.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Threat modeling is widely regarded in the security community as one of the most impactful activities a development team can perform to improve their security posture.</p>
+</div>
 
 
 
@@ -1567,7 +1628,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 10:34:14 UTC">February 12, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="February 12, 2026 13:20:13 UTC">February 12, 2026</span>
   </span>
 
     
@@ -1620,13 +1681,13 @@ cfg: { // Application Insights Configuration
         
         
           
-          <a href="getting-started/" class="md-footer__link md-footer__link--next" aria-label="Next: 🚧 Getting Started">
+          <a href="getting-started/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                🚧 Getting Started
+                Getting Started
               </div>
             </div>
             <div class="md-footer__button md-icon">
