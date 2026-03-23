@@ -11,6 +11,7 @@ We have a secure coding learning platform. Use [this form](https://forms.microso
 - Learn things that may help advance your career!
 
 !!! info
+
     You can gain unique merch if you're a Security Champion while using this platform!
 
 There is a wide arrangement of subjects, and you can do them all if you wish! So there are tracks for:

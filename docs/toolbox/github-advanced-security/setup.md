@@ -1,7 +1,7 @@
-
 # GitHub Advanced Security Enablement and Setup
 
 !!! important
+
     - Internal and Private Repositories must wait until **1st of October** before enabling GHAS.
     - You must be a repository Admin to proceed.
 
@@ -16,36 +16,34 @@ To start off, navigate to your repository and under Settings -> Security -> Adva
 
 Below you can find a table summary of the options we recommend to enable:
 
+| **Feature**                                       | **Options**                                                                           | **Recommendation**  |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------- |
+| [**Secret Protection** (1)](#1-secret-protection) |                                                                                       | ✅ Yes              |
+|                                                   | [Validity Checks (2)](#2-validity-checks)                                             | 🤷 Optional         |
+|                                                   | [Non-provider Patterns (3)](#3-non-provider-patterns)                                 | ✅ Yes              |
+|                                                   | [Scan for Generic Passwords (4)](#4-scan-for-generic-passwords)                       | ✅ Yes              |
+|                                                   | [Push-Protection (5)](#5-push-protection)                                             | ✅ Yes              |
+|                                                   | [Who can bypass push protection (6)](#6-who-can-bypass-push-protection)               | 👤 Anyone (default) |
+|                                                   | [Prevent Alert Dismissal (7)](#7-prevent-alert-dismissal)                             | ❌ No               |
+|                                                   | [Custom Patterns (8)](#8-custom-patterns)                                             | 🤷 Optional         |
+| [**Code Security** (1)](#1-code-security)         |                                                                                       | ✅ Yes              |
+|                                                   | [CodeQL analysis (2)](#2-codeql-analysis)                                             | ⚙️ Default setup    |
+|                                                   | [Other tools (3)](#3-other-tools)                                                     | 🤷 Optional         |
+|                                                   | [Copilot Autofix (4)](#4-copilot-autofix)                                             | ✅ Yes              |
+|                                                   | [Copilot Autofix for Third Party Tools (5)](#5-copilot-autofix-for-third-party-tools) | 🤷 Optional         |
+|                                                   | [Prevent Direct Alert Dismissal (6)](#6-prevent-direct-alert-dismissal)               | ❌ No               |
+|                                                   | [Protection Rules (7)](#7-protection-rules)                                           | ⚙️ Default setup    |
+|                                                   | [Private Vulnerability Reporting (8)](#8-private-vulnerability-reporting)             | 🤷 Optional         |
+| [**Dependency Graph** (1)](#1-dependency-graph)   |                                                                                       | ✅ Yes              |
+|                                                   | [Automatic dependency submission (2)](#2-automatic-dependency-submission)             | ✅ Yes              |
+|                                                   | [Dependabot Alerts (3)](#3-dependabot-alerts)                                         | ✅ Yes              |
+|                                                   | [Dependabot Security Updates (4)](#4-dependabot-security-updates)                     | ✅ Yes              |
+|                                                   | [Grouped Security Updates (5)](#5-grouped-security-updates)                           | 🤷 Optional         |
+|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                       | ✅ Yes\*            |
+|                                                   | [Dependabot on Action Runners (7)](#7-dependabot-on-action-runners)                   | ✅ Yes              |
+|                                                   | [Dependabot on Self-hosted Runners (8)](#8-dependabot-on-self-hosted-runners)         | ❌ No               |
 
-| **Feature**                                       | **Options**                                                                          | **Recommendation**   |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------  |
-| [**Secret Protection** (1)](#1-secret-protection) |                                                                                      | ✅ Yes               |
-|                                                   | [Validity Checks (2)](#2-validity-checks)                                            | 🤷 Optional          |
-|                                                   | [Non-provider Patterns (3)](#3-non-provider-patterns)                                | ✅ Yes               |
-|                                                   | [Scan for Generic Passwords (4)](#4-scan-for-generic-passwords)                      | ✅ Yes               |
-|                                                   | [Push-Protection (5)](#5-push-protection)                                            | ✅ Yes               |
-|                                                   | [Who can bypass push protection (6)](#6-who-can-bypass-push-protection)              | 👤 Anyone (default)  |
-|                                                   | [Prevent Alert Dismissal (7)](#7-prevent-alert-dismissal)                            | ❌ No                |
-|                                                   | [Custom Patterns (8)](#8-custom-patterns)                                            | 🤷 Optional          |
-| [**Code Security** (1)](#1-code-security)         |                                                                                      | ✅ Yes               |
-|                                                   | [CodeQL analysis (2)](#2-codeql-analysis)                                            | ⚙️ Default setup     |
-|                                                   | [Other tools (3)](#3-other-tools)                                                    | 🤷 Optional          |
-|                                                   | [Copilot Autofix (4)](#4-copilot-autofix)                                            | ✅ Yes               |
-|                                                   | [Copilot Autofix for Third Party Tools (5)](#5-copilot-autofix-for-third-party-tools)| 🤷 Optional          |
-|                                                   | [Prevent Direct Alert Dismissal (6)](#6-prevent-direct-alert-dismissal)              | ❌ No                |
-|                                                   | [Protection Rules (7)](#7-protection-rules)                                          | ⚙️ Default setup     |
-|                                                   | [Private Vulnerability Reporting (8)](#8-private-vulnerability-reporting)            | 🤷 Optional          |
-| [**Dependency Graph** (1)](#1-dependency-graph)   |                                                                                      | ✅ Yes               |
-|                                                   | [Automatic dependency submission (2)](#2-automatic-dependency-submission)            | ✅ Yes               |
-|                                                   | [Dependabot Alerts (3)](#3-dependabot-alerts)                                        | ✅ Yes               |
-|                                                   | [Dependabot Security Updates (4)](#4-dependabot-security-updates)                    | ✅ Yes               |
-|                                                   | [Grouped Security Updates (5)](#5-grouped-security-updates)                          | 🤷 Optional          |
-|                                                   | [Dependabot Version Updates (6)](#6-dependabot-version-updates)                      | ✅ Yes\*             |
-|                                                   | [Dependabot on Action Runners (7)](#7-dependabot-on-action-runners)                  | ✅ Yes               |
-|                                                   | [Dependabot on Self-hosted Runners (8)](#8-dependabot-on-self-hosted-runners)        | ❌ No                |
-
-\* Please see important note and warning on [Dependabot Version Updates (6)](#6-dependabot-version-updates) section   
-
+\* Please see important note and warning on [Dependabot Version Updates (6)](#6-dependabot-version-updates) section
 
 ## [Secret Protection](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning)
 
@@ -54,7 +52,7 @@ It gives a brief explanation of each of the options available and our recommenda
 The goal is to detect exposed secrets early on thus reducing risk in the SDLC. <br/>
 <br/>
 
-![Secret Protection Options](<Screenshot 2025-06-12 at 14.28.28.png>)
+![Secret Protection Options](Screenshot%202025-06-12%20at%2014.28.28.png)
 
 ### (1) Secret Protection
 
@@ -62,7 +60,7 @@ Enabling Secret Protection will enable secret scanning on the repository. Upon e
 <br/>
 ✅ Secret Protection should be enabled.
 
-### (2) [Validity checks](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets) 
+### (2) [Validity checks](https://docs.github.com/en/enterprise-cloud@latest/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets)
 
 Enhances secret scanning by verifying whether a detected secret is actually valid. When enabled, GitHub forwards the detected secret to the relevant provider (for example, an Azure secret would be sent to Microsoft) to confirm if it's active. Enabling this feature provides teams with insight into whether a secret is live and exploitable. However, it's important to note that the third party may, in the future, automatically revoke or disable the secret once its validity is confirmed. For instance, if Azure confirms a secret is active, it might proactively disable it to prevent abuse. <br/>
 <br/>
@@ -111,7 +109,7 @@ Lets you define your own regex rules to detect secrets specific to your team or 
 Code Security manages the configuration of GitHub’s Static Application Security Testing (SAST) tool also known as CodeQL, which runs via GitHub Actions to scan your repository for security issues in the code.<br/>
 <br/>
 
-![Code Security Options](<Screenshot 2025-06-12 at 15.20.32.png>)
+![Code Security Options](Screenshot%202025-06-12%20at%2015.20.32.png)
 
 ### (1) [Code Security](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning)
 
@@ -126,6 +124,7 @@ This has be configured for code security to work. Once enabled a GitHub action w
 ⚙️ We recommend choosing the [default setup](https://docs.github.com/en/code-security/code-scanning/enabling-code-scanning/configuring-default-setup-for-code-scanning) for CodeQL Analysis, which works well for most repositories and languages.
 
 !!! warning
+
     After CodeQL has run for the first time, we recommend you check the Security tab of your repo and then navigate to Code Scanning.<br/>
     If the default setup is not working properly you will see the following warning. Check the [tool status page](https://docs.github.com/en/code-security/code-scanning/managing-your-code-scanning-configuration/about-the-tool-status-page) to get more information about the issue.<br/>
     If you encounter this get in touch with us.
@@ -150,6 +149,7 @@ It’s a helpful way to quickly address straight forward issues but we always re
 Copilot Autofix also works with third-party security tools, not just CodeQL. It will generate potential fixes based on issues identified by [other tools](#3-other-tools) installed in the repository.
 
 !!! note
+
     Currently this feature only supports ESLint.
     ESLint has to be configured in the repository through the [other tools option](#3-other-tools).
 
@@ -200,6 +200,7 @@ This allows GitHub to detect and report dependencies automatically. It helps kee
 Notify you when vulnerabilities are found in your dependencies. Alerts will appear in the GitHub UI under the Security Dashboard, and can also be sent by email and filtered to a separate folder (e.g. by using the "security" keyword).
 
 !!! note
+
     Slack notifications are not available with GHAS. We recommend setting up email notifications or configuring GitHub notification rules to make sure your team stays up to date on security issues.
 
 ✅ We recommend enabling Dependabot alerts.
@@ -221,10 +222,12 @@ This option allows Dependabot to combine multiple security updates into a single
 Allows Dependabot to open pull requests to keep your dependencies up to date, even if there are no known vulnerabilities. This helps reduce technical debt and makes it easier to stay updated to the latest versions.<br/>
 
 !!! note
+
     If you're using GitHub Actions with SHA versioning, this option allows Dependabot to automatically update your GitHub Actions.
     If you're using GitHub Actions with semantic versioning, this option is optional, but we still recommend enabling it to maintain good security practices by keeping all your dependencies updated to latest versions.
 
 !!! warning
+
     Dependabot will suggest upgrading dependencies whenever new versions are available. Enabling this option can lead to a significant number of pull requests generated, requiring the team to actively manage them.
     It's beneficial to have a well defined process in place to handle these PRs effectively.
 

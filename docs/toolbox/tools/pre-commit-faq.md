@@ -21,8 +21,8 @@ Pre-commit can be installed in two ways, using Python pip or Homebrew.
 
 ### Installing pre-commit
 
-| Python | Homebrew |
-|---|---|
+| Python                   | Homebrew                  |
+| ------------------------ | ------------------------- |
 | `pip install pre-commit` | `brew install pre-commit` |
 
 Once pre-commit is installed you need to set up the git hook scripts by running `pre-commit install`. Now pre-commit wil automatically run on git commit!

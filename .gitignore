@@ -7,3 +7,4 @@ venv/
 .dccache
 .DS_STORE
 .idea/
+*.egg-info/

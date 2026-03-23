@@ -1,7 +1,8 @@
 # Web Application Logging and Monitoring
 
 !!! info
-    This is a work in progress. Any thoughts? Reach out to us on [Slack](https://app.slack.com/client/T02JL00JU/CMM6FSW5V) or e-mail at ``appsec[at]equinor.com``
+
+    This is a work in progress. Any thoughts? Reach out to us on [Slack](https://app.slack.com/client/T02JL00JU/CMM6FSW5V) or e-mail at `appsec[at]equinor.com`
 
 **Target Audience** - Application teams maintaining or implementing web applications.
 
@@ -33,9 +34,9 @@ Security logging is a huge topic, so we will limit our scope. You should not log
 
 #### Examples
 
-- ```Scans:``` Somebody keeps poking our end-points, testing known end-points, or trying different malicious inputs. A fitting mitigation for this threat can be throttling / rate limiting. Logging would not properly mitigate the issue, because the application team would be unable to take action to stop such an attack. Such an attack would be up to CDC to detect and respond
-- ```Access control:``` Assume an application holds data that is owned by specific users, and it is required that data can be accessed only by its owner. A risk is identified that, due to either errors or malicious action, user Alice could access user Bob's data. In this case, logging is an acceptable mitigation to this risk. The application can log whenever a user accesses a piece of data. Controls can be set up to check the logs in real time and detect if some accesses are incompatible, or this could happen on a regular basis (e.g. once a month a validation routine is run on the logs)
-- ```Privileged (admin) access:``` Some applications may include special permissions for admins. What application admins can do is determined by the application, so misuse of admin credentials is a threat in the scope of the application. Logging accesses and actions performed by admins is a valid mitigation strategy
+- `Scans:` Somebody keeps poking our end-points, testing known end-points, or trying different malicious inputs. A fitting mitigation for this threat can be throttling / rate limiting. Logging would not properly mitigate the issue, because the application team would be unable to take action to stop such an attack. Such an attack would be up to CDC to detect and respond
+- `Access control:` Assume an application holds data that is owned by specific users, and it is required that data can be accessed only by its owner. A risk is identified that, due to either errors or malicious action, user Alice could access user Bob's data. In this case, logging is an acceptable mitigation to this risk. The application can log whenever a user accesses a piece of data. Controls can be set up to check the logs in real time and detect if some accesses are incompatible, or this could happen on a regular basis (e.g. once a month a validation routine is run on the logs)
+- `Privileged (admin) access:` Some applications may include special permissions for admins. What application admins can do is determined by the application, so misuse of admin credentials is a threat in the scope of the application. Logging accesses and actions performed by admins is a valid mitigation strategy
 
 #### Where to store security logs
 
@@ -60,7 +61,7 @@ Iterative **threat modeling sessions** should be conducted to access the level o
 
 Depending on your selected log strategy, you should consider having **immutable logs**, especially if you are handling confidential data.
 
-```Critical or sensitive information, access tokens, secrets, source code, keys, certificates, etc.. are examples of what should never be logged.```
+`Critical or sensitive information, access tokens, secrets, source code, keys, certificates, etc.. are examples of what should never be logged.`
 
 ### Personal Identifiable Information (PII) & GDPR
 

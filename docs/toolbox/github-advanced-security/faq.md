@@ -16,11 +16,11 @@ We have scheduled five onboarding sessions in October, all Security Champions ha
 
 When you fork a repository, Advanced Security features are not automatically enabled on the fork.
 This is because security settings (such as code scanning, secret protection, etc.) are managed per repository,
-and forking does not inherit these settings by default. 
+and forking does not inherit these settings by default.
 
-If you want Advanced Security features in your fork, you need to enable them manually. 
+If you want Advanced Security features in your fork, you need to enable them manually.
 
-We have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork. 
+We have also observed that pull requests to the upstream repository require that a successful CodeQL scan is performed on the fork.
 
 ## Dependabot? CodeQL? What are these?
 

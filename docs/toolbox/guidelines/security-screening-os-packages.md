@@ -14,7 +14,6 @@ How can we determine if an open source package is "safe to use"? This is a quest
 
     Be cautious with package installs and scripts: review sources and prefer isolated containers/VMs/Codespaces for untrusted code. Avoid exposing real secrets in your local env.
 
-
 !!! Info "TL;DR"
 
     - Vet project health: multiple maintainers, recent releases, tests/docs, transparent governance, signed/provenanced releases.
@@ -22,6 +21,7 @@ How can we determine if an open source package is "safe to use"? This is a quest
     - Scan continuously: Dependabot plus ecosystem audits (npm audit, pip-audit).
     - Update deliberately: apply critical patches fast; otherwise wait ~1 week before bumping—avoid blind auto-updates.
     - Explore safely: read source/install scripts; test in isolated containers/VMs/Codespaces; watch for common supply-chain attacks.
+
 # Signal intelligence
 
 ??? Info "Signals that can give an indication of an open source project's vitality and security risk"
@@ -42,7 +42,6 @@ How can we determine if an open source package is "safe to use"? This is a quest
     - (Does the project provide a SBOM (not just dependency lock files))
     - (Look for OpenSSF Scorecard)
     - (Examining the source code ...)
-  
 
 ## 3rd party tools to check package health:
 
@@ -65,7 +64,7 @@ Some 3rd party tools can give an idea about project health:
 
     We recommend having a strategy for when to do package version updates. Besides the usual features given by semantic versioning and breaking changes, don't auto-update to the latest version without some consideration. If not an important security patch, consider waiting until the new release is a week old before updating - malicious updates are usually identified within a few days.
 
-## Safe screening 
+## Safe screening
 
 ??? Tip "Are the safe ways to explore a package?"
 
@@ -80,7 +79,7 @@ Some 3rd party tools can give an idea about project health:
 ??? Note "Want to to know more about known attack vectors in the open source ecosystem?"
 
     - Typosquatting – Publishing packages with names similar to popular ones (e.g. reqeusts vs requests).
-    - Starjacking - Lack of package metadata validation. Associating a source code repository URL with lot of stars to the package 
+    - Starjacking - Lack of package metadata validation. Associating a source code repository URL with lot of stars to the package
     - Dependency Confusion – Registering a package name in a public registry that overrides an internal/private package.
     - Malicious Maintainer Update – A trusted maintainer intentionally adds backdoors or malware.
     - Account Takeover – Maintainer's credentials or tokens are compromised, attacker publishes malicious versions.

@@ -1,4 +1,3 @@
-
 # Security Champion Activities 🦸‍♀️
 
 ## Introduce yourself
@@ -10,6 +9,7 @@ Say hello in the [Security Champion channel](https://equinor.slack.com/archives/
 We have created a few guidelines. Please check them out in our [toolbox](../toolbox/index.md) and consider implementing them in your projects where it makes sense.
 
 !!! info
+
     Feedback is good, so if you have any, feel free to contact us, or even create a PR on our [github repo](https://github.com/equinor/appsec/)!
 
 ## Threat Modelling activities

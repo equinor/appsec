@@ -13,6 +13,7 @@ We have a secure coding learning platform. You as a champion are a perfect match
 - Learn things that may help advance your career!
 
 !!! info
+
     You can gain unique merch based on your belt level!
 
 There is a wide arrangement of subjects, and you can do them all if you wish! So there are tracks for:
