@@ -15,4 +15,5 @@ Threat modeling answers the *why* behind your security efforts. If you don't bas
 Threat modeling gives you a structured way to identify what actually matters, so your security work is driven by real risks rather than assumptions or checklists.
 
 !!! tip
+
     Threat modeling is widely regarded in the security community as one of the most impactful activities a development team can perform to improve their security posture.

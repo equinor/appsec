@@ -9,9 +9,9 @@ The scope for this guideline is web application and api's.
 - Microsoft's [Identity Platform](https://learn.microsoft.com/en-us/entra/identity-platform/) is the primary component in our set-up.
 - We use Microsoft Entra ID (was Azure AD) as our primary identity provider and authorization server.
 - We use oAuth2 to facilitate authorization
-  - [Authorization Code Flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) is often the preferred flow
-  - We avoid the "Implicit Grant Flow"
-  - Public Clients should use Auth Code Flow with PKCE
+    - [Authorization Code Flow](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow) is often the preferred flow
+    - We avoid the "Implicit Grant Flow"
+    - Public Clients should use Auth Code Flow with PKCE
 - We use OpenId Connect (OIDC) as an authentication layer on top of oAuth2
 - We use SAML2/OIDC for federation
 - We refer to the MS Identity Platform for implementation guidelines</br> (guides for web, api, desktop, mobile, service, deamon/script, example code, sdk and libraries)
@@ -37,5 +37,5 @@ The scope for this guideline is web application and api's.
 ## Equinor "quirks"
 
 - We use conditional access for most our accounts and identities. Parts of this is implemented as "managed device"
-  - The [Device Code Flow](https://datatracker.ietf.org/doc/html/rfc8628) will not work on a managed device.
+    - The [Device Code Flow](https://datatracker.ietf.org/doc/html/rfc8628) will not work on a managed device.
 - The [Omnia Docs](https://docs.omnia.equinor.com/services/data/concept/authentication-the-basics/) contains important information on AuthN, AuthZ, Entra ID, consent etc.
