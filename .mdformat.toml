@@ -1,0 +1,3 @@
+# mdformat configuration
+# Use 4-space indentation for nested lists (required by MkDocs / Python-Markdown)
+[plugin.mkdocs]

@@ -18,6 +18,13 @@ dependencies = [
     "requests==2.32.5",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "mdformat",
+    "mdformat-mkdocs",
+]
+
 [project.urls]
 Homepage = "https://github.com/equinor/appsec"
 Documentation = "https://github.com/equinor/appsec"

@@ -47,4 +47,12 @@ else
   exit 1
 fi
 
+# Install project with dev dependencies (pre-commit, mdformat)
+echo "[post-create] Installing project dev dependencies..."
+pip install -e ".[dev]"
+
+# Install pre-commit git hooks
+echo "[post-create] Installing pre-commit hooks..."
+pre-commit install
+
 echo "[post-create] Setup complete."
