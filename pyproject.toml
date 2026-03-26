@@ -15,7 +15,7 @@ dependencies = [
     "mkdocs-git-revision-date-localized-plugin==1.5.1",
     "mkdocs-material==9.6.19",
     "mkdocs-techdocs-core==1.6.0",
-    "requests==2.32.5",
+    "requests==2.33.0",
 ]
 
 [project.urls]
