@@ -17,29 +17,10 @@ As SCN age, we will have different merch come and go. Below we have a record of 
 
 ## How to get merch
 
-- Getting belts through our [secure code learning platform](./4-learning-platform.md)
 - Attend gatherings arranged by the AppSec team
 - Speak at a seminar to get a unique golden and black S.W.A.T.
 - Talk to the AppSec team during conferences
 - Doing good work (and tell about it), and maybe you'll get a kudos prize
-
-## Merch for belts
-
-Since we are launching a new belt system connected to the secure coding platform, we need fresh merch! Below is a list of what you can get at the different belt systems. The items will be shipped via mail unless you can pick it up in the building (Stavanger Forus Øst).
-
-- ```White``` belt:
-    - Your very own white lanyard decorated with placeholders for those hard-earned pins.
-- ```Yellow``` belt:
-    - A yellow pin to hang on your newly acquired lanyard. Be proud!
-    - A yellow S.W.A.T. to showcase your advancement within security. It will be your best friend in meetings.
-- ```Green``` belt:
-    - A green pin to display your advanced knowledge of secure coding.
-- ```Brown``` belt:
-    - A brown pin to show that you are no rookie in terms of being one of the top-notch champions in our network.
-    - A brown S.W.A.T. that will become your best friend when focusing.
-- ```Black``` belt:
-    - A black pin. Your final step to look like an overly decorated army general. You can retire happy as your life-long goal of contributing to Equinor's Security Champion Network is finally complete _for now_.
-    - Hoodie: Now that you are all medal'ed out, the last thing you need is that sweet warm hacker hoodie to put the . over the i.
 
 !!! note
     Merch will "build up" and be shipped in bulk, normally every 2/3 belt levels in order to avoid too much shipping work.
