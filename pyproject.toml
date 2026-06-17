@@ -12,7 +12,7 @@ keywords = ["security", "appsec", "documentation"]
 
 dependencies = [
     "mkdocs-awesome-pages-plugin==2.10.1",
-    "mkdocs-git-revision-date-localized-plugin==1.5.2",
+    "mkdocs-git-revision-date-localized-plugin==1.5.3",
     "mkdocs-material==9.7.6",
     "mkdocs-techdocs-core==1.7.0",
     "requests==2.34.2",
