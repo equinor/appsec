@@ -2,8 +2,6 @@
 
 GHAS is now active and available for all repositories.
 
-We have been collecting your questions on GHAS and tried answering them in the [FAQ](faq.md).
-
 Check out [this repository](https://github.com/equinor/appsec-ghas-examples) for our examples on advanced GHAS setups.
 
 !!! note "TL;DR"
@@ -60,4 +58,3 @@ Sometimes workflows fail due to automatic dependency submission when Dependabot 
 
 - First, try following [this guide](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/configuring-access-to-private-registries-for-dependabot#configuring-private-registries)
 - If that doesn't solve it, request an exception using [this form](https://forms.cloud.microsoft/e/1Zp1vBiN7Q).
-
