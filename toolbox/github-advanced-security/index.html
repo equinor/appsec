@@ -18,7 +18,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="faq/">
+        <link rel="next" href="multi-branch-setup-dependabot/">
       
       
         
@@ -497,8 +497,6 @@ cfg: { // Application Insights Configuration
       
         
       
-        
-      
     
     
     
@@ -549,34 +547,6 @@ cfg: { // Application Insights Configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    GHAS Transition FAQ
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -1725,10 +1695,10 @@ cfg: { // Application Insights Configuration
 </li>
       
         <li class="md-nav__item">
-  <a href="#exception-from-automatic-dependency-submission" class="md-nav__link">
+  <a href="#automatic-dependency-submission-issues" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exception from Automatic Dependency Submission
+        Automatic Dependency Submission Issues
       
     </span>
   </a>
@@ -1757,7 +1727,6 @@ cfg: { // Application Insights Configuration
 
 <h1 id="github-advanced-security-ghas">GitHub Advanced Security (GHAS)<a class="headerlink" href="#github-advanced-security-ghas" title="Permanent link">&para;</a></h1>
 <p>GHAS is now active and available for all repositories.</p>
-<p>We have been collecting your questions on GHAS and tried answering them in the <a href="faq/">FAQ</a>.</p>
 <p>Check out <a href="https://github.com/equinor/appsec-ghas-examples">this repository</a> for our examples on advanced GHAS setups.</p>
 <div class="admonition note">
 <p class="admonition-title">TL;DR</p>
@@ -1767,7 +1736,7 @@ cfg: { // Application Insights Configuration
 <h2 id="what-this-means-for-you">What this means for you?<a class="headerlink" href="#what-this-means-for-you" title="Permanent link">&para;</a></h2>
 <p><strong>Unified Platform:</strong> Code and code security will now be managed under the same platform, eliminating the need for a separate dashboard.</p>
 <p><strong>Container Scanning</strong>: Please note that GHAS does not currently offer container scanning solutions, we have explored other alternatives like Trivy so please reach out if you have any questions.</p>
-<p><strong>GHAS Features</strong>: We encourage you to enable additional GHAS features like code scanning with CodeQL</p>
+<p><strong>GHAS Features</strong>: Core security features are enabled by organization policy. See <a href="setup/">Enablement and Setup</a> for the options your team can configure.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The information that follows offers guidance to internal Equinor teams and might not apply to the broader public.</p>
@@ -1780,43 +1749,22 @@ cfg: { // Application Insights Configuration
 </ul>
 <p>In the Equinor GitHub Organization:</p>
 <ul>
-<li><strong>Secret Scanning</strong> is enabled by default for all repositories</li>
-<li><strong>Dependency Scanning</strong> is enabled by default for most repositories</li>
-<li><strong>Code Scanning</strong> must be set up manually by a repository Admin</li>
+<li><strong>Secret Protection</strong> is fully enabled by policy and cannot be turned off.</li>
+<li><strong>CodeQL code scanning</strong> is enabled by policy.</li>
+<li><strong>Dependency graph and automatic dependency submission</strong> are enabled by policy.</li>
+<li><strong>Dependabot</strong> is enabled by policy, including alerts and security updates.</li>
 </ul>
 <h3 id="what-do-you-need-to-do">What do you need to do?<a class="headerlink" href="#what-do-you-need-to-do" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Check dependency scanning (SCA)</p>
-<p>In your repository go to Security -&gt; Dependency Scanning and make sure it's active (alerts created)</p>
-</li>
-<li>
-<p>Enable CodeQL (SAST)</p>
-<p>CodeQL is not enabled by default. A repository Admin must:</p>
-<ul>
-<li>
-<p>Navigate to Settings → Advanced Security → CodeQL analysis → Set up → Default</p>
-</li>
-<li>
-<p>If the default setup fails, you will see a message under Security → Code Scanning.</p>
-<p>In that case, use an advanced setup. Examples of this are available in the <a href="https://github.com/equinor/appsec-ghas-examples">appsec-ghas-examples repository</a>.</p>
-<p><img alt="Code analysis tools not working" src="image-3.png" /></p>
-</li>
-</ul>
-</li>
-</ol>
+<p>Review and address alerts in your repository's <strong>Security</strong> tab. If CodeQL reports a setup or analysis failure, contact the AppSec team in <a href="https://equinor.enterprise.slack.com/archives/CMM6FSW5V">#appsec</a>.</p>
+<p>See <a href="setup/#options-your-team-can-configure">Enablement and Setup</a> for custom secret patterns, Copilot Autofix, grouped security updates, and Dependabot version updates.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>If you ignore your Dependabot alerts for too long, <strong>Dependabot will stop working</strong>.
 In this case, you will see the following warning under Security → Dependabot.</p>
 <p><img alt="Dependabot updates are paused" src="image-4.png" /></p>
 </div>
-<h2 id="exception-from-automatic-dependency-submission">Exception from Automatic Dependency Submission<a class="headerlink" href="#exception-from-automatic-dependency-submission" title="Permanent link">&para;</a></h2>
-<p>Sometimes workflows fail due to automatic dependency submission when Dependabot fails in fetching packages from a private registry:</p>
-<ul>
-<li>First, try following <a href="https://docs.github.com/en/code-security/dependabot/working-with-dependabot/configuring-access-to-private-registries-for-dependabot#configuring-private-registries">this guide</a></li>
-<li>If that doesn't solve it, request an exception using <a href="https://forms.cloud.microsoft/e/1Zp1vBiN7Q">this form</a>.</li>
-</ul>
+<h2 id="automatic-dependency-submission-issues">Automatic Dependency Submission Issues<a class="headerlink" href="#automatic-dependency-submission-issues" title="Permanent link">&para;</a></h2>
+<p>Automatic dependency submission is enabled by policy. If it causes problems, such as failures when resolving dependencies from private registries, reach out to the AppSec team in <a href="https://equinor.enterprise.slack.com/archives/CMM6FSW5V">#appsec on Slack</a>.</p>
 
 
 
@@ -1837,7 +1785,7 @@ In this case, you will see the following warning under Security → Dependabot.<
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:23:31 UTC">September 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:27:04 UTC">September 15, 2026</span>
   </span>
 
     
@@ -1890,13 +1838,13 @@ In this case, you will see the following warning under Security → Dependabot.<
         
         
           
-          <a href="faq/" class="md-footer__link md-footer__link--next" aria-label="Next: GHAS Transition FAQ">
+          <a href="multi-branch-setup-dependabot/" class="md-footer__link md-footer__link--next" aria-label="Next: Multi Branch Setup in Dependabot">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                GHAS Transition FAQ
+                Multi Branch Setup in Dependabot
               </div>
             </div>
             <div class="md-footer__button md-icon">
