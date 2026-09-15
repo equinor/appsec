@@ -16,7 +16,7 @@ If automatic dependency submission causes problems, such as failures when resolv
 
 ## Options your team can configure
 
-Repository admins can find the settings below under **Settings > Advanced Security**.
+Repository admins can configure custom secret patterns, Copilot Autofix, and grouped Dependabot security updates under **Settings > Advanced Security**. Dependabot version updates and custom grouping rules are configured separately in `.github/dependabot.yml`.
 
 ### Custom secret patterns
 
@@ -36,7 +36,7 @@ See [Responsible use of GitHub's security AI features](https://docs.github.com/e
 
 ### Grouped Dependabot security updates
 
-Your team can enable or disable **Grouped security updates** in the Dependabot settings. Grouping combines security updates for the same package ecosystem into fewer pull requests.
+Your team can enable or disable **Grouped security updates** under **Settings > Advanced Security > Dependabot**. Grouping combines security updates for the same package ecosystem into fewer pull requests.
 
 Enable grouping to reduce pull request volume, or leave it disabled if your team prefers to review updates individually. Grouped updates can require more work to identify which dependency caused a regression.
 
