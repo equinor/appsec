@@ -271,7 +271,7 @@ We recommend the following settings:
     - Set manually to "Europe West"
 - For signing commits from a codespace, see our guideline on [Signed Commits](./git-signed-commits.md)
 
-#### [Code security an analysis](https://github.com/settings/security_analysis)
+#### [Code security and analysis](https://github.com/settings/security_analysis)
 
 - "Push protection for yourself" should be enabled
     - Block push with supported secrets against public repos

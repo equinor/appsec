@@ -44,7 +44,19 @@ The official [GitHub documentation](https://docs.github.com/en/authentication/ma
 
 For this guideline our reference is using Git from the command line.
 
-We assume that Git and SSH is installed on your system.
+First, we assume that Git and SSH are installed on your system.
+
+Then, make sure that you have configured an email address for your git commits.
+
+```shell
+git config --get user.email
+```
+
+It should return something like `<username>@equinor.com` or `<id>+<github-username>@users.noreply.github.com` (depending on your preference). You can set the email address globally like this:
+
+```shell
+git config --global user.email "username@equinor.com"
+```
 
 We assume that you are using SSH to authenticate Git with github.com. Consult our [guideline](git-github.md) for more information on this topic.
 
@@ -158,7 +170,7 @@ If you select the `Verified` badge you will get information on the signer and th
 ssh-keygen -lf ~/.ssh/git_ssh_signing_key_1
 ```
 
-!!! Tip Vigilant Mode
+!!! tip "Vigilant Mode"
 
     Explore Github's [Vigilant Mode](https://docs.github.com/en/authentication/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits#about-vigilant-mode) It should increase the trust level of signed commits yet another level.
 

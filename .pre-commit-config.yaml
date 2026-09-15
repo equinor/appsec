@@ -1,8 +1,8 @@
 repos:
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.21
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-mkdocs
+          - mdformat-mkdocs==5.1.4
         files: ^docs/

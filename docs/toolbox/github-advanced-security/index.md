@@ -40,12 +40,17 @@ In the Equinor GitHub Organization:
 ### What do you need to do?
 
 1. Check dependency scanning (SCA)
+
     In your repository go to Security -> Dependency Scanning and make sure it's active (alerts created)
+
 1. Enable CodeQL (SAST)
+
     CodeQL is not enabled by default. A repository Admin must:
+
     - Navigate to Settings → Advanced Security → CodeQL analysis → Set up → Default
 
     - If the default setup fails, you will see a message under Security → Code Scanning.
+
         In that case, use an advanced setup. Examples of this are available in the [appsec-ghas-examples repository](https://github.com/equinor/appsec-ghas-examples).
 
         ![Code analysis tools not working](image-3.png)
@@ -55,7 +60,7 @@ In the Equinor GitHub Organization:
     If you ignore your Dependabot alerts for too long, **Dependabot will stop working**.
     In this case, you will see the following warning under Security → Dependabot.
 
-![Dependabot updates are paused](image-4.png)
+    ![Dependabot updates are paused](image-4.png)
 
 ## Exception from Automatic Dependency Submission
 

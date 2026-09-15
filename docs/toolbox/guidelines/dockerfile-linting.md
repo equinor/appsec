@@ -20,11 +20,11 @@ From [hadolint](https://github.com/hadolint/hadolint):
 
 A great way to ensure that any changes being brought into your repository comply with the best practices is to add linting on pull requests as part of the code review process.
 
-??? Note "Read more"
+??? note "Read more"
 
-```
-Below is an example workflow that will run linting on our Dockerfiles whenever there is a pull request that contains changes to any Dockerfiles.
+    Below is an example workflow that will run linting on our Dockerfiles whenever there is a pull request that contains changes to any Dockerfiles.
 
+    ```yaml
     name: Lint Dockerfile
     permissions:
       contents: read
@@ -45,7 +45,7 @@ Below is an example workflow that will run linting on our Dockerfiles whenever t
             with:
               failure-threshold: info # Sets the level at which the step will fail, default is info, other levels are warning and error
               recursive: true # This enables us to check all Dockerfiles
-```
+    ```
 
 ### Run locally
 
