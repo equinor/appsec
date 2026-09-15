@@ -1,18 +1,25 @@
 # Multi Branch Setup in Dependabot
 
-In the Equinor GitHub organization, Dependabot alerts and security updates are [enabled by organization policy](setup.md#enabled-by-organization-policy); you do not need to enable them manually. Version updates still require repository configuration.
+To set up Dependabot for multiple branches in your repository, use the target-branch property in the `dependabot.yml` file. Example:
 
-To configure Dependabot version updates for multiple branches, use the `target-branch` property in `.github/dependabot.yml`. This controls version updates only; Dependabot security updates target the default branch.
+1. **Enable Dependabot**:
+
+    - Navigate to your repository's **Settings**.
+    - Under the "Security" section, click **Advanced Security**.
+    - Enable Dependabot alerts, security updates, and version updates.
 
 1. **Create or Edit the `dependabot.yml` File**:
-    - On your repository's default branch, navigate to the `.github` directory.
+
+    - In your repository, navigate to the `/.github` directory.
     - Create or edit the `dependabot.yml` file to specify configurations for each branch.
 
-2. **Define Updates for Multiple Branches**:
+1. **Define Updates for Multiple Branches**:
+
     - Use the `updates` key in the `dependabot.yml` file to define configurations for each branch.
     - Replace `package-ecosystem`, `directory`, `schedule`, and `target-branch` with values specific to your repository.
 
 Example:
+
 ```yaml
 version: 2
 updates:
