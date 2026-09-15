@@ -31,8 +31,9 @@ AI is only as useful as the context you give it. A vague prompt gets a vague ans
 The more context lives in your repo, the better Copilot can reason about your system.
 
 !!! example "Example workflow"
+
     1. Run a collaborative threat modeling session in **Miro** with your team
-    2. Translate the model into **Threat Dragon** and store the JSON file alongside your source code
-    3. Spar with **GitHub Copilot** to refine and update the model
-    4. Revisit the threat model at major releases, after significant changes, or on a regular cadence
-    5. Ask Copilot: *"Do these changes affect our current threat model?"*
+    1. Translate the model into **Threat Dragon** and store the JSON file alongside your source code
+    1. Spar with **GitHub Copilot** to refine and update the model
+    1. Revisit the threat model at major releases, after significant changes, or on a regular cadence
+    1. Ask Copilot: *"Do these changes affect our current threat model?"*

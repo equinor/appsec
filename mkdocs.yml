@@ -50,6 +50,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
+  - pymdownx.superfences
   - admonition
   - toc:
         permalink: true
@@ -58,5 +59,4 @@ plugins:
     - awesome-pages
     - git-revision-date-localized:
         type: date
-
 

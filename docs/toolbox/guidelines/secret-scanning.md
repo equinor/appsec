@@ -5,20 +5,20 @@
 This guideline aims to present relevant tools, some good practices for managing this risk, and what to do when we have messed up.
 
 - [Secret Scanning](#secret-scanning)
-  - [Recommended tools](#recommended-tools)
-    - [GitHub Advanced Security: Secret Scanning](#github-advanced-security-secret-scanning)
-      - [How to turn it on for your repository](#how-to-turn-it-on-for-your-repository)
-      - [Global push protection](#global-push-protection)
-  - [Where to scan for secrets in our SDLC](#where-to-scan-for-secrets-in-our-sdlc)
-  - [🤯 What to do when we have messed up 🤯](#-what-to-do-when-we-have-messed-up-)
-    - [Steps to mitigate a leak](#steps-to-mitigate-a-leak)
-    - [Cleaning the git history](#cleaning-the-git-history)
-      - [You are working locally, the secret is in the last commit, not pushed](#you-are-working-locally-the-secret-is-in-the-last-commit-not-pushed)
-      - [You are working locally, the secret is beyond the last commit](#you-are-working-locally-the-secret-is-beyond-the-last-commit)
-  - [How do we manage secrets in our dev environments?](#how-do-we-manage-secrets-in-our-dev-environments)
-    - [A few *known* ways of managing secrets is](#a-few-known-ways-of-managing-secrets-is)
-    - [A few *known* controls could be](#a-few-known-controls-could-be)
-    - [What we should NOT do](#what-we-should-not-do)
+    - [Recommended tools](#recommended-tools)
+        - [GitHub Advanced Security: Secret Scanning](#github-advanced-security-secret-scanning)
+            - [How to turn it on for your repository](#how-to-turn-it-on-for-your-repository)
+            - [Global push protection](#global-push-protection)
+    - [Where to scan for secrets in our SDLC](#where-to-scan-for-secrets-in-our-sdlc)
+    - [🤯 What to do when we have messed up 🤯](#-what-to-do-when-we-have-messed-up-)
+        - [Steps to mitigate a leak](#steps-to-mitigate-a-leak)
+        - [Cleaning the git history](#cleaning-the-git-history)
+            - [You are working locally, the secret is in the last commit, not pushed](#you-are-working-locally-the-secret-is-in-the-last-commit-not-pushed)
+            - [You are working locally, the secret is beyond the last commit](#you-are-working-locally-the-secret-is-beyond-the-last-commit)
+    - [How do we manage secrets in our dev environments?](#how-do-we-manage-secrets-in-our-dev-environments)
+        - [A few *known* ways of managing secrets is](#a-few-known-ways-of-managing-secrets-is)
+        - [A few *known* controls could be](#a-few-known-controls-could-be)
+        - [What we should NOT do](#what-we-should-not-do)
 
 ## Recommended tools
 
@@ -75,9 +75,9 @@ We will mess up sooner or later. So be prepared, both as an individual developer
 
 - Revoke/rotate the exposed secret - `THIS IS PRIORITY #1`
 - Depending on risk consequence - considering contacting IT-Security for assistance
-  - Contact Help Desk at (+47) 51 999 222
+    - Contact Help Desk at (+47) 51 999 222
 - Clean the git history
-  - If the repo is public/internal, consider making it `private` until the secrets are removed
+    - If the repo is public/internal, consider making it `private` until the secrets are removed
 - Potentially inspect logs
 - Do a retrospective with your team
 
@@ -88,10 +88,10 @@ This part can be very easy to super hard, it all depends on what, where and when
 #### You are working locally, the secret is in the last commit, not pushed
 
 - The secret is the only file in the last commit
-  - Consider dropping the last commit, doing a `git reset --hard HEAD~1`
+    - Consider dropping the last commit, doing a `git reset --hard HEAD~1`
 - The secret is not the only file in the last commit
-  - Consider altering files and then amend the last commit
-  - `git add [files]; git commit --amend`
+    - Consider altering files and then amend the last commit
+    - `git add [files]; git commit --amend`
 
 #### You are working locally, the secret is beyond the last commit
 
@@ -128,7 +128,7 @@ Context matters, a lot. There are many different ways of handling secrets in dev
 - Using .gitignore
 - Using .dockerignore
 - Using secret scanners
-  - Not all tools are equal
+    - Not all tools are equal
 - Limit access to secrets
 - Use different secrets for different environments (dev, test, prod)
 - Rotate secrets often, automate!

@@ -4,7 +4,7 @@
 
 **Always safe** is one of three pillar in the Equinor strategy. Safety in the digital world includes cyber security. Equinor has many software development teams (internals and partners) and we expect a growth in DevOps teams in the future. Modern software development adopts all aspects of cloud capabilities and thus there is also an increased information security and privacy risk.
 
->The purpose of the AppSec team is to reduce cyber security risk in Equinor's SDLC - Software Development Life Cycle (DevOps teams).
+> The purpose of the AppSec team is to reduce cyber security risk in Equinor's SDLC - Software Development Life Cycle (DevOps teams).
 
 The primary target audience for the team is Equinor's software development community - aka. DevOps teams.
 

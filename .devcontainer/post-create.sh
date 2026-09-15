@@ -47,4 +47,12 @@ else
   exit 1
 fi
 
+# Install project with dev dependencies (pre-commit, mdformat)
+echo "[post-create] Installing project dev dependencies via uv..."
+"$UV_INSTALL_DIR/uv" sync --locked --extra dev
+
+# Install pre-commit git hooks
+echo "[post-create] Installing pre-commit hooks..."
+"$UV_INSTALL_DIR/uv" run --locked --extra dev pre-commit install
+
 echo "[post-create] Setup complete."
