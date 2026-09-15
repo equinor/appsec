@@ -5,6 +5,7 @@ You are probably wondering what a Security Champion is in Equinor context and wh
 A Security Champion in our context is a person who has a interest in security and want to expand on this interest. The Security Champions Network (SCN) is a network where people and security is in the center.
 
 !!! info
+
     You do not need to have any security knowledge to join, but the eagerness to learn and share
 
 ## What do we expect from you?
@@ -17,6 +18,7 @@ A Security Champion in our context is a person who has a interest in security an
 - Share what you learn with your team
 
 !!! info
+
     A Security Champion is the voice of security, and security is a _team effort_.
 
 You as a champion are the heart of this network. We know time might be tight, but we greatly appreciate all participation.

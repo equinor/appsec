@@ -3,9 +3,9 @@
 Regardless of methodology, all threat modeling revolves around four questions:
 
 1. **What are we working on?**
-2. **What can go wrong?**
-3. **What are we going to do about it?**
-4. **Did we do a good enough job?**
+1. **What can go wrong?**
+1. **What are we going to do about it?**
+1. **Did we do a good enough job?**
 
 There is no shortage of excellent resources on how to work through these questions in practice. Rather than repeating what others have already written well, here are some we recommend:
 
@@ -28,4 +28,5 @@ Threat modeling does not have to be a big event. Even a short, focused session w
 Threat modeling works best as a team activity. The people who build and operate the system are the ones who understand it best. Involve anyone who can contribute to answering the four questions above.
 
 !!! info "Need help getting started?"
+
     See our [Getting Help](support.md) page for how to get help with threat modeling.

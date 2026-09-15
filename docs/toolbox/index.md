@@ -6,6 +6,7 @@ This is your hub for most things that the AppSec team is working on,
 in the navigation on the left you'll find categories of guidelines and tools.
 
 !!! info
+
     Our official communications channel is Slack and you can find us in the [#appsec](https://equinor.enterprise.slack.com/archives/CMM6FSW5V) channel.
 
 ## Recommended reading
