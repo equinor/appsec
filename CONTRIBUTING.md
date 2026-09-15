@@ -44,4 +44,5 @@ If you spot problems or would like a discussion, create a issue describing your 
 - Don't be an asshole - be polite and respect people
 - Test any links that you add or change
 - For markdown, running a markdown linter is smart
+- Indent nested Markdown lists by four spaces per level (4, 8, 12, etc.). MkDocs uses Python-Markdown, which requires this indentation even though GitHub accepts two spaces. Preview content with `uv run mkdocs serve` to check the website rendering.
 - Why not use a spell checker as well?
