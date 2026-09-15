@@ -1795,72 +1795,72 @@ cfg: { // Application Insights Configuration
 
 
 <h1 id="yo-code-warriors-lets-get-sigma-with-signed-commits">🔥 Yo, Code Warriors! 🧑‍💻 Let's Get Sigma with Signed Commits! 🦸‍♂️<a class="headerlink" href="#yo-code-warriors-lets-get-sigma-with-signed-commits" title="Permanent link">&para;</a></h1>
-<p>Alright, fam, it's time to level up your coding game and flex those sigma vibes. 💪 You know, being that lone wolf 🐺 who's got everything under control without breaking a sweat. Let's dive into why signing your commits is the ultimate sigma move and how to do it. 🚀  </p>
+<p>Alright, fam, it's time to level up your coding game and flex those sigma vibes. 💪 You know, being that lone wolf 🐺 who's got everything under control without breaking a sweat. Let's dive into why signing your commits is the ultimate sigma move and how to do it. 🚀</p>
 <hr />
 <h2 id="why-signing-your-commits-is-pure-sigma-energy">Why Signing Your Commits is Pure Sigma Energy<a class="headerlink" href="#why-signing-your-commits-is-pure-sigma-energy" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p><strong>🕵️‍♂️ Identity Flex (No Impostors Allowed)</strong><br />
-  Signing your commits is like stamping your unique seal of approval. It confirms that <em>you</em> made the changes, blocking any wannabe impostors from sneaking in malicious code.  </p>
+<p><strong>🕵️‍♂️ Identity Flex (No Impostors Allowed)</strong>\
+    Signing your commits is like stamping your unique seal of approval. It confirms that <em>you</em> made the changes, blocking any wannabe impostors from sneaking in malicious code.</p>
 </li>
 <li>
-<p><strong>🔒 Code Integrity = Sigma Grindset</strong><br />
-  A signed commit ensures your code remains untouched from the moment you commit. If anyone tries to mess with it afterward, the signature breaks, throwing up red flags.  </p>
+<p><strong>🔒 Code Integrity = Sigma Grindset</strong>\
+    A signed commit ensures your code remains untouched from the moment you commit. If anyone tries to mess with it afterward, the signature breaks, throwing up red flags.</p>
 </li>
 <li>
-<p><strong>🚫🔁 No Replay Shenanigans (Stay Ahead of the Game)</strong><br />
-  Signed commits stop attackers from reusing your legit commits in shady contexts, maintaining the flow and context of your code history.  </p>
+<p><strong>🚫🔁 No Replay Shenanigans (Stay Ahead of the Game)</strong>\
+    Signed commits stop attackers from reusing your legit commits in shady contexts, maintaining the flow and context of your code history.</p>
 </li>
 <li>
-<p><strong>🕵️‍♂️ Audit Like a Boss (Keep It 100)</strong><br />
-  With signed commits, tracking changes becomes a breeze, making audits smoother than a fresh jar of Skippy.  </p>
+<p><strong>🕵️‍♂️ Audit Like a Boss (Keep It 100)</strong>\
+    With signed commits, tracking changes becomes a breeze, making audits smoother than a fresh jar of Skippy.</p>
 </li>
 <li>
-<p><strong>🌟 Boosting Street Cred (Trust &amp; Compliance)</strong><br />
-  For projects with strict standards, signed commits show you're playing by the rules, building trust among your crew and users.  </p>
+<p><strong>🌟 Boosting Street Cred (Trust &amp; Compliance)</strong>\
+    For projects with strict standards, signed commits show you're playing by the rules, building trust among your crew and users.</p>
 </li>
 </ul>
 <hr />
 <h2 id="how-to-sign-your-commits-and-embrace-the-sigma-lifestyle">How to Sign Your Commits and Embrace the Sigma Lifestyle<a class="headerlink" href="#how-to-sign-your-commits-and-embrace-the-sigma-lifestyle" title="Permanent link">&para;</a></h2>
 <h3 id="step-1-generate-your-ssh-key">🛠️ Step 1: Generate Your SSH Key<a class="headerlink" href="#step-1-generate-your-ssh-key" title="Permanent link">&para;</a></h3>
-<p>Fire up your terminal and punch in:  </p>
-<pre><code class="language-bash">ssh-keygen -t ed25519 -f ~/.ssh/git_ssh_signing_key_1 -C &quot;Created on $(date), for $(whoami) on github.com&quot; 
-</code></pre>
+<p>Fire up your terminal and punch in:</p>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/git_ssh_signing_key_1<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;Created on </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">, for </span><span class="k">$(</span>whoami<span class="k">)</span><span class="s2"> on github.com&quot;</span><span class="w"> </span>
+</code></pre></div>
 <p>This crafts a fresh SSH key for signing.</p>
-<p>💡 <strong>Pro tip</strong>: Add a passphrase. Don’t be that person who skips security.  </p>
+<p>💡 <strong>Pro tip</strong>: Add a passphrase. Don’t be that person who skips security.</p>
 <h3 id="step-2-add-your-key-to-the-ssh-agent">🛠️ Step 2: Add Your Key to the SSH Agent 🤖<a class="headerlink" href="#step-2-add-your-key-to-the-ssh-agent" title="Permanent link">&para;</a></h3>
-<p>Alright, so you've got your <strong>fancy new SSH key</strong>, but let's be real—typing your passphrase every time? That's <strong>LAME.</strong> Ain't nobody got time for that.  </p>
+<p>Alright, so you've got your <strong>fancy new SSH key</strong>, but let's be real—typing your passphrase every time? That's <strong>LAME.</strong> Ain't nobody got time for that.</p>
 <p>So let’s make your system remember your key like a <strong>goldfish with a 500 IQ</strong> 🧠🐠:</p>
-<pre><code class="language-bash">ssh-add ~/.ssh/git_ssh_signing_key_1
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-add<span class="w"> </span>~/.ssh/git_ssh_signing_key_1
+</code></pre></div>
 <p>Now your key is locked in 🔐, and you can commit like an absolute <strong>Chad</strong> without re-entering your passphrase every 2 seconds.</p>
 <p>Big W. ✅</p>
 <h3 id="step-3-tell-git-to-use-your-new-key">🏴‍☠️ Step 3: Tell Git to Use Your New Key<a class="headerlink" href="#step-3-tell-git-to-use-your-new-key" title="Permanent link">&para;</a></h3>
-<p>Yo, <strong>Git ain't psychic</strong>—you gotta tell it to start using that <strong>top-tier</strong> SSH key.  </p>
-<p>Hit it with this:  </p>
-<pre><code class="language-bash">git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
-git config --global commit.gpgsign true
-</code></pre>
+<p>Yo, <strong>Git ain't psychic</strong>—you gotta tell it to start using that <strong>top-tier</strong> SSH key.</p>
+<p>Hit it with this:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.format<span class="w"> </span>ssh
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingkey<span class="w"> </span>~/.ssh/git_ssh_signing_key_1.pub
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.gpgsign<span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
 <p>This is like <strong>giving Git a treasure map</strong> 🏴‍☠️ so it knows where to find your key.</p>
 <p>Now every commit is gonna be signed like a <strong>true security giga-brain.</strong> 🔥</p>
 <h3 id="step-4-drop-that-key-into-github-gotta-let-the-squad-know">🔑 Step 4: Drop That Key into GitHub (Gotta Let the Squad Know)<a class="headerlink" href="#step-4-drop-that-key-into-github-gotta-let-the-squad-know" title="Permanent link">&para;</a></h3>
-<p>Your key is ready, but <strong>GitHub doesn’t know you like that yet.</strong>  </p>
-<p>So let’s make it official:  </p>
-<pre><code class="language-bash">cat ~/.ssh/git_ssh_signing_key_1.pub
-</code></pre>
+<p>Your key is ready, but <strong>GitHub doesn’t know you like that yet.</strong></p>
+<p>So let’s make it official:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/git_ssh_signing_key_1.pub
+</code></pre></div>
 <p>☝️ This command will <strong>spit out your public key</strong>. Copy that <strong>beautiful string of characters</strong> ✨ and:</p>
 <p>🔗 <strong>Go to GitHub &gt; Settings &gt; SSH and GPG keys &gt; New SSH key</strong></p>
 <p>💾 Paste it in and save! <strong>BOOM</strong>. Now GitHub recognizes you like an old friend. 😎</p>
 <h3 id="step-5-protect-your-branches-gatekeeping-but-in-a-good-way">🚧 Step 5: Protect Your Branches (Gatekeeping, But in a Good Way)<a class="headerlink" href="#step-5-protect-your-branches-gatekeeping-but-in-a-good-way" title="Permanent link">&para;</a></h3>
-<p>Alright, <strong>now we set up branch protection</strong> to make sure NO UNSIGNED COMMITS GET IN. ❌🔓  </p>
-<p>This is like <strong>putting a bouncer</strong> in front of your code, checking IDs before letting commits into the club. 🕶️💪  </p>
+<p>Alright, <strong>now we set up branch protection</strong> to make sure NO UNSIGNED COMMITS GET IN. ❌🔓</p>
+<p>This is like <strong>putting a bouncer</strong> in front of your code, checking IDs before letting commits into the club. 🕶️💪</p>
 <p>Set up <strong>branch protection rules</strong> so <strong>ONLY signed commits</strong> get through.</p>
-<p>No signature? 🚫 <strong>Access DENIED.</strong>  </p>
+<p>No signature? 🚫 <strong>Access DENIED.</strong></p>
 <h3 id="final-boss-move-always-sign-always-secure">🏆 Final Boss Move: Always Sign, Always Secure<a class="headerlink" href="#final-boss-move-always-sign-always-secure" title="Permanent link">&para;</a></h3>
-<p>Using signed commits isn’t just <em>cool</em>, it’s <strong>mandatory</strong> if you wanna keep your code safe.  </p>
-<p>Don’t be that dev who gets caught slipping—sign those commits and keep your repo locked down.  </p>
-<p>💯 <strong>Secure devs are W devs. Now go sign those commits.</strong> 🚀🔥  </p>
+<p>Using signed commits isn’t just <em>cool</em>, it’s <strong>mandatory</strong> if you wanna keep your code safe.</p>
+<p>Don’t be that dev who gets caught slipping—sign those commits and keep your repo locked down.</p>
+<p>💯 <strong>Secure devs are W devs. Now go sign those commits.</strong> 🚀🔥</p>
 
 
 
@@ -1881,7 +1881,7 @@ git config --global commit.gpgsign true
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 24, 2025 10:43:33 UTC">March 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:23:31 UTC">September 15, 2026</span>
   </span>
 
     

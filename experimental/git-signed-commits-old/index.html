@@ -1812,57 +1812,57 @@ cfg: { // Application Insights Configuration
 
 
 <h1 id="git-signed-commits-a-guide-for-proper-folks-who-aint-raised-by-wolves">🔏 Git Signed Commits: A Guide for Proper Folks Who Ain’t Raised by Wolves 🧐<a class="headerlink" href="#git-signed-commits-a-guide-for-proper-folks-who-aint-raised-by-wolves" title="Permanent link">&para;</a></h1>
-<p>Now gather ‘round, you young scallywags, and let an old hand set you straight. Back in my day, a man’s word was his bond, and a signature was as good as gold. Nowadays, any two-bit scoundrel with a typewriter hooked up to a lightning machine can go fiddlin’ with your code, impersonatin’ honest folk, and muckin’ things up faster than a hog in a henhouse. 💨  </p>
-<p><strong>That’s why you gotta sign your Git commits, just like an honest citizen signs a check down at the bank.</strong> 🏦  </p>
-<p>If you don’t, well… don’t come cryin’ when some rascal tampers with your code and the whole shebang crumbles like a biscuit in hot coffee. ☕🍪  </p>
+<p>Now gather ‘round, you young scallywags, and let an old hand set you straight. Back in my day, a man’s word was his bond, and a signature was as good as gold. Nowadays, any two-bit scoundrel with a typewriter hooked up to a lightning machine can go fiddlin’ with your code, impersonatin’ honest folk, and muckin’ things up faster than a hog in a henhouse. 💨</p>
+<p><strong>That’s why you gotta sign your Git commits, just like an honest citizen signs a check down at the bank.</strong> 🏦</p>
+<p>If you don’t, well… don’t come cryin’ when some rascal tampers with your code and the whole shebang crumbles like a biscuit in hot coffee. ☕🍪</p>
 <h2 id="the-rules-and-you-better-follow-em-yhear">📜 The Rules (And You Better Follow ‘Em, Y’hear?)<a class="headerlink" href="#the-rules-and-you-better-follow-em-yhear" title="Permanent link">&para;</a></h2>
-<p>✅ <strong>Sign every Git commit you make.</strong> A commit without a signature is like a contract written in invisible ink—ain’t worth a plugged nickel. 💰  </p>
-<p>✅ <strong>Use SSH keys with a passphrase.</strong> That’s a password, son. And make it a good one. "123456" ain’t a passphrase, it’s an invitation for hooligans.  </p>
-<p>✅ <strong>Keep separate keys for signin’ and loggin’ in.</strong> You wouldn’t use the same key for your house and your barn, would ya? </p>
+<p>✅ <strong>Sign every Git commit you make.</strong> A commit without a signature is like a contract written in invisible ink—ain’t worth a plugged nickel. 💰</p>
+<p>✅ <strong>Use SSH keys with a passphrase.</strong> That’s a password, son. And make it a good one. "123456" ain’t a passphrase, it’s an invitation for hooligans.</p>
+<p>✅ <strong>Keep separate keys for signin’ and loggin’ in.</strong> You wouldn’t use the same key for your house and your barn, would ya?</p>
 <p>✅ <strong>Make sure your branch rules require signed commits.</strong> Otherwise, you might as well leave your front door wide open and hope the raccoons don’t move in.</p>
-<p>✅ <strong>GitHub Codespaces might sign commits for ya, but don’t trust it more than your own two hands.</strong> Machines are tricky little devils, and you never know when one’s gonna go haywire. 🤖🔥  </p>
+<p>✅ <strong>GitHub Codespaces might sign commits for ya, but don’t trust it more than your own two hands.</strong> Machines are tricky little devils, and you never know when one’s gonna go haywire. 🤖🔥</p>
 <h2 id="ssh-key-signing-the-best-way-for-most-folks">🔐 SSH Key Signing (The Best Way for Most Folks)<a class="headerlink" href="#ssh-key-signing-the-best-way-for-most-folks" title="Permanent link">&para;</a></h2>
 <h3 id="1-generate-a-signing-ssh-key">1. 🛠️ Generate a Signing SSH Key<a class="headerlink" href="#1-generate-a-signing-ssh-key" title="Permanent link">&para;</a></h3>
 <p>Open up your terminal and generate a dedicated SSH key just for signing your Git commits:</p>
-<pre><code class="language-bash">ssh-keygen -t ed25519 -f ~/.ssh/git_ssh_signing_key_1 -C &quot;Created on &lt;date&gt;, for [your_username] on github.com&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/git_ssh_signing_key_1<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;Created on &lt;date&gt;, for [your_username] on github.com&quot;</span>
+</code></pre></div>
 <p>Make sure to give it a good passphrase, not something like password123. A weak passphrase is like lockin’ your door with a shoelace.</p>
 <h3 id="2-add-the-key-to-your-ssh-agent">2. 🧠 Add the Key to Your SSH Agent<a class="headerlink" href="#2-add-the-key-to-your-ssh-agent" title="Permanent link">&para;</a></h3>
 <p>To save yourself from typing the passphrase every time, add the key to your SSH agent:</p>
-<pre><code class="language-bash">ssh-add ~/.ssh/git_ssh_signing_key_1
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-add<span class="w"> </span>~/.ssh/git_ssh_signing_key_1
+</code></pre></div>
 <h3 id="3-tell-git-to-use-this-key-for-signing">3. 🧾 Tell Git to Use This Key for Signing<a class="headerlink" href="#3-tell-git-to-use-this-key-for-signing" title="Permanent link">&para;</a></h3>
 <p>Git’s like a mule—it only listens when you speak plain. So tell it exactly what to do:</p>
-<pre><code class="language-bash">git config --global gpg.format ssh
-git config --global user.signingkey ~/.ssh/git_ssh_signing_key_1.pub
-git config --global commit.gpgsign true
-</code></pre>
-<p>Now Git will sign your commits automatically, no fuss, no muss. </p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.format<span class="w"> </span>ssh
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingkey<span class="w"> </span>~/.ssh/git_ssh_signing_key_1.pub
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.gpgsign<span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
+<p>Now Git will sign your commits automatically, no fuss, no muss.</p>
 <h2 id="4-check-that-your-commits-are-signed">4. 🔍 Check That Your Commits Are Signed<a class="headerlink" href="#4-check-that-your-commits-are-signed" title="Permanent link">&para;</a></h2>
 <p>To make sure it’s working and you didn’t fat-finger anything, run this:</p>
-<pre><code class="language-bash">git log --show-signature
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>log<span class="w"> </span>--show-signature
+</code></pre></div>
 <p>If it shows your signature, you did it right. If not, go back and double-check your setup. 🎩</p>
 <h3 id="5-add-your-public-signing-key-to-github">5. 🗝️ Add Your Public Signing Key to GitHub<a class="headerlink" href="#5-add-your-public-signing-key-to-github" title="Permanent link">&para;</a></h3>
 <p>GitHub ain’t a mind reader. You’ve got to tell it about your key.</p>
 <p>First, get your public key:</p>
-<pre><code class="language-bash">cat ~/.ssh/git_ssh_signing_key_1.pub
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/git_ssh_signing_key_1.pub
+</code></pre></div>
 <h3 id="6-require-signed-commits-on-protected-branches-optional-but-smart">6. 🚪 Require Signed Commits on Protected Branches (Optional but Smart)<a class="headerlink" href="#6-require-signed-commits-on-protected-branches-optional-but-smart" title="Permanent link">&para;</a></h3>
 <p>To keep your project clean and avoid unwanted shenanigans, enforce signed commits:</p>
 <ol>
-<li>Go to your <strong>GitHub repository</strong>  </li>
-<li>Navigate to <strong>Settings → Branches</strong>  </li>
-<li>Under <strong>Branch protection rules</strong>, click <strong>Add rule</strong>  </li>
-<li>Select your main branch (usually <code>main</code> or <code>master</code>)  </li>
+<li>Go to your <strong>GitHub repository</strong></li>
+<li>Navigate to <strong>Settings → Branches</strong></li>
+<li>Under <strong>Branch protection rules</strong>, click <strong>Add rule</strong></li>
+<li>Select your main branch (usually <code>main</code> or <code>master</code>)</li>
 <li>Check <strong>Require signed commits</strong></li>
 </ol>
-<p>Now only signed commits can get through, like a proper gated community. 🚧  </p>
+<p>Now only signed commits can get through, like a proper gated community. 🚧</p>
 <h2 id="final-words-from-an-old-timer-whos-seen-some-things">🎤 Final Words from an Old-Timer Who’s Seen Some Things<a class="headerlink" href="#final-words-from-an-old-timer-whos-seen-some-things" title="Permanent link">&para;</a></h2>
-<p>Now listen, I ain’t sayin’ you gotta follow these rules. You’re a grown person, you can do what you want. <strong>But if you don’t sign your commits,</strong> don’t come bellyachin’ when some no-good scoundrel impersonates you and sneaks nonsense into your project. 🎭  </p>
-<p>Back in my day, we didn’t have none of this "Git" business. We wrote our code by hand, uphill both ways, in the snow, and we liked it! 📝 <strong>But if we had Git, you better believe we’d sign our work.</strong>  </p>
-<p>So quit yer lollygaggin’, set up signed commits, and keep your code cleaner than a Sunday suit. 👔  </p>
-<p>Or don’t. But don’t come cryin’ when your project turns into a three-ring circus. 🎪  </p>
+<p>Now listen, I ain’t sayin’ you gotta follow these rules. You’re a grown person, you can do what you want. <strong>But if you don’t sign your commits,</strong> don’t come bellyachin’ when some no-good scoundrel impersonates you and sneaks nonsense into your project. 🎭</p>
+<p>Back in my day, we didn’t have none of this "Git" business. We wrote our code by hand, uphill both ways, in the snow, and we liked it! 📝 <strong>But if we had Git, you better believe we’d sign our work.</strong></p>
+<p>So quit yer lollygaggin’, set up signed commits, and keep your code cleaner than a Sunday suit. 👔</p>
+<p>Or don’t. But don’t come cryin’ when your project turns into a three-ring circus. 🎪</p>
 
 
 
@@ -1883,7 +1883,7 @@ git config --global commit.gpgsign true
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 24, 2025 10:43:33 UTC">March 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:23:31 UTC">September 15, 2026</span>
   </span>
 
     

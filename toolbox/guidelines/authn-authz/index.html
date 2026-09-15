@@ -1803,10 +1803,12 @@ cfg: { // Application Insights Configuration
 <ul>
 <li>Microsoft's <a href="https://learn.microsoft.com/en-us/entra/identity-platform/">Identity Platform</a> is the primary component in our set-up.</li>
 <li>We use Microsoft Entra ID (was Azure AD) as our primary identity provider and authorization server.</li>
-<li>We use oAuth2 to facilitate authorization</li>
+<li>We use oAuth2 to facilitate authorization<ul>
 <li><a href="https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow">Authorization Code Flow</a> is often the preferred flow</li>
 <li>We avoid the "Implicit Grant Flow"</li>
 <li>Public Clients should use Auth Code Flow with PKCE</li>
+</ul>
+</li>
 <li>We use OpenId Connect (OIDC) as an authentication layer on top of oAuth2</li>
 <li>We use SAML2/OIDC for federation</li>
 <li>We refer to the MS Identity Platform for implementation guidelines</br> (guides for web, api, desktop, mobile, service, deamon/script, example code, sdk and libraries)</li>
@@ -1831,8 +1833,10 @@ cfg: { // Application Insights Configuration
 </ul>
 <h2 id="equinor-quirks">Equinor "quirks"<a class="headerlink" href="#equinor-quirks" title="Permanent link">&para;</a></h2>
 <ul>
-<li>We use conditional access for most our accounts and identities. Parts of this is implemented as "managed device"</li>
+<li>We use conditional access for most our accounts and identities. Parts of this is implemented as "managed device"<ul>
 <li>The <a href="https://datatracker.ietf.org/doc/html/rfc8628">Device Code Flow</a> will not work on a managed device.</li>
+</ul>
+</li>
 <li>The <a href="https://docs.omnia.equinor.com/services/data/concept/authentication-the-basics/">Omnia Docs</a> contains important information on AuthN, AuthZ, Entra ID, consent etc.</li>
 </ul>
 
@@ -1855,7 +1859,7 @@ cfg: { // Application Insights Configuration
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 23, 2024 12:09:53 UTC">April 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:23:31 UTC">September 15, 2026</span>
   </span>
 
     

@@ -1621,10 +1621,10 @@ cfg: { // Application Insights Configuration
 </li>
         
           <li class="md-nav__item">
-  <a href="#code-security-an-analysis" class="md-nav__link">
+  <a href="#code-security-and-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code security an analysis
+        Code security and analysis
       
     </span>
   </a>
@@ -2277,10 +2277,10 @@ cfg: { // Application Insights Configuration
 </li>
         
           <li class="md-nav__item">
-  <a href="#code-security-an-analysis" class="md-nav__link">
+  <a href="#code-security-and-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Code security an analysis
+        Code security and analysis
       
     </span>
   </a>
@@ -2394,7 +2394,7 @@ cfg: { // Application Insights Configuration
 <p>We assume that <code>git</code> and <code>ssh</code> are installed on your system. We do not cover the installation process besides mentioning the fact that git and ssh like any other piece of software must be kept up-to-date.</p>
 <p>The official <a href="https://git-scm.com/doc">Git documentation</a> is a good source for authoritative answers and deep dives.</p>
 <h3 id="how-git-manages-config">How Git manages config<a class="headerlink" href="#how-git-manages-config" title="Permanent link">&para;</a></h3>
-<p>Git is dependent on proper configuration to work. Configuration can be read from the command line (using the <code>-c</code> option), environment variables or files. The <a href="https://git-scm.com/docs/git-config#_configuration">official guide</a> provides the details. </p>
+<p>Git is dependent on proper configuration to work. Configuration can be read from the command line (using the <code>-c</code> option), environment variables or files. The <a href="https://git-scm.com/docs/git-config#_configuration">official guide</a> provides the details.</p>
 <p>We usually store Git config in files. Git will read config from multiple locations depending on their availability. The files are read in the order shown below, the <code>last value read</code> will take precedence over values read earlier.</p>
 <ol>
 <li>System config (usually <code>/etc/gitconfig</code>)</li>
@@ -2403,31 +2403,31 @@ cfg: { // Application Insights Configuration
 </ol>
 <p>The config files can be updated manually with a text editor or by using Git</p>
 <p>Git configuration from the command line follow the following structure:</p>
-<pre><code class="language-shell">git config options section.key value
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>options<span class="w"> </span>section.key<span class="w"> </span>value
+</code></pre></div>
 <p>For the examples below no "scope" is provided so Git will expect that you are in a Git directory and then work with a repo config file. A error message will be given if this is not the case. Use the parameter <code>--system</code>, <code>--global</code> or <code>--local</code> to specify scope.</p>
 <p>Example; setting the user name:</p>
-<pre><code class="language-shell">git config user.name &quot;Peter Pan&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Peter Pan&quot;</span>
+</code></pre></div>
 <p>Reading the config looks like this:</p>
-<pre><code class="language-shell">git config --get user.name
-Peter Pan
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--get<span class="w"> </span>user.name
+Peter<span class="w"> </span>Pan
+</code></pre></div>
 <p>Removing config looks like this:</p>
-<pre><code class="language-shell">git config --unset user.name
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--unset<span class="w"> </span>user.name
+</code></pre></div>
 <p>Setting your user name for a global scope would look like this:</p>
-<pre><code class="language-shell">git config --global user.name &quot;Peter Pan&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Peter Pan&quot;</span>
+</code></pre></div>
 <div class="admonition tip showing location of all git config">
 <p class="admonition-title">Tip</p>
 <p>Using the command <code>git config --list --show-origin</code> will expand all git config across the different levels.</p>
 </div>
 <h3 id="recommended-generic-basic-config">Recommended generic basic config<a class="headerlink" href="#recommended-generic-basic-config" title="Permanent link">&para;</a></h3>
 <p>This section contains the recommended basic generic configuration for Git.</p>
-<pre><code class="language-shell">git config --global user.name &quot;value&quot;
-git config --global user.email &quot;value&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;value&quot;</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;value&quot;</span>
+</code></pre></div>
 <ul>
 <li>The value for username should be your full name (<a href="https://developer.equinor.com/governance/scm-policy/">SCM Policy</a>)</li>
 <li>The value for user email should be the "<a href="https://github.com/settings/emails">Not visible in emails</a>" value from your github.com account. The format will usually be <code>ID+USERNAME@users.noreply.github.com</code> (Privacy, <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address">Official Github documentation</a>)</li>
@@ -2508,8 +2508,8 @@ git config --global user.email &quot;value&quot;
 <li>Add a comment (<code>-C</code>) to help identify the key's purpose. This will be added to the public key as generic text but will not have any functional impact. It will not be exposed on github.com. However, the purpose of a public key is to "share it", so use with caution (PII).</li>
 </ul>
 <p>Example; Creating a SSH key for the Github user <code>larskaare</code></p>
-<pre><code class="language-shell">ssh-keygen -t ed25519 -f ~/.ssh/github_larskaare_1 -C &quot;Github SSH auth key for machine 1&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/github_larskaare_1<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;Github SSH auth key for machine 1&quot;</span>
+</code></pre></div>
 <p>You will be asked "Enter passphrase (empty for no passphrase)", we strongly recommend using a passphrase!. Two files are created, one named <code>github_larskaare_1</code> and one named <code>github_larskaare_1.pub</code>. The file with the <code>.pub</code> extension contains the public part of the key. The file <code>github_larskaare_1</code> contains the private part of the key which should be protected and never shared.</p>
 <div class="admonition tip">
 <p class="admonition-title">Re-using keys?</p>
@@ -2521,30 +2521,30 @@ git config --global user.email &quot;value&quot;
 </div>
 <h4 id="configure-ssh-and-adding-the-key-to-the-key-agent">Configure SSH and adding the key to the key-agent<a class="headerlink" href="#configure-ssh-and-adding-the-key-to-the-key-agent" title="Permanent link">&para;</a></h4>
 <p>Adding the generated SSH key to the <code>ssh-agent</code> gives you a secure repository for your private keys's passphrases. Adding keys and passphrases to the key agent eliminates the need to repeatedly enter the passphrase.</p>
-<p>Follow the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">official documentation</a> of and add the SSH key to the ssh-agent. Be aware of the operating system selector at the top of the page - it will give you instructions for <strong>Mac</strong>, <strong>Windows</strong> and <strong>Linux</strong>. The sections below covers a minimal set-up of how to add the SSH key to the agent. The official version has more details - you can follow either. </p>
+<p>Follow the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent">official documentation</a> of and add the SSH key to the ssh-agent. Be aware of the operating system selector at the top of the page - it will give you instructions for <strong>Mac</strong>, <strong>Windows</strong> and <strong>Linux</strong>. The sections below covers a minimal set-up of how to add the SSH key to the agent. The official version has more details - you can follow either.</p>
 <h4 id="adding-ssh-config">Adding SSH config<a class="headerlink" href="#adding-ssh-config" title="Permanent link">&para;</a></h4>
 <p>SSH uses a config file for it's configuration (this file is not used by Git). The user-specific file is usually stored in <code>~/.ssh/config</code> and should be updated prior to using the SSH key and the ssh-key agent. Consult the documentation of your SSH client for details. (Many use OpenSSH which have good manual pages - <a href="https://www.openssh.com/manual.html">OpenSSH Manual Pages</a>)</p>
 <p>A SSH config file with minimum set-up usually looks like this:</p>
-<pre><code>Host github.com
+<div class="highlight"><pre><span></span><code>Host github.com
     AddKeysToAgent yes
     IdentitiesOnly=yes
     IdentityFile ~/.ssh/github_larskaare_1
-</code></pre>
+</code></pre></div>
 <h4 id="adding-the-private-ssh-key-to-the-ssh-agent">Adding the private SSH key to the SSH agent<a class="headerlink" href="#adding-the-private-ssh-key-to-the-ssh-agent" title="Permanent link">&para;</a></h4>
 <p>We assume that the <code>ssh-agent</code> is available and running.</p>
 <p>The following command will add the private part of the SSH key we generated to the ssh-agent</p>
-<pre><code class="language-shell">ssh-add ~/.ssh/github_larskaare_1
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-add<span class="w"> </span>~/.ssh/github_larskaare_1
+</code></pre></div>
 <p>For MacOS we would typically add the passphrase to the keychain as well</p>
-<pre><code class="language-shell">ssh-add --apple-use-keychain ~/.ssh/github_larskaare_1
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh-add<span class="w"> </span>--apple-use-keychain<span class="w"> </span>~/.ssh/github_larskaare_1
+</code></pre></div>
 <h3 id="configure-githubcom-to-use-our-ssh-key">Configure github.com to use our SSH key<a class="headerlink" href="#configure-githubcom-to-use-our-ssh-key" title="Permanent link">&para;</a></h3>
 <p>We now have a SSH key that we can use when communicating with github.com. To be able to use this key with Github we need to upload the public part of the key to github.com</p>
 <ul>
 <li>Print the public key</li>
 </ul>
-<pre><code class="language-shell">cat ~/.ssh/github_larskaare_1.pub
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>~/.ssh/github_larskaare_1.pub
+</code></pre></div>
 <ul>
 <li>
 <p>Copy the public key (algorithm and key) and add it as a new SSH Authentication key to your Github profile at <a href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
@@ -2554,23 +2554,23 @@ git config --global user.email &quot;value&quot;
 </li>
 </ul>
 <p>(When testing the connection to github.com, ssh will ask if the fingerprint of the SSH key presented by github.com is ok and if you would like to continue. If you are connecting to github.com answer "yes". Understanding this trust chain is not for this guide - but if you want to validate the fingerprint that's suggested you can correlate it to the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints">official ssh key fingerprints</a>. The known hosts file that is mentioned is the <code>~/.ssh/known_hosts</code> file)</p>
-<pre><code class="language-shell">ssh -T git@github.com
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
+</code></pre></div>
 <p>The command should a message similar to this to indicate success:</p>
-<pre><code>Hi larskaare! You've successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
+<div class="highlight"><pre><span></span><code>Hi larskaare! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre></div>
 <h3 id="using-git-and-ssh-with-github">Using Git and SSH with github<a class="headerlink" href="#using-git-and-ssh-with-github" title="Permanent link">&para;</a></h3>
 <p>A this stage we have SSH all configured on both ends. However, how do we tell git to use SSH? You typically would do this when cloning a repo or configuring the <code>remote</code></p>
 <ul>
 <li>A git clone command like this <code>git clone git@github.com:equinor/appsec.git</code> tells git to use SSH. The same command for using HTTPS would be git <code>git clone https://github.com/equinor/appsec.git</code>. The giveaway for HTTPS would be the url which starts with https 😅 That is not included when we use SSH - we rather have the <code>git@github.com</code> part of the url.</li>
 <li>You can examine the remote of a repo to identify if it uses SSH or HTTPS</li>
 </ul>
-<pre><code class="language-shell">git remote -v
-</code></pre>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>remote<span class="w"> </span>-v
+</code></pre></div>
 <p>should out output remote name and a URI containing the <code>git@github.com</code></p>
-<pre><code>origin  git@github.com:equinor/appsec.git (fetch)
+<div class="highlight"><pre><span></span><code>origin  git@github.com:equinor/appsec.git (fetch)
 origin  git@github.com:equinor/appsec.git (push)
-</code></pre>
+</code></pre></div>
 <ul>
 <li>You can add and change remotes for a cloned repo, from HTTPS to SSH using the command <code>git remote set-url &lt;remote name&gt; &lt;new uri&gt;</code></li>
 </ul>
@@ -2630,7 +2630,7 @@ origin  git@github.com:equinor/appsec.git (push)
 </li>
 <li>For signing commits from a codespace, see our guideline on <a href="../git-signed-commits/">Signed Commits</a></li>
 </ul>
-<h4 id="code-security-an-analysis"><a href="https://github.com/settings/security_analysis">Code security an analysis</a><a class="headerlink" href="#code-security-an-analysis" title="Permanent link">&para;</a></h4>
+<h4 id="code-security-and-analysis"><a href="https://github.com/settings/security_analysis">Code security and analysis</a><a class="headerlink" href="#code-security-and-analysis" title="Permanent link">&para;</a></h4>
 <ul>
 <li>"Push protection for yourself" should be enabled<ul>
 <li>Block push with supported secrets against public repos</li>
@@ -2695,7 +2695,7 @@ origin  git@github.com:equinor/appsec.git (push)
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 6, 2025 11:05:57 UTC">May 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 12:23:31 UTC">September 15, 2026</span>
   </span>
 
     
