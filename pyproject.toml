@@ -23,6 +23,13 @@ override-dependencies = [
     "pymdown-extensions==11.0.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "mdformat==1.0.0",
+    "mdformat-mkdocs==5.1.4",
+]
+
 [project.urls]
 Homepage = "https://github.com/equinor/appsec"
 Documentation = "https://github.com/equinor/appsec"
