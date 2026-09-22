@@ -27,7 +27,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "mdformat", marker = "extra == 'dev'", specifier = "==1.0.0" },
-    { name = "mdformat-mkdocs", marker = "extra == 'dev'", specifier = "==5.1.4" },
+    { name = "mdformat-mkdocs", marker = "extra == 'dev'", specifier = "==5.3.0" },
     { name = "mkdocs-awesome-pages-plugin", specifier = "==2.10.1" },
     { name = "mkdocs-git-revision-date-localized-plugin", specifier = "==1.5.4" },
     { name = "mkdocs-material", specifier = "==9.7.6" },
@@ -374,7 +374,7 @@ wheels = [
 
 [[package]]
 name = "mdformat-mkdocs"
-version = "5.1.4"
+version = "5.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mdformat" },
@@ -382,9 +382,9 @@ dependencies = [
     { name = "mdit-py-plugins" },
     { name = "more-itertools" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b3/25/df38de72a291b96fb7af7549c5285e934267f8f0b269d3ccacda84ef764c/mdformat_mkdocs-5.1.4.tar.gz", hash = "sha256:d3ecf035100328c5ff2b3bd7de87a16ee0484e5c317add9c70022598d15af6a1", size = 28160, upload-time = "2026-01-26T12:12:41.983Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/8c/ca9c13017fcb224e9a0c17c214279eb7273318d1890cd0adc80a3c30e443/mdformat_mkdocs-5.3.0.tar.gz", hash = "sha256:9ae35940cfc1d350c41dda717963c90c669937fbbe3be32412a2b975e4bf891d", size = 33319, upload-time = "2026-08-02T18:38:07.954Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/35/bf/00ba31df7cd955eb0dbb1b8b0eb388bc6f717f033f807656a12eb8f12a5b/mdformat_mkdocs-5.1.4-py3-none-any.whl", hash = "sha256:6ff339c1023926077c0c598533768433b38981a9eb792ebfe02d2438ba71514d", size = 38377, upload-time = "2026-01-26T12:12:40.326Z" },
+    { url = "https://files.pythonhosted.org/packages/c0/71/1e1a81c7ed1629ac41f5b3d7dd7bc93c91e106398a88f0e2949c39e04b8e/mdformat_mkdocs-5.3.0-py3-none-any.whl", hash = "sha256:46938724df5892f517130a42d5652276f9a40e80ad0bae4a2af6bde71b53f861", size = 43928, upload-time = "2026-08-02T18:38:06.347Z" },
 ]
 
 [[package]]

@@ -27,7 +27,7 @@ override-dependencies = [
 dev = [
     "pre-commit",
     "mdformat==1.0.0",
-    "mdformat-mkdocs==5.1.4",
+    "mdformat-mkdocs==5.3.0",
 ]
 
 [project.urls]
