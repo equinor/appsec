@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../assets/icons/appsec-iconenergyred.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -2377,7 +2377,7 @@ cfg: { // Application Insights Configuration
 </code></pre></div>
 <p>For the examples below no "scope" is provided so Git will expect that you are in a Git directory and then work with a repo config file. A error message will be given if this is not the case. Use the parameter <code>--system</code>, <code>--global</code> or <code>--local</code> to specify scope.</p>
 <p>Example; setting the user name:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Peter Pan&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"Peter Pan"</span>
 </code></pre></div>
 <p>Reading the config looks like this:</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--get<span class="w"> </span>user.name
@@ -2387,7 +2387,7 @@ Peter<span class="w"> </span>Pan
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--unset<span class="w"> </span>user.name
 </code></pre></div>
 <p>Setting your user name for a global scope would look like this:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Peter Pan&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"Peter Pan"</span>
 </code></pre></div>
 <div class="admonition tip showing location of all git config">
 <p class="admonition-title">Tip</p>
@@ -2395,8 +2395,8 @@ Peter<span class="w"> </span>Pan
 </div>
 <h3 id="recommended-generic-basic-config">Recommended generic basic config<a class="headerlink" href="#recommended-generic-basic-config" title="Permanent link">&para;</a></h3>
 <p>This section contains the recommended basic generic configuration for Git.</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;value&quot;</span>
-git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;value&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"value"</span>
+git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">"value"</span>
 </code></pre></div>
 <ul>
 <li>The value for username should be your full name (<a href="https://developer.equinor.com/governance/scm-policy/">SCM Policy</a>)</li>
@@ -2478,7 +2478,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <li>Add a comment (<code>-C</code>) to help identify the key's purpose. This will be added to the public key as generic text but will not have any functional impact. It will not be exposed on github.com. However, the purpose of a public key is to "share it", so use with caution (PII).</li>
 </ul>
 <p>Example; Creating a SSH key for the Github user <code>larskaare</code></p>
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/github_larskaare_1<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;Github SSH auth key for machine 1&quot;</span>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-f<span class="w"> </span>~/.ssh/github_larskaare_1<span class="w"> </span>-C<span class="w"> </span><span class="s2">"Github SSH auth key for machine 1"</span>
 </code></pre></div>
 <p>You will be asked "Enter passphrase (empty for no passphrase)", we strongly recommend using a passphrase!. Two files are created, one named <code>github_larskaare_1</code> and one named <code>github_larskaare_1.pub</code>. The file with the <code>.pub</code> extension contains the public part of the key. The file <code>github_larskaare_1</code> contains the private part of the key which should be protected and never shared.</p>
 <div class="admonition tip">
@@ -2527,7 +2527,7 @@ git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"
 <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
 </code></pre></div>
 <p>The command should a message similar to this to indicate success:</p>
-<div class="highlight"><pre><span></span><code>Hi larskaare! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+<div class="highlight"><pre><span></span><code>Hi larskaare! You've successfully authenticated, but GitHub does not provide shell access.
 </code></pre></div>
 <h3 id="using-git-and-ssh-with-github">Using Git and SSH with github<a class="headerlink" href="#using-git-and-ssh-with-github" title="Permanent link">&para;</a></h3>
 <p>A this stage we have SSH all configured on both ends. However, how do we tell git to use SSH? You typically would do this when cloning a repo or configuring the <code>remote</code></p>
@@ -2796,7 +2796,7 @@ origin  git@github.com:equinor/appsec.git (push)
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
