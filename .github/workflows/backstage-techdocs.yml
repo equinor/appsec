@@ -39,6 +39,7 @@ jobs:
       - name: Add techdocs-core plugin to mkdocs.yml
         run: |
           sed -i '/- awesome-pages/a\    - techdocs-core' mkdocs.yml
+          sed -i '/emoji_index:/d; /emoji_generator:/d' mkdocs.yml
 
       - name: Generate docs site
         run: |
