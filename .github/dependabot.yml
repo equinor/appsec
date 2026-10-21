@@ -8,6 +8,8 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 3
 
   # Update Python dependencies
   - package-ecosystem: "uv"
@@ -15,6 +17,11 @@ updates:
     schedule:
       interval: "weekly"
       day: monday
+    cooldown:
+      default-days: 3
+      # Temporary exception for GHSA-6q48-6c7w-9gw2
+      exclude:
+        - "certifi"
     ignore:
       - dependency-name: "pymdown-extensions"
         update-types:
